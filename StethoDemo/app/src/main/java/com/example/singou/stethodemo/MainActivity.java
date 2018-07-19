@@ -13,7 +13,7 @@ import com.facebook.stetho.Stetho;
  * Resources：查看本地SharePrefenrence和本地Sqlite DB
  * Console：app执行js
  *
- * //chrome://inspec
+ * //chrome://inspect/#devices
  *
  * */
 
