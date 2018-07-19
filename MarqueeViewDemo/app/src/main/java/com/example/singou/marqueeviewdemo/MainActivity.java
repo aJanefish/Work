@@ -32,8 +32,11 @@ public class MainActivity extends AppCompatActivity {
 
         List<String> info = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
-            info.add("这里是热门头条\n" + i);
+            info.add("这里是热门头条" +
+                    "\n这里是热门头条" + i);
         }
+        //marqueeView.setNotices(info);
+        marqueeView.startWithText("天气台风预警");
         marqueeView.startWithList(info);
         //点击事件
         marqueeView.setOnItemClickListener(new MarqueeView.OnItemClickListener() {
@@ -45,9 +48,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init(){
-        marqueeView.start();
+        //marqueeView.start();
 
-        //marqueeView.startFlipping();
+        //marqueeView.start();
         //marqueeView.stopFlipping();
     }
 }

@@ -2,6 +2,7 @@ package com.example.singou.glide;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -27,8 +28,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         glide_imageview= findViewById(R.id.glide_imageview);
 
+
+    }
+
+    public void onBase(View view) {
         Glide.with(this)
                 .load("http://content.macaotourism.gov.mo/uploads/mgto_sightseeing/cd22ef89ce82baced0a5a4d8f662d65f0a501181.jpg")
                 .into(glide_imageview);
+    }
+
+    public void onClear(View view) {
+        Glide.with(this).clear(glide_imageview);
     }
 }
