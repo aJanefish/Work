@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LeakCanaryDemo</string>
+    <string name="leakcanary_demo">LeakCanary Demo</string>
+    <string name="demo">demo</string>
+</resources>
