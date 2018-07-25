@@ -3,6 +3,7 @@ package com.example.singou.myapplication.activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.example.singou.myapplication.R;
 import com.orhanobut.logger.AndroidLogAdapter;
@@ -28,8 +29,8 @@ public class DebugActvity extends AppCompatActivity {
 
         Logger.addLogAdapter(new AndroidLogAdapter());
         Logger.d("message");
-
         Logger.clearLogAdapters();
+        
         FormatStrategy formatStrategy = PrettyFormatStrategy.newBuilder()
                 .showThreadInfo(false)  // (Optional) Whether to show thread info or not. Default true
                 .methodCount(0)         // (Optional) How many method line to show. Default 2
@@ -73,13 +74,50 @@ public class DebugActvity extends AppCompatActivity {
         Logger.d(map);
 
         Logger.clearLogAdapters();
+        
         formatStrategy = PrettyFormatStrategy.newBuilder()
-                .showThreadInfo(false)
-                .methodCount(0)
                 .tag("MyTag")
                 .build();
         Logger.addLogAdapter(new AndroidLogAdapter(formatStrategy));
 
-        Logger.w("my log message with my tag");
+        Logger.w("my log message with my tag 1");
+        Logger.w("my log message with my tag 2");
+        Logger.w("my log message with my tag 3");
+        Logger.w("my log message with my tag 4");
+        
+        Logger.t("tag").e("Custom tag for only one use");
+        Logger.e("Custom tag for only one use");
+    
+        Logger.json("{ \"key\": 3, \"value\": something}");
+    
+        Logger.d(Arrays.asList("foo", "bar"));
+    
+        Logger.d(Arrays.asList("foo", "bar"));
+    
+        Map<String, String> map1 = new HashMap<>();
+        map1.put("key", "value");
+        map1.put("key1", "value2");
+    
+        Logger.d(map1);
+    
+        Logger.clearLogAdapters();
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        PrettyFormatStrategy formatStrategy1 = PrettyFormatStrategy.newBuilder()
+                .tag("TAG")
+                .build();
+        Logger.addLogAdapter(new AndroidLogAdapter(formatStrategy1));
+        //Logger.json(body);
+        Logger.clearLogAdapters();
+    }
+    
+    public void onSnackbar(View view) {
     }
 }
