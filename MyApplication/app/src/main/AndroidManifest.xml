@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.DebugActvity"></activity>
+        <activity android:name=".activity.DebugActvity" />
+        <activity android:name=".activity.GlideActivity" />
+        <activity android:name=".activity.SPPXActivity"></activity>
     </application>
 
 </manifest>
