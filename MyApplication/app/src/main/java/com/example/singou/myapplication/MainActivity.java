@@ -7,6 +7,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.singou.myapplication.activity.ArrayBlockingQueueActivity;
 import com.example.singou.myapplication.activity.DebugActvity;
 import com.example.singou.myapplication.activity.GlideActivity;
 import com.example.singou.myapplication.activity.SPPXActivity;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    //Logger研究
     public void onDebug(View view) {
         startActivity(new Intent(MainActivity.this,DebugActvity.class));
     }
@@ -29,11 +31,17 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
     
+    //Glide 图片加载的问题
     public void onGlide(View view) {
         startActivity(new Intent(MainActivity.this,GlideActivity.class));
     }
     
+    //SP_PX 的细节
     public void onText(View view) {
         startActivity(new Intent(MainActivity.this,SPPXActivity.class));
+    }
+    
+    public void onArrayBlockingQueue(View view) {
+        startActivity(new Intent(MainActivity.this,ArrayBlockingQueueActivity.class));
     }
 }
