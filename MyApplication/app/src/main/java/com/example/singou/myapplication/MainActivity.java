@@ -11,6 +11,8 @@ import com.example.singou.myapplication.activity.ArrayBlockingQueueActivity;
 import com.example.singou.myapplication.activity.DebugActvity;
 import com.example.singou.myapplication.activity.GlideActivity;
 import com.example.singou.myapplication.activity.SPPXActivity;
+import com.example.singou.myapplication.activity.ScaleTypeActivity;
+import com.example.singou.myapplication.activity.ZXingActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this,GlideActivity.class));
     }
     
+    
+    
     //SP_PX 的细节
     public void onText(View view) {
         startActivity(new Intent(MainActivity.this,SPPXActivity.class));
@@ -43,5 +47,13 @@ public class MainActivity extends AppCompatActivity {
     
     public void onArrayBlockingQueue(View view) {
         startActivity(new Intent(MainActivity.this,ArrayBlockingQueueActivity.class));
+    }
+    
+    public void onScaleType(View view) {
+        startActivity(new Intent(MainActivity.this,ScaleTypeActivity.class));
+    }
+    
+    public void onZXing(View view) {
+        startActivity(new Intent(MainActivity.this,ZXingActivity.class));
     }
 }

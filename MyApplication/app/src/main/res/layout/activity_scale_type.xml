@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ScaleTypeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#f5f5f5">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/time_bg"
+                android:background="#adcd85"
+                android:scaleType="center"
+                />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/time_bg"
+                android:background="#adcd10"
+                android:scaleType="centerCrop"
+                />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/time_bg"
+                android:gravity="center"
+                android:background="#adcd10"
+                android:scaleType="centerInside"
+                />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/time_bg"
+                android:gravity="center"
+                android:background="#adcd10"
+                android:scaleType="fitCenter"
+                />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/time_bg"
+                android:gravity="center"
+                android:background="#adcd10"
+                android:scaleType="fitXY"
+                />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/time_bg"
+                android:gravity="center"
+                android:background="#adcd10"
+                android:scaleType="fitEnd"
+                />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/time_bg"
+                android:gravity="center"
+                android:background="#adcd10"
+                android:scaleType="fitEnd"
+                />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/time_bg"
+                android:gravity="center"
+                android:background="#adcd10"
+                android:scaleType="matrix"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#a5a5a5">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

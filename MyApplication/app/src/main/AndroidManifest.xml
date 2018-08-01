@@ -19,7 +19,12 @@
         <activity android:name=".activity.DebugActvity" />
         <activity android:name=".activity.GlideActivity" />
         <activity android:name=".activity.SPPXActivity" />
-        <activity android:name=".activity.ArrayBlockingQueueActivity"></activity>
+        <activity android:name=".activity.ArrayBlockingQueueActivity" />
+        <activity android:name=".activity.ScaleTypeActivity" />
+        <activity
+            android:name=".activity.ZXingActivity"
+            android:label="@string/title_activity_zxing"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

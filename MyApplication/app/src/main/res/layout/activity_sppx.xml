@@ -229,6 +229,12 @@
                 android:layout_height="wrap_content"
                 android:text="我说px36"
                 android:textSize="36px"/>
+            <TextView
+                android:id="@+id/sppx_px62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我说px62"
+                android:textSize="62px"/>
         </LinearLayout>
     </LinearLayout>
 

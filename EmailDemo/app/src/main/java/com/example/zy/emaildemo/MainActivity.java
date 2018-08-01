@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 			public void run() {
 				super.run();
 				try {
-					MailService.send_email("wo shi zhangyu!");
+					MailService.send_email(MainActivity.this,"wo shi zhangyu!");
 				} catch (IOException e) {
 					Log.d(TAG, "IOException:" + e);
 					e.printStackTrace();
