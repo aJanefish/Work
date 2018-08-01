@@ -19,6 +19,7 @@ public class SPPXActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_sppx);
 		sppx_px36 = findViewById(R.id.sppx_px36);
 		sppx_sp36 = findViewById(R.id.sppx_sp36);
+		
 		sppx_show = findViewById(R.id.sppx_show);
 		
 		initDate();

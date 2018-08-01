@@ -16,225 +16,34 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp8"
-                android:textSize="8sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp9"
-                android:textSize="9sp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp10"
-                android:textSize="10sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp11"
-                android:textSize="11sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp12"
-                android:textSize="12sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp13"
-                android:textSize="13sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp14"
-                android:textSize="14sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp15"
-                android:textSize="15sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp16"
-                android:textSize="16sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp17"
-                android:textSize="17sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp18"
-                android:textSize="18sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp19"
-                android:textSize="19sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp20"
-                android:textSize="20sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp24"
-                android:textSize="24sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp28"
-                android:textSize="28sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp30"
-                android:textSize="30sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说sp32"
-                android:textSize="32sp"/>
 
             <TextView
                 android:id="@+id/sppx_sp36"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="我说sp36"
-                android:textSize="36sp"/>
+                android:text="我说dp36"
+                android:textSize="36dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical">
-
+            android:orientation="vertical"
+            >
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/sppx_px62"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="我说px8"
-                android:textSize="8px"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px9"
-                android:textSize="9px"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px10"
-                android:textSize="10px"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px11"
-                android:textSize="11px"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px12"
-                android:textSize="12px"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px13"
-                android:textSize="13px"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px14"
-                android:textSize="14px"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px15"
-                android:textSize="15px"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px16"
-                android:textSize="16px"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px17"
-                android:textSize="17px"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px18"
-                android:textSize="18px"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px19"
-                android:textSize="19px"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px20"
-                android:textSize="20px"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px24"
-                android:textSize="24px"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px28"
-                android:textSize="28px"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px30"
-                android:textSize="30px"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px32"
-                android:textSize="32px"/>
-
+                android:text="我说px54"
+                android:textSize="54px" />
             <TextView
                 android:id="@+id/sppx_px36"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="我说px36"
                 android:textSize="36px"/>
-            <TextView
-                android:id="@+id/sppx_px62"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我说px62"
-                android:textSize="62px"/>
+
         </LinearLayout>
     </LinearLayout>
 
@@ -245,6 +54,5 @@
         android:layout_gravity="bottom|right"
         android:text="sss"
         />
-
 
 </FrameLayout>
