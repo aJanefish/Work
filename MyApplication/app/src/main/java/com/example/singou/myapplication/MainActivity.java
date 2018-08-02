@@ -27,12 +27,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this,DebugActvity.class));
     }
     
-    public void onSnackbar(View view) {
-        Toast toast = Toast.makeText(this,"nihao",Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.BOTTOM,0,0);
-        toast.show();
-    }
-    
     //Glide 图片加载的问题
     public void onGlide(View view) {
         startActivity(new Intent(MainActivity.this,GlideActivity.class));
@@ -45,14 +39,17 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this,SPPXActivity.class));
     }
     
+    //阻塞队列demo
     public void onArrayBlockingQueue(View view) {
         startActivity(new Intent(MainActivity.this,ArrayBlockingQueueActivity.class));
     }
     
+    //ScaleType Demo
     public void onScaleType(View view) {
         startActivity(new Intent(MainActivity.this,ScaleTypeActivity.class));
     }
     
+    //二维码demo
     public void onZXing(View view) {
         startActivity(new Intent(MainActivity.this,ZXingActivity.class));
     }

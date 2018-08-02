@@ -7,6 +7,21 @@ import android.widget.TextView;
 
 import com.example.singou.myapplication.R;
 
+
+/**
+ * Android UI 切图命名规范、标注规范及单位描述
+ * https://blog.csdn.net/klxh2009/article/details/74938009
+ *
+ * Android UI界面设计规范完整版
+ * https://www.25xt.com/android
+ *
+ * ps切图工具
+ * http://www.cutterman.cn/zh/cutterman
+ *
+ *
+ *
+ * */
+
 public class SPPXActivity extends AppCompatActivity {
 	
 	private TextView sppx_px36;
