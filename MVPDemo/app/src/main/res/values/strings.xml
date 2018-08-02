@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MVPDemo</string>
+    <string name="api_error_msg">error</string>
+</resources>
