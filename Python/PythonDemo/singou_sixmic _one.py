@@ -30,7 +30,6 @@ def getSerial(ser):
   #flag_stop = False
     timestr = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print (timestr+" serial.isOpen() =",ser.isOpen())
-    print ("flag_stop =",flag_stop)
     
 
 #    if flag_stop:                # read data until Ctrl+c
@@ -54,7 +53,7 @@ def open():
     try:
       # 打开串口
         #ser = serial.Serial("/dev/ttyAMA0", 9600)
-        ser = serial.Serial('/dev/ttyUSB0', 115200, timeout = 1)
+        ser = serial.Serial('/dev/ttyUSB1', 115200, timeout = 1)
     except Exception as err:
         print("OPEN serial failed. e: " + str(err))
         return None   
