@@ -4,25 +4,12 @@
 # it's a program of Singou, yu.zhang@singou.mo
 
 
-
 import serial
-import signal
 import datetime
 import requests
 from time import sleep
 
-flag_stop = False
-
-
-
-def onsignal_int(a,b):
-    print ("sigint!")
-    global flag_stop
-    flag_stop = True
-
-signal.signal(signal.SIGINT, onsignal_int)
-signal.signal(signal.SIGTERM, onsignal_int)
-
+ser = None
 
 def sendUrl(angle):
     url = "http://192.168.31.76:8080/wakeup?angle=" + angle.lstrip("0")
@@ -65,7 +52,7 @@ def getSerial(ser):
 
 def open():
     try:
-    	# 打开串口
+      # 打开串口
         #ser = serial.Serial("/dev/ttyAMA0", 9600)
         ser = serial.Serial('/dev/ttyUSB0', 115200, timeout = 1)
     except Exception as err:
@@ -80,7 +67,7 @@ def main():
   ser = open()
   while True:
     if ser == None:
-      print ("ser is None =",ser)
+      print ("ser is None ==",ser)
       sleep(1) 
       ser = open()
     else:
