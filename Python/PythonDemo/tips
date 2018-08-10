@@ -1,0 +1,9 @@
+
+sudo apt install python-pip //python2
+sudo apt install python3-pip    //python3
+
+pip install pyserial    //python2
+pip3 install pyserial   //python3
+
+
+pip3 install requests 
