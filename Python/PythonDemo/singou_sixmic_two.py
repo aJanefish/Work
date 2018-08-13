@@ -12,7 +12,7 @@ from time import sleep
 ser = None
 
 def sendUrl(angle):
-    url = "http://192.168.31.76:8080/wakeup?angle=" + angle.lstrip("0")
+    url = "http://192.168.201.12:8080/wakeup?angle=" + angle.lstrip("0")
     timestr = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     # Send HTTP Request
     try:
@@ -24,6 +24,13 @@ def sendUrl(angle):
     except Exception as err:
        print(timestr + " HTTP request failed. e: " + str(err))
 
+
+def sendUrlThread(angle):
+    try:
+        t = threading.Thread(target=sendUrl,name='sendUrl',args=(angle,)) # 线程对象.
+        t.start() #启动.
+    except:
+        print ("Error: sendUrl unable to start thread")
 
 def getSerial(ser):
 
@@ -46,6 +53,7 @@ def getSerial(ser):
         if("wakeup" in line):
             print ("has wakeup")
             print ("wakeup =",line[7:10])
+            #sendUrlThread(line[7:10])
             sendUrl(line[7:10])
         else:
             print ("not has wakeup")
@@ -60,7 +68,7 @@ def open():
     try:
       # 打开串口
         #ser = serial.Serial("/dev/ttyAMA0", 9600)
-        ser = serial.Serial('/dev/ttyUSB1', 115200, timeout = 1)
+        ser = serial.Serial('/dev/ttyUSB6mic', 115200, timeout = 1)
     except Exception as err:
         print("OPEN serial failed. e: " + str(err))
         return None   
