@@ -14,6 +14,7 @@ import android.widget.ImageView;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.List;
 
 
 //The camera preview
@@ -21,6 +22,7 @@ import java.io.IOException;
 
 public class CameraActivity extends AppCompatActivity {
 	
+	private static  final String TAG = "CameraActivity";
 	private SurfaceView surfaceView;
 	private SurfaceHolder holder;
 	private ImageView imageView;
@@ -92,6 +94,18 @@ public class CameraActivity extends AppCompatActivity {
 				}
 				Camera.Parameters parameters = mCamera.getParameters();
 				
+				
+				List<Camera.Size>  pictureSizes = parameters.getSupportedPictureSizes();
+				int length = pictureSizes.size();
+				for (int i = 0; i < length; i++) {
+					Log.e(TAG,"SupportedPictureSizes : " + pictureSizes.get(i).width + "x" + pictureSizes.get(i).height);
+				}
+				
+				List<Camera.Size>  previewSizes = parameters.getSupportedPreviewSizes();
+				length = previewSizes.size();
+				for (int i = 0; i < length; i++) {
+					Log.e(TAG,"SupportedPreviewSizes : " + previewSizes.get(i).width + "x" + previewSizes.get(i).height);
+				}
 				
 				buffer = new byte[((preWidth * preHeight) * ImageFormat.getBitsPerPixel(ImageFormat.NV21)) / 8];
 				
