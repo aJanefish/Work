@@ -12,6 +12,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Observable;
@@ -19,6 +21,8 @@ import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.ObservableSource;
 import io.reactivex.Observer;
+import io.reactivex.Single;
+import io.reactivex.SingleObserver;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
@@ -31,6 +35,7 @@ import io.reactivex.schedulers.Schedulers;
 
 import static java.lang.Thread.sleep;
 //所有的异步都可以用RxJava来做就可以了，尤其是复杂的场景，越是复杂的场景越能体现RxJava的好处
+//
 
 public class Utils {
 	private static String TAG = "Utils";
@@ -41,6 +46,212 @@ public class Utils {
 			R.drawable.app_guide_beauty_nor,R.drawable.app_guide_music_nor,R.drawable.app_guide_news_nor,
 			R.drawable.app_guide_note_nor};
 	
+	public static void demo26() {
+		//window
+		//按照实际划分窗口，将数据发送给不同的 Observable
+		
+		
+		Log.e(TAG, "window\n");
+		Observable.interval(1, TimeUnit.SECONDS) // 间隔一秒发一次
+				.take(15) // 最多接收15个
+				.window(3, TimeUnit.SECONDS)
+				.subscribeOn(Schedulers.io())
+				.observeOn(AndroidSchedulers.mainThread())
+				.subscribe(new Consumer<Observable<Long>>() {
+					@Override
+					public void accept(@NonNull Observable<Long> longObservable) throws Exception {
+						
+						Log.e(TAG, "Sub Divide begin...\n"+longObservable);
+						longObservable.subscribeOn(Schedulers.io())
+								.observeOn(AndroidSchedulers.mainThread())
+								.subscribe(new Consumer<Long>() {
+									@Override
+									public void accept(@NonNull Long aLong) throws Exception {
+										
+										Log.e(TAG, "Next:" + aLong + "\n");
+									}
+								});
+					}
+				});
+		
+
+	}
+	
+	public static void demo25() {
+		//scan
+		//scan 操作符作用和上面的 reduce 一致，唯一区别是 reduce 是个只追求结果的坏人，
+		// 而  scan 会始终如一地把每一个步骤都输出。
+		Observable.just(1, 2, 3,4,5)
+				.scan(new BiFunction<Integer, Integer, Integer>() {
+					@Override
+					public Integer apply(@NonNull Integer integer, @NonNull Integer integer2) throws Exception {
+						return integer + integer2;
+					}
+				}).subscribe(new Consumer<Integer>() {
+			@Override
+			public void accept(@NonNull Integer integer) throws Exception {
+				
+				Log.e(TAG, "accept: scan " + integer + "\n");
+			}
+		});
+		
+
+	}
+	
+	public static void demo24() {
+		//reduce
+		//reduce 操作符每次用一个方法处理一个值，可以有一个 seed 作为初始值。
+		
+		Observable.just(1, 2, 3,4)
+				.reduce(new BiFunction<Integer, Integer, Integer>() {
+					@Override
+					public Integer apply(@NonNull Integer integer, @NonNull Integer integer2) throws Exception {
+						return integer + integer2;
+					}
+				}).subscribe(new Consumer<Integer>() {
+			@Override
+			public void accept(@NonNull Integer integer) throws Exception {
+				Log.e(TAG, "accept: reduce : " + integer + "\n");
+			}
+		});
+
+	}
+	
+	public static void demo23() {
+		//merge
+		//merge 顾名思义，熟悉版本控制工具的你一定不会不知道 merge 命令，
+		// 而在 Rx 操作符中，merge 的作用是把多个 Observable 结合起来，接受可变参数，也支持迭代器集合。
+		// 注意它和 concat 的区别在于，不用等到 发射器 A 发送完所有的事件再进行发射器 B 的发送。
+		Observable.merge(Observable.just(1, 2,6,7,8), Observable.just(3, 4, 5))
+				.subscribe(new Consumer<Integer>() {
+					@Override
+					public void accept(@NonNull Integer integer) throws Exception {
+						Log.e(TAG, "accept: merge :" + integer + "\n" );
+					}
+				});
+		
+
+	}
+	
+	public static void demo22(){
+		//last
+		//last 操作符仅取出可观察到的最后一个值，或者是满足某些条件的最后一项。
+		Observable.just(1, 2, 3,4,5,6)
+				.last(4)
+				.subscribe(new Consumer<Integer>() {
+					@Override
+					public void accept(@NonNull Integer integer) throws Exception {
+						//mRxOperatorsText.append("last : " + integer + "\n");
+						Log.e(TAG, "last : " + integer + "\n");
+					}
+				});
+		
+	}
+	
+	
+	public static void demo21(){
+		//defer
+		//简单地时候就是每次订阅都会创建一个新的 Observable，并且如果没有被订阅，就不会产生新的 Observable。
+		Observable<Integer> observable = Observable.defer(new Callable<ObservableSource<Integer>>() {
+			@Override
+			public ObservableSource<Integer> call() throws Exception {
+				return Observable.just(1, 2, 3);
+			}
+		});
+		
+		
+		observable.subscribe(new Observer<Integer>() {
+			@Override
+			public void onSubscribe(@NonNull Disposable d) {
+			
+			}
+			
+			@Override
+			public void onNext(@NonNull Integer integer) {
+				
+				Log.e(TAG, "defer : " + integer + "\n");
+			}
+			
+			@Override
+			public void onError(@NonNull Throwable e) {
+				
+				Log.e(TAG, "defer : onError : " + e.getMessage() + "\n");
+			}
+			
+			@Override
+			public void onComplete() {
+				
+				Log.e(TAG, "defer : onComplete\n");
+			}
+		});
+		
+		
+		
+		
+	}
+	
+	public static void demo20(){
+		//debounce
+		//去除发送频率过快的项，看起来好像没啥用处，但你信我，后面绝对有地方很有用武之地。
+		Observable.create(new ObservableOnSubscribe<Integer>() {
+			@Override
+			public void subscribe(@NonNull ObservableEmitter<Integer> emitter) throws Exception {
+				// send events with simulated time wait
+				emitter.onNext(1); // skip
+				Thread.sleep(400);
+				emitter.onNext(2); // deliver
+				Thread.sleep(505);
+				emitter.onNext(3); // skip
+				Thread.sleep(100);
+				emitter.onNext(4); // deliver
+				Thread.sleep(605);
+				emitter.onNext(5); // deliver
+				Thread.sleep(510);
+				emitter.onComplete();
+			}
+		}).debounce(500, TimeUnit.MILLISECONDS)
+				.subscribeOn(Schedulers.io())
+				.observeOn(AndroidSchedulers.mainThread())
+				.subscribe(new Consumer<Integer>() {
+					@Override
+					public void accept(@NonNull Integer integer) throws Exception {
+						Log.e(TAG,"debounce :" + integer + "\n");
+					}
+				});
+		
+
+		
+		
+	}
+	
+	public static void demo19(){
+		//Single
+		//顾名思义，Single 只会接收一个参数，而 SingleObserver 只会调用 onError() 或者 onSuccess()。
+		Single.just(new Random().nextInt())
+				.subscribe(new SingleObserver<Integer>() {
+					@Override
+					public void onSubscribe(@NonNull Disposable d) {
+						Log.e(TAG, "single : onSubscribe : \n" );
+					}
+					
+					@Override
+					public void onSuccess(@NonNull Integer integer) {
+						
+						Log.e(TAG, "single : onSuccess : "+integer+"\n" );
+					}
+					
+					@Override
+					public void onError(@NonNull Throwable e) {
+						
+						Log.e(TAG, "single : onError : "+e.getMessage()+"\n");
+					}
+				});
+		
+
+
+		
+		
+	}
 	
 	public static void demo18(){
 		//take

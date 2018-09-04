@@ -76,4 +76,46 @@ public class MainActivity extends AppCompatActivity {
 	public void demo18(View view) {
 		Utils.demo18();
 	}
+	public void demo19(View view) {
+		Utils.demo19();
+	}
+	
+	public void demo20(View view) {
+		Utils.demo20();
+	}
+	
+	public void demo21(View view) {
+		Utils.demo21();
+	}
+	public void demo22(View view) {
+		Utils.demo22();
+	}
+	
+	public void demo23(View view) {
+		Utils.demo23();
+	}
+	
+	public void demo24(View view) {
+		Utils.demo24();
+	}
+	
+	public void demo25(View view) {
+		Utils.demo25();
+	}
+	
+	public void demo26(View view) {
+		Utils.demo26();
+	}
+	
+	public void useDemo1(View view) {
+		UseDemo.use1();
+	}
+	
+	public void useDemo2(View view) {
+		UseDemo.use2();
+	}
+	
+	public void useDemo3(View view) {
+		UseDemo.use3();
+	}
 }
