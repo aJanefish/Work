@@ -36,6 +36,34 @@ import io.reactivex.schedulers.Schedulers;
 import static java.lang.Thread.sleep;
 //所有的异步都可以用RxJava来做就可以了，尤其是复杂的场景，越是复杂的场景越能体现RxJava的好处
 //
+/**
+ * 26 window
+ * 25 scan
+ * 24 reduce
+ * 23 merge
+ * 22 last
+ * 21 defer
+ * 20 debounce
+ * 19 Single
+ * 18 take
+ * 17 skip
+ * 16 doOnNext
+ * 15 interval
+ * 14 timer
+ * 13 buffer
+ * 12 Filter
+ * 11 distinct
+ * 10 concatMap
+ * 9 FlatMap
+ * 8 Concat
+ * 7 Zip
+ * 6 map
+ * 5
+ * 4
+ * 3
+ * 2
+ * 1
+ * */
 
 public class Utils {
 	private static String TAG = "Utils";

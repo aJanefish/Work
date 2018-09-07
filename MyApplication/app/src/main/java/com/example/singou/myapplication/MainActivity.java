@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.example.singou.myapplication.activity.ArrayBlockingQueueActivity;
 import com.example.singou.myapplication.activity.DebugActvity;
+import com.example.singou.myapplication.activity.FlexboxActivity;
 import com.example.singou.myapplication.activity.GlideActivity;
 import com.example.singou.myapplication.activity.SPPXActivity;
 import com.example.singou.myapplication.activity.ScaleTypeActivity;
@@ -52,5 +53,9 @@ public class MainActivity extends AppCompatActivity {
     //二维码demo
     public void onZXing(View view) {
         startActivity(new Intent(MainActivity.this,ZXingActivity.class));
+    }
+    
+    public void onFlexbox(View view) {
+        startActivity(new Intent(MainActivity.this,FlexboxActivity.class));
     }
 }

@@ -46,10 +46,16 @@
         android:text="ArrayBlockingQueue" />
 
     <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onZXing"
+    android:text="二维码" />
+
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="onZXing"
-        android:text="二维码" />
+        android:onClick="onFlexbox"
+        android:text="Flexbox" />
 
 
 </LinearLayout>
