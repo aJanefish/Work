@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 	private TextView appname_launcher_item;
 	private RelativeLayout rel;
 	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -37,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
 		appInfoHashMap = appUtils.getInstalledApps(0);
 		for(AppInfo info : appInfoHashMap.values()){
 			appInfos.add(info);
+		}
+		
+		for (int i = appInfos.size() - 1; i >= 0; i--) {
+			
+		}
+		for (int i = 40; i > 0; i--) {
+			
 		}
 	}
 	
