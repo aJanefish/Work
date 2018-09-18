@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<color xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorAccent">
+    <!--
+    color 节点只有唯一一个也是必须的属性，
+    android:color 使用color资源文件中的color赋值即可。
+    同样没有子节点，最为简单的一个Drawable，
+    把color 值转化为了Drawable对象，以便在其他需要Drawable的地方使用。-->
+</color>

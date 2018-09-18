@@ -4,17 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bitmap1"/>
-    <ImageView
-        android:layout_centerInParent="true"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:background="@drawable/colordrawabledemo1"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bitmap1" />
+
+        <ImageView
+
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/colordrawabledemo1" />
+
+        <ImageView
+
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/shapedrawabledemo1" />
+
+        <ImageView
+
+            android:layout_width="48dp"
+            android:layout_height="96dp"
+            android:background="@drawable/shapedrawabledemo1" />
+
+
+        <ImageView
+
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/shapedrawabledemo2" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapedrawabledemo3" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shapedrawabledemo4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapedrawabledemo5" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapedrawabledemo6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapedrawabledemo7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:clickable="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/statelistdrawabledemo1" />
+
+        <ImageView
+            android:clickable="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/statelistdrawabledemo2" />
+
+        <ImageView
+            android:clickable="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="levelListClick"
+            android:background="@drawable/levellistdrawabledemo1" />
+
+    </LinearLayout>
+
+
+
+
 </LinearLayout>

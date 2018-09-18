@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="2dp"
+        android:color="@color/colorAccent"
+        android:dashGap="2dp"
+    android:dashWidth="3dp"/>
+    <!--// 和dashWidth一起设置，若不设置则为实线-->
+    <size
+        android:width="60dp"
+        android:height="60dp"/>
+    <padding
+        android:top="5dp"
+        android:right="10dp"
+        android:bottom="15dp"
+        android:left="20dp">
+
+    </padding>
+    <!--
+
+属性	参数类型	说明
+android:color	color	边框颜色
+android:width	int	边框宽度
+android:dashGap	int	边框虚线间隙大小
+android:dashWidth	int	边框虚线每个小节的宽度
+
+    -->
+</shape>
+

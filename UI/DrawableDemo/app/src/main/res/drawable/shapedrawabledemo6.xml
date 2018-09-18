@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:type="linear"
+        android:endColor="@color/colorAccent"
+        android:startColor="@color/colorPrimary"/>
+    <size
+        android:width="60dp"
+        android:height="60dp"/>
+
+    <!--
+属性	参数类型	说明
+android:angle	int	设置旋转的角度，45的倍数
+android:startColor	color	颜色变化的起始值
+android:endColor	color	颜色变化的结束值
+android:centerColor	color	中间的颜色
+android:centerX	int	渐变中心点的横坐标
+android:centerY	int	渐变的中心点的纵坐标
+android:gradientRadius	int	渐变的梯度，当android:type=”radial”有效
+android:type	linear 、 radial 、 sweep	渐变类别，linear(线性)为默认值，radial（径内渐变），sweep（扫描渐变）
+android:useLevel	boolean	设置等级，配合LevelListDrawable使用时设置
+
+    -->
+</shape>
+

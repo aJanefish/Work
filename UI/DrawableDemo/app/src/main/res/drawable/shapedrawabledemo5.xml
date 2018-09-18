@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="15dp"
+        android:topLeftRadius="20dp"
+        android:topRightRadius="30dp"
+        android:radius="30dp"/>
+
+    <solid android:color="@color/colorAccent"/>
+
+    <size
+        android:width="60dp"
+        android:height="60dp"/>
+    <!--
+    属性	参数类型	说明
+android:radius	int	统一设置圆角半径
+android:bottomLeftRadius	int	设置左下角圆角半径
+android:bottomRightRadius	int	设置右下角圆角半径
+android:topLeftRadius	int	设置左上角圆角半径
+android:topRightRadius	int	设置右上角圆角半径
+
+
+
+    -->
+</shape>
+
