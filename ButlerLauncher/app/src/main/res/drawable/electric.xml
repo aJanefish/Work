@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/electric_quantity_0"
+        android:maxLevel="10"
+        android:minLevel="1"/>
+    <item
+        android:drawable="@drawable/electric_quantity_50"
+        android:maxLevel="20"
+        android:minLevel="11"/>
+
+    <item
+        android:drawable="@drawable/electric_quantity_100"
+        android:maxLevel="30"
+        android:minLevel="21"/>
+</level-list>

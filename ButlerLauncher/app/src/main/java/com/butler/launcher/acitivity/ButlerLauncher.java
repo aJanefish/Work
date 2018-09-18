@@ -1,15 +1,12 @@
 package com.butler.launcher.acitivity;
 
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.Window;
-import android.view.WindowManager;
+import android.view.View;
+import android.widget.ImageView;
 
 import java.util.List;
 
@@ -33,6 +30,9 @@ public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.C
 	private String TAG = "ButlerLauncher";
 	private RecyclerView mRecyclerView;
 	private LauncherAdapter launcherAdapter;
+	private ImageView imageview_bulter_electric_bar;
+	private ImageView imageview_bulter_wifi_bar;
+	private ImageView imageview_bulter_setting_bar;
 	
 	
 	@Override
@@ -48,13 +48,22 @@ public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.C
 		mLauncherModel.start();
 		
 		Log.d(TAG,"onCreate");
-		
+		initData();
+	}
+	
+	private void initData() {
+		imageview_bulter_electric_bar.getBackground().setLevel(3);
+		imageview_bulter_wifi_bar.getBackground().setLevel(3);
 	}
 	
 	private void initView() {
 		mRecyclerView =   findViewById(R.id.recyclerView);
 		//设置横向布局：
 		mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+		
+		imageview_bulter_electric_bar = findViewById(R.id.imageview_bulter_electric_bar);
+		imageview_bulter_wifi_bar = findViewById(R.id.imageview_bulter_wifi_bar);
+		imageview_bulter_setting_bar = findViewById(R.id.imageview_bulter_setting_bar);
 	}
 	
 	@Override
@@ -85,9 +94,47 @@ public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.C
 	
 	}
 	
+	
+	public void settingClick(View view) {
+		Intent intent = getPackageManager().getLaunchIntentForPackage("com.android.settings");
+		startActivity(intent);
+	}
+	
+	
+	
+	public void electricClick(View view) {
+		if (flag == 0) {
+			view.getBackground().setLevel(3);
+		} else if (flag == 1){
+			view.getBackground().setLevel(13);
+		}else {
+			view.getBackground().setLevel(23);
+		}
+
+		this.flag ++;
+		this.flag = this.flag % 3 ;
+	}
+	
+	int flag = 0;
+	
+	public void wifiClick(View view) {
+		if (flag == 0) {
+			view.getBackground().setLevel(3);
+		} else if (flag == 1){
+			view.getBackground().setLevel(13);
+		}else {
+			view.getBackground().setLevel(23);
+		}
+		
+		this.flag ++;
+		this.flag = this.flag % 3 ;
+	}
+	
+	
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
+		//
 		mLauncherModel.setCallBack(null);
 	}
 }

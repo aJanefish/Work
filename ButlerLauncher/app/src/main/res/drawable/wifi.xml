@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/signal_wifi_off"
+        android:maxLevel="10"
+        android:minLevel="1"/>
+    <item
+        android:drawable="@drawable/signal_wifi_2_bar"
+        android:maxLevel="20"
+        android:minLevel="11"/>
+
+    <item
+        android:drawable="@drawable/signal_wifi_4_bar"
+        android:maxLevel="30"
+        android:minLevel="21"/>
+</level-list>
