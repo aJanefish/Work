@@ -107,10 +107,17 @@ public class LauncherAdapter extends RecyclerView.Adapter<LauncherAdapter.ViewHo
 		public void onClick(View view) {
 			Log.d(TAG,"onClick "+position+" ,["+appInfo.getPackageName()+","+appInfo.getClassName()+"]");
 			
-
+			if(appInfo.getId()==AppInfo.COMMON){
+				Intent intent = context.getPackageManager().getLaunchIntentForPackage(appInfo.getPackageName());
+				context.startActivity(intent);
+			}else if(appInfo.getId()==AppInfo.ADD){
+				Log.d(TAG,"onClick  add");
+				Intent intent = new Intent();
+				intent.setComponent(new ComponentName("com.butler.launcher","com.butler.launcher.acitivity.SettingActivity"));
+				context.startActivity(intent);
+			}
 			
-			Intent intent = context.getPackageManager().getLaunchIntentForPackage(appInfo.getPackageName());
-			context.startActivity(intent);
+
 			
 		}
 	}

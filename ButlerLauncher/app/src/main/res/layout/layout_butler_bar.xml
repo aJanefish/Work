@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:padding="0dp">
+    android:padding="8dp">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -70,12 +70,21 @@
             android:layout_weight="1">
 
             <!--time-->
+            <!--
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="上午10:19"
-                android:textColor="#224189" />
+                android:textColor="#224189" />-->
+            <TextClock
+                android:layout_centerInParent="true"
+                android:id="@+id/textClock"
+                android:layout_width="wrap_content"
+                android:format24Hour="EE HH:mm"
+                android:textColor="#098cbc"
+                android:textSize="24sp"
+                android:layout_height="wrap_content" />
         </RelativeLayout>
 
         <RelativeLayout

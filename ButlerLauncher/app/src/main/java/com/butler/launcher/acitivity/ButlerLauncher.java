@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import java.util.List;
 
 
+import com.butler.launcher.ButlerApplication;
 import com.butler.launcher.R;
 import com.butler.launcher.adapter.LauncherAdapter;
 import com.butler.launcher.bean.AppInfo;
@@ -34,7 +35,7 @@ import io.reactivex.schedulers.Schedulers;
 public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.CallBack {
 
     private String TAG = "ButlerLauncher";
-    private LauncherModel mLauncherModel;
+    private ButlerApplication butlerApplication;
     private RecyclerView mRecyclerView;
     private LauncherAdapter launcherAdapter;
     private ImageView imageview_bulter_electric_bar;
@@ -50,9 +51,12 @@ public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.C
 
         initView();
 
-        mLauncherModel = new LauncherModel(this);
+        LauncherModel mLauncherModel = new LauncherModel(this);
         mLauncherModel.setCallBack(this);
         mLauncherModel.start();
+
+        butlerApplication = (ButlerApplication) getApplication();
+        butlerApplication.setLauncherModel(mLauncherModel);
 
         Log.d(TAG, "onCreate");
         initData();
@@ -65,7 +69,8 @@ public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.C
     private void initView() {
         mRecyclerView = findViewById(R.id.recyclerView);
         //设置横向布局：
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        LinearLayoutManager linearLayoutManager= new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        mRecyclerView.setLayoutManager(linearLayoutManager);
 
         imageview_bulter_electric_bar = findViewById(R.id.imageview_bulter_electric_bar);
         imageview_bulter_wifi_bar = findViewById(R.id.imageview_bulter_wifi_bar);
@@ -74,8 +79,7 @@ public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.C
 
     @Override
     public void addView(List<AppInfo> appInfoList) {
-        Log.d(TAG, "" + appInfoList.size());
-        Log.d(TAG, appInfoList + "");
+        Log.d(TAG, "addView:" + appInfoList.size());
         launcherAdapter = new LauncherAdapter(this, appInfoList);
         //设置适配器
 
@@ -144,6 +148,6 @@ public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.C
     protected void onDestroy() {
         super.onDestroy();
 
-        mLauncherModel.onDestroy();
+        butlerApplication.getLauncherModel().onDestroy();
     }
 }

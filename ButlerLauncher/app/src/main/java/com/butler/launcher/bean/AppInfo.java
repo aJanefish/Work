@@ -7,6 +7,9 @@ import android.graphics.drawable.Drawable;
  * App信息类
  */
 public class AppInfo {
+	public static int COMMON = 0x0000;
+	public static int ADD = 0x0001;
+
 	// 包名
 	private String packageName;
 	// APP名
@@ -21,7 +24,13 @@ public class AppInfo {
 	private String[] permissions;
 	// 主Activity的类名
 	private String launchActivityName;
-	
+
+	//是否显示
+	private boolean isShow = false;
+
+	//特殊appInfo
+	private int id = COMMON;
+
 	public String getLaunchActivityName() {
 		return launchActivityName;
 	}
@@ -87,7 +96,15 @@ public class AppInfo {
 	public void setClassName(String className) {
 		this.className = className;
 	}
-	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	@Override
 	public String toString() {
 		return "AppInfo{" +

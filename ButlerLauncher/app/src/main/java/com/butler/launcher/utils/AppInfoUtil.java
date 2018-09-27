@@ -33,7 +33,7 @@ public class AppInfoUtil {
 	private static AppInfoUtil infoUtil;
 	
 	private PackageManager pManager;
-	
+
 	// 所有应用
 	private List<PackageInfo> allPackageList;
 	
@@ -109,8 +109,6 @@ public class AppInfoUtil {
 				}
 				break;
 		}
-
-		allPackageList.clear();
 
 		return getAppInfoByPackageInfo(result);
 	}
@@ -214,7 +212,6 @@ public class AppInfoUtil {
 			
 			appList.add(appInfo);
 		}
-		list.clear();
 
 
 		

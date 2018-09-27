@@ -1,16 +1,17 @@
 package com.butler.launcher.model;
 
-import android.app.Application;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.util.Log;
-import android.webkit.WebView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import com.butler.launcher.R;
 import com.butler.launcher.bean.AppInfo;
 import com.butler.launcher.utils.AppInfoUtil;
+import com.butler.launcher.utils.CanvasUtils;
 
 public class LauncherModel extends Thread {
 
@@ -20,8 +21,8 @@ public class LauncherModel extends Thread {
     private Context mContext;
     private CallBack mCallBack;
     private AppInfoUtil appInfoUtil;
-    private HashMap<String, AppInfo> mAppInfoHashMap;
-    private List<AppInfo> appInfos;
+    public static HashMap<String, AppInfo> mAppInfoHashMap;
+    public static List<AppInfo> appInfos;
     private String[] filterAppPackageName = {
             "com.butler.launcher",
             "com.baidu.searchbox",
@@ -32,8 +33,9 @@ public class LauncherModel extends Thread {
     public LauncherModel(Context context) {
         this.mContext = context;
         this.appInfoUtil = AppInfoUtil.getInstance(context);
-        this.appInfos = new ArrayList<>();
-        this.mAppInfoHashMap = appInfoUtil.getInstalledApps(2);
+        appInfos = new ArrayList<>();
+        mAppInfoHashMap = appInfoUtil.getInstalledApps(0);
+        Log.d(TAG, "LauncherModel:" + mAppInfoHashMap.size() + "");
     }
 
     public void setCallBack(CallBack mCallBack) {
@@ -44,10 +46,10 @@ public class LauncherModel extends Thread {
         this.mCallBack = null;
         this.mContext = null;
         this.appInfoUtil = null;
-        this.appInfos.clear();
-        this.appInfos = null;
-        this.mAppInfoHashMap.clear();
-        this.mAppInfoHashMap = null;
+        appInfos.clear();
+        appInfos = null;
+        mAppInfoHashMap.clear();
+        mAppInfoHashMap = null;
     }
 
     @Override
@@ -60,11 +62,22 @@ public class LauncherModel extends Thread {
         }
         //过滤apk
         filter();
+        //add DIY AppInfo
+        addDiyAppinfo();
         //加载桌面
         if (mCallBack != null) {
             mCallBack.addView(appInfos);
         }
 
+    }
+
+    private void addDiyAppinfo() {
+        AppInfo appInfo = new AppInfo();
+        appInfo.setId(AppInfo.ADD);
+        Bitmap bitmap = CanvasUtils.drawableToBitmap(mContext.getDrawable(R.drawable.ic_add_black_200dp));
+        appInfo.setBitmap(bitmap);
+        //appInfo.setAppName("添加app");
+        appInfos.add(appInfo);
     }
 
     private void filter() {

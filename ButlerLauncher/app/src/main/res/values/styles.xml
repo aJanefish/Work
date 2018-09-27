@@ -16,4 +16,13 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <style name="ButlerTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ButlerTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="ButlerTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
