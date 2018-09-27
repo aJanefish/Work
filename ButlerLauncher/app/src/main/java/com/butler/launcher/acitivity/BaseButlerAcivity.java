@@ -2,6 +2,7 @@ package com.butler.launcher.acitivity;
 
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,7 @@ public class BaseButlerAcivity extends AppCompatActivity {
 	
 	private Window window;
 	private BulterBatteryBroadcastReceiver bulterBatteryBroadcastReceiver;
+	private ButlerWifiBroadcastReceiver butlerWifiBroadcastReceiver;
 	
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -40,9 +42,17 @@ public class BaseButlerAcivity extends AppCompatActivity {
 
 	private void initReceiver(){
 		bulterBatteryBroadcastReceiver = new BulterBatteryBroadcastReceiver();
-		IntentFilter filter2 = new IntentFilter();
-		filter2.addAction(Intent.ACTION_BATTERY_CHANGED);
-		registerReceiver(bulterBatteryBroadcastReceiver,filter2);
+		IntentFilter batteryFilter = new IntentFilter();
+		batteryFilter.addAction(Intent.ACTION_BATTERY_CHANGED);
+		registerReceiver(bulterBatteryBroadcastReceiver,batteryFilter);
+
+
+		butlerWifiBroadcastReceiver = new ButlerWifiBroadcastReceiver();
+		IntentFilter wifiFilter = new IntentFilter();
+        wifiFilter.addAction(WifiManager.NETWORK_STATE_CHANGED_ACTION);
+        wifiFilter.addAction(WifiManager.WIFI_STATE_CHANGED_ACTION);
+		registerReceiver(butlerWifiBroadcastReceiver,wifiFilter);
+
 	}
 	
 	@Override
@@ -51,6 +61,7 @@ public class BaseButlerAcivity extends AppCompatActivity {
 		//清除常亮
 		window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		unregisterReceiver(bulterBatteryBroadcastReceiver);
+		unregisterReceiver(butlerWifiBroadcastReceiver);
 		unregisterEventBus();
 	}
 

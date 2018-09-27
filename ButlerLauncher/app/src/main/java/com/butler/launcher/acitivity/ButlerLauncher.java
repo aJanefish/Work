@@ -1,6 +1,8 @@
 package com.butler.launcher.acitivity;
 
 import android.content.Intent;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -15,6 +17,7 @@ import com.butler.launcher.R;
 import com.butler.launcher.adapter.LauncherAdapter;
 import com.butler.launcher.bean.AppInfo;
 import com.butler.launcher.event.BatteryEvent;
+import com.butler.launcher.event.WifiEvent;
 import com.butler.launcher.model.LauncherModel;
 
 import org.greenrobot.eventbus.Subscribe;
@@ -30,8 +33,8 @@ import io.reactivex.schedulers.Schedulers;
 
 public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.CallBack {
 
-    private LauncherModel mLauncherModel;
     private String TAG = "ButlerLauncher";
+    private LauncherModel mLauncherModel;
     private RecyclerView mRecyclerView;
     private LauncherAdapter launcherAdapter;
     private ImageView imageview_bulter_electric_bar;
@@ -56,8 +59,7 @@ public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.C
     }
 
     private void initData() {
-        imageview_bulter_electric_bar.getBackground().setLevel(3);
-        imageview_bulter_wifi_bar.getBackground().setLevel(3);
+
     }
 
     private void initView() {
@@ -99,7 +101,7 @@ public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.C
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)
-    public void showListener(BatteryEvent event) {
+    public void onBatteryState(BatteryEvent event) {
 
         int level = event.getLevel();
         if (level >= 80) {
@@ -111,28 +113,30 @@ public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.C
         }
     }
 
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onWifiState(WifiEvent event) {
+        boolean connect = event.isConnect();
+        if (connect) {
+
+            WifiManager wifi_service = (WifiManager)getApplicationContext().getSystemService(WIFI_SERVICE);
+            WifiInfo wifiInfo    = wifi_service.getConnectionInfo();
+            int rssi = wifiInfo.getRssi();
+            if(rssi <=100 ){
+                imageview_bulter_wifi_bar.getBackground().setLevel(13);
+            }else {
+                imageview_bulter_wifi_bar.getBackground().setLevel(23);
+            }
+            Log.d(TAG,"rssi :"+rssi);
+
+        } else {
+            imageview_bulter_wifi_bar.getBackground().setLevel(3);
+        }
+    }
+
 
     public void settingClick(View view) {
         Intent intent = getPackageManager().getLaunchIntentForPackage("com.android.settings");
         startActivity(intent);
-    }
-
-
-
-
-    int flag = 0;
-
-    public void wifiClick(View view) {
-        if (flag == 0) {
-            view.getBackground().setLevel(3);
-        } else if (flag == 1) {
-            view.getBackground().setLevel(13);
-        } else {
-            view.getBackground().setLevel(23);
-        }
-
-        this.flag++;
-        this.flag = this.flag % 3;
     }
 
 
