@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
+import org.greenrobot.eventbus.EventBus;
+
 public class BaseButlerAcivity extends AppCompatActivity {
 	
 	private Window window;
@@ -23,11 +25,19 @@ public class BaseButlerAcivity extends AppCompatActivity {
 		//保持常亮
 		window = getWindow();
 		window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-		
+
+		initEventBus();
+
 		initReceiver();
 
 	}
-	
+
+	private void initEventBus() {
+		if(!EventBus.getDefault().isRegistered(this)){
+			EventBus.getDefault().register(this);
+		}
+	}
+
 	private void initReceiver(){
 		bulterBatteryBroadcastReceiver = new BulterBatteryBroadcastReceiver();
 		IntentFilter filter2 = new IntentFilter();
@@ -41,5 +51,12 @@ public class BaseButlerAcivity extends AppCompatActivity {
 		//清除常亮
 		window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		unregisterReceiver(bulterBatteryBroadcastReceiver);
+		unregisterEventBus();
+	}
+
+	private void unregisterEventBus() {
+		if(EventBus.getDefault().isRegistered(this)){
+			EventBus.getDefault().unregister(this);
+		}
 	}
 }

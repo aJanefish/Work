@@ -109,6 +109,9 @@ public class AppInfoUtil {
 				}
 				break;
 		}
+
+		allPackageList.clear();
+
 		return getAppInfoByPackageInfo(result);
 	}
 	
@@ -211,6 +214,9 @@ public class AppInfoUtil {
 			
 			appList.add(appInfo);
 		}
+		list.clear();
+
+
 		
 		HashMap<String,AppInfo> hashMap = new HashMap<>();
 		for(AppInfo appInfo:appList){

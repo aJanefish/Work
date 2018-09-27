@@ -6,25 +6,35 @@ import android.content.Intent;
 import android.os.BatteryManager;
 import android.util.Log;
 
+import com.butler.launcher.event.BatteryEvent;
+
+import org.greenrobot.eventbus.EventBus;
+
 public class BulterBatteryBroadcastReceiver extends BroadcastReceiver {
 	private static final String TAG = "BulterBattery";
+
+	private int level = 0;
+
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		
 		
 		//filter2.addAction(Intent.ACTION_BATTERY_CHANGED);
-		
-		int level = intent.getIntExtra("level", 0);    ///µç³ØÊ£ÓàµçÁ¿
-		int scale = intent.getIntExtra("scale", 0);  ///»ñÈ¡µç³ØÂúµçÁ¿ÊıÖµ
-		
-		int status = intent.getIntExtra("status", BatteryManager.BATTERY_STATUS_UNKNOWN); ///»ñÈ¡µç³Ø×´Ì¬
-		int plugged = intent.getIntExtra("plugged", 0);  ///»ñÈ¡µçÔ´ĞÅÏ¢
-		int health = intent.getIntExtra("health",BatteryManager.BATTERY_HEALTH_UNKNOWN);  ///»ñÈ¡µç³Ø½¡¿µ¶È
-		int voltage = intent.getIntExtra("voltage", 0);  ///»ñÈ¡µç³ØµçÑ¹
-		int temperature = intent.getIntExtra("temperature", 0);  ///»ñÈ¡µç³ØÎÂ¶È
-		
-		Log.d(TAG,level+","+scale+","+status+","+plugged+","+health+","+voltage+","+temperature);
-		
+
+		StringBuilder stringBuilder = new StringBuilder("start level:"+level+" ");
+		level = intent.getIntExtra("level", 0);    ///ç”µæ± å‰©ä½™ç”µé‡
+//		int scale = intent.getIntExtra("scale", 0);  ///è·å–ç”µæ± æ»¡ç”µé‡æ•°å€¼
+//
+//		int status = intent.getIntExtra("status", BatteryManager.BATTERY_STATUS_UNKNOWN); ///è·å–ç”µæ± çŠ¶æ€
+//		int plugged = intent.getIntExtra("plugged", 0);  ///è·å–ç”µæºä¿¡æ¯
+//		int health = intent.getIntExtra("health",BatteryManager.BATTERY_HEALTH_UNKNOWN);  ///è·å–ç”µæ± å¥åº·åº¦
+//		int voltage = intent.getIntExtra("voltage", 0);  ///è·å–ç”µæ± ç”µå‹
+//		int temperature = intent.getIntExtra("temperature", 0);  ///è·å–ç”µæ± æ¸©åº¦
+		stringBuilder.append("end level: "+level);
+		Log.d(TAG,""+stringBuilder.toString());
+
+		EventBus.getDefault().post(new BatteryEvent(level));
+
 	}
 	
 	
