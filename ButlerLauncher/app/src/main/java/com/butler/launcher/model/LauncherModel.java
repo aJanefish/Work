@@ -13,6 +13,7 @@ import com.butler.launcher.R;
 import com.butler.launcher.bean.AppInfo;
 import com.butler.launcher.utils.AppInfoUtil;
 import com.butler.launcher.utils.CanvasUtils;
+import com.butler.launcher.utils.LauncherUtils;
 import com.butler.launcher.utils.SPUtils;
 
 public class LauncherModel extends Thread {
@@ -26,11 +27,7 @@ public class LauncherModel extends Thread {
     public static HashMap<String, AppInfo> mAppInfoHashMap;
     public static List<AppInfo> appAllInfos;
     public static List<AppInfo> appShowInfos;
-    private String[] filterAppPackageName = {
-            "com.butler.launcher",
-            "com.baidu.searchbox",
-            "com.android.wallpaperpicker"
-    };
+
 
 
     public LauncherModel(Context context) {
@@ -39,7 +36,6 @@ public class LauncherModel extends Thread {
         appAllInfos = new ArrayList<>();
         appShowInfos = new ArrayList<>();
         mAppInfoHashMap = appInfoUtil.getInstalledApps(0);
-        Log.d(TAG, "LauncherModel:" + mAppInfoHashMap.size() + "");
     }
 
     public void setCallBack(CallBack mCallBack) {
@@ -86,12 +82,14 @@ public class LauncherModel extends Thread {
 
     //从sp中获取到需要显示的app
     private void spShow() {
-        appShowInfos.clear();
+        //appShowInfos.clear();
         Map<String, ?> map = SPUtils.getInstance().getAll();
         for (Map.Entry<String, ?> entry : map.entrySet()) {
 
             if (entry.getValue().toString().contains("true")) {
                 appShowInfos.add(mAppInfoHashMap.get(entry.getKey()));
+            }else {
+                
             }
         }
         //add DIY AppInfo
@@ -109,9 +107,12 @@ public class LauncherModel extends Thread {
 
 
     private void filter() {
+
         if (mAppInfoHashMap != null) {
             for (AppInfo info : mAppInfoHashMap.values()) {
-                appAllInfos.add(info);
+                if (!LauncherUtils.getAppFifter().contains(info.getPackageName())) {
+                    appAllInfos.add(info);
+                }
             }
         }
     }

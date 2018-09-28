@@ -110,7 +110,9 @@ public class AppInfo {
 		return "AppInfo{" +
 				"packageName='" + packageName + '\'' +
 				", appName='" + appName + '\'' +
-				", launchActivityName='" + launchActivityName + '\'' +
+				", className='" + className + '\'' +
+				", isShow=" + isShow +
+				", id=" + id +
 				'}';
 	}
 }

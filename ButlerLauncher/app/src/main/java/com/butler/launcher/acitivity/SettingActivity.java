@@ -29,7 +29,7 @@ public class SettingActivity extends AppCompatActivity {
         //LauncherModel.
 
         setting_recyclerView.setLayoutManager(layoutManage);
-        setting_recyclerView.setAdapter(new LauncherSettingAdapter(LauncherModel.appAllInfos));
+        setting_recyclerView.setAdapter(new LauncherSettingAdapter(this,LauncherModel.appAllInfos));
     }
 
     public void settingBack(View view) {
