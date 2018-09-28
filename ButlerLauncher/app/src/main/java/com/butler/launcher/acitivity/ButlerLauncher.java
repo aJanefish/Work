@@ -1,6 +1,7 @@
 package com.butler.launcher.acitivity;
 
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
@@ -20,6 +21,7 @@ import com.butler.launcher.bean.AppInfo;
 import com.butler.launcher.event.BatteryEvent;
 import com.butler.launcher.event.WifiEvent;
 import com.butler.launcher.model.LauncherModel;
+import com.butler.launcher.utils.SPUtils;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
@@ -60,6 +62,13 @@ public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.C
 
         Log.d(TAG, "onCreate");
         initData();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SPUtils.getInstance().show();
+        butlerApplication.getLauncherModel().update();
     }
 
     private void initData() {
@@ -104,6 +113,7 @@ public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.C
 
     }
 
+    //更新電池狀態
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onBatteryState(BatteryEvent event) {
 
@@ -117,6 +127,7 @@ public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.C
         }
     }
 
+    //更新wifi狀態
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onWifiState(WifiEvent event) {
         boolean connect = event.isConnect();
@@ -149,5 +160,10 @@ public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.C
         super.onDestroy();
 
         butlerApplication.getLauncherModel().onDestroy();
+    }
+
+    @Override
+    protected boolean isEventBus() {
+        return true;
     }
 }

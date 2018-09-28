@@ -7,11 +7,13 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.butler.launcher.R;
 import com.butler.launcher.bean.AppInfo;
 import com.butler.launcher.utils.AppInfoUtil;
 import com.butler.launcher.utils.CanvasUtils;
+import com.butler.launcher.utils.SPUtils;
 
 public class LauncherModel extends Thread {
 
@@ -22,7 +24,8 @@ public class LauncherModel extends Thread {
     private CallBack mCallBack;
     private AppInfoUtil appInfoUtil;
     public static HashMap<String, AppInfo> mAppInfoHashMap;
-    public static List<AppInfo> appInfos;
+    public static List<AppInfo> appAllInfos;
+    public static List<AppInfo> appShowInfos;
     private String[] filterAppPackageName = {
             "com.butler.launcher",
             "com.baidu.searchbox",
@@ -33,7 +36,8 @@ public class LauncherModel extends Thread {
     public LauncherModel(Context context) {
         this.mContext = context;
         this.appInfoUtil = AppInfoUtil.getInstance(context);
-        appInfos = new ArrayList<>();
+        appAllInfos = new ArrayList<>();
+        appShowInfos = new ArrayList<>();
         mAppInfoHashMap = appInfoUtil.getInstalledApps(0);
         Log.d(TAG, "LauncherModel:" + mAppInfoHashMap.size() + "");
     }
@@ -46,8 +50,10 @@ public class LauncherModel extends Thread {
         this.mCallBack = null;
         this.mContext = null;
         this.appInfoUtil = null;
-        appInfos.clear();
-        appInfos = null;
+        appAllInfos.clear();
+        appAllInfos = null;
+        appShowInfos.clear();
+        appShowInfos = null;
         mAppInfoHashMap.clear();
         mAppInfoHashMap = null;
     }
@@ -62,13 +68,34 @@ public class LauncherModel extends Thread {
         }
         //过滤apk
         filter();
-        //add DIY AppInfo
-        addDiyAppinfo();
+        //SPUtil --> appShowInfos
+        spShow();
         //加载桌面
         if (mCallBack != null) {
-            mCallBack.addView(appInfos);
+            mCallBack.addView(appShowInfos);
         }
+    }
 
+    public void update() {
+        spShow();
+        //加载桌面
+        if (mCallBack != null) {
+            mCallBack.addView(appShowInfos);
+        }
+    }
+
+    //从sp中获取到需要显示的app
+    private void spShow() {
+        appShowInfos.clear();
+        Map<String, ?> map = SPUtils.getInstance().getAll();
+        for (Map.Entry<String, ?> entry : map.entrySet()) {
+
+            if (entry.getValue().toString().contains("true")) {
+                appShowInfos.add(mAppInfoHashMap.get(entry.getKey()));
+            }
+        }
+        //add DIY AppInfo
+        addDiyAppinfo();
     }
 
     private void addDiyAppinfo() {
@@ -77,22 +104,16 @@ public class LauncherModel extends Thread {
         Bitmap bitmap = CanvasUtils.drawableToBitmap(mContext.getDrawable(R.drawable.ic_add_black_200dp));
         appInfo.setBitmap(bitmap);
         //appInfo.setAppName("添加app");
-        appInfos.add(appInfo);
+        appShowInfos.add(appInfo);
     }
 
+
     private void filter() {
-        Log.d(TAG, "filter start");
         if (mAppInfoHashMap != null) {
-            Log.d(TAG, "filter start:" + mAppInfoHashMap.size() + "");
-            for (String appPackageName : filterAppPackageName) {
-                mAppInfoHashMap.remove(appPackageName);
-            }
-            Log.d(TAG, "filter end:" + mAppInfoHashMap.size() + "");
             for (AppInfo info : mAppInfoHashMap.values()) {
-                appInfos.add(info);
+                appAllInfos.add(info);
             }
         }
-        Log.d(TAG, "filter end");
     }
 
 
