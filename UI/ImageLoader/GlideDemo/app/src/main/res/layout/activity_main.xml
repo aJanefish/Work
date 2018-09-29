@@ -12,6 +12,12 @@
         android:layout_height="wrap_content"
         android:text="@string/glide_title"
         />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onGlass"
+        android:text="实现毛玻璃"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
