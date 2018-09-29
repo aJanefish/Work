@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
-    android:background="#151515"
+    android:background="@drawable/launcher_bg"
     android:orientation="vertical"
     tools:context=".acitivity.SettingActivity">
 
@@ -30,6 +30,7 @@
             android:textColor="#f7f5f5"
             android:text="返回"/>
 
+        <!--
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,6 +38,7 @@
             android:textColor="#f7f5f5"
             android:onClick="settingConfirm"
             android:text="确认" />
+            -->
 
     </RelativeLayout>
 

@@ -26,12 +26,6 @@ public class SPUtils {
 
     public void init(Context context) {
         sharedPreferences = context.getSharedPreferences("ButlerLauncher", Context.MODE_PRIVATE);
-        sharedPreferences.registerOnSharedPreferenceChangeListener(new SharedPreferences.OnSharedPreferenceChangeListener() {
-            @Override
-            public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-                Log.d(TAG, "onSharedPreferenceChanged:" + key);
-            }
-        });
     }
 
     public boolean getBoolean(String key) {
@@ -40,6 +34,10 @@ public class SPUtils {
 
     public boolean getBoolean(String key, boolean def) {
         return sharedPreferences.getBoolean(key, def);
+    }
+
+    public void remove(String key) {
+        sharedPreferences.edit().remove(key).apply();
     }
 
     public void setBoolean(String key, boolean value) {

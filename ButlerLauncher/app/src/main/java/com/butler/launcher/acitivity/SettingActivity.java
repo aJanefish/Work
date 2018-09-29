@@ -36,6 +36,5 @@ public class SettingActivity extends AppCompatActivity {
         finish();
     }
 
-    public void settingConfirm(View view) {
-    }
+
 }

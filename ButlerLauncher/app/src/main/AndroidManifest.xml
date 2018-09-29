@@ -28,8 +28,11 @@
         </activity>
         <activity
             android:name=".acitivity.SettingActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_setting"
-            android:theme="@style/ButlerTheme.NoActionBar"></activity>
+            android:theme="@style/ButlerTheme.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>

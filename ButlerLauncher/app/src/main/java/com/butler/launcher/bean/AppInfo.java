@@ -25,6 +25,17 @@ public class AppInfo {
 	// 主Activity的类名
 	private String launchActivityName;
 
+	//显示的列数
+	private int layoutX;
+
+	public int getLayoutX() {
+		return layoutX;
+	}
+
+	public void setLayoutX(int layoutX) {
+		this.layoutX = layoutX;
+	}
+
 	//是否显示
 	private boolean isShow = false;
 
@@ -104,6 +115,14 @@ public class AppInfo {
 	public void setId(int id) {
 		this.id = id;
 	}
+
+    public boolean isShow() {
+        return isShow;
+    }
+
+    public void setShow(boolean show) {
+        isShow = show;
+    }
 
 	@Override
 	public String toString() {

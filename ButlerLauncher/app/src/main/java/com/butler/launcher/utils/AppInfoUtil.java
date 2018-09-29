@@ -209,6 +209,7 @@ public class AppInfoUtil {
 			appInfo.setVersionName(versionName);
 			appInfo.setPermissions(permissions);
 			appInfo.setLaunchActivityName(launchActivityName);
+			appInfo.setShow(SPUtils.getInstance().getBoolean(packageName));
 			
 			appList.add(appInfo);
 		}

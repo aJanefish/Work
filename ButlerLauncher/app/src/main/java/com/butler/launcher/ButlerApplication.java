@@ -2,6 +2,7 @@ package com.butler.launcher;
 
 import android.app.Application;
 
+import com.butler.launcher.db.LauncherDBManager;
 import com.butler.launcher.model.LauncherModel;
 import com.butler.launcher.utils.SPUtils;
 
@@ -13,6 +14,7 @@ public class ButlerApplication extends Application {
 	public void onCreate() {
 		super.onCreate();
 		SPUtils.getInstance().init(this);
+		LauncherDBManager.getInstance().init(this);
 	}
 
 	public LauncherModel getLauncherModel() {

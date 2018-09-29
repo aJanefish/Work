@@ -82,7 +82,7 @@
                 android:id="@+id/textClock"
                 android:layout_width="wrap_content"
                 android:format24Hour="EE HH:mm"
-                android:textColor="#098cbc"
+                android:textColor="#f7f5f5"
                 android:textSize="24sp"
                 android:layout_height="wrap_content" />
         </RelativeLayout>

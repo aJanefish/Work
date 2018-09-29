@@ -68,7 +68,7 @@ public class ButlerLauncher extends BaseButlerAcivity implements LauncherModel.C
     protected void onResume() {
         super.onResume();
         SPUtils.getInstance().show();
-        butlerApplication.getLauncherModel().update();
+        butlerApplication.getLauncherModel().update(false);
     }
 
     private void initData() {

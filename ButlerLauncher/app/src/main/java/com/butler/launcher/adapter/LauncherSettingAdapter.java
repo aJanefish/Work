@@ -55,7 +55,8 @@ public class LauncherSettingAdapter extends RecyclerView.Adapter<LauncherSetting
 //                }
             }
         });
-        viewHolder.item_settings_switchbutton.setChecked(SPUtils.getInstance().getBoolean(appInfo.getPackageName()));
+        //viewHolder.item_settings_switchbutton.setChecked(SPUtils.getInstance().getBoolean(appInfo.getPackageName()));
+        viewHolder.item_settings_switchbutton.setChecked(appInfo.isShow());
         viewHolder.item_settings_switchbutton.setOnCheckedChangeListener(new LauncherSettingsOnCheckedChangeListener(appInfo));
     }
 
@@ -94,6 +95,7 @@ public class LauncherSettingAdapter extends RecyclerView.Adapter<LauncherSetting
         @Override
         public void onCheckedChanged(SwitchButton view, boolean isChecked) {
             Log.d(TAG,appInfo+" : "+isChecked);
+            appInfo.setShow(isChecked);
             SPUtils.getInstance().setBoolean(appInfo.getPackageName(),isChecked);
         }
     }
