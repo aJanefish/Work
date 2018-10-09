@@ -17,7 +17,8 @@
         android:theme="@style/ButlerTheme">
         <activity
             android:name=".acitivity.ButlerLauncher"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape"
+            android:theme="@style/StartStyle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

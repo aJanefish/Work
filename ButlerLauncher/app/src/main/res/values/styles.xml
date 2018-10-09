@@ -16,6 +16,10 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <style name="StartStyle" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/start_window</item>
+    </style>
+
     <style name="ButlerTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
