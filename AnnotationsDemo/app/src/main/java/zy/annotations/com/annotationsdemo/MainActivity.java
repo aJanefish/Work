@@ -1,10 +1,16 @@
 package zy.annotations.com.annotationsdemo;
 
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -30,26 +36,55 @@ public class MainActivity extends AppCompatActivity {
 
     private int tmp  = 0 ;
 
+    private List<byte[]>  list = new ArrayList<>();
+
+    float total ;
+    float free ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ViewUtilsTest.inject(this);
 
+        if(savedInstanceState != null)
+            Log.e("MainActivity","onCreate() : " + savedInstanceState.getString("octopus"));
+
+
+        total = Runtime.getRuntime().totalMemory()*1.0f/(1024*1024);
+        free = Runtime.getRuntime().freeMemory()*1.0f/(1024*1024);
+        Log.e("MainActivity","onCreate() :total: " + total);
+        Log.e("MainActivity","onCreate() :free :" + free);
+
     }
 
     @Click({R.id.button1,R.id.button2,R.id.button3})
     public void onClick(View view){
+        total = Runtime.getRuntime().totalMemory()*1.0f/(1024*1024);
+        free = Runtime.getRuntime().freeMemory()*1.0f/(1024*1024);
         switch (view.getId()) {
             case R.id.button1:
                 Toast.makeText(this,"button1:"+button1,Toast.LENGTH_LONG).show();
 
+                list.add(new byte[1024*128]);
+
+
+
+                Log.e("MainActivity","onCreate() :total: " + total);
+                Log.e("MainActivity","onCreate() :free :" + free);
                 break;
             case R.id.button2:
                 Toast.makeText(this,"button2:"+button2,Toast.LENGTH_LONG).show();
+                list.clear();
+
+                Log.e("MainActivity","onCreate() :total: " + total);
+                Log.e("MainActivity","onCreate() :free :" + free);
                 break;
             case R.id.button3:
                 Toast.makeText(this,"button3:"+button3,Toast.LENGTH_LONG).show();
+                Log.e("MainActivity","onCreate() :total: " + total);
+                Log.e("MainActivity","onCreate() :free :" + free);
+                System.gc();
                 break;
         }
 
@@ -59,4 +94,34 @@ public class MainActivity extends AppCompatActivity {
     private void show(String s){
 
     }
+
+
+
+    private Handler handler = new Handler(){
+
+
+
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+        }
+    };
+
+
+
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.e("MainActivity","onRestoreInstanceState() : " + savedInstanceState.getString("octopus"));
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putString("octopus", "www.baidu.com");
+        Log.e("MainActivity","onSaveInstanceState() : save date www.baidu.com");
+    }
+
 }
