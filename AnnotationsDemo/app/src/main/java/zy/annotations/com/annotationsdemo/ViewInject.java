@@ -36,5 +36,5 @@ import java.lang.annotation.Target;
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ViewInject {
-    public abstract int value();
+     int value();
 }

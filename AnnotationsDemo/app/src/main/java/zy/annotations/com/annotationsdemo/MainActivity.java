@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  *
@@ -28,18 +29,22 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     @ViewInject(R.id.button1)
-    Button button1;
+    private Button button1;
     @ViewInject(R.id.button2)
-    Button button2;
+    private Button button2;
     @ViewInject(R.id.button3)
-    Button button3;
+    private Button button3;
 
     private int tmp  = 0 ;
 
-    private List<byte[]>  list = new ArrayList<>();
+    private final List<byte[]>  list = new ArrayList<>();
 
-    float total ;
-    float free ;
+    private float total ;
+    private float free ;
+
+    private int rowlenght = 10;
+    private int len = 420000;
+    private Random random = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,11 +89,22 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this,"button3:"+button3,Toast.LENGTH_LONG).show();
                 Log.e("MainActivity","onCreate() :total: " + total);
                 Log.e("MainActivity","onCreate() :free :" + free);
-                System.gc();
+                //System.gc();
+                //churn();
                 break;
         }
 
 
+    }
+
+    private void churn(){
+        for (int i = 0; i < rowlenght; i++) {
+            String[] strings = new String[len];
+            for (int i1 = 0; i1 < len; i1++) {
+                strings[i1] = String.valueOf(random.nextDouble());
+            }
+            
+        }
     }
 
     private void show(String s){
@@ -97,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    private Handler handler = new Handler(){
+    private static Handler handler = new Handler(){
 
 
 
