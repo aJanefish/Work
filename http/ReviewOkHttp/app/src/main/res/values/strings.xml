@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">ReviewOkHttp</string>
-    <string name="okhttp">Okhttp使用例子</string>
-    <string name="okhttp_get_asynchronous">异步GET请求</string>
-    <string name="okhttp_get_synchronous" >同步GET请求</string>
-    <string name="okhttp_post">post</string>
-</resources>
