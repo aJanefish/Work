@@ -1,7 +1,6 @@
 package demo.okhttp.zy.com.okhttpdemo.http;
 
 import android.content.Context;
-import android.util.Log;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -12,11 +11,20 @@ import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
+import java.util.Random;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 import demo.okhttp.zy.com.okhttpdemo.event.ServerEvent;
 import demo.okhttp.zy.com.okhttpdemo.log.MyLog;
+
+/**
+ *
+ * ServerSocket 服务端 短连接
+ *
+ *
+ * */
+
 
 public class MyServerManager implements Runnable {
     private static final String TAG = "MyServerManager";
@@ -58,11 +66,23 @@ public class MyServerManager implements Runnable {
                     public void run() {
                         try {
                             handle(socket);
-                            socket.close();
+
                         } catch (SocketException e) {
                             // The server was stopped; ignore.
                         } catch (IOException e) {
                             MyLog.e(TAG, "Web server error."+e);
+                        }
+
+//                        try {
+//                            Thread.sleep(5000);
+//                        } catch (InterruptedException e) {
+//                            e.printStackTrace();
+//                        }
+
+                        try {
+                            socket.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
                         }
                     }
                 });
@@ -120,9 +140,9 @@ public class MyServerManager implements Runnable {
             byte[] bytes = null;
 
 
-            if (false) {
+            if (new Random().nextBoolean()) {
 
-                bytes = "OK".getBytes();
+                bytes = "200 OK".getBytes();
             } else {
                 bytes = "FAIL".getBytes();
             }
@@ -135,6 +155,13 @@ public class MyServerManager implements Runnable {
             output.write(bytes);
             output.flush();
         } finally {
+
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
             if (null != output) {
                 output.close();
             }

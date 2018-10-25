@@ -4,6 +4,6 @@ public class ServerEvent {
     public String clientMessage;
 
     public ServerEvent(String clientMessage) {
-        this.clientMessage = clientMessage;
+        this.clientMessage = "short:"+clientMessage;
     }
 }

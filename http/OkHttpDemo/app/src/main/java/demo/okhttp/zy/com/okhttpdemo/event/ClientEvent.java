@@ -4,6 +4,6 @@ public class ClientEvent {
     public String response;
 
     public ClientEvent(String response) {
-        this.response = response;
+        this.response = "short:"+response;
     }
 }

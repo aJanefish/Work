@@ -29,4 +29,12 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.9.1'
 
     implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.android.support:support-annotations:21.0.2'
+    implementation 'com.google.code.gson:gson:2.8.4'
+
+    //客户端
+    implementation 'com.rabtman.wsmanager:wsmanager:1.0.2'
+
+    //服务端
+    implementation 'com.koushikdutta.async:androidasync:2.+'
 }
