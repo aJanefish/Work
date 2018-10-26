@@ -23,8 +23,8 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+import okhttp3.internal.Version;
 import okio.BufferedSink;
-
 public class OkhttpUtils {
 
 
@@ -44,6 +44,8 @@ public class OkhttpUtils {
         builder.readTimeout(60, TimeUnit.SECONDS);
         builder.writeTimeout(60, TimeUnit.SECONDS);
         okHttpClient = builder.build();
+
+        Version version;
     }
 
 
