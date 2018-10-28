@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DuiWakeUpDemo</string>
+    <string name="permission_cus_title">Dear God</string>
+    <string name="permission_cus_msg">To protect the peace of the world, open these permissions! You and I together save the world!</string>
 </resources>

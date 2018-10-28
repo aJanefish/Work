@@ -1,5 +1,6 @@
 package demo.dui.zy.com.duiwakeupdemo;
 
+import android.Manifest;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +14,12 @@ import com.aispeech.export.listeners.AIWakeupListener;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+import me.weyye.hipermission.HiPermission;
+import me.weyye.hipermission.PermissionCallback;
+import me.weyye.hipermission.PermissionItem;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,7 +30,60 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        init();
+
+        initPermission();
+        //init();
+    }
+
+    private void initPermission(){
+        List<PermissionItem> permissionItems = new ArrayList<PermissionItem>();
+        permissionItems.add(new PermissionItem(Manifest.permission.READ_PHONE_STATE, "手机状态", R.drawable.permission_ic_phone));
+        permissionItems.add(new PermissionItem(Manifest.permission.INTERNET, "网络", R.drawable.permission_ic_phone));
+
+        permissionItems.add(new PermissionItem(Manifest.permission.RECORD_AUDIO, "网络", R.drawable.permission_ic_storage));
+
+        permissionItems.add(new PermissionItem(Manifest.permission.READ_EXTERNAL_STORAGE, "读内存", R.drawable.permission_ic_storage));
+
+        permissionItems.add(new PermissionItem(Manifest.permission.WRITE_EXTERNAL_STORAGE, "写内存", R.drawable.permission_ic_storage));
+
+        permissionItems.add(new PermissionItem(Manifest.permission.ACCESS_NETWORK_STATE, "网络", R.drawable.permission_ic_phone));
+
+        permissionItems.add(new PermissionItem(Manifest.permission.ACCESS_WIFI_STATE, "WIFI", R.drawable.permission_ic_phone));
+
+        permissionItems.add(new PermissionItem(Manifest.permission.MODIFY_AUDIO_SETTINGS, "MODIFY_AUDIO_SETTINGS", R.drawable.permission_ic_storage));
+
+
+
+        HiPermission.create(MainActivity.this)
+                .title(getString(R.string.permission_cus_title))
+                .permissions(permissionItems)
+                .msg(getString(R.string.permission_cus_msg))
+                .animStyle(R.style.PermissionAnimScale)
+                .style(R.style.PermissionDefaultBlueStyle)
+                .checkMutiPermission(new PermissionCallback() {
+                    @Override
+                    public void onClose() {
+                        Log.i(TAG, "onClose");
+                        //showToast(getString(R.string.permission_on_close));
+                    }
+
+                    @Override
+                    public void onFinish() {
+                        Log.i(TAG, "onFinish");
+                        init();
+                        //showToast(getString(R.string.permission_completed));
+                    }
+
+                    @Override
+                    public void onDeny(String permission, int position) {
+                        Log.i(TAG, "onDeny");
+                    }
+
+                    @Override
+                    public void onGuarantee(String permission, int position) {
+                        Log.i(TAG, "onGuarantee");
+                    }
+                });
     }
 
     private void init() {
@@ -37,7 +97,10 @@ public class MainActivity extends AppCompatActivity {
          */
         DUILiteSDK.openLog();//须在init之前调用
         // 同时会保存日志文件在/sdcard/duilite/DUILite_SDK.log
-        DUILiteSDK.init(getApplicationContext(),"d77972ac76cdd77972ac76cd5bd2d9a8","278576160",new DUILiteSDK.InitListener() {
+
+        //  taishi       d77972ac76cdd77972ac76cd5bd2d9a8
+        // xiaomi  79f393bf7e8179f393bf7e815bd52224
+        DUILiteSDK.init(getApplicationContext(),"60400522281f60400522281f5bd5358c","278576160",new DUILiteSDK.InitListener() {
             @Override
             public void success() {
                 Log.d(TAG, "授权成功! ");
@@ -70,5 +133,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void CloudASRCustomBatch(View view) {
         startActivity(new Intent(MainActivity.this,CloudASRCustomBatch.class));
+    }
+
+    public void WakeUpAsr(View view) {
+        startActivity(new Intent(MainActivity.this,WakeUpAsrActivity.class));
     }
 }

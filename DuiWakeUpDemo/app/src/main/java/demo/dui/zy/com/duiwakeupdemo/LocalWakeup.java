@@ -48,7 +48,7 @@ public class LocalWakeup extends Activity implements View.OnClickListener {
             mToast.show();
         } else {
             mEngine = AIWakeupEngine.createInstance();
-            mEngine.setWakeupWord(new String[]{"ni hao xiao chi"}, new String[]{"0.1"});
+            mEngine.setWakeupWord(new String[]{"ni hao tian ji"}, new String[]{"0.1"});
             mEngine.setResBin("wakeup.bin");
             //mEngine.setResBinPath("/sdcard/aispeech/wakeup1.bin");//设置唤醒资源的绝对路径,包含文件名。默认在assets目录下，无需配置
             mEngine.init(new AISpeechListenerImpl());

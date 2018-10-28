@@ -36,4 +36,10 @@
         android:text="不使用内部录音机，音频由外部传入的方式"
         android:onClick="CloudASRCustomBatch"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="合并"
+        android:onClick="WakeUpAsr"/>
+
 </LinearLayout>
