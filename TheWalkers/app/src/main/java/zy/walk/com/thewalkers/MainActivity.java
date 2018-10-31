@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import zy.walk.com.thewalkers.imagesandanimations.BitmapUtils;
+import zy.walk.com.thewalkers.json.JsonUtils;
 import zy.walk.com.thewalkers.newwork.Main2Activity;
 
 public class MainActivity extends AppCompatActivity {
@@ -69,5 +70,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void TestNEwWORk(View view) {
         startActivity(new Intent(getApplicationContext(),Main2Activity.class));
+    }
+
+    public void JsonTest(View view) {
+        JsonUtils.test();
     }
 }

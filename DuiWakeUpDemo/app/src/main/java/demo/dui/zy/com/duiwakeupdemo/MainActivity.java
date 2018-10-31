@@ -98,9 +98,9 @@ public class MainActivity extends AppCompatActivity {
         DUILiteSDK.openLog();//须在init之前调用
         // 同时会保存日志文件在/sdcard/duilite/DUILite_SDK.log
 
-        //  taishi       d77972ac76cdd77972ac76cd5bd2d9a8
+        // taishi  d77972ac76cdd77972ac76cd5bd2d9a8
         // xiaomi  79f393bf7e8179f393bf7e815bd52224
-        DUILiteSDK.init(getApplicationContext(),"60400522281f60400522281f5bd5358c","278576160",new DUILiteSDK.InitListener() {
+        DUILiteSDK.init(getApplicationContext(),"d77972ac76cdd77972ac76cd5bd2d9a8","278576160",new DUILiteSDK.InitListener() {
             @Override
             public void success() {
                 Log.d(TAG, "授权成功! ");

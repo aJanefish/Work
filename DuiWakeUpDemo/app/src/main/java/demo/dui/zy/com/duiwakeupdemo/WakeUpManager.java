@@ -44,6 +44,7 @@ public class WakeUpManager {
             mEngine.stop();
         }
     }
+
     public void destroy() {
         if (mEngine != null) {
             mEngine.stop();

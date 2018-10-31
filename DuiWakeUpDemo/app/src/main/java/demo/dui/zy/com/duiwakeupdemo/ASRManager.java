@@ -9,6 +9,11 @@ import com.aispeech.common.JSONResultParser;
 import com.aispeech.export.engines.AICloudASREngine;
 import com.aispeech.export.listeners.AIASRListener;
 
+/**
+ *
+ * 云端语音识别
+ *
+ * */
 public class ASRManager {
     private static final String TAG = "ASRManager";
 
@@ -30,7 +35,7 @@ public class ASRManager {
             //mEngine.setVadResBinPath("/sdcard/aispeech/vad1.bin");//自定义vad资源加载目录。默认在assets目录下，无需配置
             mEngine.setLocalVadEnable(true);//设置是否启用本地vad,默认开启为true
             mEngine.setPauseTime(300);//设置本地VAD右边界,默认为300ms
-            mEngine.setServer("ws://asr.dui.ai/runtime/v2/recognize");//设置服务器地址，默认不用设置
+            //mEngine.setServer("ws://asr.dui.ai/runtime/v2/recognize");//设置服务器地址，默认不用设置
             mEngine.setEnablePunctuation(false);//设置是否启用标点符号识别,默认为false关闭
             mEngine.setResourceType("comm");//设置识别引擎的资源类型,默认为comm
             mEngine.init(new AICloudASRListenerImpl());

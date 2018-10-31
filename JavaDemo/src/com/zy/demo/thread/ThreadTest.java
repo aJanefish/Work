@@ -1,9 +1,6 @@
 package com.zy.demo.thread;
 
-import java.util.concurrent.LinkedBlockingDeque;
-import java.util.concurrent.SynchronousQueue;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 public class ThreadTest {
     /**线程池测试 */
@@ -12,7 +9,7 @@ public class ThreadTest {
         @Override
         public void run() {
             try {
-                Thread.sleep(2000);
+                Thread.sleep(6000);
                 System.out.println(Thread.currentThread().getName() + " run");
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -21,18 +18,20 @@ public class ThreadTest {
         }
     };
 
-    private static ThreadPoolExecutor executor1 = new ThreadPoolExecutor(6, 10, 5, TimeUnit.SECONDS, new SynchronousQueue<Runnable>());
-    private static ThreadPoolExecutor executor2 = new ThreadPoolExecutor(3, 6, 5, TimeUnit.SECONDS, new LinkedBlockingDeque<Runnable>());
-    private static ThreadPoolExecutor executor3 = new ThreadPoolExecutor(3, 6, 5, TimeUnit.SECONDS, new SynchronousQueue<Runnable>());
+    public static ThreadPoolExecutor executor1 = new ThreadPoolExecutor(6, 10, 5, TimeUnit.SECONDS, new SynchronousQueue<Runnable>());
+    public static ThreadPoolExecutor executor2 = new ThreadPoolExecutor(3, 6, 5, TimeUnit.SECONDS, new LinkedBlockingDeque<Runnable>());
+    public static ThreadPoolExecutor executor3 = new ThreadPoolExecutor(3, 6, 5, TimeUnit.SECONDS, new SynchronousQueue<Runnable>());
     //核心线程数是3，最大线程数是4，队列是LinkedBlockingDeque
-    private static ThreadPoolExecutor executor4 = new ThreadPoolExecutor(3, 4, 5, TimeUnit.SECONDS, new LinkedBlockingDeque<Runnable>(2));
+    public static ThreadPoolExecutor executor4 = new ThreadPoolExecutor(3, 4, 5, TimeUnit.SECONDS, new LinkedBlockingDeque<Runnable>(2));
     // 将队列大小设置为1
-    private static ThreadPoolExecutor executor5 = new ThreadPoolExecutor(3, 4, 5, TimeUnit.SECONDS, new LinkedBlockingDeque<Runnable>(1));
+    public static ThreadPoolExecutor executor5 = new ThreadPoolExecutor(3, 4, 5, TimeUnit.SECONDS, new LinkedBlockingDeque<Runnable>(1));
     //核心线程数是3 ，最大线程数是4，队列是SynchronousQueue
-    private static ThreadPoolExecutor executor6 = new ThreadPoolExecutor(3, Integer.MAX_VALUE, 5, TimeUnit.SECONDS, new SynchronousQueue<Runnable>());
+    public static ThreadPoolExecutor executor6 = new ThreadPoolExecutor(3, Integer.MAX_VALUE, 5, TimeUnit.SECONDS, new SynchronousQueue<Runnable>());
 
 
-    private static void executor(ThreadPoolExecutor executor ){
+    public static void executor(ThreadPoolExecutor executor ){
+
+
         executor.execute(myRunnable);
         executor.execute(myRunnable);
         executor.execute(myRunnable);
