@@ -27,6 +27,12 @@
             android:text="JsonTest"
             android:onClick="JsonTest"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AuxiliaryAll"
+            android:onClick="getAuxiliaryAll"/>
+
     </LinearLayout>
 
 

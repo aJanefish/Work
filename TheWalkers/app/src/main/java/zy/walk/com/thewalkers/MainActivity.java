@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import zy.walk.com.thewalkers.imagesandanimations.BitmapUtils;
 import zy.walk.com.thewalkers.json.JsonUtils;
 import zy.walk.com.thewalkers.newwork.Main2Activity;
+import zy.walk.com.thewalkers.newwork.OkhttpUtils;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -73,6 +74,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void JsonTest(View view) {
-        JsonUtils.test();
+        JsonUtils.test1();
+        JsonUtils.test2();
+        JsonUtils.test3();
+        JsonUtils.test4();
+    }
+
+    public void getAuxiliaryAll(View view) {
+        OkhttpUtils.getAuxiliaryAll();
     }
 }
