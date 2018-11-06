@@ -33,7 +33,7 @@ public class OkhttpUtils {
     public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
     public static final MediaType MEDIA_TYPE_MARKDOWN = MediaType.parse("text/x-markdown; charset=utf-8");
     private static final MediaType MEDIA_TYPE_PNG = MediaType.parse("image/png");
-    private static final String URL = "http://192.168.201.112:9000/";
+    private static final String URL = "http://192.168.201.110:9000/";
     //private static final String URL = "http://localhost:9000/";
 
 

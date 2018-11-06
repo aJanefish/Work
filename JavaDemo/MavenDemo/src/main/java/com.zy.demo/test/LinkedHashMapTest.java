@@ -6,8 +6,8 @@ import java.util.Map;
 public class LinkedHashMapTest {
 
     /**
-     *
-     * */
+     * LRU算法
+     **/
 
     public static void test1(){
         LinkedHashMap<Integer, Integer> map = new LinkedHashMap<Integer, Integer>(0, 0.75f, true);

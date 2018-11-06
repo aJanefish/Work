@@ -144,7 +144,7 @@ public class MyServerManager implements Runnable {
 
                 bytes = "200 OK".getBytes();
             } else {
-                bytes = "FAIL".getBytes();
+                bytes = "FAIL  This is Demo".getBytes();
             }
 
             // Send out the content.
