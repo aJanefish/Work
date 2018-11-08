@@ -1,12 +1,13 @@
 package zy.walk.com.thewalkers.newwork;
 
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
 import java.io.File;
 
+import androidx.appcompat.app.AppCompatActivity;
 import zy.walk.com.thewalkers.R;
 
 public class Main2Activity extends AppCompatActivity {

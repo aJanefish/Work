@@ -33,6 +33,12 @@
             android:text="AuxiliaryAll"
             android:onClick="getAuxiliaryAll"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="other"
+            android:onClick="other"/>
+
     </LinearLayout>
 
 

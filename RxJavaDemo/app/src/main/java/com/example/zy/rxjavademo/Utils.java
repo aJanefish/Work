@@ -6,6 +6,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Environment;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -157,7 +158,6 @@ public class Utils {
 						Log.e(TAG, "accept: merge :" + integer + "\n" );
 					}
 				});
-		
 
 	}
 	
@@ -903,6 +903,7 @@ public class Utils {
 			@Override
 			public void onComplete() {
 				Log.e(TAG,"onComplete()");
+
 			}
 		};
 		

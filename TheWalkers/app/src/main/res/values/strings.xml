@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">TheWalkers</string>
     <string name="send_to">send</string>
+
+    <string name="add_new_website">Add New Website</string>
+    <string name="add_new_website_short">Add Website</string>
 </resources>

@@ -42,7 +42,7 @@ public class OkhttpUtils {
         okHttpClient.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-
+                Log.d("onFailure",""+e);
             }
 
             @Override
@@ -55,6 +55,8 @@ public class OkhttpUtils {
         });
 
     }
+
+
 
 
 }
