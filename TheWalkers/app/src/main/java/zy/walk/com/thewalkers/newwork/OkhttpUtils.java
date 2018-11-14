@@ -56,6 +56,31 @@ public class OkhttpUtils {
 
     }
 
+    public static void getTestSingou(){
+
+
+        Request request = new Request.Builder()
+                .url("http://encounter-msc.singou.mo/api/tool/RecordClicks?question_name=科學館幾點鐘開門")
+                //.post(RequestBody.create(MEDIA_TYPE_MARKDOWN, postBody))
+                .build();
+
+        okHttpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                Log.d("OkhttpUtils",""+e);
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                Log.d("OkhttpUtils",""+response);
+                Log.d("OkhttpUtils",""+response.body());
+                Log.d("OkhttpUtils","ss:"+response.body().string());
+                //Log.d("OkhttpUtils",""+new String(response.body().bytes()));
+            }
+        });
+
+    }
+
 
 
 
