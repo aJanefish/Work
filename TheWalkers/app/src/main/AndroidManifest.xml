@@ -30,7 +30,8 @@
         <activity android:name=".newwork.Main2Activity" />
         <activity android:name=".OtherActivity" />
         <activity android:name=".TestActivity" />
-        <activity android:name=".PermissionActivity"></activity>
+        <activity android:name=".PermissionActivity" />
+        <activity android:name=".ToastActivity"></activity>
     </application>
 
 </manifest>

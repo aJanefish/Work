@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToastActivity"
+    android:padding="@dimen/dp_16">
+
+
+    <Button
+        android:id="@+id/mydefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统默认Toast"
+        android:onClick="defaultToast"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/toast1"/>
+
+    <Button
+        android:id="@+id/toast1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是Toast"
+        android:onClick="toast1"
+        app:layout_constraintTop_toBottomOf="@+id/mydefault"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/toast2"/>
+
+    <Button
+        android:id="@+id/toast2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是子线程中弹出的吐司"
+        android:onClick="toast2"
+        app:layout_constraintTop_toBottomOf="@+id/toast1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/toast3"/>
+
+    <Button
+        android:id="@+id/toast3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="吐司样式切换为白色"
+        android:onClick="toast3"
+        app:layout_constraintTop_toBottomOf="@+id/toast2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/toast4"/>
+
+    <Button
+        android:id="@+id/toast4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="吐司样式切换为黑色"
+        android:onClick="toast4"
+        app:layout_constraintTop_toBottomOf="@+id/toast3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/toast5"/>
+
+    <Button
+        android:id="@+id/toast5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="吐司样式切换为QQ"
+        android:onClick="toast5"
+        app:layout_constraintTop_toBottomOf="@+id/toast4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/toast6"/>
+
+    <Button
+        android:id="@+id/toast6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点我自定义Toast"
+        android:onClick="toast6"
+        app:layout_constraintTop_toBottomOf="@+id/toast5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/toast7"/>
+
+    <Button
+        android:id="@+id/toast7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="判断当前时候有通知栏权限"
+        android:onClick="toast7"
+        app:layout_constraintTop_toBottomOf="@+id/toast6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
