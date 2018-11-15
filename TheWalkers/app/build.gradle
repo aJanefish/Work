@@ -36,5 +36,8 @@ dependencies {
     //吐司小工具
     implementation 'com.hjq:toast:3.0'
 
-    //implementation 'com.airbnb.android:lottie:$lottieVersion'
+    //权限帮助类
+    implementation 'com.hjq:xxpermissions:5.2'
+
+
 }
