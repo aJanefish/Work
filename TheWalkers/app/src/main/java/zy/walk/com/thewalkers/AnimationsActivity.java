@@ -15,6 +15,7 @@ import android.animation.AnimatorSet;
 import android.animation.Keyframe;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
+import android.animation.TypeEvaluator;
 import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -139,6 +140,9 @@ public class AnimationsActivity extends BaseActivity {
                         case AnimatorListenerAdapter:
                             AnimatorListenerAdapterTest();
                             break;
+                        case UpdateListener:
+                            UpdateListenerTest();
+                            break;
                         case XML:
                             XMLTest();
                             break;
@@ -166,11 +170,46 @@ public class AnimationsActivity extends BaseActivity {
     }
 
     private void test() {
+
+        /**
+         *
+         * 学习网址:
+         * https://www.cnblogs.com/itgungnir/p/6211380.html
+         * */
+        TypeEvaluator<Float> typeEvaluator = new TypeEvaluator() {
+            @Override
+            public Object evaluate(float fraction, Object startValue, Object endValue) {
+                return 8f;
+            }
+        };
+
+
+        ValueAnimator animator = ValueAnimator.ofInt(0, 200,0); // 产生一个从0到100变化的整数的动画
+        animator.setDuration(2000);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                Integer value = (Integer) animation.getAnimatedValue(); // 动态的获取当前运行到的属性值
+                show(value + "");
+                animaion_button.setTranslationY(value);
+
+            }
+        });
+        animator.start(); // 开始播放动画
+
+
+
     }
 
     private void UpdateListenerTest() {
         ValueAnimator animator = ValueAnimator.ofInt(0, 200,0); // 产生一个从0到100变化的整数的动画
         animator.setDuration(2000);
+        animator.setEvaluator(new TypeEvaluator() {
+            @Override
+            public Object evaluate(float fraction, Object startValue, Object endValue) {
+                return null;
+            }
+        });
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
