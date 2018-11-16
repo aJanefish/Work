@@ -2,15 +2,29 @@ package zy.walk.com.thewalkers.event;
 
 import android.view.animation.Animation;
 
+
 /**
  * 学习自定义属性动画
  * */
 public class DiyAnimationEvent {
 
+
+    public enum Type{
+        NONE,MENU,TEST,PropertyValuesHolder,AnimatorSet1,AnimatorSet2,Listener
+        ,AnimatorListenerAdapter,UpdateListener,XML
+    }
+
     public String intent;
     public String values;
     public Animation animation;
+    public Type type = Type.NONE;
 
+
+    public DiyAnimationEvent(String intent, String values, Type type) {
+        this.intent = intent;
+        this.values = values;
+        this.type = type;
+    }
 
     public DiyAnimationEvent(String intent, String values, Animation animation) {
         this.intent = intent;

@@ -9,13 +9,24 @@ import zy.walk.com.thewalkers.event.DaimajiaEvent;
 import zy.walk.com.thewalkers.event.DiyAnimationEvent;
 
 import android.animation.Animator;
+import android.animation.AnimatorInflater;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.AnimatorSet;
+import android.animation.Keyframe;
+import android.animation.ObjectAnimator;
+import android.animation.PropertyValuesHolder;
+import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.BounceInterpolator;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.OvershootInterpolator;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.daimajia.androidanimations.library.Techniques;
@@ -36,6 +47,14 @@ public class AnimationsActivity extends BaseActivity {
 
     private YoYo.YoYoString rope;
     private TextView text_view_values;
+    private ImageView image_vew_menu;
+    private ImageView image_vew_dissatisfied;
+    private ImageView image_vew_neutral;
+    private ImageView image_vew_very_satisfied;
+    private ImageView image_vew_satisfied;
+    private ImageView image_vew_very_dissatisfied;
+    private boolean isOpen = false;
+    private ArrayList<ImageView> menus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +65,6 @@ public class AnimationsActivity extends BaseActivity {
     }
 
     private void initDiy() {
-
         List<DiyAnimationEvent> list = new ArrayList<>();
         Animation animator = AnimationUtils.loadAnimation(AnimationsActivity.this, R.anim.anim_alpha_diy);
         list.add(new DiyAnimationEvent("XML alpha","alpha",animator));
@@ -55,12 +73,32 @@ public class AnimationsActivity extends BaseActivity {
         Animation animator2 = AnimationUtils.loadAnimation(AnimationsActivity.this, R.anim.anim_translate_diy);
         list.add(new DiyAnimationEvent("XML translate","translate",animator2));
         Animation animator3 = AnimationUtils.loadAnimation(AnimationsActivity.this, R.anim.anim_rotate_diy);
+        LinearInterpolator lin = new LinearInterpolator();
+        animator3.setInterpolator(lin);
         list.add(new DiyAnimationEvent("XML rotate","rotate",animator3));
+
+        Animation animator4 = AnimationUtils.loadAnimation(AnimationsActivity.this, R.anim.anim_diy);
+        list.add(new DiyAnimationEvent("XML diy","diy",animator4));
+
+        list.add(new DiyAnimationEvent("JAVA Menu","组合动画,菜单模型,AnimatorSet实现",DiyAnimationEvent.Type.MENU));
+        list.add(new DiyAnimationEvent("JAVA PropertyValuesHolder","PropertyValuesHolder 用于各种组合动画,非常方便",DiyAnimationEvent.Type.PropertyValuesHolder));
+        list.add(new DiyAnimationEvent("JAVA AnimatorSet1","AnimatorSet 用于各种组合动画,非常方便",DiyAnimationEvent.Type.AnimatorSet1));
+        list.add(new DiyAnimationEvent("JAVA AnimatorSet2","AnimatorSet 用于各种组合动画,非常方便",DiyAnimationEvent.Type.AnimatorSet2));
+        list.add(new DiyAnimationEvent("JAVA Listener","Listener监听器可以实现多种组合动画",DiyAnimationEvent.Type.Listener));
+        list.add(new DiyAnimationEvent("AnimatorListenerAdapter","监听器可以实现多种组合动画",DiyAnimationEvent.Type.AnimatorListenerAdapter));
+        list.add(new DiyAnimationEvent("UpdateListener","UpdateListener通过数值变换实现动画",DiyAnimationEvent.Type.UpdateListener));
+        list.add(new DiyAnimationEvent("JAVA XML","XML实现组合动画",DiyAnimationEvent.Type.XML));
+
+
+
+
+
+        list.add(new DiyAnimationEvent("JAVA Test","用于测试动画",DiyAnimationEvent.Type.TEST));
         DiyAnimationAdapter diyAnimationAdapter = new DiyAnimationAdapter(list);
         diyAnimationAdapter.setDiyAnimationDegete(new DiyAnimationAdapter.DiyAnimationDegete() {
             @Override
             public void onClick(final DiyAnimationEvent diyAnimationEvent) {
-                clearShow();
+                //clearShow();
                 if(diyAnimationEvent.animation != null){
 
                     diyAnimationEvent.animation.setAnimationListener(new Animation.AnimationListener() {
@@ -81,12 +119,123 @@ public class AnimationsActivity extends BaseActivity {
                     });
                     //animaion_button.setAnimation(diyAnimationEvent.animation);
                     animaion_button.startAnimation(diyAnimationEvent.animation);
-
-
+                }else {
+                    show(""+diyAnimationEvent.type);
+                    switch (diyAnimationEvent.type) {
+                        case MENU:
+                            upDateAnimation();
+                            break;
+                        case PropertyValuesHolder:
+                            PropertyValuesHolderTest();
+                            break;
+                        case AnimatorSet1:
+                            AnimatorSetTest1();
+                        case AnimatorSet2:
+                            AnimatorSetTest2();
+                            break;
+                        case Listener:
+                            ListenerTest();
+                            break;
+                        case AnimatorListenerAdapter:
+                            AnimatorListenerAdapterTest();
+                            break;
+                        case XML:
+                            XMLTest();
+                            break;
+                        case NONE:
+                            break;
+                        case TEST:
+                            test();
+                            break;
+                        default:
+                            break;
+                    }
                 }
             }
         });
         animaion_zhangyu_recycler_view.setAdapter(diyAnimationAdapter);
+    }
+
+    private void XMLTest() {
+        /**
+         * XML 实现组合动画
+         * */
+        Animator animator = AnimatorInflater.loadAnimator(this,R.animator.test1);
+        animator.setTarget(animaion_button);
+        animator.start();
+    }
+
+    private void test() {
+    }
+
+    private void UpdateListenerTest() {
+        ValueAnimator animator = ValueAnimator.ofInt(0, 200,0); // 产生一个从0到100变化的整数的动画
+        animator.setDuration(2000);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                Integer value = (Integer) animation.getAnimatedValue(); // 动态的获取当前运行到的属性值
+                show(value + "");
+
+                animaion_button.setRotation(value);
+                animaion_button.setTranslationX(value);
+                animaion_button.setTranslationY(value);
+                animaion_button.setTranslationZ(value);
+            }
+        });
+        animator.start(); // 开始播放动画
+    }
+
+    private void AnimatorListenerAdapterTest(){
+        /**实现多种组合*/
+        ObjectAnimator animator1 = ObjectAnimator.ofFloat(animaion_button, "alpha", 0f, 1f);
+        final ObjectAnimator animator2 = ObjectAnimator.ofFloat(animaion_button, "translationX", 0f, 500f);
+        final ObjectAnimator animator3 = ObjectAnimator.ofFloat(animaion_button, "translationY", 0f, 500f);
+
+        animator1.setDuration(3000);
+        animator2.setDuration(3000);
+        animator3.setDuration(3000);
+        // 设置属性动画的监听事件（使用AnimatorListenerAdapter可以选择不监听所有事件）
+        animator1.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                animator3.start(); // 在animator1执行完后执行animator3
+            }
+            @Override
+            public void onAnimationStart(Animator animation) {
+                animator2.start(); //在animator1执行的同时执行animator2
+            }
+        });
+        animator1.start();
+
+    }
+    private void ListenerTest() {
+
+        /**实现多种组合*/
+        ObjectAnimator animator1 = ObjectAnimator.ofFloat(animaion_button, "alpha", 0f, 1f);
+        final ObjectAnimator animator2 = ObjectAnimator.ofFloat(animaion_button, "translationX", 0f, 500f);
+        final ObjectAnimator animator3 = ObjectAnimator.ofFloat(animaion_button, "translationY", 0f, 500f);
+        animator1.setDuration(3000);
+        animator2.setDuration(3000);
+        animator3.setDuration(3000);
+        // 设置属性动画的监听事件（使用AnimatorListener必须要监听所有四个事件）
+        animator1.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+                animator2.start();
+            }
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                animator3.start();
+            }
+            @Override
+            public void onAnimationCancel(Animator animation) {
+            }
+            @Override
+            public void onAnimationRepeat(Animator animation) {
+            }
+        });
+        animator1.start();
     }
 
     @SuppressLint("WrongConstant")
@@ -99,11 +248,58 @@ public class AnimationsActivity extends BaseActivity {
         animaion_daimajia_recysler_view.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
         animaion_zhangyu_recycler_view.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
 
+
+        image_vew_menu =  findViewById(R.id.animation_image_vew_menu);
+        image_vew_dissatisfied = findViewById(R.id.animation_image_vew_dissatisfied);
+        image_vew_neutral = findViewById(R.id.animation_image_vew_neutral);
+        image_vew_very_satisfied = findViewById(R.id.animation_image_vew_very_satisfied);
+        image_vew_satisfied = findViewById(R.id.animation_image_vew_satisfied);
+        image_vew_very_dissatisfied = findViewById(R.id.animation_image_vew_very_dissatisfied);
+
         initDiy();
+        //initAnimation();
+
+        menus = new ArrayList<>();
+        menus.add(image_vew_dissatisfied);
+        menus.add(image_vew_very_satisfied);
+        menus.add(image_vew_neutral);
+        menus.add(image_vew_very_dissatisfied);
+        menus.add(image_vew_satisfied);
+    }
+
+
+    //菜单动画功能
+    private void upDateAnimation() {
+        for (int i = 0; i < menus.size(); i++) {
+            ImageView menu = menus.get(i);
+            double angle = Math.toRadians(i * (90 * 1.0 / (menus.size() - 1))); // 角度
+            double radius = 200; // 半径
+            float distanceX = (float) (Math.cos(angle) * radius); // X坐标偏移量
+            float distanceY = (float) (Math.sin(angle) * radius); // Y坐标偏移量
+            ObjectAnimator animatorX;
+            ObjectAnimator animatorY;
+            if (isOpen) { // 如果菜单是打开的则关闭菜单
+                animatorX = ObjectAnimator.ofFloat(menu, "translationX", -distanceX, 0f);
+                animatorY = ObjectAnimator.ofFloat(menu, "translationY", -distanceY, 0f);
+            } else { // 如果菜单是关闭的则打开菜单
+                animatorX = ObjectAnimator.ofFloat(menu, "translationX", 0f, -distanceX);
+                animatorY = ObjectAnimator.ofFloat(menu, "translationY", 0f, -distanceY);
+            }
+            AnimatorSet set = new AnimatorSet(); // X、Y轴同时移动
+            if(isOpen){
+                set.playTogether(animatorX, animatorY);
+            }else {
+                set.playSequentially(animatorX, animatorY);
+            }
+            set.setDuration(1000);
+            set.setInterpolator(new BounceInterpolator());
+            set.start();
+        }
+        isOpen = !isOpen;
     }
 
     private void show(String values){
-        text_view_values.append(values+"\n");
+        text_view_values.append(values+"\t\t");
     }
 
     private void clearShow(){
@@ -228,4 +424,94 @@ public class AnimationsActivity extends BaseActivity {
             }
         });
     }
+
+
+    /**
+     *
+     * 用PropertyValuesHolder实现组合动画
+     *
+     * */
+    private void PropertyValuesHolderTest(){
+        /**
+         * 同时执行
+         * */
+        //移动
+        PropertyValuesHolder holder1 = PropertyValuesHolder.ofFloat("translationX", 0f, 500f,0f);
+        PropertyValuesHolder holder2 = PropertyValuesHolder.ofFloat("translationY", 0f, 500f,0f);
+        //旋转
+        PropertyValuesHolder holder3 = PropertyValuesHolder.ofFloat("rotation", 0f, 360f);
+        ObjectAnimator.ofPropertyValuesHolder(image_vew_neutral, holder1, holder2, holder3).setDuration(3000).start();
+
+        //keyframe
+        Keyframe keyframe1 = Keyframe.ofFloat(0.0f,0);
+        Keyframe keyframe2 = Keyframe.ofFloat(0.25f,-90);
+        Keyframe keyframe3 = Keyframe.ofFloat(0.5f,0);
+        Keyframe keyframe4 = Keyframe.ofFloat(0.75f, 90);
+        Keyframe keyframe5 = Keyframe.ofFloat(1.0f,0);
+        PropertyValuesHolder rotation = PropertyValuesHolder.ofKeyframe("rotation", keyframe1, keyframe2, keyframe3, keyframe4,keyframe5);
+
+        //alpha
+        PropertyValuesHolder alpha = PropertyValuesHolder.ofFloat("alpha",1.0f,0.2f,1.0f);
+        //scale
+        PropertyValuesHolder scaleX = PropertyValuesHolder.ofFloat("scaleX",1.0f,2f,1.0f,0.5f,1.0f);
+        PropertyValuesHolder scaleY = PropertyValuesHolder.ofFloat("scaleY",1.0f,2f,1.0f,0.5f,1.0f);
+        PropertyValuesHolder color = PropertyValuesHolder.ofInt("BackgroundColor", 0XFFFFFF00, 0XFF0000FF,0XFFFFFF00);
+
+        ObjectAnimator animator = ObjectAnimator.ofPropertyValuesHolder(animaion_button,rotation,alpha,scaleX,scaleY,color,holder1,holder2);
+        animator.setInterpolator(new OvershootInterpolator());
+        animator.setDuration(5000).start();
+
+    }
+
+
+    private boolean AnimatorSetTest = false;
+    private void AnimatorSetTest1(){
+        /**
+         *
+         * 同时开始
+         *
+         * 依次执行
+         *
+         * */
+        //移动 translation
+        ObjectAnimator animator1 = ObjectAnimator.ofFloat(animaion_button, "translationX", 0f, 500f);
+        ObjectAnimator animator2 = ObjectAnimator.ofFloat(animaion_button, "translationY", 0f, 500f);
+        //rotation
+        ObjectAnimator animator3 = ObjectAnimator.ofFloat(animaion_button, "rotation", 0f, 360f);
+
+        ObjectAnimator animator4 = ObjectAnimator.ofFloat(animaion_button, "alpha", 1.0f,0.2f,1.0f);
+
+        ObjectAnimator scaleX = ObjectAnimator.ofFloat(animaion_button,"scaleX",1.0f,2f,1.0f,0.5f,1.0f);
+        ObjectAnimator scaleY = ObjectAnimator.ofFloat(animaion_button,"scaleY",1.0f,2f,1.0f,0.5f,1.0f);
+        AnimatorSet set = new AnimatorSet();
+        set.setDuration(3000);
+        if(AnimatorSetTest){
+            set.playTogether(animator1, animator2, animator3,animator4,scaleX,scaleY);
+        }else {
+            set.playSequentially(animator1, animator2, animator3,animator4,scaleX,scaleY);
+        }
+        AnimatorSetTest = !AnimatorSetTest;
+
+        set.start();
+    }
+
+
+    private void AnimatorSetTest2(){
+        /**
+         * play 实现组合动画
+         *
+         * 实现多种组合
+         *
+         * */
+
+        ObjectAnimator animator1 = ObjectAnimator.ofFloat(animaion_button, "translationX", 0f, 500f);
+        ObjectAnimator animator2 = ObjectAnimator.ofFloat(animaion_button, "translationY", 0f, 500f);
+        ObjectAnimator animator3 = ObjectAnimator.ofFloat(animaion_button, "rotationX", 0f, 360f);
+        ObjectAnimator animator4 = ObjectAnimator.ofFloat(animaion_button, "rotationY", 0f, 360f);
+        AnimatorSet set = new AnimatorSet();
+        set.play(animator3).before(animator2).after(animator1).with(animator4);
+        set.setDuration(3000);
+        set.start();
+    }
+
 }
