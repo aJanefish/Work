@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import zy.walk.com.thewalkers.activity.BaseActivity;
 import zy.walk.com.thewalkers.adapter.MainAdapter;
 import zy.walk.com.thewalkers.event.MainEvent;
+import zy.walk.com.thewalkers.utils.Constant;
 
 
 public class MainActivity extends BaseActivity {
@@ -26,31 +27,15 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
     }
 
-    private MainEvent createMainEvent(String title,String content,String packName,String className){
-        return new MainEvent.Builder()
-                .title(title)
-                .content(content)
-                .className(className)
-                .packageName(packName)
-                .bulde();
-    }
+
 
     @SuppressLint("WrongConstant")
     @Override
     public void initDate() {
         recycler_view_main.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
-        List<MainEvent> list = new ArrayList<>();
-        list.add(createMainEvent("Other","用来做一些小测试之类页面","zy.walk.com.thewalkers","zy.walk.com.thewalkers.OtherActivity"));
-        list.add(createMainEvent("Test","用来做一些小测试之类页面","zy.walk.com.thewalkers","zy.walk.com.thewalkers.TestActivity"));
-        list.add(createMainEvent("Permission","了解android M 后动态申请权限的方法","zy.walk.com.thewalkers","zy.walk.com.thewalkers.PermissionActivity"));
-        list.add(createMainEvent("Toast","吐司功能小集合","zy.walk.com.thewalkers","zy.walk.com.thewalkers.ToastActivity"));
-        list.add(createMainEvent("年后","ssss","zy.walk.com.thewalkers","zy.walk.com.thewalkers.MainActivity1"));
-        list.add(createMainEvent("年后","ssss","zy.walk.com.thewalkers","zy.walk.com.thewalkers.MainActivity1"));
-        list.add(createMainEvent("年后","ssss","zy.walk.com.thewalkers","zy.walk.com.thewalkers.MainActivity1"));
-        list.add(createMainEvent("年后","ssss","zy.walk.com.thewalkers","zy.walk.com.thewalkers.MainActivity1"));
-        list.add(createMainEvent("年后","ssss","zy.walk.com.thewalkers","zy.walk.com.thewalkers.MainActivity1"));
 
-        MainAdapter mainAdapter = new MainAdapter(list,getApplicationContext());
+
+        MainAdapter mainAdapter = new MainAdapter(Constant.getMainEvent(),getApplicationContext());
         recycler_view_main.setAdapter(mainAdapter);
 
     }
