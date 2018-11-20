@@ -3,6 +3,8 @@ package zy.walk.com.thewalkers;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 
+import com.github.houbb.opencc4j.util.ZhConverterUtil;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,6 +39,8 @@ public class MainActivity extends BaseActivity {
 
         MainAdapter mainAdapter = new MainAdapter(Constant.getMainEvent(),getApplicationContext());
         recycler_view_main.setAdapter(mainAdapter);
+
+
 
     }
 

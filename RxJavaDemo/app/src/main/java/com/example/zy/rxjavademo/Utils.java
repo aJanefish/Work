@@ -819,9 +819,9 @@ public class Utils {
 		Observable.create(new ObservableOnSubscribe<String>() {
 			@Override
 			public void subscribe(ObservableEmitter<String> emitter) throws Exception {
-				emitter.onNext("连载1");
-				emitter.onNext("连载2");
-				emitter.onNext("连载3");
+//				emitter.onNext("连载1");
+//				emitter.onNext("连载2");
+//				emitter.onNext("连载3");
 				Log.e(TAG,"subscribe:"+ Thread.currentThread());
 				emitter.onComplete();
 			}

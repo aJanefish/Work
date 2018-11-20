@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14550f9c-c959-49f0-af9b-426dd881288a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com.zy.demo/utf/UtfDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/adapter/MainAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/event/MainEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/drawable/item_back.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/drawable/item_back_default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/drawable/item_back_pressed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/layout/main_adapter_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ButlerLauncher/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../ButlerLauncher/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ButlerLauncher/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ButlerLauncher/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ButlerLauncher/app/src/main/res/layout/item_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ButlerLauncher/app/src/main/res/layout/item_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ButlerLauncher/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../ButlerLauncher/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zy/demo/okio/OkioDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zy/demo/okio/OkioDemo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/newwork/OkhttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/newwork/OkhttpUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/values/colors.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,7 +46,7 @@
     <session id="-1036553840">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.22" value="1" />
@@ -97,11 +80,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="672">
+              <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -150,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com.zy.demo/utf/UtfDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+            <state relative-caret-position="828">
+              <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,8 +148,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com.zy.demo/MyMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" selection-start-line="10" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="374">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -214,8 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,10 +247,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542106933467" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542696826420" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../okio" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -366,7 +349,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -400,8 +383,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="672">
+          <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -441,15 +424,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com.zy.demo/MyMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="374">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com.zy.demo/utf/UtfDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        <state relative-caret-position="828">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
