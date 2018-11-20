@@ -32,6 +32,8 @@ import android.widget.TextView;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.daimajia.easing.Glider;
+import com.daimajia.easing.Skill;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -91,36 +93,201 @@ public class AnimationsActivity extends BaseActivity {
         list.add(new DiyAnimationEvent("JAVA XML","XML实现组合动画",DiyAnimationEvent.Type.XML));
 
 
-
-
-
         list.add(new DiyAnimationEvent("JAVA Test","用于测试动画",DiyAnimationEvent.Type.TEST));
-        DiyAnimationAdapter diyAnimationAdapter = new DiyAnimationAdapter(list);
+
+
+        //AnimatorSet 组合动画
+        list.add(new DiyAnimationEvent("Flash","Flash(闪光)",ObjectAnimator.ofFloat(animaion_button, "alpha", 1, 0, 1, 0, 1)));
+        list.add(new DiyAnimationEvent("Pulse","Pulse(脉冲)",
+                ObjectAnimator.ofFloat(animaion_button, "scaleY", 1, 1.1f, 1),
+                ObjectAnimator.ofFloat(animaion_button, "scaleX", 1, 1.1f, 1))
+        );
+
+        list.add(new DiyAnimationEvent("RubberBand","RubberBand(橡皮圈)",
+                ObjectAnimator.ofFloat(animaion_button, "scaleX", 1, 1.25f, 0.75f, 1.15f, 1),
+                ObjectAnimator.ofFloat(animaion_button, "scaleY", 1, 0.75f, 1.25f, 0.85f, 1)
+        ));
+
+        list.add(new DiyAnimationEvent("Shake","Shake(摇)",
+                ObjectAnimator.ofFloat(animaion_button, "translationX", 0, 25, -25, 25, -25, 15, -15, 6, -6, 0)
+
+        ));
+
+        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
+
+        ));
+
+        float width = animaion_button.getWidth();
+        float one = (float) (width / 100.0);
+
+        list.add(new DiyAnimationEvent("Wobble","Wobble(摆动)",
+                ObjectAnimator.ofFloat(animaion_button, "translationX", 0 * one, -25 * one, 20 * one, -15 * one, 10 * one, -5 * one, 0 * one, 0),
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, -5, 3, -3, 2, -1, 0)
+        ));
+
+
+        list.add(new DiyAnimationEvent("Bounce","Bounce(反弹)",
+                ObjectAnimator.ofFloat(animaion_button, "translationY", 0, 0,-32,0, -16, 0, -8, 0, 0)
+        ));
+
+
+
+        list.add(new DiyAnimationEvent("Tada","Tada(Tada)",
+                ObjectAnimator.ofFloat(animaion_button, "scaleX", 1, 0.9f, 0.9f, 1.1f, 1.1f, 1.1f, 1.1f, 1.1f, 1.1f, 1),
+                ObjectAnimator.ofFloat(animaion_button, "scaleY", 1, 0.9f, 0.9f, 1.1f, 1.1f, 1.1f, 1.1f, 1.1f, 1.1f, 1),
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, -3, -3, 3, -3, 3, -3, 3, -3, 0)
+        ));
+
+        float x = (animaion_button.getWidth() - animaion_button.getPaddingLeft() - animaion_button.getPaddingRight()) / 2
+                + animaion_button.getPaddingLeft();
+        float y = animaion_button.getHeight() - animaion_button.getPaddingBottom();
+        list.add(new DiyAnimationEvent("StandUp","StandUp(StandUp)",
+                ObjectAnimator.ofFloat(animaion_button, "pivotX", x, x, x, x, x),
+                ObjectAnimator.ofFloat(animaion_button, "pivotY", y, y, y, y, y),
+                ObjectAnimator.ofFloat(animaion_button, "rotationX", 55, -30, 15, -15, 0)
+        ));
+
+
+        list.add(new DiyAnimationEvent("Wave","Wave(波)",
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 12, -12, 3, -3, 0),
+                ObjectAnimator.ofFloat(animaion_button, "pivotX", x, x, x, x, x),
+                ObjectAnimator.ofFloat(animaion_button, "pivotY", y, y, y, y, y)
+
+        ));
+
+        x = animaion_button.getPaddingLeft();
+        y = animaion_button.getPaddingTop();
+        list.add(new DiyAnimationEvent("Hinge","Hinge(铰链)",
+                Glider.glide(Skill.SineEaseInOut, 1300, ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 80, 60, 80, 60, 60)),
+                ObjectAnimator.ofFloat(animaion_button, "translationY", 0, 0, 0, 0, 0, 700),
+                ObjectAnimator.ofFloat(animaion_button, "alpha", 1, 1, 1, 1, 1, 0),
+                ObjectAnimator.ofFloat(animaion_button, "pivotX", x, x, x, x, x, x),
+                ObjectAnimator.ofFloat(animaion_button, "pivotY", y, y, y, y, y, y)
+
+        ));
+
+
+        list.add(new DiyAnimationEvent("RollIn","RollIn(RollIn)",
+                ObjectAnimator.ofFloat(animaion_button, "alpha", 0, 1),
+                ObjectAnimator.ofFloat(animaion_button, "translationX", -(animaion_button.getWidth() - animaion_button.getPaddingLeft() - animaion_button.getPaddingRight()), 0),
+                ObjectAnimator.ofFloat(animaion_button, "rotation", -120, 0)
+
+        ));
+        list.add(new DiyAnimationEvent("RollOut","RollOut(RollOut)",
+                ObjectAnimator.ofFloat(animaion_button, "alpha", 1, 0),
+                ObjectAnimator.ofFloat(animaion_button, "translationX", 0, animaion_button.getWidth()),
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 120)
+
+        ));
+
+
+        list.add(new DiyAnimationEvent("BounceIn","BounceIn(BounceIn)",
+                ObjectAnimator.ofFloat(animaion_button, "alpha", 0, 1, 1, 1),
+                ObjectAnimator.ofFloat(animaion_button, "scaleX", 0.3f, 1.05f, 0.9f, 1),
+                ObjectAnimator.ofFloat(animaion_button, "scaleY", 0.3f, 1.05f, 0.9f, 1)
+        ));
+
+
+        list.add(new DiyAnimationEvent("BounceOut","BounceOut(BounceOut)",
+                ObjectAnimator.ofFloat(animaion_button, "alpha", 1, 1, 1, 0),
+                ObjectAnimator.ofFloat(animaion_button, "scaleX", 1f, 0.9f, 1.1f, 0.3f),
+                ObjectAnimator.ofFloat(animaion_button, "scaleY", 1f, 0.9f, 1.1f, 0.3f)
+        ));
+
+
+        list.add(new DiyAnimationEvent("BounceInDown","BounceInDown(BounceInDown)",
+                ObjectAnimator.ofFloat(animaion_button, "alpha", 0, 1, 1, 1),
+                ObjectAnimator.ofFloat(animaion_button, "translationY", -animaion_button.getHeight(), 30, -10, 0)
+
+        ));
+
+        list.add(new DiyAnimationEvent("BounceInUp","BounceInUp(BounceInUp)",
+                ObjectAnimator.ofFloat(animaion_button, "alpha", 0, 1, 1, 1),
+                ObjectAnimator.ofFloat(animaion_button, "translationY", animaion_button.getHeight(), -30, 10, 0)
+
+        ));
+
+        list.add(new DiyAnimationEvent("BounceInLeft","BounceInLeft(BounceInLeft)",
+                ObjectAnimator.ofFloat(animaion_button, "translationX", -animaion_button.getWidth(), 30, -10, 0),
+                ObjectAnimator.ofFloat(animaion_button, "alpha", 0, 1, 1, 1)
+
+        ));
+
+        list.add(new DiyAnimationEvent("BounceInRight","BounceInRight(BounceInRight)",
+                ObjectAnimator.ofFloat(animaion_button, "translationX", animaion_button.getWidth(), -30, 10, 0),
+                ObjectAnimator.ofFloat(animaion_button, "alpha", 0, 1, 1, 1)
+
+        ));
+
+
+        list.add(new DiyAnimationEvent("FadeIn","FadeIn(FadeIn)",
+                ObjectAnimator.ofFloat(animaion_button, "alpha", 0, 1)
+        ));
+
+        list.add(new DiyAnimationEvent("FadeOut","FadeOut(FadeOut)",
+                ObjectAnimator.ofFloat(animaion_button, "alpha", 1, 0)
+        ));
+
+
+
+        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
+
+        ));
+        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
+
+        ));
+        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
+
+        ));
+        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
+
+        ));
+        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
+
+        ));
+        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
+
+        ));
+        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
+
+        ));
+        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
+
+        ));
+        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
+
+        ));
+        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
+
+        ));
+        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
+
+        ));
+        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
+                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
+
+        ));
+
+
+
+
+        final DiyAnimationAdapter diyAnimationAdapter = new DiyAnimationAdapter(list);
         diyAnimationAdapter.setDiyAnimationDegete(new DiyAnimationAdapter.DiyAnimationDegete() {
             @Override
             public void onClick(final DiyAnimationEvent diyAnimationEvent) {
                 //clearShow();
-                if(diyAnimationEvent.animation != null){
-
-                    diyAnimationEvent.animation.setAnimationListener(new Animation.AnimationListener() {
-                        @Override
-                        public void onAnimationStart(Animation animation) {
-                            show(diyAnimationEvent.intent+" onAnimationStart");
-                        }
-
-                        @Override
-                        public void onAnimationEnd(Animation animation) {
-                            show(diyAnimationEvent.intent+" onAnimationEnd");
-                        }
-
-                        @Override
-                        public void onAnimationRepeat(Animation animation) {
-                            show(diyAnimationEvent.intent+" onAnimationRepeat");
-                        }
-                    });
-                    //animaion_button.setAnimation(diyAnimationEvent.animation);
-                    animaion_button.startAnimation(diyAnimationEvent.animation);
-                }else {
                     show(""+diyAnimationEvent.type);
                     switch (diyAnimationEvent.type) {
                         case MENU:
@@ -151,11 +318,42 @@ public class AnimationsActivity extends BaseActivity {
                         case TEST:
                             test();
                             break;
+                        case Animator:
+
+                            AnimatorSet set = new AnimatorSet();
+                            set.setDuration(2000);
+                            set.playTogether(diyAnimationEvent.animators);
+                            set.start();
+
+                            break;
+                        case Animation:
+
+                            diyAnimationEvent.animation.setAnimationListener(new Animation.AnimationListener() {
+                                @Override
+                                public void onAnimationStart(Animation animation) {
+                                    show(diyAnimationEvent.intent+" onAnimationStart");
+                                }
+
+                                @Override
+                                public void onAnimationEnd(Animation animation) {
+                                    show(diyAnimationEvent.intent+" onAnimationEnd");
+                                }
+
+                                @Override
+                                public void onAnimationRepeat(Animation animation) {
+                                    show(diyAnimationEvent.intent+" onAnimationRepeat");
+                                }
+                            });
+                            //animaion_button.setAnimation(diyAnimationEvent.animation);
+                            animaion_button.startAnimation(diyAnimationEvent.animation);
+
+
+                            break;
                         default:
                             break;
                     }
                 }
-            }
+
         });
         animaion_zhangyu_recycler_view.setAdapter(diyAnimationAdapter);
     }

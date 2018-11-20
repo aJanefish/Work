@@ -1,5 +1,6 @@
 package zy.walk.com.thewalkers.event;
 
+import android.animation.Animator;
 import android.view.animation.Animation;
 
 
@@ -9,8 +10,10 @@ import android.view.animation.Animation;
 public class DiyAnimationEvent {
 
 
+    public Animator[] animators;
+
     public enum Type{
-        NONE,MENU,TEST,PropertyValuesHolder,AnimatorSet1,AnimatorSet2,Listener
+        Animation,Animator,NONE,MENU,TEST,PropertyValuesHolder,AnimatorSet1,AnimatorSet2,Listener
         ,AnimatorListenerAdapter,UpdateListener,XML
     }
 
@@ -26,9 +29,17 @@ public class DiyAnimationEvent {
         this.type = type;
     }
 
+    public DiyAnimationEvent(String intent, String values, Animator ... vas) {
+        this.intent = intent;
+        this.values = values;
+        this.animators = vas;
+        this.type = Type.Animator;
+    }
+
     public DiyAnimationEvent(String intent, String values, Animation animation) {
         this.intent = intent;
         this.values = values;
         this.animation = animation;
+        this.type = Type.Animation;
     }
 }
