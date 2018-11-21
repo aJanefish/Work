@@ -19,11 +19,13 @@ import android.animation.TypeEvaluator;
 import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.BounceInterpolator;
+import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.OvershootInterpolator;
 import android.widget.Button;
@@ -58,6 +60,7 @@ public class AnimationsActivity extends BaseActivity {
     private ImageView image_vew_very_dissatisfied;
     private boolean isOpen = false;
     private ArrayList<ImageView> menus;
+    private String TAG = "AnimationsActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -229,60 +232,6 @@ public class AnimationsActivity extends BaseActivity {
                 ObjectAnimator.ofFloat(animaion_button, "alpha", 1, 0)
         ));
 
-
-
-        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
-                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
-
-        ));
-        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
-                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
-
-        ));
-        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
-                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
-
-        ));
-        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
-                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
-
-        ));
-        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
-                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
-
-        ));
-        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
-                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
-
-        ));
-        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
-                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
-
-        ));
-        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
-                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
-
-        ));
-        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
-                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
-
-        ));
-        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
-                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
-
-        ));
-        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
-                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
-
-        ));
-        list.add(new DiyAnimationEvent("Swing","Swing(摇摆不定的)",
-                ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 10, -10, 6, -6, 3, -3, 0)
-
-        ));
-
-
-
-
         final DiyAnimationAdapter diyAnimationAdapter = new DiyAnimationAdapter(list);
         diyAnimationAdapter.setDiyAnimationDegete(new DiyAnimationAdapter.DiyAnimationDegete() {
             @Override
@@ -374,26 +323,30 @@ public class AnimationsActivity extends BaseActivity {
          * 学习网址:
          * https://www.cnblogs.com/itgungnir/p/6211380.html
          * */
-        TypeEvaluator<Float> typeEvaluator = new TypeEvaluator() {
-            @Override
-            public Object evaluate(float fraction, Object startValue, Object endValue) {
-                return 8f;
-            }
-        };
+        //旋转 缩放中心
+//        ObjectAnimator.ofFloat(animaion_button, "pivotX", x, x, x, x, x, x),
+//        ObjectAnimator.ofFloat(animaion_button, "pivotY", y, y, y, y, y, y)
 
+        //旋转
+        //ObjectAnimator.ofFloat(animaion_button, "rotation", 0, 360);
+        //ObjectAnimator.ofFloat(target, "rotationX", 90, -15, 15, 0),
+        //ObjectAnimator.ofFloat(target, "rotationy", 90, -15, 15, 0),
+//缩放
+//        ObjectAnimator.ofFloat(animaion_button, "scaleX", 0.3f, 1.05f, 0.9f, 1),
+//        ObjectAnimator.ofFloat(animaion_button, "scaleY", 0.3f, 1.05f, 0.9f, 1)
 
-        ValueAnimator animator = ValueAnimator.ofInt(0, 200,0); // 产生一个从0到100变化的整数的动画
-        animator.setDuration(2000);
-        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-            @Override
-            public void onAnimationUpdate(ValueAnimator animation) {
-                Integer value = (Integer) animation.getAnimatedValue(); // 动态的获取当前运行到的属性值
-                show(value + "");
-                animaion_button.setTranslationY(value);
+//alpha
+//        ObjectAnimator.ofFloat(animaion_button, "alpha", 0, 1, 1, 1)
 
-            }
-        });
-        animator.start(); // 开始播放动画
+        AnimatorSet animatorSet = new AnimatorSet();
+        animatorSet.playTogether(
+                      ObjectAnimator.ofFloat(animaion_button, "alpha", 0, 1, 1, 1),
+
+                ObjectAnimator.ofFloat(animaion_button, "rotationY", 90,-30,30,0)
+
+        );
+        animatorSet.setDuration(3000);
+        animatorSet.start();
 
 
 
@@ -402,12 +355,6 @@ public class AnimationsActivity extends BaseActivity {
     private void UpdateListenerTest() {
         ValueAnimator animator = ValueAnimator.ofInt(0, 200,0); // 产生一个从0到100变化的整数的动画
         animator.setDuration(2000);
-        animator.setEvaluator(new TypeEvaluator() {
-            @Override
-            public Object evaluate(float fraction, Object startValue, Object endValue) {
-                return null;
-            }
-        });
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
