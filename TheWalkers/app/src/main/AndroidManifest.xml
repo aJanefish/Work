@@ -65,7 +65,8 @@
         <activity android:name=".TestActivity" />
         <activity android:name=".PermissionActivity" />
         <activity android:name=".ToastActivity" />
-        <activity android:name=".AnimationsActivity"></activity>
+        <activity android:name=".AnimationsActivity" />
+        <activity android:name=".RxJavaActivity"></activity>
     </application>
 
 </manifest>

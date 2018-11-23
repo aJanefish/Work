@@ -24,7 +24,7 @@ import okhttp3.Response;
 import okhttp3.ResponseBody;
 
 public class PhotoService {
-    private static final String UPLOAD_URL = "https://mice.singou.mo/api/tool/SaveImg";
+    private static final String UPLOAD_URL = "http://encounter-msc.singou.mo/api/tool/SaveImg";
 
     private OkHttpClient okHttpClient;
     private UploadCallback mCallback;
@@ -43,10 +43,27 @@ public class PhotoService {
             Log.i("Singou", "onResponse: " + response.code());
             Log.i("Singou", "onResponse: " + response.message());
             Log.i("Singou", "onResponse: " + response.toString());
+            Log.i("Singou", "request: " + response.request());
             ResponseBody body = response.body();
-            Log.i("Singou", "onResponse: " + body.string());
+            Log.i("Singou", "onResponse: " + body);
+//{"status":200,"content":"916d41d8cd98f00b204e9800998ecf8427e.jpg"}
+            if (body != null) {
 
+                String json = body.string();
+
+                Log.i("Singou", "onResponse: " + json);
+
+                try {
+                    JSONObject obj = new JSONObject(json);
+                    String url = obj.getString("content");
+                    Log.i("Singou", "onResponse: url=" + url);
+
+                } catch (Exception e) {
+                    Log.i("Singou", "onResponse e: " + e);
+                }
+            }
         }
+
     };
 
     public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
@@ -80,8 +97,11 @@ public class PhotoService {
                 }
 
 
+                Log.i("Singou", "body : " + body.toString());
+
                 RequestBody sss = RequestBody.create(JSON, body.toString());
                 //RequestBody body = builder.build();
+
 
                 Request request = new Request.Builder().url(UPLOAD_URL).post(sss).build();
                 okHttpClient.newCall(request).enqueue(mUploadCallback);

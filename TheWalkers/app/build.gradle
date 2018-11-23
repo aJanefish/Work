@@ -39,9 +39,10 @@ dependencies {
     //权限帮助类
     implementation 'com.hjq:xxpermissions:5.2'
 
+    //daimajia
+    //https://github.com/daimajia
     implementation 'com.daimajia.easing:library:2.0@aar'
     implementation 'com.daimajia.androidanimations:library:2.3@aar'
-
 
     //繁字体 简体字转换
     //https://github.com/houbb/opencc4j

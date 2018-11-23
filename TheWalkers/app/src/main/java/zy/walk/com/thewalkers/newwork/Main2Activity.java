@@ -2,6 +2,7 @@ package zy.walk.com.thewalkers.newwork;
 
 
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 
@@ -22,10 +23,12 @@ public class Main2Activity extends AppCompatActivity {
 
     public void test(View view) {
 
-        File file = new File("/storage/emulated/0/a.png");
+        ///storage/emulated/0/test.png
 
+        File file = new File("/storage/emulated/0/Screenshots/Screenshot_20180926-123140.png");
+///storage/emulated/0/test.png
 
-
+        Log.d("Singou", "test:---"+Environment.getExternalStorageDirectory().getAbsolutePath());
         PhotoService photoService = new PhotoService();
         photoService.uploadFile(file, new PhotoService.UploadCallback() {
             @Override
