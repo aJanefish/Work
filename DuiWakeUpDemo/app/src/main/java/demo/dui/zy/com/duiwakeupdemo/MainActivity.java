@@ -138,4 +138,9 @@ public class MainActivity extends AppCompatActivity {
     public void WakeUpAsr(View view) {
         startActivity(new Intent(MainActivity.this,WakeUpAsrActivity.class));
     }
+
+    public void LocalWakeupDiy(View view) {
+        startActivity(new Intent(MainActivity.this,WakeUpDemo.class));
+
+    }
 }

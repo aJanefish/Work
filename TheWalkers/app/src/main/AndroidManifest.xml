@@ -66,7 +66,8 @@
         <activity android:name=".PermissionActivity" />
         <activity android:name=".ToastActivity" />
         <activity android:name=".AnimationsActivity" />
-        <activity android:name=".RxJavaActivity"></activity>
+        <activity android:name=".RxJavaActivity" />
+        <activity android:name=".AuxiliaryInfoShowActivity"></activity>
     </application>
 
 </manifest>

@@ -35,7 +35,8 @@
         <activity android:name=".CloudASR" />
         <activity android:name=".CloudASRMultiResult" />
         <activity android:name=".CloudASRCustomBatch" />
-        <activity android:name=".WakeUpAsrActivity"></activity>
+        <activity android:name=".WakeUpAsrActivity" />
+        <activity android:name=".WakeUpDemo"></activity>
     </application>
 
 </manifest>

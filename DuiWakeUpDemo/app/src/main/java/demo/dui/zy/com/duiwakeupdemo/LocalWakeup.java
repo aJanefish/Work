@@ -2,6 +2,8 @@ package demo.dui.zy.com.duiwakeupdemo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -24,7 +26,7 @@ public class LocalWakeup extends Activity implements View.OnClickListener {
 
 
     Toast mToast;
-
+    private AISpeechListenerImpl ai;
 
 
     @Override
@@ -42,7 +44,11 @@ public class LocalWakeup extends Activity implements View.OnClickListener {
         btnStart.setOnClickListener(this);
         btnStop.setOnClickListener(this);
         mToast = Toast.makeText(this, "", Toast.LENGTH_LONG);
+        init();
 
+    }
+
+    private void init(){
         if (!AIWakeupEngine.checkLibValid()) {
             mToast.setText("so加载失败");
             mToast.show();
@@ -51,7 +57,8 @@ public class LocalWakeup extends Activity implements View.OnClickListener {
             mEngine.setWakeupWord(new String[]{"ni hao tian ji"}, new String[]{"0.1"});
             mEngine.setResBin("wakeup.bin");
             //mEngine.setResBinPath("/sdcard/aispeech/wakeup1.bin");//设置唤醒资源的绝对路径,包含文件名。默认在assets目录下，无需配置
-            mEngine.init(new AISpeechListenerImpl());
+            ai = new AISpeechListenerImpl();
+            mEngine.init(ai);
         }
     }
 
@@ -59,7 +66,6 @@ public class LocalWakeup extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (v == btnStart) {
-            mEngine.start();
             resultText.setText("语音唤醒演示:唤醒词是 你好小驰\n可以说话了");
         } else if (v == btnStop) {
             mEngine.stop();
@@ -84,6 +90,10 @@ public class LocalWakeup extends Activity implements View.OnClickListener {
                         resultText.append("初始化成功!");
                         btnStart.setEnabled(true);
                         btnStop.setEnabled(true);
+                        Log.i(TAG, "Init result 初始化成功:"+mEngine );
+
+                                mEngine.start();
+
                     } else {
                         resultText.setText("初始化失败!code:" + status);
                     }
@@ -95,7 +105,7 @@ public class LocalWakeup extends Activity implements View.OnClickListener {
 
         @Override
         public void onWakeup(String recordId, final double confidence, final String wakeupWord) {
-            Log.d(TAG,"wakeup foreground");
+            Log.d(TAG,"wakeup:"+"唤醒成功  wakeupWord = " + wakeupWord + "  confidence = " + confidence);
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -113,14 +123,25 @@ public class LocalWakeup extends Activity implements View.OnClickListener {
 
         @Override
         public void onBufferReceived(byte[] buffer) {
-            Log.d(TAG, "onBufferReceived: "+buffer.length );
+            //Log.d(TAG, "onBufferReceived: "+buffer.length );
         }
 
         @Override
         public void onWakeupEngineStopped() {
-            //mEngine.start();//在这里启动下一轮唤醒
-        }
+            Log.d(TAG, "onWakeupEngineStopped: "+Thread.currentThread());
 
+            mEngine.destroy();
+
+            new Handler(Looper.myLooper()).postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    init();
+                }
+            },500);
+
+
+
+        }
     }
 
     private void showTip(final String str) {

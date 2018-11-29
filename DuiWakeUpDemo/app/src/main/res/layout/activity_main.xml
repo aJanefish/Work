@@ -15,6 +15,11 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="语音唤醒DIY"
+        android:onClick="LocalWakeupDiy"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="语音唤醒不使用内部录音机"
         android:onClick="LocalWakeupCustom"/>
 

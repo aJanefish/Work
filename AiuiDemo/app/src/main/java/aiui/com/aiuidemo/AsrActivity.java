@@ -34,6 +34,9 @@ import com.iflytek.cloud.util.ContactManager;
 import com.iflytek.cloud.util.ContactManager.ContactListener;
 import com.iflytek.cloud.util.ResourceUtil;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 
 public class AsrActivity extends AppCompatActivity implements OnClickListener {
     private static String TAG = "AsrActivity";
@@ -49,6 +52,7 @@ public class AsrActivity extends AppCompatActivity implements OnClickListener {
     private Toast mToast;
 
     private String mEngineType = "cloud";
+    private long startTime;
 
     @SuppressLint("ShowToast")
     public void onCreate(Bundle savedInstanceState) {
@@ -56,7 +60,6 @@ public class AsrActivity extends AppCompatActivity implements OnClickListener {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_asr);
         initLayout();
-
 
         initSpeech();
 
@@ -107,7 +110,6 @@ public class AsrActivity extends AppCompatActivity implements OnClickListener {
                 // 设置参数
                 setParam();
 
-
                 // 不显示听写对话框
                 ret = mIat.startListening(mRecognizerListener);
                 if (ret != ErrorCode.SUCCESS) {
@@ -147,6 +149,22 @@ public class AsrActivity extends AppCompatActivity implements OnClickListener {
     };
 
 
+    private void printResult(RecognizerResult results) {
+
+        String text = JsonParser.parseIatResult(results.getResultString());
+
+        String sn = null;
+        // 读取json结果中的sn字段
+        try {
+            JSONObject resultJson = new JSONObject(results.getResultString());
+            sn = resultJson.optString("sn"); // sentence, number類型, 第几句
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        mIatResults.put(sn, text);
+    }
+
     /**
      * 听写监听器。
      */
@@ -155,35 +173,45 @@ public class AsrActivity extends AppCompatActivity implements OnClickListener {
         @Override
         public void onBeginOfSpeech() {
             // 此回调表示：sdk内部录音机已经准备好了，用户可以开始语音输入
-            showTip("开始说话");
+            startTime = System.currentTimeMillis();
+            showTip("onBeginOfSpeech-开始说话");
         }
 
         @Override
         public void onError(SpeechError error) {
             // Tips：
             // 错误码：10118(您没有说话)，可能是录音机权限被禁，需要提示用户打开应用的录音权限。
-            showTip(error.getPlainDescription(true));
+            showTip("onError-"+error.getPlainDescription(true));
+            showTip("onError-"+error.getPlainDescription(false));
 
         }
 
         @Override
         public void onEndOfSpeech() {
             // 此回调表示：检测到了语音的尾端点，已经进入识别过程，不再接受语音输入
-            showTip("结束说话");
+            long endTime = System.currentTimeMillis();
+
+            showTip("onEndOfSpeech-结束说话-时间间隔:"+(endTime-startTime)+"ms");
         }
 
         @Override
         public void onResult(RecognizerResult results, boolean isLast) {
             mResultText.append("isLast:"+isLast+" , "+results.getResultString() + "\n");
             Log.d(TAG,"onResult:"+results.getResultString());
-
-
-            String text = JsonParser.parseIatResult(results.getResultString());
-            mResultText.append(text + "\n");
-
+            printResult(results);
 
             if (isLast) {
                 //TODO 最后的结果
+                StringBuilder resultBuffer = new StringBuilder();
+                for (String key : mIatResults.keySet()) {
+                    resultBuffer.append(mIatResults.get(key));
+                }
+                String text = resultBuffer.toString();
+                if (!TextUtils.isEmpty(text)) {
+                    showTip(text);
+                }else {
+                    showTip("str == null || str.length() == 0");
+                }
             }
         }
 
@@ -240,8 +268,8 @@ public class AsrActivity extends AppCompatActivity implements OnClickListener {
             // 设置语言
         //mIat.setParameter(SpeechConstant.LANGUAGE, "zh_cn");
         mIat.setParameter(SpeechConstant.LANGUAGE, "en_us");
-            // 设置语言区域
-            mIat.setParameter(SpeechConstant.ACCENT, lag);
+        // 设置语言区域
+        mIat.setParameter(SpeechConstant.ACCENT, lag);
 
 
 
@@ -249,7 +277,7 @@ public class AsrActivity extends AppCompatActivity implements OnClickListener {
         mIat.setParameter(SpeechConstant.RESULT_TYPE, "json");
 
         // 设置语音前端点:静音超时时间，即用户多长时间不说话则当做超时处理
-        mIat.setParameter(SpeechConstant.VAD_BOS, "4000");
+        //mIat.setParameter(SpeechConstant.VAD_BOS, "10000");
 
         // 设置语音后端点:后端点静音检测时间，即用户停止说话多长时间内即认为不再输入， 自动停止录音
         mIat.setParameter(SpeechConstant.VAD_EOS, "1000");
@@ -261,17 +289,6 @@ public class AsrActivity extends AppCompatActivity implements OnClickListener {
         mIat.setParameter(SpeechConstant.AUDIO_FORMAT, "wav");
         mIat.setParameter(SpeechConstant.ASR_AUDIO_PATH, Environment.getExternalStorageDirectory() + "/msc/iat.wav");
     }
-
-    private String getResourcePath() {
-        StringBuffer tempBuffer = new StringBuffer();
-        //识别通用资源
-        tempBuffer.append(ResourceUtil.generateResourcePath(this, ResourceUtil.RESOURCE_TYPE.assets, "iat/common.jet"));
-        tempBuffer.append(";");
-        tempBuffer.append(ResourceUtil.generateResourcePath(this, ResourceUtil.RESOURCE_TYPE.assets, "iat/sms_16k.jet"));
-        //识别8k资源-使用8k的时候请解开注释
-        return tempBuffer.toString();
-    }
-
 
 
     @Override

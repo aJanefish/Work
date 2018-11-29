@@ -17,6 +17,8 @@ public class Constant {
 
 
         list.add(createMainEvent("RxJava","RxJava(RxJava)","zy.walk.com.thewalkers","zy.walk.com.thewalkers.RxJavaActivity"));
+        list.add(createMainEvent("辅助信息展示","Singou(singou)","zy.walk.com.thewalkers","zy.walk.com.thewalkers.AuxiliaryInfoShowActivity"));
+
         list.add(createMainEvent("废柴","行走","zy.walk.com.thewalkers","zy.walk.com.thewalkers.MainActivity1"));
 
 

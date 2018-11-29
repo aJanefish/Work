@@ -6,48 +6,87 @@
     android:layout_height="match_parent"
     tools:context=".OtherActivity">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline1"
+
+    <TextView
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="300dp" />
+        android:text="'ss"/>
 
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linealayout1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="100dp" />
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
 
-    <Button
-        android:id="@+id/btn_a"
-        android:text="A"
+            <TextView
+                android:id="@+id/left_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="left"/>
+            <TextView
+                android:id="@+id/left_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/left_type"
+                android:text="url"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/center_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="left"/>
+            <TextView
+                android:id="@+id/center_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/center_type"
+                android:text="url"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/right_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="left"/>
+            <TextView
+                android:id="@+id/right_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/right_type"
+                android:text="url"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/b"
-        />
-
-    <Button
-        android:id="@+id/b"
-        android:text="B"
-        android:visibility="gone"
-        android:textAllCaps="false"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="20dp"
-        app:layout_goneMarginLeft="60dp"
-        app:layout_goneMarginRight="100dp"
-        app:layout_goneMarginTop="100dp"
-        app:layout_goneMarginBottom="200dp"
-
-        />
-
-
-
-
+        app:layout_constraintTop_toBottomOf="@id/linealayout1">
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 

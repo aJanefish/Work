@@ -30,15 +30,20 @@
             android:background="@drawable/main_setting_btn_np" />
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/iat_text"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="top|left"
-        android:paddingBottom="20dp"
-        android:textSize="20sp" />
+        android:layout_weight="1">
 
+        <TextView
+            android:id="@+id/iat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:paddingBottom="20dp"
+            android:textSize="20sp" />
+
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"

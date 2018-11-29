@@ -24,35 +24,14 @@ public class OkhttpUtils {
         okHttpClient = builder.build();
     }
 
-    public static void getAuxiliaryAll(){
-
-        String postBody = ""
-                + "Releases\n"
-                + "--------\n"
-                + "\n"
-                + " * _1.0_ May 6, 2013\n"
-                + " * _1.1_ June 15, 2013\n"
-                + " * _1.2_ August 11, 2013\n";
+    public static void getAuxiliaryAll(Callback callback){
 
         Request request = new Request.Builder()
                 .url("http://encounter-msc.singou.mo/api/tool/getAuxiliaryAll")
                 //.post(RequestBody.create(MEDIA_TYPE_MARKDOWN, postBody))
                 .build();
 
-        okHttpClient.newCall(request).enqueue(new Callback() {
-            @Override
-            public void onFailure(Call call, IOException e) {
-                Log.d("onFailure",""+e);
-            }
-
-            @Override
-            public void onResponse(Call call, Response response) throws IOException {
-                Log.d("OkhttpUtils",""+response);
-                Log.d("OkhttpUtils",""+response.body());
-                Log.d("OkhttpUtils","ss:"+response.body().string());
-                //Log.d("OkhttpUtils",""+new String(response.body().bytes()));
-            }
-        });
+        okHttpClient.newCall(request).enqueue(callback);
 
     }
 
