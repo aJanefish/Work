@@ -14,6 +14,7 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 import zy.walk.com.thewalkers.adapter.ShowMessageAdapter;
+import zy.walk.com.thewalkers.event.AuxiliaryItemBean;
 import zy.walk.com.thewalkers.event.ShowBeanBate;
 import zy.walk.com.thewalkers.newwork.OkhttpUtils;
 
@@ -26,6 +27,7 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class AuxiliaryInfoShowActivity extends AppCompatActivity {
@@ -41,6 +43,7 @@ public class AuxiliaryInfoShowActivity extends AppCompatActivity {
         initView();
         initData();
     }
+
     public void upDateShowBean() {
 
         Observable.create(new ObservableOnSubscribe<ShowBeanBate>() {
@@ -78,6 +81,32 @@ public class AuxiliaryInfoShowActivity extends AppCompatActivity {
                     public void onNext(ShowBeanBate showBeanBate) {
                         contentBeanList = showBeanBate.getContent();
                         show_recycler_view.setAdapter(new ShowMessageAdapter(contentBeanList));
+                        List<String> httpList = new ArrayList<String>();
+                        for (ShowBeanBate.ContentBean contentBean : contentBeanList) {
+                            httpList.add(contentBean.getIntention_name());
+                            AuxiliaryItemBean auxiliaryItemBean = new Gson().fromJson(contentBean.getAuxiliary_info(), AuxiliaryItemBean.class);
+                            for (AuxiliaryItemBean.EnBean enBean : auxiliaryItemBean.getEn()) {
+                                if(enBean.getUrl().contains("http")){
+                                    httpList.add(enBean.getUrl());
+                                }
+                            }
+                            for (AuxiliaryItemBean.PtBean ptBean : auxiliaryItemBean.getPt()) {
+                                if(ptBean.getUrl().contains("http")){
+                                    httpList.add(ptBean.getUrl());
+                                }
+                            }
+                            for (AuxiliaryItemBean.ZhBean zhBean : auxiliaryItemBean.getZh()) {
+                                if(zhBean.getUrl().contains("http")){
+                                    httpList.add(zhBean.getUrl());
+                                }
+                            }
+
+                        }
+                        Log.d(TAG,"httpList.size:"+httpList.size());
+                        int size = httpList.size();
+                        for (int i = 0; i < size; i++) {
+                            Log.d(TAG,i+" : "+httpList.get(i));
+                        }
                     }
 
                     @Override
@@ -109,4 +138,9 @@ public class AuxiliaryInfoShowActivity extends AppCompatActivity {
     public void back(View view) {
         finish();
     }
+
+
+
+
+
 }

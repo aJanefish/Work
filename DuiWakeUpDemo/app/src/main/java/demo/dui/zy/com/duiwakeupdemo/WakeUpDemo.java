@@ -22,7 +22,18 @@ public class WakeUpDemo extends AppCompatActivity {
         setContentView(R.layout.activity_wake_up_demo);
     }
 
+    boolean isdestroy = true;
+    boolean isBuilding = false;
     public void start(View view) {
+        Log.d(TAG,"isdestroy:"+isdestroy + " ,isBuilding:"+ isBuilding);
+        if(isdestroy && !isBuilding){
+            isBuilding = true;
+            init();
+        }
+    }
+
+    private void init() {
+        Log.d(TAG,"init:");
         if (!AIWakeupEngine.checkLibValid()) {
 
             Log.d(TAG,"so加载失败");
@@ -35,6 +46,7 @@ public class WakeUpDemo extends AppCompatActivity {
             mEngine.init(ai);
         }
     }
+
 
     private class AISpeechListenerImpl implements AIWakeupListener {
 
@@ -57,11 +69,11 @@ public class WakeUpDemo extends AppCompatActivity {
                 public void run() {
                     if (status == AIConstant.OPT_SUCCESS) {
 
-
                         Log.i(TAG, "Init result 初始化成功:"+mEngine );
 
                         mEngine.start();
-
+                        isdestroy = false;
+                        isBuilding = false;
                     } else {
                         Log.i(TAG, "初始化失败!code:" + status);
                     }
@@ -91,14 +103,15 @@ public class WakeUpDemo extends AppCompatActivity {
         public void onWakeupEngineStopped() {
             Log.d(TAG, "onWakeupEngineStopped: "+Thread.currentThread().getName());
             mEngine.destroy();
+
             //start(null);
             new Handler(Looper.myLooper()).postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    start(null);
+                    //start(null);
+                    isdestroy = true;
                 }
-            },0);
-
+            },500);
         }
     }
 }
