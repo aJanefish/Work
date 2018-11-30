@@ -2,6 +2,9 @@ package zy.walk.com.thewalkers.newwork;
 
 import android.util.Log;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -16,6 +19,10 @@ import okhttp3.Response;
 public class OkhttpUtils {
     private static final OkHttpClient okHttpClient;
     public static final MediaType MEDIA_TYPE_MARKDOWN = MediaType.parse("text/x-markdown; charset=utf-8");
+    private static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+
+    private static String TAG = "OkhttpUtils";
+
     static {
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
         builder.connectTimeout(60, TimeUnit.SECONDS);
@@ -33,6 +40,142 @@ public class OkhttpUtils {
 
         okHttpClient.newCall(request).enqueue(callback);
 
+    }
+
+    public static void getFace(){
+        JSONObject object = new JSONObject();
+
+        //"test@megvii.com", "123456"
+
+        try {
+            object.put("username", "test@megvii.com");
+            object.put("password", "123456");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        String serverIp = "192.168.201.10";
+        final String SERVER_PATH = "http://" + serverIp;
+        String strJson = object.toString();
+        ///http://192.168.201.10/static/upload/avatar/2018-11-29/63b2ce43069672b0bee475b8bff5a6d76aba41cd.jpg
+        Request request = (new Request.Builder())
+                .addHeader("user-agent", "Koala Admin")
+                .post(RequestBody.create(MediaType.parse("application/json"), strJson))
+                .url(SERVER_PATH + "/auth/login")
+                .build();
+        okHttpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                Log.d(TAG,"response:"+response);
+                String cookie = response.header("Set-Cookie");
+                getFaceList(cookie,SERVER_PATH+"/mobile-admin/subjects");
+            }
+        });
+    }
+
+    private static void getFaceList(String cookie,String url){
+        Request request = (new Request.Builder())
+                .addHeader("Cookie", cookie)
+                .url(url)
+                .build();
+        okHttpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                Log.d(TAG,"response:"+response);
+                Log.d(TAG,"response:"+response.body());
+                Log.d(TAG,"response:"+response.body().string());
+
+
+            }
+        });
+
+    }
+
+
+
+    //http://encounter-msc.singou.mo/api/tool/face?method=3&username=admin&password=mSc!2016
+    public static void getCookie(){
+        Request request = new Request.Builder()
+                .url("http://encounter-msc.singou.mo/api/tool/face?method=3&username=admin&password=mSc!2016")
+                //.post(RequestBody.create(MEDIA_TYPE_MARKDOWN, postBody))
+                .build();
+
+        okHttpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                Log.d("OkhttpUtils",""+response);
+                Log.d("OkhttpUtils",""+response.body());
+                Log.d("OkhttpUtils","ss:"+response.body().string());
+
+                Log.d("OkhttpUtils","headers:"+response.headers());
+                String cookie = response.header("Set-Cookie");
+
+
+                Log.d("OkhttpUtils","cookie:"+cookie);
+                //http://encounter-msc.singou.mo/api/tool/face
+
+                getFace(cookie);
+
+            }
+        });
+    }
+
+
+    public static void getFace(String cookie){
+
+
+        JSONObject body = new JSONObject();
+        try {
+
+            body.put("method", "1");
+
+
+        } catch (Exception e) {
+            Log.d(TAG, "Exception:" + e);
+        }
+
+        Log.d(TAG, "" + body.toString());
+
+        RequestBody requestBody = RequestBody.create(JSON, body.toString());
+
+
+        Request request = new Request.Builder()
+                .addHeader("Cookie", cookie)
+                .url("http://encounter-msc.singou.mo/api/tool/face?method=1")
+                //.post(requestBody)
+                .build();
+
+        okHttpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                Log.d("OkhttpUtils","1 "+response);
+                Log.d("OkhttpUtils","1 "+response.body());
+                Log.d("OkhttpUtils","1 ss:"+response.body().string());
+
+
+                //Log.d("OkhttpUtils","1 headers:"+response.headers());
+
+            }
+        });
     }
 
     public static void getTestSingou(){

@@ -2,6 +2,7 @@ package zy.walk.com.thewalkers;
 
 import androidx.appcompat.app.AppCompatActivity;
 import zy.walk.com.thewalkers.newwork.Main2Activity;
+import zy.walk.com.thewalkers.newwork.OkhttpUtils;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -44,6 +45,14 @@ public class TestActivity extends AppCompatActivity {
         }
 
         test_text_view.setText(list.toString());
+    }
+
+    public void Cookie(View view) {
+        OkhttpUtils.getCookie();
+    }
+
+    public void getFaceList(View view) {
+        OkhttpUtils.getFace();
     }
 
     private class ShowToastEvent {
