@@ -2,6 +2,7 @@ package zy.walk.com.thewalkers.newwork;
 
 import android.util.Log;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -177,6 +178,138 @@ public class OkhttpUtils {
             }
         });
     }
+
+    public static void getRobotCode(){
+
+
+        Request request = new Request.Builder()
+                .url("http://encounter-msc.singou.mo/api/tool/face?method=4")
+                .build();
+
+        okHttpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                Log.d("OkhttpUtils",""+e);
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                //{
+                //    "status": 1,
+                //    "content": [
+                //        {
+                //            "robotID": "5",
+                //            "robotCode": "15032047895680730",
+                //            "robotName": "天機一號 (小紫)",
+                //            "robotFrontCamera": "http://10.24.12.12:7080/mjpg.php/1/3/100",
+                //            "robotRearCamera": "http://10.24.12.12:7080/mjpg.php/2/3/100",
+                //            "robotFaceHost": "192.168.201.10",
+                //            "faceUser": "test@megvii.com",
+                //            "facePass": "123456",
+                //            "directionalControl": "",
+                //            "status": "1",
+                //            "createdAt": "1503205450",
+                //            "updatedAt": "1537167510"
+                //        }
+                //    ]
+                //}
+                Log.d("OkhttpUtils",""+response);
+                Log.d("OkhttpUtils",""+response.body());
+
+                String content = response.body().string();
+                Log.d("OkhttpUtils","ss:"+content);
+                try {
+                    JSONObject jsonObject = new JSONObject(content);
+                    JSONArray jsonArray = jsonObject.getJSONArray("content");
+                    JSONObject jsonObject1 = (JSONObject) jsonArray.get(0);
+                    String robotCode = (String) jsonObject1.get("robotCode");
+                    Log.d("OkhttpUtils","srobotCodes:"+robotCode);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+
+    }
+
+
+
+    public static void sendFaceError(){
+
+        //
+
+
+        JSONObject contetn = new JSONObject();
+        try {
+            contetn.put("robot_id", "15032047895680730");
+            contetn.put("guest_id", "138");
+            contetn.put("error_code", "-1000");
+            contetn.put("error_content", "未知错误");
+        } catch (Exception e) {
+            Log.d(TAG, "Exception:" + e);
+        }
+
+
+        JSONArray jsonArray = new JSONArray();
+        jsonArray.put(contetn);
+        jsonArray.put(contetn);
+        jsonArray.put(contetn);
+
+
+        //[
+        //    {
+        //        "robot_id":"15032047895680730",
+        //        "guest_id":"138",
+        //        "error_code":"-1000",
+        //        "error_content":"未知错误"
+        //    },
+        //    {
+        //        "robot_id":"15032047895680730",
+        //        "guest_id":"139",
+        //        "error_code":"-1000",
+        //        "error_content":"未知错误"
+        //    }
+        //]
+
+        JSONObject body = new JSONObject();
+        try {
+
+            body.put("data",""+jsonArray.toString());
+        } catch (Exception e) {
+            Log.d(TAG, "Exception:" + e);
+        }
+
+        Log.d(TAG, "" + body.toString());
+
+        RequestBody requestBody = RequestBody.create(JSON, body.toString());
+
+
+        Request request = new Request.Builder()
+                //.addHeader("Cookie", cookie)
+                .url("http://encounter-msc.singou.mo/api/tool/recodeBindFail?data="+body.toString())
+                //.post(requestBody)
+                .build();
+
+        okHttpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                Log.d(TAG,""+e);
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                Log.d("OkhttpUtils"," "+response);
+                Log.d("OkhttpUtils"," "+response.body());
+                Log.d("OkhttpUtils"," "+response.body().string());
+
+
+                //Log.d("OkhttpUtils","1 headers:"+response.headers());
+
+            }
+        });
+    }
+
 
     public static void getTestSingou(){
 

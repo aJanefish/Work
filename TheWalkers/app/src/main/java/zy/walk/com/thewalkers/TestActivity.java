@@ -55,6 +55,14 @@ public class TestActivity extends AppCompatActivity {
         OkhttpUtils.getFace();
     }
 
+    public void sendFaceError(View view) {
+        OkhttpUtils.sendFaceError();
+    }
+
+    public void getRobotCode(View view) {
+        OkhttpUtils.getRobotCode();
+    }
+
     private class ShowToastEvent {
         String values;
 
