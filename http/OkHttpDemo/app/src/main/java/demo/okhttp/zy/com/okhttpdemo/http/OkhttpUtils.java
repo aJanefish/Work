@@ -1,6 +1,5 @@
 package demo.okhttp.zy.com.okhttpdemo.http;
 
-import android.support.annotation.Nullable;
 import android.util.Log;
 
 import org.greenrobot.eventbus.EventBus;
@@ -33,7 +32,7 @@ public class OkhttpUtils {
     public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
     public static final MediaType MEDIA_TYPE_MARKDOWN = MediaType.parse("text/x-markdown; charset=utf-8");
     private static final MediaType MEDIA_TYPE_PNG = MediaType.parse("image/png");
-    private static final String URL = "http://192.168.201.110:9000/";
+    private static final String URL = "http://192.168.201.80:9000/";
     //private static final String URL = "http://localhost:9000/";
 
 
@@ -108,7 +107,6 @@ public class OkhttpUtils {
     //post DIY
     public void sendPostDIY(final String values) {
         RequestBody DIYRequestBody = new RequestBody() {
-            @Nullable
             @Override
             public MediaType contentType() {
                 return MEDIA_TYPE_MARKDOWN;

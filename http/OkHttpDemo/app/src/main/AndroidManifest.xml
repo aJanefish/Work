@@ -8,7 +8,6 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-
     <application
         android:name=".application.App"
         android:allowBackup="true"
@@ -24,6 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.DiyHttpActivity" />
+        <activity android:name=".activity.FaceDemoActivity"></activity>
     </application>
 
 </manifest>

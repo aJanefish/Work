@@ -38,7 +38,7 @@ public class MyWsManager {
 
         wsManager = new WsManager.Builder(context)
                 //.wsUrl("ws://localhost:8888/demo/")
-                .wsUrl("http://192.168.201.110:8888/demo/")
+                .wsUrl("http://192.168.201.80:8888/demo/")
                 .needReconnect(true)
                 .client(okHttpClient)
                 .build();
