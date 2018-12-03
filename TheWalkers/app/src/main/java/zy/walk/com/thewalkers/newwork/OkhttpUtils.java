@@ -2,6 +2,8 @@ package zy.walk.com.thewalkers.newwork;
 
 import android.util.Log;
 
+import com.google.gson.Gson;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -16,6 +18,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+import zy.walk.com.thewalkers.event.EncounterFaceEvent;
 
 public class OkhttpUtils {
     private static final OkHttpClient okHttpClient;
@@ -179,8 +182,8 @@ public class OkhttpUtils {
         });
     }
 
+    //获取所有encounter 的face主机ID
     public static void getRobotCode(){
-
 
         Request request = new Request.Builder()
                 .url("http://encounter-msc.singou.mo/api/tool/face?method=4")
@@ -194,40 +197,12 @@ public class OkhttpUtils {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                //{
-                //    "status": 1,
-                //    "content": [
-                //        {
-                //            "robotID": "5",
-                //            "robotCode": "15032047895680730",
-                //            "robotName": "天機一號 (小紫)",
-                //            "robotFrontCamera": "http://10.24.12.12:7080/mjpg.php/1/3/100",
-                //            "robotRearCamera": "http://10.24.12.12:7080/mjpg.php/2/3/100",
-                //            "robotFaceHost": "192.168.201.10",
-                //            "faceUser": "test@megvii.com",
-                //            "facePass": "123456",
-                //            "directionalControl": "",
-                //            "status": "1",
-                //            "createdAt": "1503205450",
-                //            "updatedAt": "1537167510"
-                //        }
-                //    ]
-                //}
+
                 Log.d("OkhttpUtils",""+response);
                 Log.d("OkhttpUtils",""+response.body());
 
                 String content = response.body().string();
-                Log.d("OkhttpUtils","ss:"+content);
-                try {
-                    JSONObject jsonObject = new JSONObject(content);
-                    JSONArray jsonArray = jsonObject.getJSONArray("content");
-                    JSONObject jsonObject1 = (JSONObject) jsonArray.get(0);
-                    String robotCode = (String) jsonObject1.get("robotCode");
-                    Log.d("OkhttpUtils","srobotCodes:"+robotCode);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+                new Gson().fromJson(content,EncounterFaceEvent.class);
             }
         });
 
