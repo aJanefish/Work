@@ -13,7 +13,9 @@ public class Constant {
 
         List<MainEvent> list = new ArrayList<>();
         list.add(createMainEvent("DIY","用来做一些小测试之类页面","demo.okhttp.zy.com.okhttpdemo","demo.okhttp.zy.com.okhttpdemo.activity.DiyHttpActivity"));
-        list.add(createMainEvent("Face++ ","OkHttpDemo","demo.okhttp.zy.com.okhttpdemo","demo.okhttp.zy.com.okhttpdemo.activity.FaceDemoActivity"));
+        list.add(createMainEvent("Face++ ","HttpDemo","demo.okhttp.zy.com.okhttpdemo","demo.okhttp.zy.com.okhttpdemo.activity.FaceDemoActivity"));
+        list.add(createMainEvent("OkHttpDemo","OkHttpDemo","demo.okhttp.zy.com.okhttpdemo","demo.okhttp.zy.com.okhttpdemo.activity.OkHttpDemoActivity"));
+
 
 
         list.add(createMainEvent("废柴","行走","zy.walk.com.thewalkers","zy.walk.com.thewalkers.MainActivity1"));

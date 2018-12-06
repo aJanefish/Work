@@ -57,13 +57,13 @@ public class ShowMessageAdapter extends  RecyclerView.Adapter<ShowMessageAdapter
         }
         holder.auxiliary.setText(auxStringBuilder.toString());
 
-        List<ShowBeanBate.ContentBean.QuestionListBean> questionList = contentBean.getQuestionList();
-        StringBuilder questionListBeanStringBuilder = new StringBuilder();
-        questionListBeanStringBuilder.append("Question\n");
-        for (ShowBeanBate.ContentBean.QuestionListBean questionListBean : questionList) {
-            questionListBeanStringBuilder.append(questionListBean.getLanguage()+":"+questionListBean.getQuestion_name()+"\t:\t"+questionListBean.getIntention_answer()+"\n");
-        }
-        holder.question.setText(questionListBeanStringBuilder.toString());
+//        List<ShowBeanBate.ContentBean.QuestionListBean> questionList = contentBean.getQuestionList();
+//        StringBuilder questionListBeanStringBuilder = new StringBuilder();
+//        questionListBeanStringBuilder.append("Question\n");
+//        for (ShowBeanBate.ContentBean.QuestionListBean questionListBean : questionList) {
+//            questionListBeanStringBuilder.append(questionListBean.getLanguage()+":"+questionListBean.getQuestion_name()+"\t:\t"+questionListBean.getIntention_answer()+"\n");
+//        }
+        //holder.question.setText(questionListBeanStringBuilder.toString());
     }
 
     @Override

@@ -44,6 +44,8 @@ public class AuxiliaryInfoShowActivity extends AppCompatActivity {
         initData();
     }
 
+
+
     public void upDateShowBean() {
 
         Observable.create(new ObservableOnSubscribe<ShowBeanBate>() {
@@ -59,10 +61,15 @@ public class AuxiliaryInfoShowActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call call, Response response) throws IOException {
                         String date = response.body().string();
-                        ShowBeanBate showBeanBate = new Gson().fromJson(date, ShowBeanBate.class);
-                        emitter.onNext(showBeanBate);
-                        emitter.onComplete();
-
+                        try{
+                            ShowBeanBate showBeanBate = new Gson().fromJson(date, ShowBeanBate.class);
+                            emitter.onNext(showBeanBate);
+                        }catch (Exception e){
+                            Log.d(TAG,"upDateShowBean:"+e);
+                            emitter.onError(new Throwable(e));
+                        }finally {
+                            emitter.onComplete();
+                        }
                     }
                 });
                 Log.e(TAG, "subscribe:" + Thread.currentThread());
@@ -138,9 +145,5 @@ public class AuxiliaryInfoShowActivity extends AppCompatActivity {
     public void back(View view) {
         finish();
     }
-
-
-
-
 
 }

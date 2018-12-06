@@ -19,11 +19,8 @@ import demo.okhttp.zy.com.okhttpdemo.event.ServerEvent;
 import demo.okhttp.zy.com.okhttpdemo.log.MyLog;
 
 /**
- *
  * ServerSocket 服务端 短连接
- *
- *
- * */
+ */
 
 
 public class MyServerManager implements Runnable {
@@ -53,11 +50,11 @@ public class MyServerManager implements Runnable {
     public void run() {
 
         try {
-            MyLog.d(TAG,"创建服务端");
+            MyLog.d(TAG, "创建服务端");
             mServerSocket = new ServerSocket(9000);
 
             while (mIsRunning) {
-                MyLog.d(TAG,"等待客户端接入......");
+                MyLog.d(TAG, "等待客户端接入......");
                 final Socket socket = mServerSocket.accept();
 
                 // 放入線程池中執行
@@ -70,7 +67,7 @@ public class MyServerManager implements Runnable {
                         } catch (SocketException e) {
                             // The server was stopped; ignore.
                         } catch (IOException e) {
-                            MyLog.e(TAG, "Web server error."+e);
+                            MyLog.e(TAG, "Web server error." + e);
                         }
 
 //                        try {
@@ -89,9 +86,9 @@ public class MyServerManager implements Runnable {
             }
         } catch (SocketException e) {
             // The server was stopped; ignore.
-            MyLog.e(TAG, "Web server SocketException error."+ e);
+            MyLog.e(TAG, "Web server SocketException error." + e);
         } catch (IOException e) {
-            MyLog.e(TAG, "Web server IOException error."+ e);
+            MyLog.e(TAG, "Web server IOException error." + e);
         }
 
     }
@@ -114,21 +111,30 @@ public class MyServerManager implements Runnable {
             String line;
             StringBuilder stringBuilder = new StringBuilder("[");
             while ((line = reader.readLine()) != null) {
-                MyLog.i(TAG, "readLine: " + line+"\n");
-                stringBuilder.append(line);
+                MyLog.i(TAG, "readLine: " + line + "\n");
+
                 if (line.startsWith("GET /")) {
                     method = Method.GET;
                     int start = line.indexOf('/') + 1;
                     int end = line.indexOf(' ', start);
                     route = line.substring(start, end);
-                    break;
+
                 } else if (line.startsWith("POST /")) {
                     method = Method.POST;
                     int start = line.indexOf('/') + 1;
                     int end = line.indexOf(' ', start);
                     route = line.substring(start, end);
-                    break;
+
+                } else {
+                    int start = line.indexOf('/') + 1;
+                    int end = line.indexOf(' ', start);
+                    method = line.substring(0, start);
+                    route = line.substring(start, end);
+
                 }
+                stringBuilder.append(method+"\n");
+                stringBuilder.append(line);
+                break;
             }
             stringBuilder.append("]");
             EventBus.getDefault().post(new ServerEvent(stringBuilder.toString()));
@@ -142,9 +148,9 @@ public class MyServerManager implements Runnable {
 
             if (new Random().nextBoolean()) {
 
-                bytes = "200 OK".getBytes();
+                bytes =( method+" 200 OK").getBytes();
             } else {
-                bytes = "FAIL  This is Demo".getBytes();
+                bytes = (method+" FAIL  This is Demo").getBytes();
             }
 
             // Send out the content.
@@ -191,7 +197,7 @@ public class MyServerManager implements Runnable {
                 mServerSocket = null;
             }
         } catch (IOException e) {
-            MyLog.e(TAG, "Error closing the server socket."+ e);
+            MyLog.e(TAG, "Error closing the server socket." + e);
         }
     }
 }

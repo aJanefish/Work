@@ -311,6 +311,7 @@ public class FaceManager {
                 try {
                     //获取人脸图像
                     Response response = okHttpClient.newCall(request).execute();
+                    Log.d(TAG, "uploadSubjectPhoto response:" + response.body());
                     InputStream inputStream = response.body().byteStream();//得到图片的流
                     bitmap = BitmapFactory.decodeStream(inputStream);
                 } catch (IOException e) {

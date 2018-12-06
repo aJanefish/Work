@@ -30,8 +30,8 @@ public class MainActivity extends BaseActivity {
 
 
         MainAdapter mainAdapter = new MainAdapter(Constant.getMainEvent(),getApplicationContext());
-        recycler_view_main.setAdapter(mainAdapter);
 
+        recycler_view_main.setAdapter(mainAdapter);
 
 
     }

@@ -24,7 +24,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.DiyHttpActivity" />
-        <activity android:name=".activity.FaceDemoActivity"></activity>
+        <activity android:name=".activity.FaceDemoActivity" />
+        <activity android:name=".activity.OkHttpDemoActivity"></activity>
     </application>
 
 </manifest>
