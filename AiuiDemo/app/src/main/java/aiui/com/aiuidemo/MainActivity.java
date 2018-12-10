@@ -78,4 +78,8 @@ public class MainActivity extends AppCompatActivity {
     public void aiuiAsr(View view) {
         startActivity(new Intent(MainActivity.this,AsrActivity.class));
     }
+
+    public void aiuiAsrTest(View view) {
+        startActivity(new Intent(MainActivity.this,AsrTestActivity.class));
+    }
 }

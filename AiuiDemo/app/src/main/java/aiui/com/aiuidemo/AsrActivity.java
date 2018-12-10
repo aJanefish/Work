@@ -41,7 +41,7 @@ import org.json.JSONObject;
 public class AsrActivity extends AppCompatActivity implements OnClickListener {
     private static String TAG = "AsrActivity";
     // 语音听写对象
-    private SpeechRecognizer mIat;
+    private SpeechRecognizer mSpeechRecognizer;
     // 语音听写UI
     private RecognizerDialog mIatDialog;
     // 听写结果内容
@@ -68,7 +68,7 @@ public class AsrActivity extends AppCompatActivity implements OnClickListener {
     private void initSpeech() {
         // 初始化识别无UI识别对象
         // 使用SpeechRecognizer对象，可根据回调消息自定义界面；
-        mIat = SpeechRecognizer.createRecognizer(this, mInitListener);
+        mSpeechRecognizer = SpeechRecognizer.createRecognizer(this, mInitListener);
     }
 
     /**
@@ -82,15 +82,13 @@ public class AsrActivity extends AppCompatActivity implements OnClickListener {
         findViewById(R.id.iat_cancel).setOnClickListener(this);
         findViewById(R.id.image_iat_set).setOnClickListener(this);
 
-
-
     }
 
     int ret = 0;// 函数调用返回值
 
     @Override
     public void onClick(View view) {
-        if (null == mIat) {
+        if (null == mSpeechRecognizer) {
             // 创建单例失败，与 21001 错误为同样原因，参考 http://bbs.xfyun.cn/forum.php?mod=viewthread&tid=9688
             this.showTip("创建对象失败，请确认 libmsc.so 放置正确，\n 且有调用 createUtility 进行初始化");
             return;
@@ -111,7 +109,7 @@ public class AsrActivity extends AppCompatActivity implements OnClickListener {
                 setParam();
 
                 // 不显示听写对话框
-                ret = mIat.startListening(mRecognizerListener);
+                ret = mSpeechRecognizer.startListening(mRecognizerListener);
                 if (ret != ErrorCode.SUCCESS) {
                     showTip("听写失败,错误码：" + ret);
                 } else {
@@ -121,12 +119,12 @@ public class AsrActivity extends AppCompatActivity implements OnClickListener {
                 break;
             // 停止听写
             case R.id.iat_stop:
-                mIat.stopListening();
+                mSpeechRecognizer.stopListening();
                 showTip("停止听写");
                 break;
             // 取消听写
             case R.id.iat_cancel:
-                mIat.cancel();
+                mSpeechRecognizer.cancel();
                 showTip("取消听写");
                 break;
             default:
@@ -252,42 +250,39 @@ public class AsrActivity extends AppCompatActivity implements OnClickListener {
      */
     public void setParam() {
         // 清空参数
-        mIat.setParameter(SpeechConstant.PARAMS, null);
+        mSpeechRecognizer.setParameter(SpeechConstant.PARAMS, null);
         //        <item>mandarin</item>
         //        <item>cantonese</item>
         //        <item>en_us</item>
         String lag = "en_us";
         // 设置引擎
-        mIat.setParameter(SpeechConstant.ENGINE_TYPE, mEngineType);
+        mSpeechRecognizer.setParameter(SpeechConstant.ENGINE_TYPE, mEngineType);
         // 设置返回结果格式
-        mIat.setParameter(SpeechConstant.RESULT_TYPE, "json");
-
-
-
+        mSpeechRecognizer.setParameter(SpeechConstant.RESULT_TYPE, "json");
 
             // 设置语言
         //mIat.setParameter(SpeechConstant.LANGUAGE, "zh_cn");
-        mIat.setParameter(SpeechConstant.LANGUAGE, "en_us");
+        mSpeechRecognizer.setParameter(SpeechConstant.LANGUAGE, "en_us");
         // 设置语言区域
-        mIat.setParameter(SpeechConstant.ACCENT, lag);
+        mSpeechRecognizer.setParameter(SpeechConstant.ACCENT, lag);
 
 
 
         // 设置返回结果格式
-        mIat.setParameter(SpeechConstant.RESULT_TYPE, "json");
+        mSpeechRecognizer.setParameter(SpeechConstant.RESULT_TYPE, "json");
 
         // 设置语音前端点:静音超时时间，即用户多长时间不说话则当做超时处理
         //mIat.setParameter(SpeechConstant.VAD_BOS, "10000");
 
         // 设置语音后端点:后端点静音检测时间，即用户停止说话多长时间内即认为不再输入， 自动停止录音
-        mIat.setParameter(SpeechConstant.VAD_EOS, "1000");
+        mSpeechRecognizer.setParameter(SpeechConstant.VAD_EOS, "1000");
 
         // 设置标点符号,设置为"0"返回结果无标点,设置为"1"返回结果有标点
-        mIat.setParameter(SpeechConstant.ASR_PTT, "0");
+        mSpeechRecognizer.setParameter(SpeechConstant.ASR_PTT, "0");
 
         // 设置音频保存路径，保存音频格式支持pcm、wav，设置路径为sd卡请注意WRITE_EXTERNAL_STORAGE权限
-        mIat.setParameter(SpeechConstant.AUDIO_FORMAT, "wav");
-        mIat.setParameter(SpeechConstant.ASR_AUDIO_PATH, Environment.getExternalStorageDirectory() + "/msc/iat.wav");
+        mSpeechRecognizer.setParameter(SpeechConstant.AUDIO_FORMAT, "wav");
+        mSpeechRecognizer.setParameter(SpeechConstant.ASR_AUDIO_PATH, Environment.getExternalStorageDirectory() + "/msc/iat.wav");
     }
 
 
@@ -295,10 +290,10 @@ public class AsrActivity extends AppCompatActivity implements OnClickListener {
     protected void onDestroy() {
         super.onDestroy();
 
-        if (null != mIat) {
+        if (null != mSpeechRecognizer) {
             // 退出时释放连接
-            mIat.cancel();
-            mIat.destroy();
+            mSpeechRecognizer.cancel();
+            mSpeechRecognizer.destroy();
         }
     }
 }

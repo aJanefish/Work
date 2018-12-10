@@ -32,6 +32,8 @@ public class IatSettings extends PreferenceActivity implements OnPreferenceChang
         mVadeosPreference = (EditTextPreference)findPreference("iat_vadeos_preference");
         mVadeosPreference.getEditText().addTextChangedListener(new SettingTextWatcher(IatSettings.this,mVadeosPreference,0,10000));
     }
+
+
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         return true;

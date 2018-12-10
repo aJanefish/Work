@@ -57,7 +57,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".AsrActivity" />
-        <activity android:name=".IatSettings"></activity>
+        <activity android:name=".IatSettings" />
+        <activity android:name=".AsrTestActivity"></activity>
     </application>
 
 </manifest>
