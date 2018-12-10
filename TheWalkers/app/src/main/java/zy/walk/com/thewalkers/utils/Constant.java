@@ -23,6 +23,8 @@ public class Constant {
 
         list.add(createMainEvent("辅助信息展示", "Singou(singou)", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.AuxiliaryInfoShowActivity"));
         list.add(createMainEvent("DIY VIEW", "diy view", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.DiyViewActivity"));
+        list.add(createMainEvent("Google translate", "谷歌翻译", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.GoogleTranslateActivity"));
+
 
 
         list.add(createMainEvent("废柴", "行走", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.MainActivity1"));
@@ -48,6 +50,7 @@ public class Constant {
         List<MainEvent> list = new ArrayList<>();
 
         list.add(createMainEvent("DIY VIEW", "Canvas view", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.ViewActivity"));
+        list.add(createMainEvent("Bitmap VIEW", "Android粒子篇之Bitmap像素级操作", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.BitmapActivity"));
 
 
         list.add(createMainEvent("废柴", "行走", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.MainActivity1"));

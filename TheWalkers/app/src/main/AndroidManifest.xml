@@ -70,7 +70,9 @@
         <activity android:name=".AuxiliaryInfoShowActivity" />
         <activity android:name=".PreferenceActivity" />
         <activity android:name=".DiyViewActivity" />
-        <activity android:name=".activity.ViewActivity"></activity>
+        <activity android:name=".activity.ViewActivity" />
+        <activity android:name=".activity.GoogleTranslateActivity" />
+        <activity android:name=".activity.BitmapActivity"></activity>
     </application>
 
 </manifest>

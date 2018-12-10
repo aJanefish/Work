@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.GoogleTranslateActivity">
+
+    <EditText
+        android:id="@+id/activity_google_translate_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="澳门今天全天晴转阵雨，18℃ ~ 25℃，东北风3-4级，气候温暖"
+        android:text="澳门今天全天晴转阵雨，18℃ ~ 25℃，东北风3-4级，气候温暖"
+        />
+    <Button
+        android:id="@+id/activity_google_translate_ft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="繁体"
+        android:onClick="activity_google_translate_ft"
+        app:layout_constraintTop_toBottomOf="@id/activity_google_translate_et"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/activity_google_translate_english"/>
+
+    <Button
+        android:id="@+id/activity_google_translate_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:onClick="activity_google_translate_english"
+        app:layout_constraintTop_toBottomOf="@id/activity_google_translate_et"
+        app:layout_constraintLeft_toRightOf="@+id/activity_google_translate_ft"
+        app:layout_constraintRight_toLeftOf="@id/activity_google_translate_por"/>
+
+    <Button
+        android:id="@+id/activity_google_translate_por"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Português"
+        android:onClick="activity_google_translate_por"
+        app:layout_constraintTop_toBottomOf="@id/activity_google_translate_et"
+        app:layout_constraintLeft_toRightOf="@+id/activity_google_translate_english"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/activity_google_translate_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/activity_google_translate_por"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
