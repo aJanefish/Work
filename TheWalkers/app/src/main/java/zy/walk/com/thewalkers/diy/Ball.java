@@ -9,6 +9,7 @@ public class Ball implements Cloneable {
     public float y;//点位Y
     public int color;//颜色
     public float r;//半径
+    public long born;
 
 
     public Ball(float r) {
@@ -34,10 +35,6 @@ public class Ball implements Cloneable {
     @Override
     public String toString() {
         return "Ball{" +
-                "aX=" + aX +
-                ", aY=" + aY +
-                ", vX=" + vX +
-                ", vY=" + vY +
                 ", x=" + x +
                 ", y=" + y +
                 ", color=" + color +
