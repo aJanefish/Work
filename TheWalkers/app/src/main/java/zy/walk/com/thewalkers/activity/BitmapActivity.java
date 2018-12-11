@@ -7,9 +7,14 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class BitmapActivity extends AppCompatActivity {
 
@@ -27,7 +32,7 @@ public class BitmapActivity extends AppCompatActivity {
     }
 
     private void initDate() {
-        activity_bitmap_image_view.setImageBitmap(createBitmap());
+        activity_bitmap_image_view.setImageBitmap(createBitmap(200,200));
     }
 
     private void initView() {
@@ -51,11 +56,10 @@ public class BitmapActivity extends AppCompatActivity {
 
 
     //创建Bitmap
-    private Bitmap createBitmap(){
+    private Bitmap createBitmap(int width,int height){
 
-        Bitmap bitmap = Bitmap.createBitmap(200, 200, Bitmap.Config.ARGB_8888);
-        int width = bitmap.getWidth();
-        int height = bitmap.getHeight();
+        Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+
         for (int i = 0; i < width/2; i++) {
             for (int i1 = 0; i1 < height/2; i1++) {
                 bitmap.setPixel(i, i1, Color.BLACK);
@@ -75,4 +79,30 @@ public class BitmapActivity extends AppCompatActivity {
 
         return bitmap;
     }
+
+    /**
+     * 保存bitmap到本地
+     *
+     * @param path    路径
+     * @param mBitmap 图片
+     * @return 路径
+     */
+    public static String saveBitmap(String path, Bitmap mBitmap) {
+
+
+
+//        File filePic = FileHelper.get().createFile(path + ".png");
+//        try {
+//            FileOutputStream fos = new FileOutputStream(filePic);
+//            mBitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
+//            fos.flush();
+//            fos.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//            return null;
+//        }
+//        return filePic.getAbsolutePath();
+        return null;
+    }
+
 }
