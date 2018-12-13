@@ -29,7 +29,7 @@ public class OkhttpUtils {
 
     static {
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
-        builder.connectTimeout(60, TimeUnit.SECONDS);
+        builder.connectTimeout(5, TimeUnit.SECONDS);
         builder.readTimeout(60, TimeUnit.SECONDS);
         builder.writeTimeout(60, TimeUnit.SECONDS);
         okHttpClient = builder.build();

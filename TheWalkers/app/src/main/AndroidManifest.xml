@@ -73,7 +73,8 @@
         <activity android:name=".activity.ViewActivity" />
         <activity android:name=".activity.GoogleTranslateActivity" />
         <activity android:name=".activity.BitmapActivity" />
-        <activity android:name=".activity.EnvironmentActivity"></activity>
+        <activity android:name=".activity.EnvironmentActivity" />
+        <activity android:name=".activity.FaceActivity"></activity>
     </application>
 
 </manifest>

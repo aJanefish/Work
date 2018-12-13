@@ -52,16 +52,17 @@ public class BitmapActivity extends AppCompatActivity {
      * @return
      */
     private List<Ball> initRect(Bitmap bitmap,float d) {
-        for (int i = 0; i < bitmap.getWidth(); i++) {
-            for (int j = 0; j < bitmap.getHeight(); j++) {
+        for (int i = 0; i < bitmap.getWidth(); i+=d) {
+            for (int j = 0; j < bitmap.getHeight(); j+=d) {
                 Ball ball = new Ball();
                 ball.x = i * d ;
                 ball.y = j * d ;
-                ball.color = bitmap.getPixel(i, j);
+
 
                 ball.vX = (float) (Math.pow(-1, Math.ceil(Math.random() * 1000)) * 20 * Math.random());
                 ball.vY = rangeInt(-15, 35);
                 ball.aY = 0.98f;
+
                 ball.color = bitmap.getPixel(i, j);
                 ball.born = System.currentTimeMillis();
 
