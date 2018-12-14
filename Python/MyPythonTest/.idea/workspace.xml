@@ -1,55 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fa2cee4-77b4-4c90-b934-926766470f8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test001.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test002.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test003.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test004.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test005.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test006.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test007.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test008.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test009.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test010.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test011.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test012.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test013.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test014.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test015.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test016.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test017.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test018.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test019.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test020.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test021.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test022.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test023.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test024.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test025.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test026.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test027.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test028.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test029.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test030.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test031.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test033.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test034.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test035.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test037.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test039.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test040.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test041.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test042.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/Test043.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/work/DateTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/work/__init__.py" afterDir="false" />
-    </list>
+    <list default="true" id="8fa2cee4-77b4-4c90-b934-926766470f8b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -468,7 +420,7 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
