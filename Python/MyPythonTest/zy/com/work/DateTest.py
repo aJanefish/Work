@@ -31,7 +31,9 @@ def dec2hl8_new(dec):
 
 def char_checkxor(data, n):
     print data[n:len(data) - 3]
-    ss = hex(reduce(lambda x, y: x ^ y, data[n:len(data) - 3]))
+    # print (~(reduce(lambda x, y: x + y, data[n:len(data) - 3]))) & 255
+    # print hex((~(reduce(lambda x, y: x + y, data[n:len(data) - 3]))) & 255)
+    ss = hex((~(reduce(lambda x, y: x + y, data[n:len(data) - 3]))) & 255)
     print ss, int(ss, 16)
     return ss
 
@@ -52,17 +54,17 @@ def send_command(left_fb, left_speed, right_fb, right_speed):
     data[8] = right_speed
     data[9] = int(char_checkxor(data, 5), 16)
 
-    mdata = map(lambda x: chr(x), data)
+    #mdata = map(lambda x: chr(x), data)
 
     print ('Try to send data=', data)
-    print 'mdata:', mdata
+    #print 'mdata:', mdata
 
 
 if __name__ == '__main__':
     # 0x0F
     # 0x0B
-    send_command(0x0F, 99, 0X0F, 88)
-    send_command_new(1, 1)
+    send_command(0x0F, 100, 0X0F, 100)
+    #send_command_new(1, 1)
     # print ord('Z'), ord('\x0f'), ord('d')
     print dec2hl8(100)
     # print hex(-100)
