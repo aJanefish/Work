@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fa2cee4-77b4-4c90-b934-926766470f8b" name="Default Changelist" comment="" />
+    <list default="true" id="8fa2cee4-77b4-4c90-b934-926766470f8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test045.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test046.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test050.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test051.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test052.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test054.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test055.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test056.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test057.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test058.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test059.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test063.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test064.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test065.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test071.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test073.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test090.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test092.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test093.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test097.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test098.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zy/com/test/Test100.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,37 +38,38 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Test007" value="1" />
           <entry key="ipynb" value="1" />
-          <entry key="py" value="57" />
+          <entry key="py" value="85" />
           <entry key="pyi" value="1" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IPNB" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="57" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="85" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="2" />
-          <entry key="py" value="4068" />
+          <entry key="dummy" value="4" />
+          <entry key="py" value="4764" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="4068" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="4764" />
         </counts>
       </usages-collector>
     </session>
@@ -51,7 +77,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zy/com/test/Test035.py">
+        <entry file="file://$PROJECT_DIR$/zy/com/test/Test092.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret selection-end-line="4" selection-end-column="3" />
@@ -60,86 +86,64 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zy/com/test/Test037.py">
+        <entry file="file://$PROJECT_DIR$/zy/com/test/Test093.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="6" selection-end-column="3" />
+            <state relative-caret-position="286">
+              <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zy/com/test/Test039.py">
+        <entry file="file://$PROJECT_DIR$/zy/com/test/Test097.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="6" selection-end-column="3" />
+            <state relative-caret-position="308">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zy/com/test/Test040.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="6" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zy/com/test/Test041.py">
+        <entry file="file://$PROJECT_DIR$/zy/com/test/Test098.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret selection-end-line="4" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zy/com/test/Test042.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="4" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zy/com/test/Test043.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="26" selection-start-line="18" selection-end-line="18" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zy/com/work/DateTest.py">
+        <entry file="file://$PROJECT_DIR$/zy/com/test/Test100.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
-              <folding>
-                <marker date="1544759981369" expanded="true" signature="1011:1035" ph="..." />
-                <marker date="1544759981369" expanded="true" signature="1096:1490" ph="..." />
-              </folding>
+            <state relative-caret-position="132">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharmEdu2018.2/system/python_stubs/1630422706/_struct.py">
+        <entry file="file://$PROJECT_DIR$/zy/com/test/Test073.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="704">
+              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/struct.py">
+        <entry file="file://$PROJECT_DIR$/zy/com/test/Test071.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="9" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="9" />
+            <state>
+              <caret selection-end-line="4" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zy/com/test/Test090.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="6" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -165,21 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/zy/com/test/Test1.py" />
-        <option value="$PROJECT_DIR$/zy/com/test/Test001.py" />
-        <option value="$PROJECT_DIR$/zy/com/test/Test002.py" />
-        <option value="$PROJECT_DIR$/zy/com/test/Test003.py" />
-        <option value="$PROJECT_DIR$/zy/com/test/Test004.py" />
-        <option value="$PROJECT_DIR$/zy/com/test/Test005.py" />
-        <option value="$PROJECT_DIR$/zy/com/test/Test006.py" />
-        <option value="$PROJECT_DIR$/zy/com/test/Test007.py" />
-        <option value="$PROJECT_DIR$/zy/com/test/Test008.py" />
-        <option value="$PROJECT_DIR$/zy/com/test/Test009.py" />
-        <option value="$PROJECT_DIR$/zy/com/test/Test010.py" />
-        <option value="$PROJECT_DIR$/zy/com/test/Test011.py" />
-        <option value="$PROJECT_DIR$/zy/com/test/Test012.py" />
-        <option value="$PROJECT_DIR$/zy/com/test/Test013.py" />
-        <option value="$PROJECT_DIR$/zy/com/test/Test014.py" />
         <option value="$PROJECT_DIR$/zy/com/test/Test015.py" />
         <option value="$PROJECT_DIR$/zy/com/test/Test016.py" />
         <option value="$PROJECT_DIR$/zy/com/test/Test017.py" />
@@ -208,10 +197,33 @@
         <option value="$PROJECT_DIR$/zy/com/test/Test042.py" />
         <option value="$PROJECT_DIR$/zy/com/test/Test043.py" />
         <option value="$PROJECT_DIR$/zy/com/work/DateTest.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test044.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test045.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test046.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test050.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test051.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test052.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test054.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test055.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test056.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test057.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test058.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test059.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test063.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test064.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test065.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test071.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test090.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test073.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test092.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test093.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test097.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test098.py" />
+        <option value="$PROJECT_DIR$/zy/com/test/Test100.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -223,6 +235,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,13 +259,12 @@
               <item name="MyPythonTest" type="462c0819:PsiDirectoryNode" />
               <item name="zy" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,28 +283,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.DateTest">
-    <configuration name="DateTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MyPythonTest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zy/com/work" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zy/com/work/DateTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Test100">
     <configuration name="Test005" type="PythonConfigurationType" factoryName="Python">
       <module name="MyPythonTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -314,7 +305,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test040" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Test092" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MyPythonTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -326,7 +317,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zy/com/test/Test040.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zy/com/test/Test092.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -335,7 +326,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test041" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Test093" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MyPythonTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -347,7 +338,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zy/com/test/Test041.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zy/com/test/Test093.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -356,7 +347,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test042" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Test097" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MyPythonTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -368,7 +359,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zy/com/test/Test042.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zy/com/test/Test097.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -377,7 +368,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test043" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Test098" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MyPythonTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -389,7 +380,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zy/com/test/Test043.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zy/com/test/Test098.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test100" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MyPythonTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zy/com/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zy/com/test/Test100.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -400,19 +412,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Test005" />
-      <item itemvalue="Python.Test040" />
-      <item itemvalue="Python.Test041" />
-      <item itemvalue="Python.Test042" />
-      <item itemvalue="Python.Test043" />
-      <item itemvalue="Python.DateTest" />
+      <item itemvalue="Python.Test092" />
+      <item itemvalue="Python.Test093" />
+      <item itemvalue="Python.Test097" />
+      <item itemvalue="Python.Test098" />
+      <item itemvalue="Python.Test100" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.DateTest" />
-        <item itemvalue="Python.Test043" />
-        <item itemvalue="Python.Test042" />
-        <item itemvalue="Python.Test041" />
-        <item itemvalue="Python.Test040" />
+        <item itemvalue="Python.Test100" />
+        <item itemvalue="Python.Test098" />
+        <item itemvalue="Python.Test097" />
+        <item itemvalue="Python.Test093" />
+        <item itemvalue="Python.Test092" />
       </list>
     </recent_temporary>
   </component>
@@ -423,11 +435,11 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3177874" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -439,17 +451,17 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Python Console" order="1" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.5911063" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33188722" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="8" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -459,150 +471,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zy/com/test/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test002.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test003.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test004.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test005.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test007" />
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test007.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test006.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-635">
-          <caret selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/time.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test009.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmEdu2018.2/system/python_stubs/1630422706/time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="103" column="4" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test010.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test011.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test012.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test013.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test018.ipynb" />
-    <entry file="file://$USER_HOME$/.PyCharmEdu2018.2/system/python_stubs/1630422706/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="479" column="19" selection-start-line="479" selection-start-column="11" selection-end-line="479" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test015.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test014.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test019.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test021.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zy/com/test/Test022.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -764,16 +632,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zy/com/test/Test043.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="26" selection-start-line="18" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmEdu2018.2/system/python_stubs/1630422706/_struct.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
+        <state relative-caret-position="1078">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
@@ -787,12 +648,186 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zy/com/work/DateTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
+        <state relative-caret-position="88">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
           <folding>
             <marker date="1544759981369" expanded="true" signature="1011:1035" ph="..." />
             <marker date="1544759981369" expanded="true" signature="1096:1490" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test043.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test045.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test046.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test050.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test051.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test052.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test054.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test055.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/lib-tk/Tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1132">
+          <caret line="2299" column="8" selection-start-line="2299" selection-start-column="8" selection-end-line="2299" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test056.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test057.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test058.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test059.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test063.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test064.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test065.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#66#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test073.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test090.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test092.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test093.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test097.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test071.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test098.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zy/com/test/Test100.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
