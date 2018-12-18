@@ -16,7 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import zy.walk.com.thewalkers.R;
-import zy.walk.com.thewalkers.event.MainEvent;
+import zy.walk.com.thewalkers.imagesandanimations.event.MainEvent;
 
 public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 

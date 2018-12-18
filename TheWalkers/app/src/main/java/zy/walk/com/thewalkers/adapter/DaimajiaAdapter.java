@@ -11,7 +11,7 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import zy.walk.com.thewalkers.R;
-import zy.walk.com.thewalkers.event.DaimajiaEvent;
+import zy.walk.com.thewalkers.imagesandanimations.event.DaimajiaEvent;
 
 public class DaimajiaAdapter extends RecyclerView.Adapter<DaimajiaAdapter.ViewHolder> {
 

@@ -74,7 +74,8 @@
         <activity android:name=".activity.GoogleTranslateActivity" />
         <activity android:name=".activity.BitmapActivity" />
         <activity android:name=".activity.EnvironmentActivity" />
-        <activity android:name=".activity.FaceActivity"></activity>
+        <activity android:name=".activity.FaceActivity" />
+        <activity android:name=".activity.AdapterActivity"></activity>
     </application>
 
 </manifest>

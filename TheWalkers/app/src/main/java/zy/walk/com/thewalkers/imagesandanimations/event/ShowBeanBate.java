@@ -1,4 +1,4 @@
-package zy.walk.com.thewalkers.event;
+package zy.walk.com.thewalkers.imagesandanimations.event;
 
 import java.util.List;
 

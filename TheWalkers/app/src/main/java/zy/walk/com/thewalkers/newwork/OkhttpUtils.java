@@ -18,7 +18,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
-import zy.walk.com.thewalkers.event.EncounterFaceEvent;
+import zy.walk.com.thewalkers.imagesandanimations.event.EncounterFaceEvent;
 
 public class OkhttpUtils {
     private static final OkHttpClient okHttpClient;

@@ -1,11 +1,9 @@
 package zy.walk.com.thewalkers.utils;
 
-import android.os.Environment;
-
 import java.util.ArrayList;
 import java.util.List;
 
-import zy.walk.com.thewalkers.event.MainEvent;
+import zy.walk.com.thewalkers.imagesandanimations.event.MainEvent;
 
 public class Constant {
     public static final List<MainEvent> getMainEvent() {
@@ -26,6 +24,7 @@ public class Constant {
         list.add(createMainEvent("辅助信息展示", "Singou(singou)", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.AuxiliaryInfoShowActivity"));
         list.add(createMainEvent("DIY VIEW", "diy view", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.DiyViewActivity"));
         list.add(createMainEvent("Google translate", "谷歌翻译", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.GoogleTranslateActivity"));
+        list.add(createMainEvent("Adapter", "adapter框架", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.AdapterActivity"));
 
 
 

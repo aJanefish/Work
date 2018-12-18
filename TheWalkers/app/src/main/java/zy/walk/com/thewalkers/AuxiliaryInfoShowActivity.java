@@ -14,8 +14,8 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 import zy.walk.com.thewalkers.adapter.ShowMessageAdapter;
-import zy.walk.com.thewalkers.event.AuxiliaryItemBean;
-import zy.walk.com.thewalkers.event.ShowBeanBate;
+import zy.walk.com.thewalkers.imagesandanimations.event.AuxiliaryItemBean;
+import zy.walk.com.thewalkers.imagesandanimations.event.ShowBeanBate;
 import zy.walk.com.thewalkers.newwork.OkhttpUtils;
 
 import android.annotation.SuppressLint;

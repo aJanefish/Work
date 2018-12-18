@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import zy.walk.com.thewalkers.R;
-import zy.walk.com.thewalkers.event.DiyAnimationEvent;
+import zy.walk.com.thewalkers.imagesandanimations.event.DiyAnimationEvent;
 
 public class DiyAnimationAdapter extends RecyclerView.Adapter<DiyAnimationAdapter.ViewHolder> {
 

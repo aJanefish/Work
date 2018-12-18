@@ -13,8 +13,8 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import zy.walk.com.thewalkers.R;
-import zy.walk.com.thewalkers.event.AuxiliaryItemBean;
-import zy.walk.com.thewalkers.event.ShowBeanBate;
+import zy.walk.com.thewalkers.imagesandanimations.event.AuxiliaryItemBean;
+import zy.walk.com.thewalkers.imagesandanimations.event.ShowBeanBate;
 
 public class ShowMessageAdapter extends  RecyclerView.Adapter<ShowMessageAdapter.ViewHolder> {
 
