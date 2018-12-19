@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fa2cee4-77b4-4c90-b934-926766470f8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/zy/com/demo/sortDemo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/http/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/http/clinetDemo1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zy/com/http/serverDemo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/imagesandanimations/event/DemoEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zy/com/python3/Demo004.py" beforeDir="false" afterPath="$PROJECT_DIR$/zy/com/python3/Demo004.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/AdapterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/AdapterActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/adapter/DemoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/adapter/DemoAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/imagesandanimations/event/ShowBeanBate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/imagesandanimations/event/ShowBeanBate.java" afterDir="false" />
@@ -167,7 +159,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -402,7 +394,7 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />

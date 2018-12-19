@@ -61,14 +61,20 @@ public class MyServerManager implements Runnable {
                 mExecutor.execute(new Runnable() {
                     @Override
                     public void run() {
-                        try {
-                            handle(socket);
 
-                        } catch (SocketException e) {
-                            // The server was stopped; ignore.
-                        } catch (IOException e) {
-                            MyLog.e(TAG, "Web server error." + e);
-                        }
+                        if (true) {
+                            //测试长连接
+                            handleLongConect(socket);
+                            return;
+                        } else {
+                            try {
+                                handle(socket);
+
+                            } catch (SocketException e) {
+                                // The server was stopped; ignore.
+                            } catch (IOException e) {
+                                MyLog.e(TAG, "Web server error." + e);
+                            }
 
 //                        try {
 //                            Thread.sleep(5000);
@@ -76,10 +82,11 @@ public class MyServerManager implements Runnable {
 //                            e.printStackTrace();
 //                        }
 
-                        try {
-                            socket.close();
-                        } catch (IOException e) {
-                            e.printStackTrace();
+                            try {
+                                socket.close();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
                         }
                     }
                 });
@@ -89,6 +96,72 @@ public class MyServerManager implements Runnable {
             MyLog.e(TAG, "Web server SocketException error." + e);
         } catch (IOException e) {
             MyLog.e(TAG, "Web server IOException error." + e);
+        }
+
+    }
+
+    private void handleLongConect(Socket socket) {
+        BufferedReader reader = null;
+        PrintStream output = null;
+        try {
+            String route = null;
+
+            // Read HTTP headers and parse out the route.
+            reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            String method = null;
+            String line;
+
+            while ((line = reader.readLine()) != null) {
+                MyLog.i(TAG, "readLine: " + line + "\n");
+
+                    int start = line.indexOf('/') + 1;
+                    int end = line.indexOf(' ', start);
+
+                break;
+            }
+
+
+            // Output stream that we send the response to
+            output = new PrintStream(socket.getOutputStream());
+
+            // Prepare the content to send.
+            MyLog.i(TAG, "Received http request: " + line);
+            EventBus.getDefault().post(new ServerEvent(line));
+            byte[] bytes = null;
+
+
+            if (new Random().nextBoolean()) {
+
+                bytes = (method + " 200 OK").getBytes();
+            } else {
+                bytes = (method + " FAIL  This is Demo").getBytes();
+            }
+
+
+            // Send out the content.
+            output.println("HTTP/1.0 200 OK");
+            //output.println("Content-Type: " + detectMimeType(route));
+            output.println("Content-Length: " + bytes.length);
+            output.println();
+            output.write(bytes);
+            output.flush();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+
+//            try {
+//                Thread.sleep(1000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//
+//            if (null != output) {
+//                output.close();
+//            }
+//            if (null != reader) {
+//                reader.close();
+//            }
         }
 
     }
@@ -132,7 +205,7 @@ public class MyServerManager implements Runnable {
                     route = line.substring(start, end);
 
                 }
-                stringBuilder.append(method+"\n");
+                stringBuilder.append(method + "\n");
                 stringBuilder.append(line);
                 break;
             }
@@ -148,9 +221,9 @@ public class MyServerManager implements Runnable {
 
             if (new Random().nextBoolean()) {
 
-                bytes =( method+" 200 OK").getBytes();
+                bytes = (method + " 200 OK").getBytes();
             } else {
-                bytes = (method+" FAIL  This is Demo").getBytes();
+                bytes = (method + " FAIL  This is Demo").getBytes();
             }
 
             // Send out the content.

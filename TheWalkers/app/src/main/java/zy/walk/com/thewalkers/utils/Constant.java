@@ -24,7 +24,7 @@ public class Constant {
         list.add(createMainEvent("辅助信息展示", "Singou(singou)", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.AuxiliaryInfoShowActivity"));
         list.add(createMainEvent("DIY VIEW", "diy view", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.DiyViewActivity"));
         list.add(createMainEvent("Google translate", "谷歌翻译", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.GoogleTranslateActivity"));
-        list.add(createMainEvent("Adapter", "adapter框架", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.AdapterActivity"));
+        list.add(createMainEvent("Adapter", "adapter框架", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.AdapterMainActivity"));
 
 
 
@@ -54,6 +54,25 @@ public class Constant {
         list.add(createMainEvent("Bitmap VIEW", "Android粒子篇之Bitmap像素级操作", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.BitmapActivity"));
         list.add(createMainEvent("Environment", "Environment详情", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.EnvironmentActivity"));
         list.add(createMainEvent("Face", "diy face", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.FaceActivity"));
+
+
+        list.add(createMainEvent("废柴", "行走", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.MainActivity1"));
+
+        list.add(createMainEvent("废柴", "行走", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.MainActivity1"));
+        list.add(createMainEvent("废柴", "行走", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.MainActivity1"));
+        list.add(createMainEvent("废柴", "行走", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.MainActivity1"));
+
+        return list;
+    }
+
+
+    public static List<MainEvent> getAdapterEvent() {
+        List<MainEvent> list = new ArrayList<>();
+
+        list.add(createMainEvent("Adapter", "Adapter框架", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.AdapterActivity"));
+        list.add(createMainEvent("ItemTouchHelper", "ItemTouchHelper源码分析 实现拖动 ", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.AdapterActivity1"));
+
+
 
 
         list.add(createMainEvent("废柴", "行走", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.MainActivity1"));
