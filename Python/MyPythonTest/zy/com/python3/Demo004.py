@@ -49,6 +49,8 @@ print s.split(";")
 print s.split(";", 1)
 
 li = [1, 9, 8, 4]
+li.sort()
+print li
 
 print [elem * 2 for elem in li]
 li = [elem * 2 for elem in li]
