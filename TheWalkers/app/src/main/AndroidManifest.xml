@@ -76,7 +76,8 @@
         <activity android:name=".activity.EnvironmentActivity" />
         <activity android:name=".activity.FaceActivity" />
         <activity android:name=".activity.AdapterActivity" />
-        <activity android:name=".activity.AdapterMainActivity"></activity>
+        <activity android:name=".activity.AdapterMainActivity" />
+        <activity android:name=".activity.ItemTouchHelperActivity"></activity>
     </application>
 
 </manifest>

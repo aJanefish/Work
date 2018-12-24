@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed648d5f-1f88-4e25-bc4d-c775626cd025" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zy/test/Test012.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zy/test/Test013.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zy/test/Test014.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zy/test/Test015.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zy/test/Test016.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zy/test/Test017.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zy/test/Test018.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zy/test/Test019.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zy/test/Test020.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KotlinDemo/META-INF/KotlinDemo.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KotlinDemo/META-INF/KotlinDemo.kotlin_module" afterDir="false" />
-    </list>
+    <list default="true" id="ed648d5f-1f88-4e25-bc4d-c775626cd025" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -193,8 +180,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545625241312" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545634117263" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../arthas" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -318,7 +305,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -329,7 +315,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.31368187" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.31368187" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

@@ -61,8 +61,6 @@ public class AdapterMainActivity extends AppCompatActivity {
         });
 
         adapter_main_recycler_view.setAdapter(commonAdapter);
-
-
     }
 
     private void initView() {
