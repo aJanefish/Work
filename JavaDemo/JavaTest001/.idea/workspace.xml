@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce428021-14fb-4e6c-8e15-1aff75c41b3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/test/SingletonInner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/enums/BitVetory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/enums/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/enums/Day.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/enums/Day2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/enums/EnumMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/enums/EnumSetDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/enums/EnumTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/enums/Food.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/enums/Meal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaTest001/com/test/ClassDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaTest001/com/test/ClassDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaTest001/com/test/utils/PrintUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaTest001/com/test/utils/PrintUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/test/ClassDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/ClassDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/test/utils/PrintUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/utils/PrintUtils.java" afterDir="false" />
-    </list>
+    <list default="true" id="ce428021-14fb-4e6c-8e15-1aff75c41b3b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +36,7 @@
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/EnumMap.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="75" column="12" lean-forward="true" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
+              <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
               <folding>
                 <element signature="e#3556#3557#0" expanded="true" />
                 <element signature="e#3609#3610#0" expanded="true" />
@@ -111,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/test/enums/Color.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -187,24 +171,6 @@
               <item name="JavaTest001" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaTest001" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="JavaTest001" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaTest001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaTest001" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaTest001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaTest001" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaTest001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -214,7 +180,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545810980344" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545811277104" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -327,9 +293,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -338,7 +303,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31590655" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31590655" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -706,7 +671,7 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/EnumMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="75" column="12" lean-forward="true" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
+          <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
           <folding>
             <element signature="e#3556#3557#0" expanded="true" />
             <element signature="e#3609#3610#0" expanded="true" />
@@ -729,7 +694,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/test/enums/Color.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
