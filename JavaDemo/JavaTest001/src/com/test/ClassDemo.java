@@ -1,17 +1,27 @@
 package com.test;
 
+import com.test.utils.Print;
+
 public class ClassDemo {
 
     public  static void main(String[] args){
-        println("class");
-        Class  cc = ClassDemo.class;
-        println(cc);
-
+        test1();
     }
 
-    public static void println(Object object){
-        System.out.println(object);
+    //静态内部类的加载时机
+    private static void test1() {
+        Class singletonInnerClass = SingletonInner.class;
+//        try {
+//            Class.forName("com.test.SingletonInner");
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
+
+        //Print.println(SingletonInner.Type);
+        SingletonInner.getSingleton();
     }
+
+
 }
     /**
      *    修饰符、父类、实现的接口、注解相关

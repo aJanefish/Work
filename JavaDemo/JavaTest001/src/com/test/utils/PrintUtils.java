@@ -1,5 +1,7 @@
 package com.test.utils;
 
+import java.util.Arrays;
+
 public class PrintUtils<T> {
 
     public void show(T[] ts){
@@ -9,9 +11,11 @@ public class PrintUtils<T> {
         }
         int length = ts.length;
         Print.println(length);
-        for (int i = 0; i < length; i++) {
-            Print.println(ts[i]);
-        }
+
+        Print.println(Arrays.toString(ts));
+//        for (int i = 0; i < length; i++) {
+//            Print.println(ts[i]);
+//        }
     }
 
 }
