@@ -19,6 +19,7 @@ public class ClassDemo {
 
         //Print.println(SingletonInner.Type);
         SingletonInner.getSingleton();
+        Print.println(ClassLoader.getSystemClassLoader());
     }
 
 

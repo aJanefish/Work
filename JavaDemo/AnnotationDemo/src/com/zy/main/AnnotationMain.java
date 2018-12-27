@@ -16,6 +16,11 @@ public class AnnotationMain {
     public static void main(String[] ages){
         Print.P("AnnotationMain ----------- main");
         test1();
+        ClassLoader classLoader = ClassLoader.getSystemClassLoader();
+        Print.P(classLoader);
+        Print.P(classLoader.getParent());
+        Print.P(classLoader.getParent().getParent());
+
 
     }
 
