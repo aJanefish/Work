@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2732091-2f5a-4c1c-9e70-7cad1f19068b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../LoadClassDemo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LoadClassDemo/src/com/zy/DemoObj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LoadClassDemo/src/com/zy/FileClassLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LoadClassDemo/src/com/zy/LoadClassMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LoadClassDemo/src/com/zy/utils/Print.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/Test06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/Test07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/Test08.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/Test3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/Test4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/Test5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/TestMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/utils/Print.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnnotationDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AnnotationDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnnotationDemo/out/production/AnnotationDemo/com/zy/main/AnnotationMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AnnotationDemo/out/production/AnnotationDemo/com/zy/main/AnnotationMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnnotationDemo/src/com/zy/main/AnnotationMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AnnotationDemo/src/com/zy/main/AnnotationMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaTest001/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaTest001/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaTest001/out/production/JavaTest001/com/test/ClassDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaTest001/out/production/JavaTest001/com/test/ClassDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaTest001/src/com/test/ClassDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaTest001/src/com/test/ClassDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AtomicDemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AtomicDemo/src/com/AtomicMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AtomicDemo/src/com/utils/Print.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/test/Test07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/Test07.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/Test07.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="376">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+              <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#531#671#0" expanded="true" />
@@ -53,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/test/Test08.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
-              <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+              <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#124#125#0" expanded="true" />
@@ -66,10 +48,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="185" column="26" lean-forward="true" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
+              <folding>
+                <element signature="e#4504#4505#0" expanded="true" />
+                <element signature="e#4572#4573#0" expanded="true" />
+                <element signature="e#4725#4726#0" expanded="true" />
+                <element signature="e#4793#4794#0" expanded="true" />
+                <element signature="e#5214#5215#0" expanded="true" />
+                <element signature="e#5290#5291#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="305" column="32" selection-start-line="305" selection-start-column="32" selection-end-line="305" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/Test06.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-386">
-              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#199#1138#0" expanded="true" />
@@ -160,6 +168,13 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SynchronizedDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SynchronizedDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -168,7 +183,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545883712276" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545883944866" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -283,7 +298,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -292,7 +307,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2814238" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2814238" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -418,46 +433,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/Test08.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#124#125#0" expanded="true" />
-            <element signature="e#142#143#0" expanded="true" />
-            <element signature="e#638#906#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="361" column="30" selection-start-line="361" selection-start-column="30" selection-end-line="361" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="185" column="27" selection-start-line="185" selection-start-column="27" selection-end-line="185" selection-end-column="27" />
-          <folding>
-            <element signature="e#4504#4505#0" expanded="true" />
-            <element signature="e#4572#4573#0" expanded="true" />
-            <element signature="e#4725#4726#0" expanded="true" />
-            <element signature="e#4793#4794#0" expanded="true" />
-            <element signature="e#5214#5215#0" expanded="true" />
-            <element signature="e#5290#5291#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/Test06.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-386">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#199#1138#0" expanded="true" />
@@ -469,12 +448,48 @@
     <entry file="file://$PROJECT_DIR$/src/com/test/Test07.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#531#671#0" expanded="true" />
             <element signature="e#670#671#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/Test08.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#124#125#0" expanded="true" />
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#638#906#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="185" column="26" lean-forward="true" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
+          <folding>
+            <element signature="e#4504#4505#0" expanded="true" />
+            <element signature="e#4572#4573#0" expanded="true" />
+            <element signature="e#4725#4726#0" expanded="true" />
+            <element signature="e#4793#4794#0" expanded="true" />
+            <element signature="e#5214#5215#0" expanded="true" />
+            <element signature="e#5290#5291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="305" column="32" selection-start-line="305" selection-start-column="32" selection-end-line="305" selection-end-column="32" />
         </state>
       </provider>
     </entry>

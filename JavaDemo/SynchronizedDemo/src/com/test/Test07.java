@@ -56,7 +56,6 @@ public class Test07 implements Runnable {
         //中断线程,无法生效
         //t.interrupt();
         t.stop();
-        
     }
 
 }
