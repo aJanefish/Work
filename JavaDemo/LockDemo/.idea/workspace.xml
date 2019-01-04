@@ -2,25 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d70a6f-23c6-4210-8b7b-9228bf0b887e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/AQSDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/LockMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ReenterLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ReentrantLockDemo001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/utils/Print.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../VolatileDemo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../VolatileDemo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../VolatileDemo/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../VolatileDemo/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../VolatileDemo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../VolatileDemo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../VolatileDemo/VolatileDemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../VolatileDemo/src/com/DoubleCheckLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../VolatileDemo/src/com/MixedOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../VolatileDemo/src/com/VolatileMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../VolatileDemo/src/com/utils/Print.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/LockSupportTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/WaitTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lock/ReentrantLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SemaphoreDemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SemaphoreDemo/src/com/zy/SemaphoreMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SemaphoreDemo/src/com/zy/utils/Print.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AtomicDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AtomicDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AtomicDemo/out/production/AtomicDemo/com/UnSafeDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AtomicDemo/out/production/AtomicDemo/com/UnSafeDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AtomicDemo/out/production/AtomicDemo/com/bean/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AtomicDemo/out/production/AtomicDemo/com/bean/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AtomicDemo/out/production/AtomicDemo/com/utils/Print.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AtomicDemo/out/production/AtomicDemo/com/utils/Print.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AtomicDemo/src/com/UnSafeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AtomicDemo/src/com/UnSafeDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AtomicDemo/src/com/bean/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AtomicDemo/src/com/bean/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AtomicDemo/src/com/utils/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AtomicDemo/src/com/utils/Print.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LockDemo/com/LockMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LockDemo/com/LockMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/LockMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/LockMain.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,21 +30,12 @@
     <favorites_list name="LockDemo" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/LockMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" selection-start-line="5" selection-end-line="8" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ReenterLock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="880">
+              <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,10 +44,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ReentrantLockDemo001.java">
+        <entry file="file://$PROJECT_DIR$/src/com/WaitTest1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+            <state relative-caret-position="880">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/LockSupportTest1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="924">
+              <caret line="45" column="85" selection-start-line="45" selection-start-column="85" selection-end-line="45" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="861" column="42" selection-start-line="861" selection-start-column="42" selection-end-line="861" selection-end-column="42" />
+            <state relative-caret-position="716">
+              <caret line="1614" column="30" selection-start-line="1614" selection-start-column="30" selection-end-line="1614" selection-end-column="30" />
               <folding>
                 <element signature="e#20991#20992#0" expanded="true" />
                 <element signature="e#21042#21043#0" expanded="true" />
@@ -81,6 +78,16 @@
                 <element signature="e#22965#22966#0" expanded="true" />
                 <element signature="e#32644#32645#0" expanded="true" />
                 <element signature="e#32694#32695#0" expanded="true" />
+                <element signature="e#41392#41393#0" expanded="true" />
+                <element signature="e#41449#41450#0" expanded="true" />
+                <element signature="e#42562#42563#0" expanded="true" />
+                <element signature="e#42619#42620#0" expanded="true" />
+                <element signature="e#46422#46423#0" expanded="true" />
+                <element signature="e#46479#46480#0" expanded="true" />
+                <element signature="e#53988#53989#0" expanded="true" />
+                <element signature="e#54023#54024#0" expanded="true" />
+                <element signature="e#61323#61331#0" expanded="true" />
+                <element signature="e#88061#88069#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,17 +96,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/Semaphore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="192" column="32" selection-start-line="192" selection-start-column="32" selection-end-line="192" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/AQSDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+            <state relative-caret-position="4686">
+              <caret line="257" column="44" selection-start-line="256" selection-start-column="35" selection-end-line="257" selection-end-column="44" />
+              <folding>
+                <element signature="e#6228#6229#0" expanded="true" />
+                <element signature="e#6269#6270#0" expanded="true" />
+                <element signature="e#6303#6304#0" expanded="true" />
+                <element signature="e#6344#6345#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/AbstractOwnableSynchronizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
+            <state relative-caret-position="858">
+              <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
               <folding>
                 <element signature="e#0#2069#0" expanded="true" />
                 <element signature="e#1663#1664#0" expanded="true" />
@@ -120,28 +124,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lock/ReentrantLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="137" column="42" lean-forward="true" selection-start-line="137" selection-start-column="42" selection-end-line="137" selection-end-column="42" />
+            <state relative-caret-position="4290">
+              <caret line="216" column="35" selection-start-line="216" selection-start-column="35" selection-end-line="216" selection-end-column="35" />
               <folding>
-                <element signature="e#5811#5812#0" expanded="true" />
-                <element signature="e#5878#5879#0" expanded="true" />
-                <element signature="e#6849#6850#0" expanded="true" />
-                <element signature="e#6907#6908#0" expanded="true" />
-                <element signature="e#7116#7117#0" expanded="true" />
-                <element signature="e#7150#7151#0" expanded="true" />
-                <element signature="e#8176#8177#0" expanded="true" />
-                <element signature="e#8216#8217#0" expanded="true" />
-                <element signature="e#8451#8452#0" expanded="true" />
-                <element signature="e#8515#8516#0" expanded="true" />
-                <element signature="e#9117#9118#0" expanded="true" />
-                <element signature="e#9144#9145#0" expanded="true" />
-                <element signature="e#18553#18554#0" expanded="true" />
-                <element signature="e#18595#18596#0" expanded="true" />
-                <element signature="e#21160#21161#0" expanded="true" />
-                <element signature="e#21198#21199#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#4929#4930#0" expanded="true" />
+                <element signature="e#4970#4971#0" expanded="true" />
+                <element signature="e#7312#7313#0" expanded="true" />
+                <element signature="e#7346#7347#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,8 +143,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/Lock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-39">
-              <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
+            <state relative-caret-position="7084">
+              <caret line="355" column="4" selection-start-line="355" selection-start-column="4" selection-end-line="355" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6732">
+              <caret line="351" column="23" selection-start-line="351" selection-start-column="23" selection-end-line="351" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -169,6 +171,23 @@
     <findStrings>
       <find>abstract</find>
       <find>head</find>
+      <find>tryAcquire</find>
+      <find>getQueuedThreads</find>
+      <find>getWaitingThreads</find>
+      <find>hasQueuedThread</find>
+      <find>hasQueuedThreads</find>
+      <find>isHeldByCurrentThread</find>
+      <find>isLocked</find>
+      <find>getQueueLength</find>
+      <find>state</find>
+      <find>FairSync</find>
+      <find>nextWaiter</find>
+      <find>headOffset</find>
+      <find>interrupted</find>
+      <find>park</find>
+      <find>LockSupport</find>
+      <find>sync</find>
+      <find>isShared</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,10 +196,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/LockMain.java" />
         <option value="$PROJECT_DIR$/src/com/ReenterLock.java" />
         <option value="$PROJECT_DIR$/src/com/ReentrantLockDemo001.java" />
         <option value="$PROJECT_DIR$/src/com/AQSDemo.java" />
+        <option value="$PROJECT_DIR$/src/com/lock/ReentrantLock.java" />
+        <option value="$PROJECT_DIR$/src/com/LockMain.java" />
+        <option value="$PROJECT_DIR$/src/com/LockSupportTest1.java" />
+        <option value="$PROJECT_DIR$/src/com/WaitTest1.java" />
       </list>
     </option>
   </component>
@@ -196,7 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,15 +236,30 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LockDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LockDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lock" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LockDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LockDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546077977928" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546513801048" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -242,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AQSDemo">
+  <component name="RunManager" selected="Application.LockSupportTest1">
     <configuration name="AQSDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.AQSDemo" />
       <module name="LockDemo" />
@@ -269,8 +305,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReenterLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ReenterLock" />
+    <configuration name="LockSupportTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.LockSupportTest1" />
       <module name="LockDemo" />
       <extension name="coverage">
         <pattern>
@@ -295,12 +331,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WaitTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.WaitTest1" />
+      <module name="LockDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LockSupportTest1" />
+        <item itemvalue="Application.WaitTest1" />
+        <item itemvalue="Application.LockMain" />
         <item itemvalue="Application.AQSDemo" />
         <item itemvalue="Application.ReentrantLockDemo001" />
-        <item itemvalue="Application.ReenterLock" />
-        <item itemvalue="Application.LockMain" />
       </list>
     </recent_temporary>
   </component>
@@ -319,33 +369,34 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" sideWeight="0.5006954" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993046" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4993046" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5006954" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16129032" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2057842" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32925472" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
       <window_info id="Image Layers" order="0" />
@@ -391,51 +442,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/Lock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/Semaphore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="192" column="32" selection-start-line="192" selection-start-column="32" selection-end-line="192" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="913" column="16" selection-start-line="913" selection-start-column="16" selection-end-line="913" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ReentrantLockDemo001.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ReenterLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/LockMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" selection-start-line="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -446,42 +456,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ReenterLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="861" column="42" selection-start-line="861" selection-start-column="42" selection-end-line="861" selection-end-column="42" />
+        <state relative-caret-position="154">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="57" />
           <folding>
-            <element signature="e#20991#20992#0" expanded="true" />
-            <element signature="e#21042#21043#0" expanded="true" />
-            <element signature="e#22675#22676#0" expanded="true" />
-            <element signature="e#22703#22704#0" expanded="true" />
-            <element signature="e#22933#22934#0" expanded="true" />
-            <element signature="e#22965#22966#0" expanded="true" />
-            <element signature="e#32644#32645#0" expanded="true" />
-            <element signature="e#32694#32695#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/AbstractOwnableSynchronizer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ReentrantLockDemo001.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
+        <state relative-caret-position="110">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
           <folding>
-            <element signature="e#0#2069#0" expanded="true" />
-            <element signature="e#1663#1664#0" expanded="true" />
-            <element signature="e#1708#1709#0" expanded="true" />
-            <element signature="e#2022#2023#0" expanded="true" />
-            <element signature="e#2065#2066#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43494">
+          <caret line="2064" column="17" selection-start-line="2064" selection-start-column="17" selection-end-line="2064" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="137" column="42" lean-forward="true" selection-start-line="137" selection-start-column="42" selection-end-line="137" selection-end-column="42" />
+        <state relative-caret-position="8822">
+          <caret line="456" column="16" selection-start-line="456" selection-start-column="16" selection-end-line="456" selection-end-column="16" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#5811#5812#0" expanded="true" />
             <element signature="e#5878#5879#0" expanded="true" />
             <element signature="e#6849#6850#0" expanded="true" />
@@ -494,10 +501,148 @@
             <element signature="e#8515#8516#0" expanded="true" />
             <element signature="e#9117#9118#0" expanded="true" />
             <element signature="e#9144#9145#0" expanded="true" />
+            <element signature="e#15850#15851#0" expanded="true" />
+            <element signature="e#15881#15882#0" expanded="true" />
             <element signature="e#18553#18554#0" expanded="true" />
             <element signature="e#18595#18596#0" expanded="true" />
             <element signature="e#21160#21161#0" expanded="true" />
             <element signature="e#21198#21199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/ext/dnsns.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/ext/dnsns.jar!/sun/net/spi/nameservice/dns/DNSNameServiceDescriptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/ext/dnsns.jar!/sun/net/spi/nameservice/dns/DNSNameService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/ext/dnsns.jar!/META-INF/services/sun.net.spi.nameservice.NameServiceDescriptor">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/LockSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="140" column="24" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/LockMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/WaitTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/LockSupportTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="45" column="85" selection-start-line="45" selection-start-column="85" selection-end-line="45" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/Semaphore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4686">
+          <caret line="257" column="44" selection-start-line="256" selection-start-column="35" selection-end-line="257" selection-end-column="44" />
+          <folding>
+            <element signature="e#6228#6229#0" expanded="true" />
+            <element signature="e#6269#6270#0" expanded="true" />
+            <element signature="e#6303#6304#0" expanded="true" />
+            <element signature="e#6344#6345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/AbstractOwnableSynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#2069#0" expanded="true" />
+            <element signature="e#1663#1664#0" expanded="true" />
+            <element signature="e#1708#1709#0" expanded="true" />
+            <element signature="e#2022#2023#0" expanded="true" />
+            <element signature="e#2065#2066#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lock/ReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4290">
+          <caret line="216" column="35" selection-start-line="216" selection-start-column="35" selection-end-line="216" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4929#4930#0" expanded="true" />
+            <element signature="e#4970#4971#0" expanded="true" />
+            <element signature="e#7312#7313#0" expanded="true" />
+            <element signature="e#7346#7347#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7084">
+          <caret line="355" column="4" selection-start-line="355" selection-start-column="4" selection-end-line="355" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6732">
+          <caret line="351" column="23" selection-start-line="351" selection-start-column="23" selection-end-line="351" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="1614" column="30" selection-start-line="1614" selection-start-column="30" selection-end-line="1614" selection-end-column="30" />
+          <folding>
+            <element signature="e#20991#20992#0" expanded="true" />
+            <element signature="e#21042#21043#0" expanded="true" />
+            <element signature="e#22675#22676#0" expanded="true" />
+            <element signature="e#22703#22704#0" expanded="true" />
+            <element signature="e#22933#22934#0" expanded="true" />
+            <element signature="e#22965#22966#0" expanded="true" />
+            <element signature="e#32644#32645#0" expanded="true" />
+            <element signature="e#32694#32695#0" expanded="true" />
+            <element signature="e#41392#41393#0" expanded="true" />
+            <element signature="e#41449#41450#0" expanded="true" />
+            <element signature="e#42562#42563#0" expanded="true" />
+            <element signature="e#42619#42620#0" expanded="true" />
+            <element signature="e#46422#46423#0" expanded="true" />
+            <element signature="e#46479#46480#0" expanded="true" />
+            <element signature="e#53988#53989#0" expanded="true" />
+            <element signature="e#54023#54024#0" expanded="true" />
+            <element signature="e#61323#61331#0" expanded="true" />
+            <element signature="e#88061#88069#0" expanded="true" />
           </folding>
         </state>
       </provider>

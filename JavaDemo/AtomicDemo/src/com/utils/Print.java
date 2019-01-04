@@ -5,11 +5,11 @@ public class Print {
     public static void P(){
         P("");
     }
-    public static void P(Object o){
-        if(o == null){
-            System.out.println("o is null");
+    public static void P(Object object){
+        if(object == null){
+            System.out.println("object is null");
         }else {
-            System.out.println(o);
+            System.out.println(object);
         }
 
     }
