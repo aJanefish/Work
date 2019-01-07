@@ -1,32 +1,40 @@
 package com.blocking.queue;
 
+/**
+ * LinkedBlockingQueue是一个由链表实现的有界队列阻塞队列，但大小默认值为Integer.MAX_VALUE
+ * 所以我们在使用LinkedBlockingQueue时建议手动传值，为其提供我们所需的大小，避免队列过大造成机器负载或者内存爆满等情况
+ * */
+
 import com.blocking.queue.utils.Print;
-import sun.dc.pr.PRError;
 
 import java.util.AbstractQueue;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
-public class ArrayBlockingQueueDemo {
+
+public class LinkedBlockingQueueDemo {
 
     private static int capacity = 1;
-    private final static ArrayBlockingQueue<Apple> queue = new ArrayBlockingQueue<>(capacity);
-
-    public static void main(String[] args) {
-        new Thread(new Producer(queue, capacity)).start();
+    private final static LinkedBlockingQueue<LinkedApple> queue= new LinkedBlockingQueue<LinkedApple>(capacity);
+    public static void main(String[] args){
+        new Thread(new LinkedProducer(queue,capacity)).start();
         //new Thread(new Producer(queue)).start();
         //new Thread(new Consumer(queue)).start();
-        new Thread(new Consumer(queue, capacity)).start();
+        new Thread(new LinkedConsumer(queue,capacity)).start();
     }
+
+
+
 }
 
-class Apple {
+
+class LinkedApple {
     public static int id = 0;
     private String name = "apple";
     private int tmpID;
 
-    public Apple() {
+    public LinkedApple() {
         tmpID = id++;
     }
 
@@ -42,11 +50,11 @@ class Apple {
 /**
  * 生产者线程
  */
-class Producer implements Runnable {
-    private final AbstractQueue<Apple> mAbq;
+class LinkedProducer implements Runnable {
+    private final AbstractQueue<LinkedApple> mAbq;
     private final int capacity;
 
-    Producer(AbstractQueue<Apple> arrayBlockingQueue, int capacity) {
+    LinkedProducer(AbstractQueue<LinkedApple> arrayBlockingQueue, int capacity) {
         this.mAbq = arrayBlockingQueue;
         this.capacity = capacity;
     }
@@ -65,16 +73,16 @@ class Producer implements Runnable {
     private void Produce() {
         try {
             Print.P("Produce  -- start");
-            Apple apple = new Apple();
+            LinkedApple apple = new LinkedApple();
             if (mAbq.size() < capacity) {
 
             } else {
                 System.out.println("队列已满,需要等待资源释放...");
             }
             if (mAbq instanceof ArrayBlockingQueue) {
-                ((ArrayBlockingQueue<Apple>) mAbq).put(apple);
+                ((ArrayBlockingQueue<LinkedApple>) mAbq).put(apple);
             } else {
-                ((LinkedBlockingQueue<Apple>) mAbq).put(apple);
+                ((LinkedBlockingQueue<LinkedApple>) mAbq).put(apple);
             }
 
             System.out.println("生产:" + apple);
@@ -91,12 +99,12 @@ class Producer implements Runnable {
 /**
  * 消费者线程
  */
-class Consumer implements Runnable {
+class LinkedConsumer implements Runnable {
 
     private final int capacity;
-    private AbstractQueue<Apple> mAbq;
+    private AbstractQueue<LinkedApple> mAbq;
 
-    Consumer(AbstractQueue<Apple> abstractQueue, int capacity) {
+    LinkedConsumer(AbstractQueue<LinkedApple> abstractQueue, int capacity) {
         this.mAbq = abstractQueue;
         this.capacity = capacity;
     }
@@ -123,14 +131,15 @@ class Consumer implements Runnable {
         if (mAbq.size() == 0) {
             Print.P(tmp + "队列为空,需要生产者生成资源...");
         }
-        Apple apple;
+        LinkedApple apple;
         if (mAbq instanceof ArrayBlockingQueue) {
-            apple = ((ArrayBlockingQueue<Apple>) mAbq).take();
+            apple = ((ArrayBlockingQueue<LinkedApple>) mAbq).take();
         } else {
-            apple = ((LinkedBlockingQueue<Apple>) mAbq).take();
+            apple = ((LinkedBlockingQueue<LinkedApple>) mAbq).take();
         }
         System.out.println(tmp + "消费:Apple=" + apple);
         Print.P(tmp + "Consumer...end\n\n");
     }
 }
+
 
