@@ -11,7 +11,7 @@ import java.util.Objects;
 /**
  * A*寻路算法
  */
-public class Demo005 {
+public class AStart {
     private static int MAXX = 10;
     private static int MAXY = 7;
     private static Object[][] objects = new Object[MAXX][MAXY];
@@ -123,6 +123,7 @@ public class Demo005 {
             //生成路径
             List<MyNode> path = new ArrayList<>();
 
+            //根据Close 生成path
             createPath(CloseList, path, 0);
             Print.println();
         } else {
@@ -302,6 +303,7 @@ public class Demo005 {
     }
 
 
+    //标记已经搜索的点
     private static boolean isUse(MyNode myNode) {
 //        if (closeList.contains(myNode) || barrierListNode.contains(myNode) || openList.contains(myNode)) {
 //            return true;
