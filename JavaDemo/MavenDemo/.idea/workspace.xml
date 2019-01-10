@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14550f9c-c959-49f0-af9b-426dd881288a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../BlockingQueueDemo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BlockingQueueDemo/src/com/blocking/queue/BlockingQueueMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BlockingQueueDemo/src/com/blocking/queue/utils/Print.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SemaphoreDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SemaphoreDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BlockingQueueDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BlockingQueueDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoadClassDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LoadClassDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/MyPythonTest/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/MyPythonTest/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/MyPythonTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/MyPythonTest/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -91,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com.zy.demo/MyMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
-              <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -139,6 +139,46 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="singou" type="58d84e3e:PackageViewProjectNode" />
+              <item name="singou" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="singou" type="58d84e3e:PackageViewProjectNode" />
+              <item name="singou" type="616d4139:PackageViewModuleNode" />
+              <item name="com.zy.demo" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="singou" type="58d84e3e:PackageViewProjectNode" />
+              <item name="singou" type="616d4139:PackageViewModuleNode" />
+              <item name="com.zy.demo" type="1f31426a:PackageElementNode" />
+              <item name="okio" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="singou" type="58d84e3e:PackageViewProjectNode" />
+              <item name="singou" type="616d4139:PackageViewModuleNode" />
+              <item name="com.zy.demo" type="1f31426a:PackageElementNode" />
+              <item name="test" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="singou" type="58d84e3e:PackageViewProjectNode" />
+              <item name="singou" type="616d4139:PackageViewModuleNode" />
+              <item name="com.zy.demo" type="1f31426a:PackageElementNode" />
+              <item name="thread" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="singou" type="58d84e3e:PackageViewProjectNode" />
+              <item name="singou" type="616d4139:PackageViewModuleNode" />
+              <item name="com.zy.demo" type="1f31426a:PackageElementNode" />
+              <item name="utf" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,46 +257,6 @@
             <path>
               <item name="singou" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="singou" type="58d84e3e:PackageViewProjectNode" />
-              <item name="singou" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="singou" type="58d84e3e:PackageViewProjectNode" />
-              <item name="singou" type="616d4139:PackageViewModuleNode" />
-              <item name="com.zy.demo" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="singou" type="58d84e3e:PackageViewProjectNode" />
-              <item name="singou" type="616d4139:PackageViewModuleNode" />
-              <item name="com.zy.demo" type="1f31426a:PackageElementNode" />
-              <item name="okio" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="singou" type="58d84e3e:PackageViewProjectNode" />
-              <item name="singou" type="616d4139:PackageViewModuleNode" />
-              <item name="com.zy.demo" type="1f31426a:PackageElementNode" />
-              <item name="test" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="singou" type="58d84e3e:PackageViewProjectNode" />
-              <item name="singou" type="616d4139:PackageViewModuleNode" />
-              <item name="com.zy.demo" type="1f31426a:PackageElementNode" />
-              <item name="thread" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="singou" type="58d84e3e:PackageViewProjectNode" />
-              <item name="singou" type="616d4139:PackageViewModuleNode" />
-              <item name="com.zy.demo" type="1f31426a:PackageElementNode" />
-              <item name="utf" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -419,9 +419,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20309168" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20522387" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -508,7 +507,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com.zy.demo/MyMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
         </state>
       </provider>
     </entry>
