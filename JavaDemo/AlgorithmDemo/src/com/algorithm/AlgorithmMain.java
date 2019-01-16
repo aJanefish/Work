@@ -17,5 +17,29 @@ public class AlgorithmMain {
         Print.println(tmp);
         tmp = max - Integer.numberOfLeadingZeros(1<<1);
         Print.println(tmp);
+
+
+        while (true){
+            test1();
+            Print.println("end test1");
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
+
+    private static void test1() {
+        long start = System.currentTimeMillis();
+        while (true){
+            Print.println("ss");
+            long end = System.currentTimeMillis();
+            if(end - start >= 1000){
+                return;
+            }
+        }
+    }
+
+
 }
