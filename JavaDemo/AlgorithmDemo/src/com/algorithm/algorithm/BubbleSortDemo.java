@@ -14,6 +14,7 @@ public class BubbleSortDemo {
 
 
     public static void bubbleSort(int[] ints) {
+        Print.println("基本冒泡排序");
         int length = ints.length;
         if (length == 0) {
             return;
@@ -34,6 +35,7 @@ public class BubbleSortDemo {
     //优化的冒泡算法
     //最大的数在后面
     private static void sort(int array[]) {
+        Print.println("优化的冒泡算法");
         int tmp = 0;
         //记录最后一次交换的位置
         int lastExchangeIndex = 0;
@@ -60,6 +62,41 @@ public class BubbleSortDemo {
         }
     }
 
+    //鸡尾酒排序 = 双冒泡排序
+    // 小 ==>> 大
+    private static void doubleSort(int array[]) {
+        Print.println("鸡尾酒排序 = 双冒泡排序");
+        int length = array.length;
+        //int x
+        int maxIndex = length;
+        int minIndex = 0;
+        Print.println(maxIndex+" : "+Arrays.toString(array));
+        for (int i = 0; i < length/2 ; i++) {
+            //>> 找到最大的数
+
+            int tmxMaxIndex = maxIndex;
+            //有序标记，每一轮的初始是true
+            boolean isSorted = true;
+            for (int x = i +1 ;x < tmxMaxIndex; x ++){
+                if(array[x-1] > array[x]){
+                    int tmp = array[x-1];
+                    array[x-1] = array[x];
+                    array[x] = tmp;
+
+                    //有元素交换，所以不是有序，标记变为false
+                    isSorted = false;
+                    maxIndex = x;
+                }
+            }
+
+            Print.println(maxIndex+" : "+Arrays.toString(array));
+            if (isSorted) {
+                break;
+            }
+
+        }
+    }
+
 
     public static void main(String[] args) {
         Print.println("冒泡排序");
@@ -79,6 +116,13 @@ public class BubbleSortDemo {
         int[] ints2 = Arrays.copyOf(ints, ints.length);
         sort(ints2);
         Print.println(Arrays.toString(ints2));
+
+
+        //int[] ints3 = Arrays.copyOf(ints, ints.length);
+        int[] ints3 = new int[]{10,1,2,3,4,5,6,7,8,9};
+        doubleSort(ints3);
+        Print.println(Arrays.toString(ints3));
+
     }
-    
+
 }
