@@ -64,20 +64,20 @@ public class BubbleSortDemo {
 
     //鸡尾酒排序 = 双冒泡排序
     // 小 ==>> 大
-    private static void doubleSort(int array[]) {
-        Print.println("鸡尾酒排序 = 双冒泡排序");
+    public static void doubleSort(int array[]) {
+        //Print.println("鸡尾酒排序 = 双冒泡排序");
         int length = array.length;
         //int x
         int maxIndex = length;
         int minIndex = 0;
-        Print.println(maxIndex+" : "+Arrays.toString(array));
+        //Print.println(maxIndex+" : "+Arrays.toString(array));
         for (int i = 0; i < length/2 ; i++) {
             //>> 找到最大的数
 
-            int tmxMaxIndex = maxIndex;
+            int tmpMaxIndex = maxIndex;
             //有序标记，每一轮的初始是true
             boolean isSorted = true;
-            for (int x = i +1 ;x < tmxMaxIndex; x ++){
+            for (int x = i +1 ;x < tmpMaxIndex; x ++){
                 if(array[x-1] > array[x]){
                     int tmp = array[x-1];
                     array[x-1] = array[x];
@@ -89,8 +89,28 @@ public class BubbleSortDemo {
                 }
             }
 
-            Print.println(maxIndex+" : "+Arrays.toString(array));
+            //Print.println(isSorted+" : maxIndex:"+maxIndex+" : "+Arrays.toString(array));
             if (isSorted) {
+                break;
+            }
+
+
+            isSorted = true;
+            int tmpMinIndex = minIndex;
+            for (int x = maxIndex ;x > tmpMinIndex; x --){
+                if(array[x] < array[x - 1]){
+                    int tmp = array[x-1];
+                    array[x-1] = array[x];
+                    array[x] = tmp;
+
+                    //有元素交换，所以不是有序，标记变为false
+                    isSorted = false;
+                    minIndex = x;
+                }
+            }
+
+            //Print.println(isSorted+" : minIndex: "+minIndex+" : "+Arrays.toString(array)+"\n");
+            if(isSorted){
                 break;
             }
 
@@ -100,28 +120,30 @@ public class BubbleSortDemo {
 
     public static void main(String[] args) {
         Print.println("冒泡排序");
-        int tmp = 10;
+        int tmp = 100000000;
         int[] ints = new int[tmp];
         Random random = new Random();
         for (int i = 0; i < tmp; i++) {
-            ints[i] = random.nextInt(100);
+            ints[i] = random.nextInt(10000000);
         }
-        Print.println(Arrays.toString(ints));
+//        Print.println(Arrays.toString(ints));
+//
+//        int[] ints1 = Arrays.copyOf(ints, ints.length);
+//        bubbleSort(ints1);
+//
+//        Print.println(Arrays.toString(ints1));
+//
+//        int[] ints2 = Arrays.copyOf(ints, ints.length);
 
-        int[] ints1 = Arrays.copyOf(ints, ints.length);
-        bubbleSort(ints1);
-
-        Print.println(Arrays.toString(ints1));
-
-        int[] ints2 = Arrays.copyOf(ints, ints.length);
-        sort(ints2);
-        Print.println(Arrays.toString(ints2));
+        //Print.println(Arrays.toString(ints2));
+        long start = System.currentTimeMillis();
+        doubleSort(ints);
+        long end = System.currentTimeMillis();
+        Print.println(end - start);
 
 
-        //int[] ints3 = Arrays.copyOf(ints, ints.length);
-        int[] ints3 = new int[]{10,1,2,3,4,5,6,7,8,9};
-        doubleSort(ints3);
-        Print.println(Arrays.toString(ints3));
+
+        //Print.println(Arrays.toString(ints));
 
     }
 
