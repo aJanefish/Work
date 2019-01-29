@@ -26,6 +26,9 @@ public class Constant {
         list.add(createMainEvent("Google translate", "谷歌翻译", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.GoogleTranslateActivity"));
         list.add(createMainEvent("Adapter", "adapter框架", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.AdapterMainActivity"));
 
+        list.add(createMainEvent("Menu", "Menu(设置界面)", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.MenuActivity"));
+
+
 
 
         list.add(createMainEvent("废柴", "行走", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.MainActivity1"));

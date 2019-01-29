@@ -77,7 +77,8 @@
         <activity android:name=".activity.FaceActivity" />
         <activity android:name=".activity.AdapterActivity" />
         <activity android:name=".activity.AdapterMainActivity" />
-        <activity android:name=".activity.ItemTouchHelperActivity"></activity>
+        <activity android:name=".activity.ItemTouchHelperActivity" />
+        <activity android:name=".activity.MenuActivity"></activity>
     </application>
 
 </manifest>
