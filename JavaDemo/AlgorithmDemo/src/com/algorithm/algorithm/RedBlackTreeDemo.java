@@ -27,6 +27,47 @@ public class RedBlackTreeDemo {
     public static void main(String[] args) {
         Print.println("红黑树");
 
+        //红黑树添加测试
+        addTest();
+
+        //红黑树删除元素测试
+        deleteTest();
+
+
+    }
+
+    private static void deleteTest() {
+        Print.println("delete Test ---------------- 红黑树删除元素测试");
+        TreeMap<Integer,Integer> treeMap = new TreeMap<>();
+        Print.println(treeMap);
+        Print.println(treeMap.keySet());
+        treeMap.put(50,50);
+
+        int tmp = 10;
+
+        int[] ints = new int[]{39,4,42,46,17,8,18,9,1,70,30};
+        Random random = new Random();
+        for (int i = 0; i <= tmp; i++) {
+            treeMap.put(ints[i],ints[i]);
+        }
+
+        Print.println(treeMap);
+        TreeMap.Entry<Integer, Integer> root = treeMap.getRoot();
+        Print.println("BOOT:"+root);
+        Print.println("left:"+root.left);
+        Print.println("right:"+root.right);
+
+        treeMap.remove(39);
+
+        Print.println(treeMap);
+        Print.println("BOOT:"+root);
+        Print.println("left:"+root.left);
+        Print.println("right:"+root.right);
+    }
+
+    //红黑树添加测试
+    private static void addTest() {
+        Print.println("add Test ---------------- 红黑树添加测试");
         TreeMap<Integer,Integer> treeMap = new TreeMap<>();
         Print.println(treeMap);
         Print.println(treeMap.keySet());
