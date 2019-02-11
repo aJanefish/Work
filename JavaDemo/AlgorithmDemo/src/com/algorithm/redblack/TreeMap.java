@@ -2319,13 +2319,14 @@ public class TreeMap<K,V>
 
         // If strictly internal, copy successor's element to p and then make p
         // point to successor.
+        Print.println("deleteEntry 1:"+p);
         if (p.left != null && p.right != null) {
             Entry<K,V> s = successor(p);
             p.key = s.key;
             p.value = s.value;
             p = s;
         } // p has 2 children
-
+        Print.println("deleteEntry 2:"+p);
         // Start fixup at replacement node, if it exists.
         Entry<K,V> replacement = (p.left != null ? p.left : p.right);
 
@@ -2363,8 +2364,9 @@ public class TreeMap<K,V>
 
     /** From CLR */
     private void fixAfterDeletion(Entry<K,V> x) {
+        Print.println("fixAfterDeletion 1:"+x);
         while (x != root && colorOf(x) == BLACK) {
-            if (x == leftOf(parentOf(x))) {
+            if (x == leftOf(parentOf(x))) { // 父亲的左孩子
                 Entry<K,V> sib = rightOf(parentOf(x));
 
                 if (colorOf(sib) == RED) {
@@ -2391,7 +2393,7 @@ public class TreeMap<K,V>
                     rotateLeft(parentOf(x));
                     x = root;
                 }
-            } else { // symmetric
+            } else { // symmetric  父亲的右孩子
                 Entry<K,V> sib = leftOf(parentOf(x));
 
                 if (colorOf(sib) == RED) {
@@ -2420,7 +2422,7 @@ public class TreeMap<K,V>
                 }
             }
         }
-
+        Print.println("fixAfterDeletion 2:"+x);
         setColor(x, BLACK);
     }
 

@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14550f9c-c959-49f0-af9b-426dd881288a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../AlgorithmDemo/src/com/algorithm/java/StringDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AlgorithmDemo/src/com/algorithm/utils/TestNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com.zy.demo/utils/Print.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/MenuActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/layout/activity_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmDemo/out/production/AlgorithmDemo/com/algorithm/AlgorithmMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmDemo/out/production/AlgorithmDemo/com/algorithm/AlgorithmMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmDemo/out/production/AlgorithmDemo/com/algorithm/algorithm/KDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmDemo/out/production/AlgorithmDemo/com/algorithm/algorithm/KDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmDemo/src/com/algorithm/AlgorithmMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmDemo/src/com/algorithm/AlgorithmMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.zy.demo/utf/UtfDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.zy.demo/utf/UtfDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zy/demo/utf/UtfDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zy/demo/utf/UtfDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/utils/Constant.java" afterDir="false" />
-    </list>
+    <list default="true" id="14550f9c-c959-49f0-af9b-426dd881288a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,20 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com.zy.demo/utf/UtfDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -72,11 +43,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="543" />
-    <option name="y" value="42" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
     <option name="width" value="1400" />
-    <option name="height" value="997" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -217,7 +188,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548735646681" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548748669098" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -372,10 +343,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="543" y="42" width="1400" height="997" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29029852" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20735608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -384,7 +354,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.55" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35595107" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -490,7 +460,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com.zy.demo/utf/UtfDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
+        <state relative-caret-position="394">
           <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />

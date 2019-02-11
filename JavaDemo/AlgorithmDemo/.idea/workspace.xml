@@ -2,21 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7508f34-e726-438f-8558-3532905f8362" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/algorithm/java/StringDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/algorithm/utils/TestNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MavenDemo/src/main/java/com.zy.demo/utils/Print.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/MenuActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/layout/activity_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relationship/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relationship/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relationship/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relationship/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relationship/relationship.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relationship/src/com/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relationship/src/com/utils/Print.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relationship/src/data/ClanBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/AlgorithmMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/AlgorithmMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/algorithm/KDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/algorithm/KDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/algorithm/AlgorithmMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithm/AlgorithmMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/algorithm/RedBlackTreeDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/algorithm/RedBlackTreeDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$DescendingKeySpliterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$DescendingKeySpliterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$EntrySpliterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$EntrySpliterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$KeySpliterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$KeySpliterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$TreeMapSpliterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$TreeMapSpliterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$ValueSpliterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$ValueSpliterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/algorithm/redblack/TreeMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithm/redblack/TreeMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MavenDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MavenDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MavenDemo/src/main/java/com.zy.demo/utf/UtfDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MavenDemo/src/main/java/com.zy.demo/utf/UtfDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MavenDemo/target/classes/com/zy/demo/utf/UtfDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MavenDemo/target/classes/com/zy/demo/utf/UtfDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/utils/Constant.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/algorithm/redblack/TreeMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12870">
-              <caret line="607" column="17" selection-start-line="607" selection-start-column="17" selection-end-line="607" selection-end-column="17" />
+            <state relative-caret-position="596">
+              <caret line="2385" column="43" selection-start-line="2385" selection-start-column="43" selection-end-line="2385" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,42 +46,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/algorithm/redblack/RedBlackNode.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/algorithm/utils/Print.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+            <state relative-caret-position="44">
+              <caret line="2" selection-start-line="2" selection-end-line="14" />
               <folding>
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
+                <element signature="e#96#97#0" expanded="true" />
+                <element signature="e#138#139#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/algorithm/AlgorithmMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/algorithm/redblack/Color.java">
+        <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithm/RedBlackTreeDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/algorithm/utils/TestNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            <state relative-caret-position="1166">
+              <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,8 +127,6 @@
         <option value="$PROJECT_DIR$/src/com/algorithm/redblack/RedBlackNode.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/redblack/RedBlackTree.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/redblack/TreeMapUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/algorithm/redblack/TreeMap.java" />
-        <option value="$PROJECT_DIR$/src/com/algorithm/algorithm/RedBlackTreeDemo.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/algorithm/HashMapDemo.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/algorithm/ChangeDigitDemo.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/algorithm/EightQueens.java" />
@@ -155,6 +142,8 @@
         <option value="$PROJECT_DIR$/src/com/algorithm/java/StringDemo.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/AlgorithmMain.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/utils/TestNode.java" />
+        <option value="$PROJECT_DIR$/src/com/algorithm/algorithm/RedBlackTreeDemo.java" />
+        <option value="$PROJECT_DIR$/src/com/algorithm/redblack/TreeMap.java" />
       </list>
     </option>
   </component>
@@ -170,7 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,13 +175,6 @@
               <item name="AlgorithmDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="AlgorithmDemo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgorithmDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AlgorithmDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -222,10 +203,11 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548643817969" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548756114055" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -244,26 +226,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AlgorithmMain">
+  <component name="RunManager" selected="Application.RedBlackTreeDemo">
     <configuration name="AlgorithmMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.algorithm.AlgorithmMain" />
       <module name="AlgorithmDemo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountSortDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.algorithm.algorithm.CountSortDemo" />
-      <module name="AlgorithmDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.algorithm.algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -297,6 +266,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RedBlackTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.algorithm.algorithm.RedBlackTreeDemo" />
+      <module name="AlgorithmDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.algorithm.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StringDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.algorithm.java.StringDemo" />
       <module name="AlgorithmDemo" />
@@ -312,11 +294,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RedBlackTreeDemo" />
         <item itemvalue="Application.AlgorithmMain" />
         <item itemvalue="Application.StringDemo" />
         <item itemvalue="Application.KDemo" />
         <item itemvalue="Application.LRUDemo" />
-        <item itemvalue="Application.CountSortDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -335,8 +317,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49910554" visible="true" weight="0.21588486" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49910554" visible="true" weight="0.22014925" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -345,7 +328,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5008944" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44271412" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20467186" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.27919912" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -634,26 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithm/RedBlackTreeDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="26" selection-start-line="26" selection-end-line="27" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/utils/Print.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#138#139#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithm/BubbleSortDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -829,16 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/redblack/TreeMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12870">
-          <caret line="607" column="17" selection-start-line="607" selection-start-column="17" selection-end-line="607" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/redblack/RedBlackNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -867,7 +820,38 @@
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/AlgorithmMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <caret line="20" selection-start-line="20" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/redblack/TreeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="2385" column="43" selection-start-line="2385" selection-start-column="43" selection-end-line="2385" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithm/RedBlackTreeDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1166">
+          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/utils/Print.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="14" />
+          <folding>
+            <element signature="e#96#97#0" expanded="true" />
+            <element signature="e#138#139#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
