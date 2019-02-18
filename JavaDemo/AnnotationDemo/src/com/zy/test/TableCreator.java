@@ -16,6 +16,7 @@ public class TableCreator {
     public static String createTableSql(String className) throws ClassNotFoundException {
         Class<?> cl = Class.forName(className);
         DBTable dbTable = cl.getAnnotation(DBTable.class);
+
         //如果没有表注解，直接返回
         if(dbTable == null) {
             System.out.println(

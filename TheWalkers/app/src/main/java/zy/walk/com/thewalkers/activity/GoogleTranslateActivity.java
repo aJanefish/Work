@@ -48,10 +48,10 @@ public class GoogleTranslateActivity extends AppCompatActivity {
         translate("pt");
     }
 
-    private void translate(String launage){
+    private void translate(String language){
         String content = et.getText().toString().trim();
         show(content);
-        TranslateUtil.translate(launage, content, new Callback() {
+        TranslateUtil.translate(language, content, new Callback() {
 
 
             @Override

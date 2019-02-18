@@ -60,6 +60,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
             Log.d(TAG,mainEvent.toString());
             Intent intent = new Intent();
             intent.setClassName(mainEvent.packageName,mainEvent.className);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK );
             try {
                 context.startActivity(intent);
             }catch (ActivityNotFoundException e){

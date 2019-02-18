@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="white_pressed">#f5f2f2</color>
     <color name="white_default" >#ffffff</color>
+    <color name="blue_light" >#337AC2</color>
 </resources>

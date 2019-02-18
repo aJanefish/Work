@@ -19,9 +19,13 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getWindowManager();
     }
 
-
+    @Override
+    public void onAttachedToWindow() {
+        super.onAttachedToWindow();
+    }
 
     @SuppressLint("WrongConstant")
     @Override

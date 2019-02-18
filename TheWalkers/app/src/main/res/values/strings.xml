@@ -4,4 +4,5 @@
 
     <string name="add_new_website">Add New Website</string>
     <string name="add_new_website_short">Add Website</string>
+    <string name="GPUActivity">GPUActivity</string>
 </resources>

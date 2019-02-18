@@ -56,7 +56,10 @@ public class Constant {
         list.add(createMainEvent("DIY VIEW", "Canvas view", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.ViewActivity"));
         list.add(createMainEvent("Bitmap VIEW", "Android粒子篇之Bitmap像素级操作", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.BitmapActivity"));
         list.add(createMainEvent("Environment", "Environment详情", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.EnvironmentActivity"));
+        list.add(createMainEvent("Diy Layout", "Diy Layout", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.DiyLayoutActivity"));
+
         list.add(createMainEvent("Face", "diy face", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.FaceActivity"));
+        list.add(createMainEvent("GPU", "渲染优化", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.GPUActivity"));
 
 
         list.add(createMainEvent("废柴", "行走", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.MainActivity1"));

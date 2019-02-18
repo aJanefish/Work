@@ -10,6 +10,7 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
@@ -61,6 +62,19 @@ public class RunBallFive extends View {
             public void onAnimationUpdate(ValueAnimator animation) {
                 updateBall();//更新小球信息
                 invalidate();
+                //invalidate(1,1,1,1);
+
+
+//
+//
+//                new Thread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        Log.d("zhangyu",""+Thread.currentThread());
+//                        //invalidate();
+//                        postInvalidate();
+//                    }
+//                }).start();
             }
         });
         mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.XOR));//设置对源的叠合模式
