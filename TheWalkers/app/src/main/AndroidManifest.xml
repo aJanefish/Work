@@ -32,8 +32,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.GPUActivity"
-            android:label="@string/GPUActivity"></activity>
+        <activity android:name=".activity.BitmapDemoActivity"
+            android:label="@string/bitmap_demo_activity"></activity>
+        <activity
+            android:name=".activity.GPUActivity"
+            android:label="@string/GPUActivity" />
         <activity android:name=".activity.DiyLayoutActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

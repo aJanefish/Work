@@ -54,6 +54,8 @@ public class Constant {
         List<MainEvent> list = new ArrayList<>();
 
         list.add(createMainEvent("DIY VIEW", "Canvas view", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.ViewActivity"));
+        list.add(createMainEvent("Bitmap Demo", "Bitmap学习(构造和生成)", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.BitmapDemoActivity"));
+
         list.add(createMainEvent("Bitmap VIEW", "Android粒子篇之Bitmap像素级操作", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.BitmapActivity"));
         list.add(createMainEvent("Environment", "Environment详情", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.EnvironmentActivity"));
         list.add(createMainEvent("Diy Layout", "Diy Layout", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.DiyLayoutActivity"));

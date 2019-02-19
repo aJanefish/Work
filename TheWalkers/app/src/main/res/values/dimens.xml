@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="sp_24">24sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
     <dimen name="wake_up_radius">16dp</dimen>
     <dimen name="dp_16">16dp</dimen>
 </resources>

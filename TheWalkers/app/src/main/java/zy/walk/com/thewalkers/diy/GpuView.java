@@ -2,6 +2,7 @@ package zy.walk.com.thewalkers.diy;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -87,7 +88,7 @@ public class GpuView extends View {
         d = new MyPoint();
         i = new MyPoint();
 
-        calcPointsXY(a, f);
+        //calcPointsXY(a, f);
 
         pathAPaint = new Paint();
         pathAPaint.setColor(Color.GREEN);
@@ -118,6 +119,33 @@ public class GpuView extends View {
 
     }
 
+    private int measureSize(int defaultSize,int measureSpec) {
+        int result = defaultSize;
+        int specMode = View.MeasureSpec.getMode(measureSpec);
+        int specSize = View.MeasureSpec.getSize(measureSpec);
+
+        if (specMode == View.MeasureSpec.EXACTLY) {
+            result = specSize;
+        } else if (specMode == View.MeasureSpec.AT_MOST) {
+            result = Math.min(result, specSize);
+        }
+        return result;
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        int height = measureSize(defaultHeight, heightMeasureSpec);
+        int width = measureSize(defaultWidth, widthMeasureSpec);
+        setMeasuredDimension(width, height);
+
+        viewWidth = width;
+        viewHeight = height;
+        f.x = width;
+        f.y = height;
+        calcPointsXY(a,f);//将初始化计算放在这
+    }
+
 
     @Override
     protected void onDraw(Canvas canvas) {
@@ -134,6 +162,7 @@ public class GpuView extends View {
         bitmapCanvas.drawPath(pathA,pathAPaint);
         bitmapCanvas.drawPath(getPathC(),pathCPaint);
         bitmapCanvas.drawPath(getPathB(),pathBPaint);
+        //bitmap.getPixel(0,0);
         canvas.drawBitmap(bitmap,0,0,null);
 
 
@@ -141,14 +170,14 @@ public class GpuView extends View {
         //canvas.drawRect(0,0,f.x,f.y,bgPaint);
         //绘制各标识点
         canvas.drawText("a", a.x, a.y, pointPaint);
-        canvas.drawText("f", f.x, f.y, pointPaint);
+        canvas.drawText("f", f.x-10, f.y-10, pointPaint);
         canvas.drawText("g", g.x, g.y, pointPaint);
 
         canvas.drawText("e", e.x, e.y, pointPaint);
         canvas.drawText("h", h.x, h.y, pointPaint);
 
         canvas.drawText("c", c.x, c.y, pointPaint);
-        canvas.drawText("j", j.x, j.y, pointPaint);
+        canvas.drawText("j", j.x-10, j.y-10, pointPaint);
 
         canvas.drawText("b", b.x, b.y, pointPaint);
         canvas.drawText("k", k.x, k.y, pointPaint);
@@ -193,6 +222,9 @@ public class GpuView extends View {
         //return pathA;
     }
 
+
+
+
     /**
      * 绘制区域C
      * @return
@@ -235,7 +267,9 @@ public class GpuView extends View {
                 invalidate();
                 break;
             case MotionEvent.ACTION_UP:
-
+//                calcPointsXY(new MyPoint(f.x+10,f.y+10), f);
+//                getPathAFromLowerRight();
+//                invalidate();
                 break;
         }
         return true;
