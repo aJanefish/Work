@@ -26,7 +26,7 @@ public class Constant {
         list.add(createMainEvent("Google translate", "谷歌翻译", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.GoogleTranslateActivity"));
         list.add(createMainEvent("Adapter", "adapter框架", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.AdapterMainActivity"));
 
-        list.add(createMainEvent("Menu", "Menu(设置界面)", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.MenuActivity"));
+        list.add(createMainEvent("Android Date 集合", "android集合", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.AndroidDateActivity"));
 
 
 
@@ -79,6 +79,7 @@ public class Constant {
 
         list.add(createMainEvent("Adapter", "Adapter框架", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.AdapterActivity"));
         list.add(createMainEvent("ItemTouchHelper", "ItemTouchHelper源码分析 实现拖动 ", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.ItemTouchHelperActivity"));
+        list.add(createMainEvent("ListView", "ListView中图片错位怎么产生的", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.ListViewDemoActivity"));
 
 
 

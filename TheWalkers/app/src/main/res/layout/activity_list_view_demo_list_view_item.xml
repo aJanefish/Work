@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/activity_list_view_demo_list_view_item_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/activity_list_view_demo_list_view_item_text_view_des"
+        app:layout_constraintTop_toTopOf="@id/activity_list_view_demo_list_view_item_image_view"
+        app:layout_constraintBottom_toBottomOf="@id/activity_list_view_demo_list_view_item_image_view"
+        />
+
+    <TextView
+        android:id="@+id/activity_list_view_demo_list_view_item_text_view_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="@id/activity_list_view_demo_list_view_item_text_view"
+        app:layout_constraintRight_toLeftOf="@id/activity_list_view_demo_list_view_item_image_view"
+        app:layout_constraintTop_toTopOf="@id/activity_list_view_demo_list_view_item_image_view"
+        app:layout_constraintBottom_toBottomOf="@id/activity_list_view_demo_list_view_item_image_view"
+        />
+
+    <ImageView
+        android:id="@+id/activity_list_view_demo_list_view_item_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/activity_list_view_demo_list_view_item_text_view_des"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

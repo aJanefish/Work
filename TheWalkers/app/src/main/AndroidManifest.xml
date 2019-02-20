@@ -32,8 +32,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.BitmapDemoActivity"
-            android:label="@string/bitmap_demo_activity"></activity>
+        <activity android:name=".activity.ListViewDemoActivity"></activity>
+        <activity
+            android:name=".activity.BitmapDemoActivity"
+            android:label="@string/bitmap_demo_activity" />
         <activity
             android:name=".activity.GPUActivity"
             android:label="@string/GPUActivity" />
@@ -67,7 +69,7 @@
         <activity android:name=".activity.AdapterActivity" />
         <activity android:name=".activity.AdapterMainActivity" />
         <activity android:name=".activity.ItemTouchHelperActivity" />
-        <activity android:name=".activity.MenuActivity" />
+        <activity android:name=".activity.AndroidDateActivity" />
     </application>
 
 </manifest>

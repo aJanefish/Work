@@ -23,9 +23,22 @@ public class Test {
 //        hashtable.put(1,1);
 //        hashtable.get(1);
 
+        test1();
+
 
     }
 
+    private static void test1() {
+        Print.println(""+'A'+'B');
+
+        Print.println('A'+'B');
+
+        int x = 9;
+        Print.println(x + " : "+Integer.toHexString(x)+" : "+Integer.toBinaryString(x));
+        x = ~x;
+        Print.println(x + " : "+Integer.toHexString(x)+" : "+Integer.toBinaryString(x));
+
+    }
 
 
 }

@@ -4,14 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MenuActivity">
+    tools:context=".activity.AndroidDateActivity">
 
     <TextView
+        android:id="@+id/AndroidDateActivity_des"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Menu 设置"
+        android:text="Android Date"
         android:textSize="@dimen/sp_24"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test1"
+        tools:ignore="MissingConstraints"
+        android:onClick="test1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/AndroidDateActivity_des"
         app:layout_constraintLeft_toLeftOf="parent"/>
 
 
