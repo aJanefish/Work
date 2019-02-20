@@ -28,6 +28,9 @@ public class Constant {
 
         list.add(createMainEvent("Android Date 集合", "android集合", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.AndroidDateActivity"));
 
+        //ContentResolver
+        list.add(createMainEvent("ContentResolver", "ContentResolverDemo", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.ContentResolverDemoActivity"));
+
 
 
 

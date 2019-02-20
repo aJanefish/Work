@@ -6,4 +6,6 @@
     <string name="add_new_website_short">Add Website</string>
     <string name="GPUActivity">GPUActivity</string>
     <string name="bitmap_demo_activity">BitmapDemoActivity</string>
+    <string name="activity_content_resolver_demo_title">ContentResolverDemo</string>
+    <string name="activity_content_resolver_demo_des">com.zy.content.provider.demo</string>
 </resources>

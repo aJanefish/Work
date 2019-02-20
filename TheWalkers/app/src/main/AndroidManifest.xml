@@ -32,7 +32,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.ListViewDemoActivity"></activity>
+        <activity android:name=".activity.ContentResolverDemoActivity"
+            android:label="@string/activity_content_resolver_demo_title"></activity>
+        <activity android:name=".activity.ListViewDemoActivity" />
         <activity
             android:name=".activity.BitmapDemoActivity"
             android:label="@string/bitmap_demo_activity" />

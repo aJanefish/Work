@@ -60,6 +60,8 @@ public class ListViewDemoAdapter extends BaseAdapter {
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = LayoutInflater.from(mContext);
+
+        //ViewGroup view = (ViewGroup) inflater.inflate(R.layout.activity_list_view_demo_list_view_item_root, null);
         final ViewHolder holder;
         ListViewDemoEvent listViewDemoEvent = listViewDemoEvents.get(position);
 
