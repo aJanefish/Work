@@ -3,6 +3,7 @@ package com.algorithm.algorithm;
 import com.algorithm.utils.Print;
 
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 class Data<T> {
     public Data<T> priv;
@@ -121,12 +122,19 @@ public class LRUDemo<T> {
         lruDemo.show();
         lruDemo.get(4);
         lruDemo.show();
-        LinkedHashMap<Integer,String> linkedHashMap = new LinkedHashMap<>();
-        linkedHashMap.put(1,"001");
-        linkedHashMap.put(2,"002");
-        linkedHashMap.put(3,"003");
-        linkedHashMap.put(4,"004");
-        linkedHashMap.put(5,"005");
-        Print.print(linkedHashMap);
+        LinkedHashMap<Integer,Integer> linkedHashMap = new LinkedHashMap<>(0, 0.75f, true);
+        linkedHashMap.put(1,1);
+        linkedHashMap.put(2,2);
+        linkedHashMap.put(3,3);
+        linkedHashMap.put(4,4);
+        linkedHashMap.put(5,5);
+        Print.println(linkedHashMap);
+        linkedHashMap.get(3);
+        linkedHashMap.get(4);
+        Print.println(linkedHashMap);
+        for (Map.Entry<Integer, Integer> entry : linkedHashMap.entrySet()) {
+            System.out.println(entry.getKey() + ":" + entry.getValue());
+
+        }
     }
 }

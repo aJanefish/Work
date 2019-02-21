@@ -2,25 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7508f34-e726-438f-8558-3532905f8362" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../relationship/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/relationship.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/src/com/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/src/com/utils/Print.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/src/data/ClanBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ContentProviderDEmo/app/src/main/java/com/zy/contentproviderdemo/MyContentProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ContentProviderDEmo/app/src/main/java/com/zy/contentproviderdemo/MyContentProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/algorithm/RedBlackTreeDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/algorithm/RedBlackTreeDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$DescendingKeySpliterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$DescendingKeySpliterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$EntrySpliterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$EntrySpliterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$KeySpliterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$KeySpliterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$TreeMapSpliterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$TreeMapSpliterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$ValueSpliterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap$ValueSpliterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/redblack/TreeMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/algorithm/redblack/TreeMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithm/redblack/TreeMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MavenDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MavenDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/algorithm/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/algorithm/Data.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/algorithm/LRUDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/algorithm/LRUDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/algorithm/algorithm/LRUDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithm/algorithm/LRUDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/ContentResolverDemoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/ContentResolverDemoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/java/com/example/singou/glide/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/java/com/example/singou/glide/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/java/com/example/singou/glide/MainAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/java/com/example/singou/glide/MainAdapter.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +31,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/algorithm/redblack/TreeMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
+            <state relative-caret-position="47630">
               <caret line="2385" column="43" selection-start-line="2385" selection-start-column="43" selection-end-line="2385" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -46,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/algorithm/utils/Print.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
@@ -54,6 +48,18 @@
               <folding>
                 <element signature="e#96#97#0" expanded="true" />
                 <element signature="e#138#139#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithm/LRUDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="134" column="39" selection-start-line="134" selection-start-column="39" selection-end-line="134" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,6 +105,7 @@
       <find>threshold</find>
       <find>pivot</find>
       <find>ints</find>
+      <find>LinkedHashMap</find>
     </findStrings>
     <replaceStrings>
       <replace>TreeMapUtils</replace>
@@ -137,13 +144,13 @@
         <option value="$PROJECT_DIR$/src/com/algorithm/algorithm/HeapSortDemo.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/algorithm/PriorityQueueDemo.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/algorithm/CountSortDemo.java" />
-        <option value="$PROJECT_DIR$/src/com/algorithm/algorithm/LRUDemo.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/algorithm/KDemo.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/java/StringDemo.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/AlgorithmMain.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/utils/TestNode.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/algorithm/RedBlackTreeDemo.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/redblack/TreeMap.java" />
+        <option value="$PROJECT_DIR$/src/com/algorithm/algorithm/LRUDemo.java" />
       </list>
     </option>
   </component>
@@ -159,6 +166,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,6 +185,21 @@
               <item name="AlgorithmDemo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlgorithmDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlgorithmDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="LRUDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="AlgorithmDemo" type="b2602c69:ProjectViewProjectNode" />
@@ -202,12 +226,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548756114055" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550716871252" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -226,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RedBlackTreeDemo">
+  <component name="RunManager" selected="Application.LRUDemo">
     <configuration name="AlgorithmMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.algorithm.AlgorithmMain" />
       <module name="AlgorithmDemo" />
@@ -294,11 +316,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LRUDemo" />
         <item itemvalue="Application.RedBlackTreeDemo" />
         <item itemvalue="Application.AlgorithmMain" />
         <item itemvalue="Application.StringDemo" />
         <item itemvalue="Application.KDemo" />
-        <item itemvalue="Application.LRUDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -317,9 +339,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49910554" visible="true" weight="0.22014925" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49910554" visible="true" weight="0.22228146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -328,7 +349,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5008944" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20467186" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36707452" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.27919912" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -721,16 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithm/LRUDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="103" column="44" lean-forward="true" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithm/CountSortDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
@@ -826,7 +837,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/redblack/TreeMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
+        <state relative-caret-position="47630">
           <caret line="2385" column="43" selection-start-line="2385" selection-start-column="43" selection-end-line="2385" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -851,6 +862,16 @@
           <folding>
             <element signature="e#96#97#0" expanded="true" />
             <element signature="e#138#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithm/LRUDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="134" column="39" selection-start-line="134" selection-start-column="39" selection-end-line="134" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

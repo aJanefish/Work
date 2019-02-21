@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import zy.walk.com.thewalkers.R;
 
 import android.content.ContentResolver;
+import android.content.ContentUris;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;

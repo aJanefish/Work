@@ -57,7 +57,7 @@ public class MyContentProvider extends ContentProvider {
     @Override
     public Uri insert(@NonNull Uri uri, @Nullable ContentValues values) {
         //return null;
-        Log.d(TAG,"insert:"+mMatcher.match(uri) +" values: "+values);
+        Log.d(TAG,"insert:"+mMatcher.match(uri) +" values: "+values+" : "+Thread.currentThread());
         return uri;
     }
 
