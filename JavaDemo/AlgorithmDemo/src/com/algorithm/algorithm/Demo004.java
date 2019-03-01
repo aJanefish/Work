@@ -1,6 +1,6 @@
 package com.algorithm.algorithm;
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 /**
  * 判断单链表是否有环
@@ -38,13 +38,13 @@ public class Demo004 {
 
     //12 8
     public static void main(String[] args) {
-        Print.println("判断单链表是否有环");
+        P.pln("判断单链表是否有环");
         //创建一个链表
         Note headNote = new Note('A');
         createLinkedNote(headNote);
-        Print.println(headNote);
+        P.pln(headNote);
         for(Note head = headNote;head != null; head = head.next){
-            Print.println(head+"-->");
+            P.pln(head+"-->");
 
             if(head.getNumShow() >= 3){
                 break;
@@ -57,11 +57,11 @@ public class Demo004 {
     //判断链表是否是环
     //思路：两个引用,一个跑得快，一个跑的慢 如果是环。总会有相遇的时候
     private static void test1(Note headNote) {
-        Print.println("test1------------------------------");
+        P.pln("test1------------------------------");
         Note note1 = headNote.next;
         Note note2 = headNote.next.next;
         for(;note1 != null && note2 != null && note1 != note2; ){
-            Print.println(note1+" - "+note2);
+            P.pln(note1+" - "+note2);
 
             note1 = note1.next;
             if(note2.next == null){
@@ -70,9 +70,9 @@ public class Demo004 {
             }
             note2 = note2.next.next;
         }
-        Print.println(note1+" - "+note2);
-        Print.println("note1:"+note1);
-        Print.println("note2:"+note2);
+        P.pln(note1+" - "+note2);
+        P.pln("note1:"+note1);
+        P.pln("note2:"+note2);
     }
 
     private static void createLinkedNote(Note headNote) {

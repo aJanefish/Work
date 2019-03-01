@@ -1,6 +1,6 @@
 package com.algorithm.algorithm;
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
@@ -52,9 +52,9 @@ import java.util.Base64;
 
 public class Base64Demo {
     public static void main(String[] args) {
-        Print.println(1 << 6);
+        P.pln(1 << 6);
         char cha = 'A';
-        Print.println(cha + " : " + (int) cha);
+        P.pln(cha + " : " + (int) cha);
 
         test1();
         test2();
@@ -68,31 +68,31 @@ public class Base64Demo {
 
     //加密 3*8 = 4*6 ==> (toBase64)63个字符
     private static void test5() {
-        Print.println("test5------------------- 加密");
+        P.pln("test5------------------- 加密");
         String test = "s13";
         //获取字符串的ASCII码
         byte[] tmp1 = test.getBytes(StandardCharsets.ISO_8859_1);
         byte[] tmp2 = Base64.getEncoder().encode(tmp1);
-        Print.println(Arrays.toString(tmp1));
+        P.pln(Arrays.toString(tmp1));
 
-        Print.println(Arrays.toString(tmp2));
+        P.pln(Arrays.toString(tmp2));
         for (byte b : tmp1) {
-            Print.println(b+": "+(char)b);
+            P.pln(b+": "+(char)b);
         }
         for (byte b : tmp2) {
-            Print.println(b+": "+(char)b);
+            P.pln(b+": "+(char)b);
         }
     }
 
     //Base64 解密 实现
     private static void test4() {
-        Print.println("\ntest4------------------");
+        P.pln("\ntest4------------------");
         String test = "czEz";
         //获取字符串的ASCII码
         byte[] tmp1 = test.getBytes(StandardCharsets.ISO_8859_1);
-        Print.println(Arrays.toString(tmp1));
+        P.pln(Arrays.toString(tmp1));
         for (byte b : tmp1) {
-            Print.println(b + " : " + (char) b);
+            P.pln(b + " : " + (char) b);
         }
 
         byte[] dst = new byte[tmp1.length];
@@ -101,55 +101,55 @@ public class Base64Demo {
         if (ret != dst.length) {
             dst = Arrays.copyOf(dst, ret);
         }
-        Print.println(Arrays.toString(dst));
+        P.pln(Arrays.toString(dst));
         for (byte b : dst) {
-            Print.println(b + " : " + (char) b);
+            P.pln(b + " : " + (char) b);
         }
     }
 
 
     //copy Object
     private static void test3() {
-        Print.println("\ntest3----------------");
+        P.pln("\ntest3----------------");
         byte[] dst = new byte[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
         byte[] newDst = Arrays.copyOf(dst, 5);
-        Print.println(Arrays.toString(dst));
-        Print.println(Arrays.toString(newDst));
+        P.pln(Arrays.toString(dst));
+        P.pln(Arrays.toString(newDst));
     }
 
     private static void test2() {
-        Print.println("test2----------------");
+        P.pln("test2----------------");
         String test = "czEz";
         byte[] tmp1 = test.getBytes(StandardCharsets.ISO_8859_1);
-        Print.println("ISO_8859_1:" + Arrays.toString(tmp1));
+        P.pln("ISO_8859_1:" + Arrays.toString(tmp1));
         tmp1 = test.getBytes(StandardCharsets.US_ASCII);
-        Print.println("US_ASCII:" + Arrays.toString(tmp1));
+        P.pln("US_ASCII:" + Arrays.toString(tmp1));
         tmp1 = test.getBytes(StandardCharsets.UTF_8);
-        Print.println("UTF_8:" + Arrays.toString(tmp1));
+        P.pln("UTF_8:" + Arrays.toString(tmp1));
         tmp1 = test.getBytes(StandardCharsets.UTF_16);
-        Print.println("UTF_16:" + Arrays.toString(tmp1));
+        P.pln("UTF_16:" + Arrays.toString(tmp1));
         tmp1 = test.getBytes(StandardCharsets.UTF_16BE);
-        Print.println("UTF_16BE:" + Arrays.toString(tmp1));
+        P.pln("UTF_16BE:" + Arrays.toString(tmp1));
         tmp1 = test.getBytes(StandardCharsets.UTF_16LE);
-        Print.println("UTF_16LE:" + Arrays.toString(tmp1));
+        P.pln("UTF_16LE:" + Arrays.toString(tmp1));
     }
 
     //解密 Base64 -- ASCII
     private static void test1() {
-        Print.println("解密 Base64 -- ASCII");
+        P.pln("解密 Base64 -- ASCII");
         //Base64 "czEz" -- "s13"
         String test = "czEz";
         //JAVA 自带的Base64解码
         //获取字符串的ASCII码
         byte[] tmp1 = test.getBytes(StandardCharsets.ISO_8859_1);
-        Print.println(Arrays.toString(tmp1));
+        P.pln(Arrays.toString(tmp1));
         for (byte b : tmp1) {
-            Print.println(b + " : " + (char) b);
+            P.pln(b + " : " + (char) b);
         }
         byte[] tmp = Base64.getDecoder().decode(tmp1);
-        Print.println(Arrays.toString(tmp));
+        P.pln(Arrays.toString(tmp));
         for (byte b : tmp) {
-            Print.println(b + " : " + (char) b + " : " + Character.toChars(b + 1).length + " : " + Character.toChars(b + 1)[0]);
+            P.pln(b + " : " + (char) b + " : " + Character.toChars(b + 1).length + " : " + Character.toChars(b + 1)[0]);
         }
     }
 
@@ -168,17 +168,17 @@ public class Base64Demo {
             fromBase64[toBase64[i]] = i;
         fromBase64['='] = -2;
 
-        Print.println(Arrays.toString(fromBase64));
-        Print.println(toBase64[28]);
-        Print.println(toBase64[51]);
-        Print.println(toBase64[4]);
-        Print.println(toBase64[51]);
+        P.pln(Arrays.toString(fromBase64));
+        P.pln(toBase64[28]);
+        P.pln(toBase64[51]);
+        P.pln(toBase64[4]);
+        P.pln(toBase64[51]);
 
-        Print.println(fromBase64[(int)toBase64[28]]);
-        Print.println(fromBase64[(int)toBase64[51]]);
-        Print.println(fromBase64[(int)toBase64[4]]);
-        Print.println(fromBase64[(int)toBase64[51]]);
-        Print.println("static -----\n\n\n");
+        P.pln(fromBase64[(int)toBase64[28]]);
+        P.pln(fromBase64[(int)toBase64[51]]);
+        P.pln(fromBase64[(int)toBase64[4]]);
+        P.pln(fromBase64[(int)toBase64[51]]);
+        P.pln("static -----\n\n\n");
     }
 
 
@@ -192,7 +192,7 @@ public class Base64Demo {
         int shiftto = 18;       // pos of first byte of 4-byte atom
         while (sp < sl) {
             int b = src[sp++] & 0xff;
-            Print.println("b:"+b+" - "+base64[b]);
+            P.pln("b:"+b+" - "+base64[b]);
             if ((b = base64[b]) < 0) {
                 if (b == -2) {         // padding byte '='
                     // =     shiftto==18 unnecessary padding
@@ -214,7 +214,7 @@ public class Base64Demo {
                             "Illegal base64 character " +
                                     Integer.toString(src[sp - 1], 16));
             }
-            Print.println(b+" : "+shiftto);
+            P.pln(b+" : "+shiftto);
             bits |= (b << shiftto);
             shiftto -= 6;
             if (shiftto < 0) {
@@ -226,7 +226,7 @@ public class Base64Demo {
             }
         }
 
-        Print.println("dst:"+Arrays.toString(dst));
+        P.pln("dst:"+Arrays.toString(dst));
         // reached end of byte array or hit padding '=' characters.
         if (shiftto == 6) {
             dst[dp++] = (byte) (bits >> 16);

@@ -1,6 +1,6 @@
 package com.algorithm.algorithm;
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 import java.util.Arrays;
 
@@ -109,7 +109,7 @@ public class BinaryHeapDemo {
             parent = (child - 2) >> 1;
         }
 
-        //Print.println("\n\n"+parent+":"+child);
+        //P.pln("\n\n"+parent+":"+child);
         while (parent >= 0 && child >= 0) {
             if (array[child] < array[parent]) {
                 int tmp = array[child];
@@ -123,7 +123,7 @@ public class BinaryHeapDemo {
                 } else {//偶数
                     parent = (child - 2) >> 1;
                 }
-                //Print.println(parent+":"+child);
+                //P.pln(parent+":"+child);
             } else {
                 //满足最小堆 ,退出
                 break;
@@ -133,12 +133,12 @@ public class BinaryHeapDemo {
 
     private void show() {
         int[] arr = Arrays.copyOf(array, size);
-        Print.println(Arrays.toString(arr));
+        P.pln(Arrays.toString(arr));
     }
 
 
     public static void main(String[] args) {
-        Print.println("二叉堆");
+        P.pln("二叉堆");
         BinaryHeapDemo binaryHeapDemo = new BinaryHeapDemo(16);
         binaryHeapDemo.add(10);
         binaryHeapDemo.add(9);
@@ -152,7 +152,7 @@ public class BinaryHeapDemo {
         binaryHeapDemo.add(1);
         binaryHeapDemo.add(0);
         binaryHeapDemo.show();
-        Print.println(binaryHeapDemo.size);
+        P.pln(binaryHeapDemo.size);
         binaryHeapDemo.delete(0);
         binaryHeapDemo.show();
     }

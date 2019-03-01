@@ -1,6 +1,6 @@
 package com.algorithm.algorithm;
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -49,15 +49,15 @@ public class LRUDemo<T> {
 
     public void show() {
         Data<T> tmp = head;
-        Print.print("[");
+        P.p("[");
         while (tmp != null) {
-            Print.print(tmp.values);
+            P.p(tmp.values);
             tmp = tmp.next;
             if (tmp != null) {
-                Print.print(",");
+                P.p(",");
             }
         }
-        Print.print("]\n");
+        P.p("]\n");
     }
 
 
@@ -103,7 +103,7 @@ public class LRUDemo<T> {
     }
 
     public static void main(String[] args) {
-        Print.println("LRU");
+        P.pln("LRU");
         LRUDemo<Integer> lruDemo = new LRUDemo<>();
         lruDemo.add(1);
         lruDemo.add(2);
@@ -123,15 +123,16 @@ public class LRUDemo<T> {
         lruDemo.get(4);
         lruDemo.show();
         LinkedHashMap<Integer,Integer> linkedHashMap = new LinkedHashMap<>(0, 0.75f, true);
+        //LinkedHashMap<Integer,Integer> linkedHashMap = new LinkedHashMap<Integer,Integer>(true);
         linkedHashMap.put(1,1);
         linkedHashMap.put(2,2);
         linkedHashMap.put(3,3);
         linkedHashMap.put(4,4);
         linkedHashMap.put(5,5);
-        Print.println(linkedHashMap);
+        P.pln(linkedHashMap);
         linkedHashMap.get(3);
         linkedHashMap.get(4);
-        Print.println(linkedHashMap);
+        P.pln(linkedHashMap);
         for (Map.Entry<Integer, Integer> entry : linkedHashMap.entrySet()) {
             System.out.println(entry.getKey() + ":" + entry.getValue());
 

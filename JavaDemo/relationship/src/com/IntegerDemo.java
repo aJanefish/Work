@@ -1,6 +1,6 @@
 package com;
 
-import com.utils.Print;
+import com.utils.P;
 
 /**
  * 1.Integer 是int的包装类，int则是java的一种基本数据类型
@@ -11,7 +11,7 @@ import com.utils.Print;
  * */
 public class IntegerDemo {
     public static void main(String[] args) {
-        Print.println("relationship");
+        P.pln("relationship");
         //int和Integer的区别
         // 4 1 8
         Integer i1 =  1;
@@ -19,24 +19,24 @@ public class IntegerDemo {
 
         Integer i3 =  128;
         Integer i4 =  128;
-        Print.println(i1 == i2);
-        Print.println(i3 == i4);
+        P.pln(i1 == i2);
+        P.pln(i3 == i4);
 
         Integer i5 =  new Integer(128);
         Integer i6 =  new Integer(128);
-        Print.println(i5 == i6);
+        P.pln(i5 == i6);
 
         Integer i7 =  new Integer(1);
         Integer i8 =  new Integer(1);
-        Print.println(i7 == i8);
+        P.pln(i7 == i8);
 
         Integer i9 =  Integer.valueOf(1);
         Integer i10 =  Integer.valueOf(1);
         Integer i99 = new Integer(1);
-        Print.println((i9 == i10) +" : "+( i1 == i9) +" : "+(i1 == i99));
+        P.pln((i9 == i10) +" : "+( i1 == i9) +" : "+(i1 == i99));
 
         Integer i11 =  Integer.valueOf(12222);
         Integer i12 =  Integer.valueOf(12222);
-        Print.println(i11 == i12);
+        P.pln(i11 == i12);
     }
 }

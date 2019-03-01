@@ -1,7 +1,7 @@
 package com.algorithm.redblack;
 
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 import java.io.Serializable;
 import java.util.*;
@@ -531,7 +531,7 @@ public class TreeMap<K,V>
         Entry<K,V> parent;
         // split comparator and comparable paths
         Comparator<? super K> cpr = comparator;
-        //Print.println("cpr:"+cpr);
+        //P.pln("cpr:"+cpr);
         if (cpr != null) {
             do {
                 parent = t;
@@ -564,7 +564,7 @@ public class TreeMap<K,V>
         }
 
         Entry<K,V> e = new Entry<>(key, value, parent);
-        //Print.println(cmp+":"+e+" : "+e.parent);
+        //P.pln(cmp+":"+e+" : "+e.parent);
         if (cmp < 0)
             parent.left = e;
         else
@@ -2269,7 +2269,7 @@ public class TreeMap<K,V>
     /** From CLR */
     private void fixAfterInsertion(Entry<K,V> x) {
         x.color = RED;
-        //Print.println("fixAfterInsertion:"+x+":"+x.parent);
+        //P.pln("fixAfterInsertion:"+x+":"+x.parent);
 
         while (x != null && x != root && x.parent.color == RED) {
             if (parentOf(x) == leftOf(parentOf(parentOf(x)))) {//父亲 == 祖父的左孩子
@@ -2305,7 +2305,7 @@ public class TreeMap<K,V>
                     rotateLeft(parentOf(parentOf(x)));
                 }
             }
-            //Print.println("end:"+x+""+x.parent);
+            //P.pln("end:"+x+""+x.parent);
         }
         root.color = BLACK;
     }
@@ -2319,14 +2319,14 @@ public class TreeMap<K,V>
 
         // If strictly internal, copy successor's element to p and then make p
         // point to successor.
-        Print.println("deleteEntry 1:"+p);
+        P.pln("deleteEntry 1:"+p);
         if (p.left != null && p.right != null) {
             Entry<K,V> s = successor(p);
             p.key = s.key;
             p.value = s.value;
             p = s;
         } // p has 2 children
-        Print.println("deleteEntry 2:"+p);
+        P.pln("deleteEntry 2:"+p);
         // Start fixup at replacement node, if it exists.
         Entry<K,V> replacement = (p.left != null ? p.left : p.right);
 
@@ -2364,7 +2364,7 @@ public class TreeMap<K,V>
 
     /** From CLR */
     private void fixAfterDeletion(Entry<K,V> x) {
-        Print.println("fixAfterDeletion 1:"+x);
+        P.pln("fixAfterDeletion 1:"+x);
         while (x != root && colorOf(x) == BLACK) {
             if (x == leftOf(parentOf(x))) { // 父亲的左孩子
                 Entry<K,V> sib = rightOf(parentOf(x));
@@ -2422,7 +2422,7 @@ public class TreeMap<K,V>
                 }
             }
         }
-        Print.println("fixAfterDeletion 2:"+x);
+        P.pln("fixAfterDeletion 2:"+x);
         setColor(x, BLACK);
     }
 

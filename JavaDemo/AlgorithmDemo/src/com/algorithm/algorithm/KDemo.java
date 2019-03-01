@@ -1,7 +1,7 @@
 package com.algorithm.algorithm;
 
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -15,7 +15,7 @@ public class KDemo {
     private static int test(int[] array, int k) {
         //长度为k 的二叉堆(最小堆 - 根节点大于儿子节点)
         int[] ints = new int[k];
-        Print.println(Arrays.toString(ints));
+        P.pln(Arrays.toString(ints));
 
         for (int i = 0; i < array.length; i++) {
 
@@ -26,7 +26,7 @@ public class KDemo {
                 int parent = 0;
                 int childIndex = parent * 2 + 1;
                 while (childIndex < k){
-                    //Print.println(childIndex+ " : " +parent);
+                    //P.pln(childIndex+ " : " +parent);
                     if((childIndex+1) < k && ints[childIndex +1] < ints[childIndex]){
                         childIndex ++;
                     }
@@ -44,7 +44,7 @@ public class KDemo {
                 }
             }
         }
-        Print.println(Arrays.toString(ints));
+        P.pln(Arrays.toString(ints));
         return ints[0];
     }
 
@@ -53,16 +53,16 @@ public class KDemo {
 
 
     public static void main(String[] args) {
-        Print.println("寻找无序数组的第k大元素");
+        P.pln("寻找无序数组的第k大元素");
         int tmp = 100;
         int[] array = new int[tmp];
         Random random = new Random();
         for (int i = 0; i < tmp; i++) {
             array[i] = random.nextInt(100);
         }
-        Print.println(Arrays.toString(array));
+        P.pln(Arrays.toString(array));
         int values = test(array, 3);
-        Print.print(values);
+        P.p(values);
     }
 
 

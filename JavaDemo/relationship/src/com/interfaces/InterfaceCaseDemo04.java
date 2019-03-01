@@ -1,7 +1,6 @@
 package com.interfaces;
 
-import com.sun.org.apache.xpath.internal.operations.Or;
-import com.utils.Print;
+import com.utils.P;
 
 /**
  * 工厂设计模式
@@ -14,7 +13,7 @@ class Apple implements Fruit{
 
     @Override
     public void eat() {
-        Print.println("eat Apple");
+        P.pln("eat Apple");
     }
 }
 
@@ -22,7 +21,7 @@ class Orange implements Fruit{
 
     @Override
     public void eat() {
-        Print.println("eat Orange");
+        P.pln("eat Orange");
     }
 }
 
@@ -30,7 +29,7 @@ class Banana implements Fruit{
 
     @Override
     public void eat() {
-        Print.println("eat Banana");
+        P.pln("eat Banana");
     }
 }
 

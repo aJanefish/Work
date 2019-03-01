@@ -1,6 +1,6 @@
 package com;
 
-import com.utils.Print;
+import com.utils.P;
 
 /**
  * JAVA 复习
@@ -9,7 +9,7 @@ import com.utils.Print;
 public class Main {
 
     public static void main(String[] args) {
-        Print.println("relationship");
+        P.pln("relationship");
         //int和Integer的区别
         // 4 1 8
         Integer i1 =  1;
@@ -17,11 +17,11 @@ public class Main {
 
         Integer i3 =  128;
         Integer i4 =  128;
-        Print.println(i1 == i2);
-        Print.println(i3 == i4);
+        P.pln(i1 == i2);
+        P.pln(i3 == i4);
 
         Integer i5 =  new Integer(128);
         Integer i6 =  new Integer(128);
-        Print.println(i5 == i6);
+        P.pln(i5 == i6);
     }
 }

@@ -2,9 +2,8 @@ package com.algorithm.algorithm;
 
 
 import com.algorithm.redblack.TreeMap;
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
-import javax.swing.tree.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Random;
@@ -25,7 +24,7 @@ public class RedBlackTreeDemo {
 
 
     public static void main(String[] args) {
-        Print.println("红黑树");
+        P.pln("红黑树");
 
         //红黑树添加测试
         addTest();
@@ -37,10 +36,10 @@ public class RedBlackTreeDemo {
     }
 
     private static void deleteTest() {
-        Print.println("delete Test ---------------- 红黑树删除元素测试");
+        P.pln("delete Test ---------------- 红黑树删除元素测试");
         TreeMap<Integer,Integer> treeMap = new TreeMap<>();
-        Print.println(treeMap);
-        Print.println(treeMap.keySet());
+        P.pln(treeMap);
+        P.pln(treeMap.keySet());
         treeMap.put(50,50);
 
         int tmp = 10;
@@ -51,26 +50,26 @@ public class RedBlackTreeDemo {
             treeMap.put(ints[i],ints[i]);
         }
 
-        Print.println(treeMap);
+        P.pln(treeMap);
         TreeMap.Entry<Integer, Integer> root = treeMap.getRoot();
-        Print.println("BOOT:"+root);
-        Print.println("left:"+root.left);
-        Print.println("right:"+root.right);
+        P.pln("BOOT:"+root);
+        P.pln("left:"+root.left);
+        P.pln("right:"+root.right);
 
         treeMap.remove(39);
 
-        Print.println(treeMap);
-        Print.println("BOOT:"+root);
-        Print.println("left:"+root.left);
-        Print.println("right:"+root.right);
+        P.pln(treeMap);
+        P.pln("BOOT:"+root);
+        P.pln("left:"+root.left);
+        P.pln("right:"+root.right);
     }
 
     //红黑树添加测试
     private static void addTest() {
-        Print.println("add Test ---------------- 红黑树添加测试");
+        P.pln("add Test ---------------- 红黑树添加测试");
         TreeMap<Integer,Integer> treeMap = new TreeMap<>();
-        Print.println(treeMap);
-        Print.println(treeMap.keySet());
+        P.pln(treeMap);
+        P.pln(treeMap.keySet());
         treeMap.put(50,50);
 
         int tmp = 10;
@@ -79,7 +78,7 @@ public class RedBlackTreeDemo {
         Random random = new Random();
         for (int i = 0; i <= tmp; i++) {
             //int t = random.nextInt(100);
-            //Print.println(i+":"+t);
+            //P.pln(i+":"+t);
             treeMap.put(ints[i],ints[i]);
         }
 
@@ -88,15 +87,15 @@ public class RedBlackTreeDemo {
 
 
 
-        Print.println(treeMap);
+        P.pln(treeMap);
 
-        Print.println("keySet:"+treeMap.keySet());
+        P.pln("keySet:"+treeMap.keySet());
 
 
         TreeMap.Entry<Integer, Integer> root = treeMap.getRoot();
-        Print.println("BOOT:"+root);
-        Print.println("left:"+root.left);
-        Print.println("right:"+root.right);
+        P.pln("BOOT:"+root);
+        P.pln("left:"+root.left);
+        P.pln("right:"+root.right);
         printTree(root);
 
 
@@ -106,7 +105,7 @@ public class RedBlackTreeDemo {
     }
 
     public  static void printTree(TreeMap.Entry root) {
-        Print.println("TREE--------------------");
+        P.pln("TREE--------------------");
         Queue<TreeMap.Entry> queue = new LinkedList<>();
         queue.offer(root);
         TreeMap.Entry last = root;	//记录当前层最后一个节点

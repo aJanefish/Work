@@ -1,6 +1,6 @@
 package com.algorithm.algorithm;
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 /**
  * 国际象棋中的皇后，可以横向、纵向、斜向移动。如何在一个8X8的棋盘上放置8个皇后，
@@ -10,28 +10,28 @@ public class EightQueens {
     private int[][] checkerboard = new int[8][8];
 
     public EightQueens() {
-        Print.println(checkerboard.getClass());
+        P.pln(checkerboard.getClass());
     }
 
 
     public static void main(String[] args) {
-        Print.println("八个皇后");
+        P.pln("八个皇后");
         EightQueens eightQueens = new EightQueens();
         eightQueens.show();
         boolean check = eightQueens.game(0, 0, eightQueens.checkerboard);
-        Print.println("check:" + check);
+        P.pln("check:" + check);
     }
 
     //递归回溯
     public boolean game(int queenX, int queenY, int[][] checkerboard) {
 
         int w = checkerboard.length;
-        Print.println("queenY:" + queenY);
+        P.pln("queenY:" + queenY);
         //改变表格的状态
         int[][] tmpCheckerboard;
         for (int i = 0; i < w; i++) {
             //[i,queenY] 该位置是否有主人
-            //Print.println("["+i+","+queenY+"]");
+            //P.pln("["+i+","+queenY+"]");
             if (portion(i, queenY, checkerboard)) {
                 continue;
             }
@@ -114,7 +114,7 @@ public class EightQueens {
         while (tmpQueenX < w - 1 && tmpQueenY < w - 1) {
             tmpQueenX++;
             tmpQueenY++;
-            //Print.println(tmpQueenX + ":" + tmpQueenY);
+            //P.pln(tmpQueenX + ":" + tmpQueenY);
 
             tmpCheckerboard[tmpQueenX][tmpQueenY] = 1;
         }
@@ -169,7 +169,7 @@ public class EightQueens {
         while (tmpQueenX < w - 1 && tmpQueenY < w - 1) {
             tmpQueenX++;
             tmpQueenY++;
-            Print.println(tmpQueenX + ":" + tmpQueenY);
+            P.pln(tmpQueenX + ":" + tmpQueenY);
 
             checkerboard[tmpQueenX][tmpQueenY] = 1;
         }
@@ -191,24 +191,24 @@ public class EightQueens {
     private void show(int[][] checkerboard) {
         int w = checkerboard.length;
         int h = checkerboard[0].length;
-        Print.println();
+        P.pln();
         for (int i = 0; i < h; i++) {
             for (int i1 = 0; i1 < w; i1++) {
-                Print.print(checkerboard[i1][i] + "  ");
+                P.p(checkerboard[i1][i] + "  ");
             }
-            Print.println();
+            P.pln();
         }
     }
 
     private void show() {
         int w = checkerboard.length;
         int h = checkerboard[0].length;
-        Print.println();
+        P.pln();
         for (int i = 0; i < h; i++) {
             for (int i1 = 0; i1 < w; i1++) {
-                Print.print(checkerboard[i1][i] + "  ");
+                P.p(checkerboard[i1][i] + "  ");
             }
-            Print.println();
+            P.pln();
         }
     }
 

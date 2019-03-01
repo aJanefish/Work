@@ -1,6 +1,6 @@
 package com.algorithm.algorithm;
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,10 +10,10 @@ import java.util.List;
  */
 public class Demo001 {
     public static void main(String[] args) {
-        Print.println("判断一个数是不是2的乘方");
-        Print.println(int[].class);
-        Print.println(int.class);
-        Print.println(Integer.class);
+        P.pln("判断一个数是不是2的乘方");
+        P.pln(int[].class);
+        P.pln(int.class);
+        P.pln(Integer.class);
         test1(1325454155);
         test2(1325454155);
         test3(1325454155);
@@ -21,28 +21,28 @@ public class Demo001 {
 
     // 2的阶乘 100000   2的阶乘-1  11111  相与为0
     private static void test3(int testNum) {
-        Print.println("test2------------------");
+        P.pln("test2------------------");
 //        int tmp = 31;
 //        for (int i = 0; i < tmp; i++) {
 //            int n = 1 << i;
 //            int nd = n - 1;
-//            Print.println(n+" -- "+nd+" : "+(n&nd));
+//            P.pln(n+" -- "+nd+" : "+(n&nd));
 //        }
         long start = System.currentTimeMillis();
         boolean flag = (testNum & (testNum - 1)) == 0;
         long end = System.currentTimeMillis();
-        Print.println("耗时:"+(end - start));
+        P.pln("耗时:"+(end - start));
         if (flag) {
-            Print.println(testNum + "是2的阶乘");
+            P.pln(testNum + "是2的阶乘");
         } else {
-            Print.println(testNum + "不是2的阶乘");
+            P.pln(testNum + "不是2的阶乘");
         }
     }
 
     //位运算判断 判断只有一个 1
     private static void test2(int testNum) {
-        Print.println("test2------------------");
-        Print.println(0xFFFFFFFF + " , " + 0x1);
+        P.pln("test2------------------");
+        P.pln(0xFFFFFFFF + " , " + 0x1);
 
         int temp = 0; //1 出现的次数
         long start = System.currentTimeMillis();
@@ -56,38 +56,38 @@ public class Demo001 {
             }
         }
         long end = System.currentTimeMillis();
-        Print.println("耗时:"+(end - start));
-        Print.println(testNum + "的二进制中1的个数是:" + temp);
+        P.pln("耗时:"+(end - start));
+        P.pln(testNum + "的二进制中1的个数是:" + temp);
 
         if (temp == 1) {
-            Print.println(testNum + "是2的阶乘");
+            P.pln(testNum + "是2的阶乘");
         } else {
-            Print.println(testNum + "不是2的阶乘");
+            P.pln(testNum + "不是2的阶乘");
         }
 
     }
 
     //枚举 出所有的2的阶乘
     private static void test1(int cases) {
-        Print.println("test1------------------");
+        P.pln("test1------------------");
         List list = new ArrayList();
 
         int tmp = 31;
         for (int i = 0; i < tmp; i++) {
-            //Print.println(i+":"+(1<<i)+","+Integer.numberOfLeadingZeros(1<<i));
+            //P.pln(i+":"+(1<<i)+","+Integer.numberOfLeadingZeros(1<<i));
             list.add(1 << i);
         }
-        Print.println(list.size() + ":" + list);
+        P.pln(list.size() + ":" + list);
 
         long start = System.currentTimeMillis();
         boolean flag = list.contains(cases);
         long end = System.currentTimeMillis();
-        Print.println("耗时:"+(end - start));
+        P.pln("耗时:"+(end - start));
 
         if (flag) {
-            Print.println(cases + "是2的阶乘");
+            P.pln(cases + "是2的阶乘");
         } else {
-            Print.println(cases + "不是2的阶乘");
+            P.pln(cases + "不是2的阶乘");
         }
     }
 }

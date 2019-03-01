@@ -1,7 +1,7 @@
 package com.algorithm.algorithm;
 
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -22,7 +22,7 @@ public class AStart {
 
         int tmpY = objects[0].length;
         int tmpX = objects.length;
-        Print.println(tmpX + " - " + tmpY);
+        P.pln(tmpX + " - " + tmpY);
         for (int i = 0; i < tmpY; i++) {
             for (int i1 = 0; i1 < tmpX; i1++) {
                 objects[i1][i] = 0;
@@ -78,7 +78,7 @@ public class AStart {
             //从OpenList 中找出F最小的Node
             MyNode current = findMinNode(OpenList);
             if (current == null) {
-                Print.println("current == null");
+                P.pln("current == null");
                 break;
             }
             //移除OpenList
@@ -87,11 +87,11 @@ public class AStart {
 
             //找到当前点的Open Node
             List<MyNode> currentOpenList = findCurrentOpenList(current);
-            Print.println(tmpNum++);
+            P.pln(tmpNum++);
             showBoolean();
-            Print.println(current);
+            P.pln(current);
 
-            Print.println("currentOpenList:" + currentOpenList.size() + " : " + currentOpenList);
+            P.pln("currentOpenList:" + currentOpenList.size() + " : " + currentOpenList);
             if (currentOpenList.size() == 0) {
                 CloseList.remove(current);
             } else {
@@ -102,10 +102,10 @@ public class AStart {
                 OpenList.addAll(currentOpenList);
             }
 
-            Print.println(CloseList.size() + " : " + CloseList + " \n\n\n");
+            P.pln(CloseList.size() + " : " + CloseList + " \n\n\n");
         }
 
-        Print.println(OpenList.contains(endNode));
+        P.pln(OpenList.contains(endNode));
 
         if (OpenList.contains(endNode)) {
             CloseList.add(OpenList.get(OpenList.indexOf(endNode)));
@@ -119,19 +119,19 @@ public class AStart {
             });
 
             //CloseList.add();
-            Print.println("成功");
+            P.pln("成功");
             //生成路径
             List<MyNode> path = new ArrayList<>();
 
             //根据Close 生成path
             createPath(CloseList, path, 0);
-            Print.println();
+            P.pln();
         } else {
-            Print.println("失败");
+            P.pln("失败");
         }
 
-        Print.println("CloseList:" + CloseList.size() + " : " + CloseList);
-        Print.println("OpenList:" + OpenList.size() + " : " + OpenList);
+        P.pln("CloseList:" + CloseList.size() + " : " + CloseList);
+        P.pln("OpenList:" + OpenList.size() + " : " + OpenList);
 
         showCloseList(CloseList);
         showBoolean();
@@ -143,7 +143,7 @@ public class AStart {
         int maxG = closeList.get(closeList.size() - 1).getG();
         for (int i = 0; i <= maxG; i++) {
             List<MyNode> list = findCloseListByG(closeList, i);
-            Print.println(i + ":" + list);
+            P.pln(i + ":" + list);
         }
     }
 
@@ -162,7 +162,7 @@ public class AStart {
     private static void createPath(List<MyNode> closeList, List<MyNode> path, int g) {
 
         if (path.size() != 0 && path.contains(endNode)) {
-            //Print.println("path:" + path.size() + " : " + path);
+            //P.pln("path:" + path.size() + " : " + path);
             showPath(path);
             return;
         }
@@ -171,7 +171,7 @@ public class AStart {
         List<MyNode> tmpList = findCloseListByG(closeList, g);
         //找最小F List
         List<MyNode> minF_List = findMinF(tmpList);
-        Print.println(g + " : " + tmpList.size() + ":minF_List:" + minF_List.size() + ":" + minF_List);
+        P.pln(g + " : " + tmpList.size() + ":minF_List:" + minF_List.size() + ":" + minF_List);
         for (MyNode myNode : minF_List) {
 
             //克隆path 不然会相互干扰
@@ -188,18 +188,18 @@ public class AStart {
                     createPath(closeList, tmpPath, g + 1);
                 }else {
                     //连接不上
-                    Print.println(current+"--<对不上>--"+myNode);
+                    P.pln(current+"--<对不上>--"+myNode);
                 }
             }
         }
     }
 
     private static void showPath(List<MyNode> path) {
-        Print.println("Paht:"+path.size());
+        P.pln("Paht:"+path.size());
         for (MyNode myNode : path) {
-            Print.print("["+myNode.getX()+","+myNode.getY()+"]->");
+            P.p("["+myNode.getX()+","+myNode.getY()+"]->");
         }
-        Print.println();
+        P.pln();
     }
 
     private static List<MyNode> cloneList(List<MyNode> list) {
@@ -251,7 +251,7 @@ public class AStart {
                 left.setH(endNode);
                 list.add(left);
             }
-            //Print.println("left:"+left);
+            //P.pln("left:"+left);
 
         }
         MyNode right = current.getRight(MAXX);
@@ -262,7 +262,7 @@ public class AStart {
                 right.setH(endNode);
                 list.add(right);
             }
-            //Print.println("right:"+right);
+            //P.pln("right:"+right);
         }
 
         MyNode up = current.getUp();
@@ -271,7 +271,7 @@ public class AStart {
                 up.setH(endNode);
                 list.add(up);
             }
-            //Print.println("up:"+up);
+            //P.pln("up:"+up);
         }
 
         MyNode down = current.getDown(MAXY);
@@ -280,7 +280,7 @@ public class AStart {
                 down.setH(endNode);
                 list.add(down);
             }
-            //Print.println("down:"+down);
+            //P.pln("down:"+down);
         }
 
         return list;
@@ -334,7 +334,7 @@ public class AStart {
 
     //初始化迷宫数据
     private static void init() {
-        Print.println("init --------------");
+        P.pln("init --------------");
         int tmpY = objects[0].length;
         int tmpX = objects.length;
         for (int i = 0; i < tmpY; i++) {
@@ -364,9 +364,9 @@ public class AStart {
         showBoolean();
 
         startNode.setH(endNode);
-        Print.println(startNode);
-        Print.println(endNode);
-        Print.println(barrierListNode + "\n\n");
+        P.pln(startNode);
+        P.pln(endNode);
+        P.pln(barrierListNode + "\n\n");
     }
 
     private static void showBoolean() {
@@ -376,9 +376,9 @@ public class AStart {
         for (int i = 0; i < tmpY; i++) {
             for (int i1 = 0; i1 < tmpX; i1++) {
                 Object object = booleans[i1][i];
-                Print.print(object + " ");
+                P.p(object + " ");
             }
-            Print.println();
+            P.pln();
         }
 
     }
@@ -386,13 +386,13 @@ public class AStart {
     private static void show() {
         int tmpY = objects[0].length;
         int tmpX = objects.length;
-        Print.println(tmpX + " - " + tmpY);
+        P.pln(tmpX + " - " + tmpY);
         for (int i = 0; i < tmpY; i++) {
             for (int i1 = 0; i1 < tmpX; i1++) {
                 Object object = objects[i1][i];
-                Print.print(object + " ");
+                P.p(object + " ");
             }
-            Print.println();
+            P.pln();
         }
     }
 }

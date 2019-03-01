@@ -1,15 +1,15 @@
 package com.algorithm.java;
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 public class StringDemo {
 
     public static void main(String[] args) {
-        Print.println("String Demo");
+        P.pln("String Demo");
         String str = "hello";
         String str1 = str.substring(0, str.length() / 2);
-        Print.println(str);
-        Print.println(str1);
+        P.pln(str);
+        P.pln(str1);
 
     }
 }

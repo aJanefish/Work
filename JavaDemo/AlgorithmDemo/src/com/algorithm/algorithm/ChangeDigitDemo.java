@@ -1,9 +1,7 @@
 package com.algorithm.algorithm;
 
 
-import com.algorithm.utils.Print;
-
-import java.util.Arrays;
+import com.algorithm.utils.P;
 
 /**
  * 给定一个正整数，实现一个方法来求出离该整数最近的大于自身的“换位数”。
@@ -12,7 +10,7 @@ import java.util.Arrays;
 public class ChangeDigitDemo {
 
     public static void main(String[] args) {
-        Print.println("换位数");
+        P.pln("换位数");
 
     }
 }

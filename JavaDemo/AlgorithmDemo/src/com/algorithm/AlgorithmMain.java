@@ -1,22 +1,22 @@
 package com.algorithm;
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 /**
  * 学习算法
  * */
 public class AlgorithmMain {
     public static void main(String[] args){
-        Print.println("Algorithm Main");
-        Print.println(1&1);
-        Print.println(1|0);
-        Print.println(1<<2);
+        P.pln("Algorithm Main");
+        P.pln(1&1);
+        P.pln(1|0);
+        P.pln(1<<2);
         int  max = Integer.numberOfLeadingZeros(0x00);
-        Print.println(max);
+        P.pln(max);
         int tmp = max - Integer.numberOfLeadingZeros(0x01);
-        Print.println(tmp);
+        P.pln(tmp);
         tmp = max - Integer.numberOfLeadingZeros(1<<1);
-        Print.println(tmp);
+        P.pln(tmp);
 
 
 

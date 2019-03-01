@@ -1,6 +1,6 @@
 package com.algorithm.redblack;
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 public class RedBlackTree {
 
@@ -48,7 +48,7 @@ public class RedBlackTree {
 
         cmp = (node.values - y.values);
         if (cmp == 0) {
-            Print.println("该Node已经添加:" + node);
+            P.pln("该Node已经添加:" + node);
             return;
         } else if (cmp < 0) {
             y.left = node;
@@ -59,7 +59,7 @@ public class RedBlackTree {
         node.parent = y;
         node.color = Color.RED;
 
-        Print.println(node);
+        P.pln(node);
         insertFixUp(node);
     }
 
@@ -83,7 +83,7 @@ public class RedBlackTree {
 
 
     public void show() {
-        Print.println("show");
+        P.pln("show");
         int depth = 0;
         show(mBoot, depth);
     }
@@ -96,25 +96,25 @@ public class RedBlackTree {
 //            stringBuffer.append(" ");
 //        }
 
-//        Print.println("depth:" + depth + " boot:" + boot + " , LeftChild:" + boot.getLeftChild() + ", RightChild: " + boot.getRightChild());
+//        P.pln("depth:" + depth + " boot:" + boot + " , LeftChild:" + boot.getLeftChild() + ", RightChild: " + boot.getRightChild());
 //
 //        if (boot.getLeftChild() != null && boot.getLeftChild() != NIL) {
 //            show(boot.getLeftChild(), depth + 1);
 //        } else {
-//            Print.println(depth + " : " + boot + " :LeftChild == NIL: " + boot.getLeftChild());
+//            P.pln(depth + " : " + boot + " :LeftChild == NIL: " + boot.getLeftChild());
 //        }
 //
 //        if (mBoot == boot) {
-//            Print.println(depth + " : " + "BOOT:" + boot);
+//            P.pln(depth + " : " + "BOOT:" + boot);
 //        } else {
-//            Print.println(depth + " : " + boot);
+//            P.pln(depth + " : " + boot);
 //        }
 //
 //
 //        if (boot.getRightChild() != null && boot.getRightChild() != NIL) {
 //            show(boot.getRightChild(), depth + 1);
 //        } else {
-//            Print.println(depth + " : " + boot + " RightChild == NIL " + boot.getRightChild());
+//            P.pln(depth + " : " + boot + " RightChild == NIL " + boot.getRightChild());
 //        }
 
     }

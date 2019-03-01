@@ -1,6 +1,6 @@
 package com.algorithm.algorithm;
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 import java.util.Random;
 
@@ -18,14 +18,14 @@ public class Demo003 {
     //12 8
     public static void main(String[] args) {
 
-        Print.println(MAXNUMBER + " -- " + MINNUMBER);
+        P.pln(MAXNUMBER + " -- " + MINNUMBER);
         Random random = new Random();
         int a = random.nextInt(MAXNUMBER);
         int b = random.nextInt(MAXNUMBER);
-        Print.println(a + ":" + b);
+        P.pln(a + ":" + b);
         int max = a > b ? a : b;
         int min = a + b - max;
-        Print.println(max + ":" + min);
+        P.pln(max + ":" + min);
 
         test1(max, min);
         test2(max, min);
@@ -49,9 +49,9 @@ public class Demo003 {
     private  static int tmpNumTest4 = 0;
     private static void test4(int max, int min) {
         tmpNumTest4 ++;
-        //Print.println("更相减损术 和 辗转相除法 相结合的方法-------------------:"+max+" - "+min);
+        //P.pln("更相减损术 和 辗转相除法 相结合的方法-------------------:"+max+" - "+min);
         if(max == min){
-            Print.println(max + "和" + min + "的最大公约数是:" + min + " , tmpNumTest4:"+tmpNumTest4);
+            P.pln(max + "和" + min + "的最大公约数是:" + min + " , tmpNumTest4:"+tmpNumTest4);
             return;
         }
         if(max < min){
@@ -78,7 +78,7 @@ public class Demo003 {
      */
 
     private static void test3(int max, int min) {
-        Print.println("更相减损术-------------------");
+        P.pln("更相减损术-------------------");
         int a = max;
         int b = min;
         int tmpNum = 0;
@@ -92,15 +92,15 @@ public class Demo003 {
 
             a = tmpMax;
             b = tmpMin;
-            //Print.println(a + " -- " + b);
+            //P.pln(a + " -- " + b);
         }
         long end = System.currentTimeMillis();
-        Print.println("耗时:" + (end - start) + " tmpNum:" + tmpNum);
-        Print.println(max + "和" + min + "的最大公约数是:" + b);
+        P.pln("耗时:" + (end - start) + " tmpNum:" + tmpNum);
+        P.pln(max + "和" + min + "的最大公约数是:" + b);
     }
 
     private static void test2(int max, int min) {
-        Print.println("辗转相除法-------------------");
+        P.pln("辗转相除法-------------------");
         int a = max;
         int b = min;
         int tmpNum = 0;
@@ -112,34 +112,34 @@ public class Demo003 {
             b = tmp;
         }
         long end = System.currentTimeMillis();
-        Print.println("耗时:" + (end - start) + " tmpNum:" + tmpNum);
-        Print.println(max + "和" + min + "的最大公约数是:" + b);
+        P.pln("耗时:" + (end - start) + " tmpNum:" + tmpNum);
+        P.pln(max + "和" + min + "的最大公约数是:" + b);
     }
 
     //基本方法 暴力枚举求解
     private static void test1(int max, int min) {
-        Print.println("暴力枚举求解 -------------------------");
+        P.pln("暴力枚举求解 -------------------------");
 
         long start = System.currentTimeMillis();
         int tmpNum = 0;
         if (max % min == 0) {
-            Print.println(max + "和" + min + "的最大公约数是:" + min);
+            P.pln(max + "和" + min + "的最大公约数是:" + min);
         } else {
             int tmp = min / 2;
-            Print.println(tmp);
+            P.pln(tmp);
 
             for (int i = tmp; i > 0; i--) {
                 tmpNum++;
                 if (min % i == 0 && max % i == 0) {
-                    Print.println(max + "和" + min + "的最大公约数是:" + i);
-                    Print.println(max + "/" + i + "=" + (max / i) + ":" + (max % i));
-                    Print.println(min + "/" + i + "=" + (min / i) + ":" + (min % i));
+                    P.pln(max + "和" + min + "的最大公约数是:" + i);
+                    P.pln(max + "/" + i + "=" + (max / i) + ":" + (max % i));
+                    P.pln(min + "/" + i + "=" + (min / i) + ":" + (min % i));
                     break;
                 }
             }
         }
 
         long end = System.currentTimeMillis();
-        Print.println("耗时:" + (end - start) + " tmpNum:" + tmpNum);
+        P.pln("耗时:" + (end - start) + " tmpNum:" + tmpNum);
     }
 }

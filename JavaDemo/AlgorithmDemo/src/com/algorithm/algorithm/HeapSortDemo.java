@@ -1,7 +1,7 @@
 package com.algorithm.algorithm;
 
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -49,7 +49,7 @@ public class HeapSortDemo {
             downAdjust(array, i, array.length);
         }
 
-        Print.println("最大堆:" + Arrays.toString(array));
+        P.pln("最大堆:" + Arrays.toString(array));
         //循环去除最大元素放到最后的位置
         for (int i = array.length - 1; i >= 0; i--) {
 
@@ -67,16 +67,16 @@ public class HeapSortDemo {
 
 
     public static void main(String[] args) {
-        Print.println("二叉堆--> 最大堆||最小堆 --> 堆排序");
+        P.pln("二叉堆--> 最大堆||最小堆 --> 堆排序");
         int tmp = 10;
         int[] array = new int[tmp];
         Random random = new Random();
         for (int i = 0; i < tmp; i++) {
             array[i] = random.nextInt(100);
         }
-        Print.println("原始无序:"+Arrays.toString(array));
+        P.pln("原始无序:"+Arrays.toString(array));
         heapSort(array);
-        Print.println("堆排序后的数据:"+Arrays.toString(array));
+        P.pln("堆排序后的数据:"+Arrays.toString(array));
 
     }
 

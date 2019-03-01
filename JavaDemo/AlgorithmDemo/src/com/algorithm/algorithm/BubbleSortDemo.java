@@ -1,9 +1,8 @@
 package com.algorithm.algorithm;
 
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
-import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -14,7 +13,7 @@ public class BubbleSortDemo {
 
 
     public static void bubbleSort(int[] ints) {
-        Print.println("基本冒泡排序");
+        P.pln("基本冒泡排序");
         int length = ints.length;
         if (length == 0) {
             return;
@@ -35,7 +34,7 @@ public class BubbleSortDemo {
     //优化的冒泡算法
     //最大的数在后面
     private static void sort(int array[]) {
-        Print.println("优化的冒泡算法");
+        P.pln("优化的冒泡算法");
         int tmp = 0;
         //记录最后一次交换的位置
         int lastExchangeIndex = 0;
@@ -65,12 +64,12 @@ public class BubbleSortDemo {
     //鸡尾酒排序 = 双冒泡排序
     // 小 ==>> 大
     public static void doubleSort(int array[]) {
-        //Print.println("鸡尾酒排序 = 双冒泡排序");
+        //P.pln("鸡尾酒排序 = 双冒泡排序");
         int length = array.length;
         //int x
         int maxIndex = length;
         int minIndex = 0;
-        //Print.println(maxIndex+" : "+Arrays.toString(array));
+        //P.pln(maxIndex+" : "+Arrays.toString(array));
         for (int i = 0; i < length/2 ; i++) {
             //>> 找到最大的数
 
@@ -89,7 +88,7 @@ public class BubbleSortDemo {
                 }
             }
 
-            //Print.println(isSorted+" : maxIndex:"+maxIndex+" : "+Arrays.toString(array));
+            //P.pln(isSorted+" : maxIndex:"+maxIndex+" : "+Arrays.toString(array));
             if (isSorted) {
                 break;
             }
@@ -109,7 +108,7 @@ public class BubbleSortDemo {
                 }
             }
 
-            //Print.println(isSorted+" : minIndex: "+minIndex+" : "+Arrays.toString(array)+"\n");
+            //P.pln(isSorted+" : minIndex: "+minIndex+" : "+Arrays.toString(array)+"\n");
             if(isSorted){
                 break;
             }
@@ -119,31 +118,31 @@ public class BubbleSortDemo {
 
 
     public static void main(String[] args) {
-        Print.println("冒泡排序");
+        P.pln("冒泡排序");
         int tmp = 100000000;
         int[] ints = new int[tmp];
         Random random = new Random();
         for (int i = 0; i < tmp; i++) {
             ints[i] = random.nextInt(10000000);
         }
-//        Print.println(Arrays.toString(ints));
+//        P.pln(Arrays.toString(ints));
 //
 //        int[] ints1 = Arrays.copyOf(ints, ints.length);
 //        bubbleSort(ints1);
 //
-//        Print.println(Arrays.toString(ints1));
+//        P.pln(Arrays.toString(ints1));
 //
 //        int[] ints2 = Arrays.copyOf(ints, ints.length);
 
-        //Print.println(Arrays.toString(ints2));
+        //P.pln(Arrays.toString(ints2));
         long start = System.currentTimeMillis();
         doubleSort(ints);
         long end = System.currentTimeMillis();
-        Print.println(end - start);
+        P.pln(end - start);
 
 
 
-        //Print.println(Arrays.toString(ints));
+        //P.pln(Arrays.toString(ints));
 
     }
 

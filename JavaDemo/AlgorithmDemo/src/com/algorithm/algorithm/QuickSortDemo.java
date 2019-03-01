@@ -1,6 +1,6 @@
 package com.algorithm.algorithm;
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 
 import java.util.Arrays;
@@ -35,11 +35,11 @@ public class QuickSortDemo {
 
     private static int partitionDiy(int[] array, int start, int end) {
         //[start,end]
-        //Print.println("start:" + start + ", end:" + end);
+        //P.pln("start:" + start + ", end:" + end);
 
         int pivot = start;
         int pivotValues = array[start];
-        //Print.println("pivot:" + pivot + ",pivotValues:" + pivotValues);
+        //P.pln("pivot:" + pivot + ",pivotValues:" + pivotValues);
         //数组划分
         //1.挖坑法
         int index = start;
@@ -70,7 +70,7 @@ public class QuickSortDemo {
                 }
                 right--;
             }
-            //Print.println(Arrays.toString(array));
+            //P.pln(Arrays.toString(array));
         }
         array[index] = pivotValues;
         return index;
@@ -151,7 +151,7 @@ public class QuickSortDemo {
     //指针交换法 获取基准点 获取中间点
     //[startIndex,endIndex]
     private static int partitionTwo(int[] arr, int startIndex, int endIndex) {
-        //Print.println("startIndex: "+startIndex+" ,endIndex: "+endIndex);
+        //P.pln("startIndex: "+startIndex+" ,endIndex: "+endIndex);
         // 取第一个位置的元素作为基准元素
         int pivotValues = arr[startIndex];
         int left = startIndex + 1;
@@ -173,27 +173,27 @@ public class QuickSortDemo {
                 arr[left] = arr[right];
                 arr[right] = p;
             }
-            //Print.println(left + " : " + right);
+            //P.pln(left + " : " + right);
 
         }
         arr[startIndex] = arr[left];
         arr[left] = pivotValues;
-        //Print.println(left + " : " + right);
+        //P.pln(left + " : " + right);
         return left;
     }
 
 
     public static void main(String[] args) {
-        //Print.println("快速排序");
-        //Print.println("分治法");
-        //Print.println("快速排序在每一轮挑选一个基准元素，并让其他比它大的元素移动到数列一边，比它小的元素移动到数列的另一边，从而把数列拆解成了两个部分");
+        //P.pln("快速排序");
+        //P.pln("分治法");
+        //P.pln("快速排序在每一轮挑选一个基准元素，并让其他比它大的元素移动到数列一边，比它小的元素移动到数列的另一边，从而把数列拆解成了两个部分");
         int tmp = 1000000;
         int[] ints = new int[tmp];
         Random random = new Random();
         for (int i = 0; i < tmp; i++) {
             ints[i] = random.nextInt(100);
         }
-        //Print.println(Arrays.toString(ints));
+        //P.pln(Arrays.toString(ints));
 
 
 
@@ -204,7 +204,7 @@ public class QuickSortDemo {
             long start = System.currentTimeMillis();
             quickSortDiy(ints1, 0, ints1.length - 1);
             long end = System.currentTimeMillis();
-            Print.println(i+" 快速排序耗时 DIY:" + (end - start));
+            P.pln(i+" 快速排序耗时 DIY:" + (end - start));
         }
 
         for (int i = 0; i < tmpNum; i++) {
@@ -212,7 +212,7 @@ public class QuickSortDemo {
             long start = System.currentTimeMillis();
             quickSortOne(ints2, 0, ints2.length - 1);
             long end = System.currentTimeMillis();
-            Print.println(i+" , 快速排序耗时1 :" + (end - start));
+            P.pln(i+" , 快速排序耗时1 :" + (end - start));
         }
 
 
@@ -222,7 +222,7 @@ public class QuickSortDemo {
             long start = System.currentTimeMillis();
             quickSortTwo(ints3, 0, ints3.length - 1);
             long end = System.currentTimeMillis();
-            Print.println("快速排序耗时2 :" + (end - start));
+            P.pln("快速排序耗时2 :" + (end - start));
         }
 
         for (int i = 0; i < tmpNum; i++) {
@@ -230,11 +230,11 @@ public class QuickSortDemo {
             long start = System.currentTimeMillis();
             quickSortThree(ints4, 0, ints4.length - 1);
             long end = System.currentTimeMillis();
-            Print.println("非递归实现快速排序 :" + (end - start));
+            P.pln("非递归实现快速排序 :" + (end - start));
         }
 
 
-        //Print.println(Arrays.toString(ints4));
+        //P.pln(Arrays.toString(ints4));
     }
 
 
@@ -247,7 +247,7 @@ public class QuickSortDemo {
         stack.push(new Point(start, end));
         Point point = stack.pop();
         while (point != null) {
-            //Print.println(point);
+            //P.pln(point);
             if(point.start>=point.end){
                 try {
                     point = stack.pop();
@@ -258,7 +258,7 @@ public class QuickSortDemo {
             }
             //找基准元素
             int index = partitionTwo(array, point.start, point.end);
-            //Print.println("index:" + index);
+            //P.pln("index:" + index);
             //[point.start,index-1]  index [index +1 ,point.end]
 
 

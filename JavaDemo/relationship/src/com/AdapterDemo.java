@@ -1,6 +1,6 @@
 package com;
 
-import com.utils.Print;
+import com.utils.P;
 
 /**
  * 适配器模式
@@ -50,13 +50,13 @@ class WindowImpl extends WindowAdapter {
     @Override
     public void open() {
         super.open();
-        Print.println("窗口打开");
+        P.pln("窗口打开");
     }
 
     @Override
     public void close() {
         super.close();
-        Print.println("窗口关闭");
+        P.pln("窗口关闭");
     }
 }
 
@@ -72,7 +72,7 @@ public class AdapterDemo {
             @Override
             public void open() {
                 super.open();
-                Print.println("窗口打开1");
+                P.pln("窗口打开1");
             }
         };
         window.open();

@@ -2,9 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bd15605-0ddf-4e32-9af3-9413aad8297b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../ContentProviderDEmo/app/src/main/java/com/zy/contentproviderdemo/MyContentProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ContentProviderDEmo/app/src/main/java/com/zy/contentproviderdemo/MyContentProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/ContentResolverDemoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/ContentResolverDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bean/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/reference/ReferenceDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/reference/Salad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/utils/P.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/androidTest/java/com/zy/glidedemo/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/java/com/zy/glidedemo/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/test/java/com/zy/glidedemo/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmDemo/src/com/algorithm/algorithm/LRUDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmDemo/src/com/algorithm/algorithm/LRUDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/AdapterDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/AdapterDemo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/InnerDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/InnerDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/IntegerDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/IntegerDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/Proxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/Proxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/Real.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/Real.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/WindowImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/WindowImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/WithInner$Inner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/WithInner$Inner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/WithInner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/WithInner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Apple.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Apple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Banana.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Banana.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Factory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Factory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/interfaces/InterfaceCaseDemo04.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/interfaces/InterfaceCaseDemo04.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Orange.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Orange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/proxyDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/proxyDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/utils/Print.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/AdapterDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AdapterDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/InnerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/InnerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/IntegerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/IntegerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/interfaces/InterfaceCaseDemo04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/interfaces/InterfaceCaseDemo04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/proxyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/proxyDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/utils/Print.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,10 +83,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/Test.java">
+        <entry file="file://$PROJECT_DIR$/src/com/reference/ReferenceDemo1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="38" column="86" selection-start-line="38" selection-start-column="86" selection-end-line="38" selection-end-column="86" />
+            <state relative-caret-position="277">
+              <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -28,15 +95,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/HashMap.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ref/ReferenceQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12848">
-              <caret line="630" selection-start-line="630" selection-end-line="630" />
+            <state relative-caret-position="1276">
+              <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ref/WeakReference.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
               <folding>
-                <element signature="e#19327#19328#0" expanded="true" />
-                <element signature="e#19410#19411#0" expanded="true" />
-                <element signature="e#24329#24330#0" expanded="true" />
-                <element signature="e#24394#24395#0" expanded="true" />
+                <element signature="e#1456#1457#0" expanded="true" />
+                <element signature="e#1487#1488#0" expanded="true" />
+                <element signature="e#1898#1899#0" expanded="true" />
+                <element signature="e#1932#1933#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/utils/Print.java" />
         <option value="$PROJECT_DIR$/src/data/ClanBean.java" />
         <option value="$PROJECT_DIR$/src/com/IntegerDemo.java" />
         <option value="$PROJECT_DIR$/src/com/InnerDemo.java" />
@@ -93,14 +168,19 @@
         <option value="$PROJECT_DIR$/src/com/Main.java" />
         <option value="$PROJECT_DIR$/src/com/map/ZYHashMap.java" />
         <option value="$PROJECT_DIR$/src/com/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/utils/Print.java" />
+        <option value="$PROJECT_DIR$/src/com/utils/P.java" />
+        <option value="$PROJECT_DIR$/src/com/bean/Apple.java" />
+        <option value="$PROJECT_DIR$/src/com/reference/Salad.java" />
+        <option value="$PROJECT_DIR$/src/com/reference/ReferenceDemo1.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1" />
-    <option name="y" value="76" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -108,8 +188,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,14 +224,7 @@
               <item name="relationship" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="InnerDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="relationship" type="b2602c69:ProjectViewProjectNode" />
-              <item name="relationship" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="proxyDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="reference" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="relationship" type="b2602c69:ProjectViewProjectNode" />
@@ -164,7 +237,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550561117169" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551153646471" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -181,7 +254,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.ReferenceDemo1">
     <configuration name="AdapterDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.AdapterDemo" />
       <module name="relationship" />
@@ -195,12 +268,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InterfaceCaseDemo04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interfaces.InterfaceCaseDemo04" />
+    <configuration name="ReferenceDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.reference.ReferenceDemo1" />
       <module name="relationship" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.interfaces.*" />
+          <option name="PATTERN" value="com.reference.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -249,11 +322,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReferenceDemo1" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.StringDemo" />
         <item itemvalue="Application.AdapterDemo" />
         <item itemvalue="Application.proxyDemo" />
-        <item itemvalue="Application.InterfaceCaseDemo04" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +347,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26545843" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27985075" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -282,8 +355,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28921023" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32925472" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32369298" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.063403785" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -303,17 +376,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/utils/Print.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#86#87#0" expanded="true" />
-            <element signature="e#128#129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/ClanBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -504,17 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="99" column="22" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
-          <folding>
-            <element signature="e#5748#5749#0" expanded="true" />
-            <element signature="e#5784#5785#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/misc/Unsafe.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -535,25 +586,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="38" column="86" selection-start-line="38" selection-start-column="86" selection-end-line="38" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12848">
+        <state relative-caret-position="12936">
           <caret line="630" selection-start-line="630" selection-end-line="630" />
           <folding>
             <element signature="e#19327#19328#0" expanded="true" />
             <element signature="e#19410#19411#0" expanded="true" />
             <element signature="e#24329#24330#0" expanded="true" />
             <element signature="e#24394#24395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-377">
+          <caret line="4426" column="25" selection-start-line="4426" selection-start-column="25" selection-end-line="4426" selection-end-column="25" />
+          <folding>
+            <element signature="e#175306#175307#0" expanded="true" />
+            <element signature="e#175349#175350#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="211" column="28" selection-start-line="211" selection-start-column="28" selection-end-line="211" selection-end-column="28" />
+          <folding>
+            <element signature="e#5748#5749#0" expanded="true" />
+            <element signature="e#5784#5785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/utils/P.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#86#87#0" expanded="true" />
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bean/Apple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <folding>
+            <element signature="e#97#98#0" expanded="true" />
+            <element signature="e#129#130#0" expanded="true" />
+            <element signature="e#160#161#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ref/ReferenceQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ref/Reference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="263" column="16" selection-start-line="263" selection-start-column="16" selection-end-line="263" selection-end-column="16" />
+          <folding>
+            <element signature="e#9341#9342#0" expanded="true" />
+            <element signature="e#9377#9378#0" expanded="true" />
+            <element signature="e#9692#9693#0" expanded="true" />
+            <element signature="e#9728#9729#0" expanded="true" />
+            <element signature="e#10805#10806#0" expanded="true" />
+            <element signature="e#10852#10853#0" expanded="true" />
+            <element signature="e#10912#10913#0" expanded="true" />
+            <element signature="e#10948#10949#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/reference/Salad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#165#166#0" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ref/WeakReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+          <folding>
+            <element signature="e#1456#1457#0" expanded="true" />
+            <element signature="e#1487#1488#0" expanded="true" />
+            <element signature="e#1898#1899#0" expanded="true" />
+            <element signature="e#1932#1933#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/reference/ReferenceDemo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

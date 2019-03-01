@@ -1,6 +1,6 @@
 package com.algorithm.algorithm;
 
-import com.algorithm.utils.Print;
+import com.algorithm.utils.P;
 
 import java.util.Arrays;
 
@@ -75,14 +75,14 @@ public class PriorityQueueDemo {
     private void downAdjust() {
         int parentIndex = 0;
         int childIndex = (parentIndex << 1) + 1;
-        //Print.println("\n\n"+parentIndex + ": "+ childIndex);
+        //P.pln("\n\n"+parentIndex + ": "+ childIndex);
         while (childIndex < size) {
             //若果左孩子 小于 右孩子
             if (childIndex + 1 < size && array[childIndex] < array[childIndex + 1]) {
                 childIndex++;
             }
 
-            //Print.println(""+parentIndex + ": "+ childIndex);
+            //P.pln(""+parentIndex + ": "+ childIndex);
 
             if (array[parentIndex] < array[childIndex]) {
                 int tmp = array[parentIndex];
@@ -100,7 +100,7 @@ public class PriorityQueueDemo {
 
     public void show(){
         int[] ints = Arrays.copyOf(array,size);
-        Print.println(Arrays.toString(ints));
+        P.pln(Arrays.toString(ints));
     }
 
 
@@ -114,7 +114,7 @@ public class PriorityQueueDemo {
     }
 
     public static void main(String[] args) throws Exception {
-        Print.println("优先队列");
+        P.pln("优先队列");
         PriorityQueueDemo priorityQueueDemo = new PriorityQueueDemo();
         int tmp =10;
         for (int i = 0; i <= tmp; i++) {
@@ -124,48 +124,48 @@ public class PriorityQueueDemo {
 
 
         int queue = priorityQueueDemo.deQueue();
-        Print.println(queue);
+        P.pln(queue);
         priorityQueueDemo.show();
 
         queue = priorityQueueDemo.deQueue();
-        Print.println(queue);
+        P.pln(queue);
         priorityQueueDemo.show();
 
         queue = priorityQueueDemo.deQueue();
-        Print.println(queue);
+        P.pln(queue);
         priorityQueueDemo.show();
 
         queue = priorityQueueDemo.deQueue();
-        Print.println(queue);
+        P.pln(queue);
         priorityQueueDemo.show();
 
         queue = priorityQueueDemo.deQueue();
-        Print.println(queue);
+        P.pln(queue);
         priorityQueueDemo.show();
 
         queue = priorityQueueDemo.deQueue();
-        Print.println(queue);
+        P.pln(queue);
         priorityQueueDemo.show();
 
         queue = priorityQueueDemo.deQueue();
-        Print.println(queue);
+        P.pln(queue);
         priorityQueueDemo.show();
 
 
         queue = priorityQueueDemo.deQueue();
-        Print.println(queue);
+        P.pln(queue);
         priorityQueueDemo.show();
 
         queue = priorityQueueDemo.deQueue();
-        Print.println(queue);
+        P.pln(queue);
         priorityQueueDemo.show();
 
         queue = priorityQueueDemo.deQueue();
-        Print.println(queue);
+        P.pln(queue);
         priorityQueueDemo.show();
 
         queue = priorityQueueDemo.deQueue();
-        Print.println(queue);
+        P.pln(queue);
         priorityQueueDemo.show();
 
 

@@ -1,7 +1,6 @@
 package com;
 
-import com.utils.Print;
-import sun.nio.ch.Net;
+import com.utils.P;
 
 interface Network{
     public void browse();
@@ -11,7 +10,7 @@ class Real implements Network{
 
     @Override
     public void browse() {
-        Print.println("上网浏览信息");
+        P.pln("上网浏览信息");
     }
 }
 
@@ -25,7 +24,7 @@ class Proxy implements Network{
     }
 
     public void check(){
-        Print.println("检查用户是否合法");
+        P.pln("检查用户是否合法");
     }
 
     @Override
