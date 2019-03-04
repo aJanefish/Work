@@ -15,6 +15,7 @@ public class Constant {
         list.add(createMainEvent("DIY","用来做一些小测试之类页面","demo.okhttp.zy.com.okhttpdemo","demo.okhttp.zy.com.okhttpdemo.activity.DiyHttpActivity"));
         list.add(createMainEvent("Face++ ","HttpDemo","demo.okhttp.zy.com.okhttpdemo","demo.okhttp.zy.com.okhttpdemo.activity.FaceDemoActivity"));
         list.add(createMainEvent("OkHttpDemo","OkHttpDemo","demo.okhttp.zy.com.okhttpdemo","demo.okhttp.zy.com.okhttpdemo.activity.OkHttpDemoActivity"));
+        list.add(createMainEvent("Socket","demo","demo.okhttp.zy.com.okhttpdemo","demo.okhttp.zy.com.okhttpdemo.activity.SocketDemoActivity"));
 
 
 
