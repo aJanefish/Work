@@ -1,9 +1,5 @@
-package com.algorithm;
+package com.algorithm.zytest;
 
-import com.algorithm.algorithm.PriorityQueueDemo;
-import com.algorithm.utils.P;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -13,7 +9,7 @@ import java.util.Scanner;
  * 输出：“abba”
  */
 
-public class Test {
+public class Test01 {
 
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);

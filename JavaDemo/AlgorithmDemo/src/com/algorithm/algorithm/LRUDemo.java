@@ -132,6 +132,7 @@ public class LRUDemo<T> {
         P.pln(linkedHashMap);
         linkedHashMap.get(3);
         linkedHashMap.get(4);
+        linkedHashMap.get(1);
         P.pln(linkedHashMap);
         for (Map.Entry<Integer, Integer> entry : linkedHashMap.entrySet()) {
             System.out.println(entry.getKey() + ":" + entry.getValue());

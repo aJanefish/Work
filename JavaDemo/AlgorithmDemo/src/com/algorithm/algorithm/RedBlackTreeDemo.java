@@ -36,7 +36,7 @@ public class RedBlackTreeDemo {
     }
 
     private static void deleteTest() {
-        P.pln("delete Test ---------------- 红黑树删除元素测试");
+        P.pln("delete Test01 ---------------- 红黑树删除元素测试");
         TreeMap<Integer,Integer> treeMap = new TreeMap<>();
         P.pln(treeMap);
         P.pln(treeMap.keySet());
@@ -66,7 +66,7 @@ public class RedBlackTreeDemo {
 
     //红黑树添加测试
     private static void addTest() {
-        P.pln("add Test ---------------- 红黑树添加测试");
+        P.pln("add Test01 ---------------- 红黑树添加测试");
         TreeMap<Integer,Integer> treeMap = new TreeMap<>();
         P.pln(treeMap);
         P.pln(treeMap.keySet());

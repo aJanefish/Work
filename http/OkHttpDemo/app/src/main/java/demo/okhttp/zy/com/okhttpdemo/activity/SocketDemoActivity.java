@@ -38,11 +38,29 @@ public class SocketDemoActivity extends AppCompatActivity {
         executorService = Executors.newCachedThreadPool();
     }
 
-    public void send(View view) {
+    public void send1(View view) {
         executorService.execute(new Runnable() {
             @Override
             public void run() {
                 send2SingouServer("1");
+            }
+        });
+    }
+
+    public void send2(View view) {
+        executorService.execute(new Runnable() {
+            @Override
+            public void run() {
+                send2SingouServer("2");
+            }
+        });
+    }
+
+    public void send3(View view) {
+        executorService.execute(new Runnable() {
+            @Override
+            public void run() {
+                send2SingouServer("3");
             }
         });
     }

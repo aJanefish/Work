@@ -30,6 +30,7 @@ public class Constant {
 
         //ContentResolver
         list.add(createMainEvent("ContentResolver", "ContentResolverDemo", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.ContentResolverDemoActivity"));
+        list.add(createMainEvent("mediaplayer", "mediaplayerDemo", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.MediaplayerDemoActivity"));
 
 
 
