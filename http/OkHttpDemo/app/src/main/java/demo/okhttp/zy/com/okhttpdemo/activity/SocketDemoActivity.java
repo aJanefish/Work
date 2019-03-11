@@ -19,8 +19,8 @@ public class SocketDemoActivity extends AppCompatActivity {
     private static String TAG = "SocketDemoActivity";
     private TextView title;
 
-    public static final String IP_ADDR = "192.168.201.230";//服务器地址  这里要改成服务器的ip
-    public static final int PORT = 9000;//服务器端口号
+    public static final String IP_ADDR = "192.168.201.230";
+    public static final int PORT = 9000;
     private ExecutorService executorService;
 
 

@@ -2,9 +2,6 @@ package com.algorithm;
 
 import java.util.ArrayList;
 import java.util.List;
-interface test{
-    static void sdagf(){};
-}
 
 public class NameList {
     private List names = new ArrayList();
