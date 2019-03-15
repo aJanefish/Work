@@ -36,7 +36,6 @@
         android:layout_height="wrap_content"
         android:text="play"
         android:textSize="24sp"
-        android:onClick="play"
         app:layout_constraintTop_toBottomOf="@id/media_player_destination"
         app:layout_constraintBottom_toBottomOf="parent"
 
@@ -51,7 +50,6 @@
         android:layout_height="wrap_content"
         android:text="stop"
         android:textSize="24sp"
-        android:onClick="stop"
         app:layout_constraintTop_toBottomOf="@id/media_player_destination"
         app:layout_constraintBottom_toBottomOf="parent"
 
@@ -65,7 +63,6 @@
         android:layout_height="wrap_content"
         android:text="pause"
         android:textSize="24sp"
-        android:onClick="pause"
         app:layout_constraintTop_toBottomOf="@id/media_player_destination"
         app:layout_constraintBottom_toBottomOf="parent"
 
@@ -80,7 +77,6 @@
         android:layout_height="wrap_content"
         android:text="start"
         android:textSize="24sp"
-        android:onClick="start"
         app:layout_constraintTop_toBottomOf="@id/media_player_destination"
         app:layout_constraintBottom_toBottomOf="parent"
 

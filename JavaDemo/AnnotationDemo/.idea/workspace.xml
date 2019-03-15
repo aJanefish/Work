@@ -2,86 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="134ce603-8c5a-4c92-8280-5d112aec286d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../relationship/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/src/com/AdapterDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/src/com/InnerDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/src/com/IntegerDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/src/com/StringDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/src/com/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/src/com/interfaces/InterfaceCaseDemo02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/src/com/interfaces/InterfaceCaseDemo04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/src/com/interfaces/InterfaceDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/src/com/proxyDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RxJavaDemo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/DiyLayoutActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/layout/FirstLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/layout/activity_diy_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/viewinjection/ViewField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/viewinjection/ViewLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/viewinjection/ViewMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/viewinjection/ViewUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AnnotationDemo/META-INF/AnnotationDemo.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AnnotationDemo/com/zy/main/AnnotationMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnnotationDemo/com/zy/main/AnnotationMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zy/test/TableCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zy/test/TableCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AtomicDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AtomicDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../relationship/out/production/relationship/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../relationship/out/production/relationship/com/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../relationship/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../relationship/src/com/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/Delegate.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/Delegate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/Example.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/Example.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/Test018Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/Test018Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/A$DefaultImpls.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/A$DefaultImpls.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/A.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/A.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/B$DefaultImpls.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/B$DefaultImpls.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/B.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/B.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/BaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/BaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Box.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Box.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/C.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/C.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/C15.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/C15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/CC.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/CC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Child.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Child.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/D.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/DD.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/DD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Derived.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Derived.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Empty.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Empty.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/MyInterface$DefaultImpls.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/MyInterface$DefaultImpls.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/MyInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/MyInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Runoob.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Runoob.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/StudentTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/StudentTwo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test001Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test001Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test002Kt$main$sumLambda$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test002Kt$main$sumLambda$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test002Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test002Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test003Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test003Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test004Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test004Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test005Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test005Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test006Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test006Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test007Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test007Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test008Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test008Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test009Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test009Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test010Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test010Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test011Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test011Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test012Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test012Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test013Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test013Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test014Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test014Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test015Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test015Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test016Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test016Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test017Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test017Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test019Kt$lazyValue$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test019Kt$lazyValue$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test019Kt$lazyValue1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test019Kt$lazyValue1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test019Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test019Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test020Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/Test020Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/User20$$special$$inlined$observable$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/User20$$special$$inlined$observable$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/User20$$special$$inlined$observable$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/User20$$special$$inlined$observable$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/User20.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinDemo/out/production/KotlinDemo/com/zy/test/User20.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RxJavaDemo/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../RxJavaDemo/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RxJavaDemo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RxJavaDemo/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RxJavaDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RxJavaDemo/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RxJavaDemo/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../RxJavaDemo/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/utils/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/MediaplayerDemoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/MediaplayerDemoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/layout/activity_mediaplayer_demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/layout/activity_mediaplayer_demo.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,8 +23,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zy/main/AnnotationMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+            <state relative-caret-position="520">
+              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/zy/test/TableCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1161">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,30 +105,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zy/test/Member.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/zy/test/TableCreator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zy/interfaces/Constraints.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -242,6 +158,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,8 +210,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -348,7 +264,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -454,6 +370,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zy/test/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zy/main/AnnotationMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2640">
@@ -512,30 +448,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy/test/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zy/main/AnnotationMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zy/test/TableCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="-1161">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
