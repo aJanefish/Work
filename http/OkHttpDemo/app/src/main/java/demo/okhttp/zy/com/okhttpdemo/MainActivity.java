@@ -3,13 +3,13 @@ package demo.okhttp.zy.com.okhttpdemo;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import demo.okhttp.zy.com.okhttpdemo.activity.BaseActivity;
 import demo.okhttp.zy.com.okhttpdemo.adapter.MainAdapter;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
 
     private RecyclerView main_recycler_view;
@@ -22,6 +22,11 @@ public class MainActivity extends AppCompatActivity {
         initView();
         initDate();
         
+    }
+
+    @Override
+    protected String getLog() {
+        return "MainActivity1";
     }
 
     @SuppressLint("WrongConstant")

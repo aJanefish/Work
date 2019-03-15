@@ -60,6 +60,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         public void onClick(View v) {
             Log.d(TAG,mainEvent.toString());
             Intent intent = new Intent();
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             intent.setClassName(mainEvent.packageName,mainEvent.className);
             try {
                 context.startActivity(intent);

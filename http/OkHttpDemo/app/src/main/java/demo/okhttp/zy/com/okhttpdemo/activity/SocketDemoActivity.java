@@ -11,16 +11,15 @@ import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import androidx.appcompat.app.AppCompatActivity;
 import demo.okhttp.zy.com.okhttpdemo.R;
 
-public class SocketDemoActivity extends AppCompatActivity {
+public class SocketDemoActivity extends BaseActivity {
 
     private static String TAG = "SocketDemoActivity";
     private TextView title;
 
-    public static final String IP_ADDR = "192.168.201.230";
-    public static final int PORT = 9000;
+    public static final String IP_ADDR = "192.168.201.121";
+    public static final int PORT = 8989;
     private ExecutorService executorService;
 
 
@@ -30,6 +29,11 @@ public class SocketDemoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_socket_demo);
         title = findViewById(R.id.activity_socket_demo_title);
         initDate();
+    }
+
+    @Override
+    protected String getLog() {
+        return "MainActivity2";
     }
 
 
@@ -60,7 +64,10 @@ public class SocketDemoActivity extends AppCompatActivity {
         executorService.execute(new Runnable() {
             @Override
             public void run() {
-                send2SingouServer("3");
+                int x = 0;
+                while (x++ < 500) {
+                    send2SingouServer("{\"name\":\"zhangyu\"};adsgf;lala;gdlagdadsgfagfas2019-03-13 17:14:41.846 29235-30031/demo.okhttp.zy.com.okhttpdemo D/SocketDemoActivity");
+                }
             }
         });
     }
@@ -72,7 +79,7 @@ public class SocketDemoActivity extends AppCompatActivity {
         try {
             //创建一个流套接字并将其连接到指定主机上的指定端口号
             socket = new Socket(IP_ADDR, PORT);
-            Log.d(TAG,"连接已经建立");
+            Log.d(TAG, "连接已经建立");
 
             DataOutputStream outputStream = null;
             outputStream = new DataOutputStream(socket.getOutputStream());
