@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7508f34-e726-438f-8558-3532905f8362" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/zytest/StringDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmDemo/com/algorithm/zytest/StringDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/algorithm/zytest/StringDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/algorithm/zytest/StringDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/activity/SocketDemoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/activity/SocketDemoActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/adapter/MainAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/adapter/MainAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/AnimationsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/AnimationsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/PermissionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/PermissionActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/ToastActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/ToastActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/BaseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/MediaplayerDemoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/MediaplayerDemoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/manager/RobustPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/manager/RobustPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/layout/activity_mediaplayer_demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/layout/activity_mediaplayer_demo.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -144,7 +147,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="343" />
     <option name="y" value="139" />
     <option name="width" value="1400" />
@@ -308,7 +311,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49910554" visible="true" weight="0.18976545" />

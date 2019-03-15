@@ -32,6 +32,8 @@ import java.util.List;
 public class ToastActivity extends BaseActivity {
 
 
+    private static final String TAG = "ToastActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +50,11 @@ public class ToastActivity extends BaseActivity {
     public void initDate() {
         List<String> list = new ArrayList<>();
         list.add("我是系统默认Toast");
+    }
+
+    @Override
+    protected String getLog() {
+        return TAG;
     }
 
     public void defaultToast(View view) {

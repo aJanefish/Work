@@ -606,6 +606,11 @@ public class AnimationsActivity extends BaseActivity {
         });
     }
 
+    @Override
+    protected String getLog() {
+        return TAG;
+    }
+
 
     /**
      *

@@ -41,6 +41,11 @@ public class MainActivity extends BaseActivity {
     }
 
     @Override
+    protected String getLog() {
+        return TAG;
+    }
+
+    @Override
     public void initView() {
         recycler_view_main = findViewById(R.id.recycler_view_main);
     }

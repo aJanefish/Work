@@ -34,8 +34,8 @@ public class RobustPlayer implements MediaPlayer.OnCompletionListener {
     public void stop() {
         synchronized (this) {
             if (mPlayer != null) {
-                mPlayer.release();
-                mPlayer = null;
+                mPlayer.stop();
+                //mPlayer = null;
             }
         }
     }

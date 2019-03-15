@@ -39,4 +39,8 @@ public class MediaplayerDemoActivity extends AppCompatActivity {
     public void start(View view) {
         robustPlayer.start();
     }
+
+    public void stop(View view) {
+        robustPlayer.stop();
+    }
 }

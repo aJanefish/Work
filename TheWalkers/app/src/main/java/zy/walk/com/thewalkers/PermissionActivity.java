@@ -63,6 +63,11 @@ public class PermissionActivity extends BaseActivity {
 
     }
 
+    @Override
+    protected String getLog() {
+        return TAG;
+    }
+
     private void show(String values){
         permission_text_view.append(values+"\n");
     }
