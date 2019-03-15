@@ -17,11 +17,11 @@
         tools:ignore="MissingConstraints" />
 
     <Button
+        android:id="@+id/AndroidDateActivity_test1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="test1"
         tools:ignore="MissingConstraints"
-        android:onClick="test1"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/AndroidDateActivity_des"
         app:layout_constraintLeft_toLeftOf="parent"/>
