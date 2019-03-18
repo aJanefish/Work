@@ -2,76 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bd15605-0ddf-4e32-9af3-9413aad8297b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/bean/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/reference/ReferenceDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/reference/Salad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/utils/P.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/androidTest/java/com/zy/glidedemo/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/java/com/zy/glidedemo/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/test/java/com/zy/glidedemo/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmDemo/src/com/algorithm/algorithm/LRUDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmDemo/src/com/algorithm/algorithm/LRUDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/AdapterDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/AdapterDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/InnerDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/InnerDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/IntegerDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/IntegerDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/Proxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/Proxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/Real.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/Real.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/WindowImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/WindowImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/WithInner$Inner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/WithInner$Inner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/WithInner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/WithInner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Apple.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Apple.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Banana.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Banana.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Factory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Factory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/interfaces/InterfaceCaseDemo04.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/interfaces/InterfaceCaseDemo04.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Orange.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/interfaces/Orange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/proxyDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/proxyDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/utils/Print.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/AdapterDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AdapterDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/InnerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/InnerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/IntegerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/IntegerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVMDemo/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVMDemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVMDemo/src/HelloMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVMDemo/src/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVMDemo/src/ZyMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVMDemo/src/jvm/HotClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVMDemo/src/jvm/JvmStaticDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVMDemo/src/jvm/ZyClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVMDemo/src/utils/P.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AtomicDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AtomicDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/interfaces/InterfaceCaseDemo04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/interfaces/InterfaceCaseDemo04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/proxyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/proxyDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/utils/Print.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,37 +23,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/reference/ReferenceDemo1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ref/ReferenceQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1276">
+            <state relative-caret-position="871">
               <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ref/WeakReference.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+            <state relative-caret-position="464">
+              <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
               <folding>
-                <element signature="e#1456#1457#0" expanded="true" />
-                <element signature="e#1487#1488#0" expanded="true" />
-                <element signature="e#1898#1899#0" expanded="true" />
-                <element signature="e#1932#1933#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,12 +93,12 @@
         <option value="$PROJECT_DIR$/src/com/StringDemo.java" />
         <option value="$PROJECT_DIR$/src/com/Main.java" />
         <option value="$PROJECT_DIR$/src/com/map/ZYHashMap.java" />
-        <option value="$PROJECT_DIR$/src/com/Test.java" />
         <option value="$PROJECT_DIR$/src/com/utils/Print.java" />
         <option value="$PROJECT_DIR$/src/com/utils/P.java" />
         <option value="$PROJECT_DIR$/src/com/bean/Apple.java" />
         <option value="$PROJECT_DIR$/src/com/reference/Salad.java" />
         <option value="$PROJECT_DIR$/src/com/reference/ReferenceDemo1.java" />
+        <option value="$PROJECT_DIR$/src/com/Test.java" />
       </list>
     </option>
   </component>
@@ -188,8 +114,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,23 +145,18 @@
             </path>
             <path>
               <item name="relationship" type="b2602c69:ProjectViewProjectNode" />
-              <item name="relationship" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="reference" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="relationship" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551153646471" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552893607630" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -254,7 +173,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReferenceDemo1">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="AdapterDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.AdapterDemo" />
       <module name="relationship" />
@@ -322,8 +241,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ReferenceDemo1" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.ReferenceDemo1" />
         <item itemvalue="Application.StringDemo" />
         <item itemvalue="Application.AdapterDemo" />
         <item itemvalue="Application.proxyDemo" />
@@ -347,7 +266,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27985075" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28304905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -356,7 +275,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925472" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32369298" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2814238" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.063403785" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -634,16 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bean/Apple.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -656,13 +565,6 @@
             <element signature="e#227#228#0" expanded="true" />
             <element signature="e#259#260#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ref/ReferenceQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -695,9 +597,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/reference/ReferenceDemo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ref/WeakReference.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
+        <state relative-caret-position="924">
           <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
           <folding>
             <element signature="e#1456#1457#0" expanded="true" />
@@ -708,10 +620,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/reference/ReferenceDemo1.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ref/ReferenceQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        <state relative-caret-position="871">
+          <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
