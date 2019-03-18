@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="644136fe-0cb3-4a48-b1eb-1a4d5505a9ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HelloMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Worker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ZyMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jvm/HotClassLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jvm/JvmStaticDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jvm/ZyClassLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/P.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AtomicDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AtomicDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../relationship/out/production/relationship/com/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../relationship/out/production/relationship/com/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../relationship/src/com/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../relationship/src/com/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -183,7 +172,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552893607596" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552898051419" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -238,7 +227,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -250,7 +238,7 @@
       <window_info anchor="bottom" id="Problems" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46273637" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46273637" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

@@ -3,6 +3,8 @@ package com;
 import com.sun.istack.internal.NotNull;
 import com.utils.P;
 
+import java.util.HashMap;
+import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class Test {
@@ -27,6 +29,8 @@ public class Test {
         //test2(null);
 
         test3();
+        List list = null;
+        list.iterator();
 
     }
 
