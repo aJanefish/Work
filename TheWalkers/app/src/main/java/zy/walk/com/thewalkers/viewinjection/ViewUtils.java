@@ -6,15 +6,13 @@ import android.content.Context;
 import android.util.Log;
 import android.view.View;
 
-import java.lang.annotation.Annotation;
-import java.lang.annotation.Target;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
 import androidx.annotation.NonNull;
-import zy.walk.com.thewalkers.activity.MediaplayerDemoActivity;
 
 /**
  * View 注入框架
@@ -67,6 +65,9 @@ public class ViewUtils {
                     @Override
                     public void onClick(View v) {
                         try {
+                            if (!method.isAccessible()) {
+                                method.setAccessible(true);
+                            }
                             method.invoke(target, v);
                         } catch (IllegalAccessException e) {
                             e.printStackTrace();
@@ -75,7 +76,6 @@ public class ViewUtils {
                         }
                     }
                 });
-
             }
         }
     }

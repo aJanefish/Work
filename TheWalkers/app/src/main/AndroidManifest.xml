@@ -32,7 +32,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MediaplayerDemoActivity"></activity>
+        <activity android:name=".activity.DaggerActivity"></activity>
+        <activity android:name=".activity.MediaplayerDemoActivity" />
         <activity
             android:name=".activity.ContentResolverDemoActivity"
             android:label="@string/activity_content_resolver_demo_title" />

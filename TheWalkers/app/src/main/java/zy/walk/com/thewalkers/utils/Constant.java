@@ -6,6 +6,8 @@ import java.util.List;
 import zy.walk.com.thewalkers.imagesandanimations.event.MainEvent;
 
 public class Constant {
+
+    public static final String LOG = "TheWalkers";
     public static final List<MainEvent> getMainEvent() {
 
         List<MainEvent> list = new ArrayList<>();
@@ -32,12 +34,11 @@ public class Constant {
         list.add(createMainEvent("ContentResolver", "ContentResolverDemo", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.ContentResolverDemoActivity"));
         list.add(createMainEvent("mediaplayer", "mediaplayerDemo", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.MediaplayerDemoActivity"));
 
+        list.add(createMainEvent("Dagger2", "Dagger2 依赖注入", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.DaggerActivity"));
 
 
 
         list.add(createMainEvent("废柴", "行走", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.MainActivity1"));
-
-
         list.add(createMainEvent("废柴", "行走", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.MainActivity1"));
         list.add(createMainEvent("废柴", "行走", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.MainActivity1"));
         list.add(createMainEvent("废柴", "行走", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.MainActivity1"));
