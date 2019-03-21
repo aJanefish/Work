@@ -1,12 +1,15 @@
 package zy.walk.com.thewalkers.activity;
 
 
-
 import okhttp3.OkHttpClient;
 import zy.walk.com.thewalkers.R;
-import zy.walk.com.thewalkers.dagger.DaggerUserComponent;
+//import zy.walk.com.thewalkers.dagger.BModule;
+//import zy.walk.com.thewalkers.dagger.DaggerUserComponent;
+//import zy.walk.com.thewalkers.dagger.OkHttpModule;
 import zy.walk.com.thewalkers.dagger.Person;
+import zy.walk.com.thewalkers.dagger.Student;
 import zy.walk.com.thewalkers.dagger.User;
+import zy.walk.com.thewalkers.dagger.UserComponent;
 import zy.walk.com.thewalkers.viewinjection.ViewField;
 import zy.walk.com.thewalkers.viewinjection.ViewLayout;
 import zy.walk.com.thewalkers.viewinjection.ViewMethod;
@@ -38,14 +41,13 @@ public class DaggerActivity extends BaseActivity {
     @Inject
     User user1;
 
-    @Named("release")
+
     @Inject
     Person person;
 
-    @Named("debug")
+
     @Inject
     Person person1;
-
 
 
     @Inject
@@ -58,13 +60,21 @@ public class DaggerActivity extends BaseActivity {
     @Inject
     OkHttpClient okHttpClient2;
 
+    @Inject
+    Student student;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_dagger);
         ViewUtils.register(this);
-        DaggerUserComponent.builder().build().inject(this);
+        //DaggerUserComponent.builder().build().inject(this);
+//        UserComponent userComponent = DaggerUserComponent.builder().
+//                bModule(new BModule(55)).
+//                okHttpModule(new OkHttpModule()).
+//                build();
+//        userComponent.inject(this);
     }
 
     @Override
@@ -88,14 +98,14 @@ public class DaggerActivity extends BaseActivity {
     private void test(View view) {
         Log.d(TAG, "" + title + "\n" + des + "\n" + button_test);
         Log.d(TAG, "User:" + user);
+
         Log.d(TAG, "User1:" + user1);
         Log.d(TAG, "person:" + person);
         Log.d(TAG, "person1:" + person1);
 
         Log.d(TAG, "okHttpClient:" + okHttpClient);
-        Log.d(TAG, "okHttpClient:" + okHttpClient1);
+        Log.d(TAG, "student:" + student);
 
-        Log.d(TAG, "okHttpClient:" + okHttpClient2);
 
     }
 }

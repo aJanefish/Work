@@ -21,6 +21,8 @@ import zy.walk.com.thewalkers.utils.Constant;
 public class OkHttpModule {
 
 
+    public OkHttpModule() {
+    }
 
     @Provides
     //@Singleton

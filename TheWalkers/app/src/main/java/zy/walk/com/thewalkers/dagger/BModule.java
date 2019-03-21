@@ -7,21 +7,24 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 
+
 @Module
 public class BModule {
 
+    int age;
 
-    @Named("release")
-    @Provides
-    //@Singleton
-    Person providePerson(){
-        return new Person(100);
+    public BModule(int age) {
+        this.age = age;
     }
 
-
-    @Named("debug")
     @Provides
-    Person providePerson1(){
-        return new Person();
+    Person providesPerson(User user) {
+        return new Person(age, user,"ZY");
     }
+
+    @Provides
+    School providesSchool(){
+        return new School("巴中中学","四川省巴中市","100001");
+    }
+
 }
