@@ -2,75 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e96bd313-0a0a-4c6c-a40e-9e03415f0eb6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zy/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zy/example/BaiDuExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zy/example/Example01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zy/example/Example02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zy/example/Example03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zy/example/Example04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zy/example/Example05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zy/example/Example06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zy/example/Example07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zy/example/Example08.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zy/example/Example09.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zy/example/Example10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zy/example/ResponseBodyPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zy/example/entity/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zy/example/entity/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ZyServer/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ZyServer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ZyServer/server/src/main/java/RESTServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ZyServer/server/src/main/java/db/DB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ZyServer/server/src/main/java/entity/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ZyServer/server/src/main/java/entity/FileEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ZyServer/server/src/main/java/entity/Resp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ZyServer/server/src/main/java/handler/BlogHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ZyServer/server/src/main/java/handler/FormHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ZyServer/server/src/main/java/handler/HeaderHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ZyServer/server/src/main/java/transformer/GsonTransformer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ZyServer/server/src/main/java/util/FileSizeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ZyServer/server/src/main/java/util/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/activity/RetrofitActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/res/layout/activity_retrofit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/androidTest/java/com/zy/retrofit/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/java/com/zy/retrofit/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/java/com/zy/retrofit/DataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/java/com/zy/retrofit/P.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/java/com/zy/retrofit/RetrofitManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/test/java/com/zy/retrofit/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/androidTest/java/com/zy/viewinject/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/java/com/zy/viewinject/ViewField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/java/com/zy/viewinject/ViewLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/java/com/zy/viewinject/ViewMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/java/com/zy/viewinject/ViewUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/test/java/com/zy/viewinject/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketJavaDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketJavaDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/utils/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/src/main/java/com/example/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/src/main/java/com/example/Example01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/src/main/java/com/example/OkHttpMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ZyServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ZyServer/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -142,16 +83,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zy/example/Example10.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="75" column="37" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+            <state relative-caret-position="-30">
+              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#670#671#0" expanded="true" />
                 <element signature="e#726#727#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zy/Constant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -250,25 +209,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="zy" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="retrofit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RetrofitDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zy" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="retrofit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RetrofitDemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zy" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -278,7 +218,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553164221679" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553164777493" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -404,7 +344,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
@@ -413,7 +353,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32925472" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30923247" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30923247" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4260289" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -508,13 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zy/example/Example04.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -522,13 +455,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zy/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -631,13 +557,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zy/example/Example10.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="75" column="37" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+        <state relative-caret-position="-30">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#670#671#0" expanded="true" />
             <element signature="e#726#727#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zy/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

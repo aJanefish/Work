@@ -2,75 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10585d18-651b-41d6-aacc-f4154e727532" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/BaiDuExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/Example01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/Example02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/Example03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/Example04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/Example05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/Example06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/Example07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/Example08.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/Example09.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/Example10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/ResponseBodyPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/entity/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/entity/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/RESTServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/db/DB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/entity/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/entity/FileEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/entity/Resp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/handler/BlogHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/handler/FormHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/handler/HeaderHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/transformer/GsonTransformer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/util/FileSizeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/util/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/activity/RetrofitActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/res/layout/activity_retrofit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/androidTest/java/com/zy/retrofit/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/java/com/zy/retrofit/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/java/com/zy/retrofit/DataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/java/com/zy/retrofit/P.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/java/com/zy/retrofit/RetrofitManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/test/java/com/zy/retrofit/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/androidTest/java/com/zy/viewinject/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/java/com/zy/viewinject/ViewField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/java/com/zy/viewinject/ViewLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/java/com/zy/viewinject/ViewMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/java/com/zy/viewinject/ViewUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/test/java/com/zy/viewinject/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketJavaDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketJavaDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/utils/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/src/main/java/com/example/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/src/main/java/com/example/Example01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/src/main/java/com/example/OkHttpMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetrofitDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RetrofitDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -264,7 +205,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553164221629" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553164777441" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
