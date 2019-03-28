@@ -4,7 +4,6 @@ import android.util.Log;
 
 import java.io.IOException;
 
-import okhttp3.OkHttpClient;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -22,7 +21,7 @@ public class RetrofitManager {
                 //.addConverterFactory(BuiltInConverter)
                 //.addConverterFactory()
                 //定义client类型
-                .client(new OkHttpClient())
+                //.client(new OkHttpClient())
                 //创建
                 .build();
 
@@ -53,6 +52,14 @@ public class RetrofitManager {
                 System.out.println("onFailure");
             }
         });
+
+//        try {
+//            Response<ResponseBody> responseBodyResponse = baiDu.execute();
+//            System.out.println(responseBodyResponse.body().string());
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
 
     }
