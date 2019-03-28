@@ -22,6 +22,7 @@ public class NIODemo04 {
     private static final int TIMEOUT = 3000;
 
     public static void main(String[] args) {
+        P.pln("NIO Demo04 Server");
         selector();
     }
 
@@ -52,6 +53,7 @@ public class NIODemo04 {
 
     public static void handleWrite(SelectionKey key) throws IOException {
         ByteBuffer buf = (ByteBuffer) key.attachment();
+        buf.put("hello client".getBytes());
         buf.flip();
         SocketChannel sc = (SocketChannel) key.channel();
         while (buf.hasRemaining()) {

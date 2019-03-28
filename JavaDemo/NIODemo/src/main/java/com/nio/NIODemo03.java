@@ -12,13 +12,11 @@ public class NIODemo03 {
 
     public static void main(String args[]) {
         P.pln("NIO NIODemo03");
-        client();
+        //client1();
+        client2();
     }
 
-    /**
-     * 客户端NIO Demo
-     */
-    private static void client() {
+    private static void client2() {
 
         ByteBuffer buffer = ByteBuffer.allocate(1024);
         ByteBuffer readBuffer = ByteBuffer.allocate(1024);
@@ -28,7 +26,49 @@ public class NIODemo03 {
             //连接网络
             socketChannel = SocketChannel.open();
             socketChannel.configureBlocking(false);
-            socketChannel.connect(new InetSocketAddress("192.168.201.153", 8080));
+            socketChannel.connect(new InetSocketAddress("192.168.201.154", 8080));
+            if (socketChannel.finishConnect()) {
+                int i = 0;
+                while (true) {
+                    TimeUnit.SECONDS.sleep(5);
+                    String info = "I'm " + i++ + "-th information from client";
+                    buffer.clear();
+                    buffer.put(info.getBytes());
+                    buffer.flip();
+                    while (buffer.hasRemaining()) {
+                        System.out.println(buffer);
+                        //写入到buffer
+                        socketChannel.write(buffer);
+                    }
+                }
+            }
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (socketChannel != null) {
+                    socketChannel.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * 客户端NIO Demo
+     */
+    private static void client1() {
+
+        ByteBuffer buffer = ByteBuffer.allocate(1024);
+        ByteBuffer readBuffer = ByteBuffer.allocate(1024);
+
+        SocketChannel socketChannel = null;
+        try {
+            //连接网络
+            socketChannel = SocketChannel.open();
+            socketChannel.configureBlocking(false);
+            socketChannel.connect(new InetSocketAddress("192.168.201.154", 8080));
             if (socketChannel.finishConnect()) {
 
                 int i = 0;
@@ -64,12 +104,12 @@ public class NIODemo03 {
 
     private static void readBuffer(ByteBuffer readBuffer) {
         readBuffer.flip();
-
+        P.pln("client - readBuffer - start");
         while (readBuffer.hasRemaining()) {
             System.out.print((char) readBuffer.get());
-            readBuffer.getInt();
+            //readBuffer.getInt();
         }
-        P.pln();
+        P.pln("client - readBuffer - end");
         readBuffer.compact();
 
     }

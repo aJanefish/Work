@@ -1,0 +1,19 @@
+andomAccessFile fromFile = new RandomAccessFile("fromFile.txt", "rw");
+02
+FileChannel      fromChannel = fromFile.getChannel();
+03
+ 
+04
+RandomAccessFile toFile = new RandomAccessFile("toFile.txt", "rw");
+05
+FileChannel      toChannel = toFile.getChannel();
+06
+ 
+07
+long position = 0;
+08
+long count = fromChannel.size();
+09
+ 
+10
+toChannel.transferFrom(position, count, fromChannel);

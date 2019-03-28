@@ -17,7 +17,7 @@ public class NIODemo02 {
     }
 
     /**
-     * 传统IO
+     * 传统IO Server
      */
     public static void server() {
         ServerSocket serverSocket = null;
@@ -39,12 +39,12 @@ public class NIODemo02 {
                     byte[] temp = new byte[recvMsgSize];
                     System.arraycopy(recvBuf, 0, temp, 0, recvMsgSize);
                     System.out.println(new String(temp));
-
-                    out.write(("I'm " + (i++) + "-th information from server").getBytes());
-                    out.flush();
                 }
+
+                out.write(("I'm " + (i++) + "-th information from server").getBytes());
+                out.flush();
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             try {

@@ -18,6 +18,7 @@ public class NIODemo1 {
      * NIO demo
      * */
     public static void method2() {
+        P.pln("method2 ------------------");
         RandomAccessFile aFile = null;
         try {
             aFile = new RandomAccessFile("src/nio.txt", "rw");
