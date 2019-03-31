@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="644136fe-0cb3-4a48-b1eb-1a4d5505a9ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/stackframe/DynamicDispatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackframe/Overload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackframe/StaticDispatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stackframe/StaticResolution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JVMDemo/HelloMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JVMDemo/HelloMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JVMDemo/META-INF/JVMDemo.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JVMDemo/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JVMDemo/Worker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/MyPythonTest/.idea/MyPythonTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/MyPythonTest/.idea/MyPythonTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/MyPythonTest/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/MyPythonTest/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/MyPythonTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/MyPythonTest/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +22,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ZyMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="572">
               <caret line="31" column="41" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -38,13 +34,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/stackframe/StaticResolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="110">
               <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding>
                 <element signature="e#86#87#0" expanded="true" />
-                <element signature="e#108#109#0" expanded="true" />
-                <element signature="e#184#185#0" expanded="true" />
-                <element signature="e#210#211#0" expanded="true" />
+                <element signature="e#135#136#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,15 +47,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/stackframe/StaticDispatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
+            <state relative-caret-position="440">
               <caret line="26" column="13" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="13" />
               <folding>
                 <element signature="e#221#222#0" expanded="true" />
                 <element signature="e#280#281#0" expanded="true" />
                 <element signature="e#317#318#0" expanded="true" />
                 <element signature="e#380#381#0" expanded="true" />
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#487#488#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/stackframe/Overload.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
+            <state relative-caret-position="132">
               <caret line="7" column="33" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="33" />
               <folding>
                 <element signature="e#122#123#0" expanded="true" />
@@ -83,12 +75,6 @@
                 <element signature="e#450#451#0" expanded="true" />
                 <element signature="e#493#494#0" expanded="true" />
                 <element signature="e#542#543#0" expanded="true" />
-                <element signature="e#623#624#0" expanded="true" />
-                <element signature="e#674#675#0" expanded="true" />
-                <element signature="e#741#742#0" expanded="true" />
-                <element signature="e#797#798#0" expanded="true" />
-                <element signature="e#816#817#0" expanded="true" />
-                <element signature="e#842#843#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,12 +83,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/stackframe/DynamicDispatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
+            <state relative-caret-position="544">
               <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding>
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#273#274#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
                 <element signature="e#448#449#0" expanded="true" />
               </folding>
             </state>
@@ -112,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/lang/Character.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="122" column="53" lean-forward="true" selection-start-line="122" selection-start-column="53" selection-end-line="122" selection-end-column="53" />
+            <state relative-caret-position="2112">
+              <caret line="122" column="53" selection-start-line="122" selection-start-column="53" selection-end-line="122" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -165,6 +149,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,18 +212,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553063896609" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../relationship" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -337,9 +321,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -454,9 +437,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/lang/Comparable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ZyMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="572">
           <caret line="31" column="41" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -466,49 +456,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stackframe/StaticResolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="110">
           <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding>
             <element signature="e#86#87#0" expanded="true" />
-            <element signature="e#108#109#0" expanded="true" />
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#135#136#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/lang/Comparable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/lang/Character.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="122" column="53" lean-forward="true" selection-start-line="122" selection-start-column="53" selection-end-line="122" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stackframe/StaticDispatch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
+        <state relative-caret-position="440">
           <caret line="26" column="13" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="13" />
           <folding>
             <element signature="e#221#222#0" expanded="true" />
             <element signature="e#280#281#0" expanded="true" />
             <element signature="e#317#318#0" expanded="true" />
             <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stackframe/Overload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
+        <state relative-caret-position="132">
           <caret line="7" column="33" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="33" />
           <folding>
             <element signature="e#122#123#0" expanded="true" />
@@ -521,24 +493,23 @@
             <element signature="e#450#451#0" expanded="true" />
             <element signature="e#493#494#0" expanded="true" />
             <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/lang/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2112">
+          <caret line="122" column="53" selection-start-line="122" selection-start-column="53" selection-end-line="122" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stackframe/DynamicDispatch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
+        <state relative-caret-position="544">
           <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding>
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
             <element signature="e#448#449#0" expanded="true" />
           </folding>
         </state>
