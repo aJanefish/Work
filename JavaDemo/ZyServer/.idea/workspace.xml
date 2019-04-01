@@ -2,32 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10585d18-651b-41d6-aacc-f4154e727532" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../NIODemo/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NIODemo/src/main/java/com/NIOMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NIODemo/src/main/java/com/nio/NIODemo02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NIODemo/src/main/java/com/nio/NIODemo03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NIODemo/src/main/java/com/nio/NIODemo04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NIODemo/src/main/java/com/nio/NIODemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NIODemo/src/main/java/com/util/P.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NIODemo/src/nio.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NIODemo/src/nomal_io.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/Example11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/entity/InfoBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RetrofitDemo/src/main/java/com/zy/example/entity/SingouResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../relationship/src/com/example/Example01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/java/com/zy/viewinject/Date.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/src/main/java/com/example/ExampleLocalhost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkioDemo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkioDemo/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkioDemo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkioDemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkioDemo/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/test/ByteStringDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/test/readDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/test/writeDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/util/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/util/P.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NIODemo/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../NIODemo/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NIODemo/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../NIODemo/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NIODemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NIODemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NIODemo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../NIODemo/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NIODemo/out/production/classes/com/nio/ServerSocketChannelDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NIODemo/out/production/classes/com/nio/ServerSocketChannelDemo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NIODemo/out/production/classes/com/nio/ServerSocketChannelDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NIODemo/out/production/classes/com/nio/ServerSocketChannelDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NIODemo/src/main/java/com/nio/ServerSocketChannelDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NIODemo/src/main/java/com/nio/ServerSocketChannelDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NIODemo/src/nio.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../OkHttpJavaDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RetrofitDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RetrofitDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OkHttpJavaDemo/out/production/classes/com/example/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/out/production/classes/com/example/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OkHttpJavaDemo/out/production/classes/com/example/Example01$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OkHttpJavaDemo/out/production/classes/com/example/Example01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OkHttpJavaDemo/src/main/java/com/example/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/src/main/java/com/example/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OkHttpJavaDemo/src/main/java/com/example/Example01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OkHttpJavaDemo/src/main/java/com/example/ExampleBaidu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/Data/data.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/RESTServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/RESTServer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/RESTServer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/RESTServer$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/RESTServer$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/RESTServer$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/RESTServer$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/RESTServer$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/RESTServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/RESTServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/java/com/zy/retrofit/RetrofitManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/java/com/zy/retrofit/RetrofitManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -51,8 +53,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/RESTServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+            <state relative-caret-position="489">
+              <caret line="67" column="52" lean-forward="true" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/entity/Blog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/handler/BlogHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="462">
               <caret line="35" column="40" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -84,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/handler/FormHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
+            <state relative-caret-position="704">
               <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -96,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/db/DB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="528">
               <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -136,7 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,6 +231,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,7 +346,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -341,7 +355,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41268075" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35595107" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -368,16 +382,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/entity/Blog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/entity/FileEntity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -447,8 +451,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/RESTServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        <state relative-caret-position="489">
+          <caret line="67" column="52" lean-forward="true" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/entity/Blog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -464,7 +478,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/handler/BlogHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="462">
           <caret line="35" column="40" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -474,7 +488,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/handler/FormHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
+        <state relative-caret-position="704">
           <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -484,7 +498,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/db/DB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="528">
           <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />

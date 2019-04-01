@@ -12,8 +12,8 @@ import java.util.concurrent.TimeUnit;
 public class ServerSocketChannelDemo {
     public static void main(String args[]) throws IOException, InterruptedException {
         P.pln("ServerSocketChannel Demo");
-        //blockingTest();
-        nonBlockingTest();
+        blockingTest();
+        //nonBlockingTest();
 
 
     }
@@ -67,6 +67,7 @@ public class ServerSocketChannelDemo {
                     ByteBuffer writeBuf = ByteBuffer.allocate(48);
                     writeBuf.clear();
                     writeBuf.put(newData.getBytes());
+                    writeBuf.putChar('A');
                     writeBuf.flip();
                     while (writeBuf.hasRemaining()) {
 

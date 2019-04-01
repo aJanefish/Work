@@ -7,9 +7,9 @@ import java.rmi.server.RemoteRef;
 import java.util.concurrent.TimeUnit;
 
 import static com.example.Constant.BAIDU;
-import static com.example.Constant.URL;
 
-public class Example01 {
+
+public class ExampleBaidu {
 
 
 

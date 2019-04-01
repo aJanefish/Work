@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'NIODemo'
+group 'OkioDemo'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
@@ -13,5 +13,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile 'com.squareup.okio:okio:1.9.0' 
+    //compile 'com.squareup.okio:okio:1.9.0'
+    //compile 'com.squareup.okio:okio:2.2.2'
+    compile 'com.squareup.okio:okio:1.9.0'
 }

@@ -1,0 +1,4 @@
+write string by utf-8.
+work
+ni hao ma ?
+1234567890
