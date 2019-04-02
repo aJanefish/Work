@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_niodemo" default="compile.module.niodemo">
+  <dirname property="module.niodemo.basedir" file="${ant.file.module_niodemo}"/>
+  
+  <property name="module.jdk.home.niodemo" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.niodemo" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.niodemo" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.niodemo" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="niodemo.output.dir" value="${module.niodemo.basedir}/../out/production/NIODemo"/>
+  <property name="niodemo.testoutput.dir" value="${module.niodemo.basedir}/../out/test/NIODemo"/>
+  
+  <path id="niodemo.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="niodemo.module.production.classpath">
+    <path refid="${module.jdk.classpath.niodemo}"/>
+  </path>
+  
+  <path id="niodemo.runtime.production.module.classpath">
+    <pathelement location="${niodemo.output.dir}"/>
+  </path>
+  
+  <path id="niodemo.module.classpath">
+    <path refid="${module.jdk.classpath.niodemo}"/>
+    <pathelement location="${niodemo.output.dir}"/>
+  </path>
+  
+  <path id="niodemo.runtime.module.classpath">
+    <pathelement location="${niodemo.testoutput.dir}"/>
+    <pathelement location="${niodemo.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.niodemo">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.niodemo">
+    <patternset refid="excluded.from.module.niodemo"/>
+  </patternset>
+  
+  
+  <target name="compile.module.niodemo" depends="compile.module.niodemo.production,compile.module.niodemo.tests" description="Compile module NIODemo"/>
+  
+  <target name="compile.module.niodemo.production" depends="register.custom.compilers" description="Compile module NIODemo; production classes"/>
+  
+  <target name="compile.module.niodemo.tests" depends="register.custom.compilers,compile.module.niodemo.production" description="compile module NIODemo; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.niodemo" description="cleanup module">
+    <delete dir="${niodemo.output.dir}"/>
+    <delete dir="${niodemo.testoutput.dir}"/>
+  </target>
+</project>

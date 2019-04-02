@@ -6,6 +6,9 @@ import zy.walk.com.thewalkers.R;
 //import zy.walk.com.thewalkers.dagger.BModule;
 //import zy.walk.com.thewalkers.dagger.DaggerUserComponent;
 //import zy.walk.com.thewalkers.dagger.OkHttpModule;
+import zy.walk.com.thewalkers.dagger.BModule;
+import zy.walk.com.thewalkers.dagger.DaggerUserComponent;
+import zy.walk.com.thewalkers.dagger.OkHttpModule;
 import zy.walk.com.thewalkers.dagger.Person;
 import zy.walk.com.thewalkers.dagger.Student;
 import zy.walk.com.thewalkers.dagger.User;
@@ -70,11 +73,11 @@ public class DaggerActivity extends BaseActivity {
         //setContentView(R.layout.activity_dagger);
         ViewUtils.register(this);
         //DaggerUserComponent.builder().build().inject(this);
-//        UserComponent userComponent = DaggerUserComponent.builder().
-//                bModule(new BModule(55)).
-//                okHttpModule(new OkHttpModule()).
-//                build();
-//        userComponent.inject(this);
+        UserComponent userComponent = DaggerUserComponent.builder().
+                bModule(new BModule(55)).
+                okHttpModule(new OkHttpModule()).
+                build();
+        userComponent.inject(this);
     }
 
     @Override

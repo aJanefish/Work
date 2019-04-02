@@ -11,7 +11,8 @@ public class SocketChannelDemo {
     public static void main(String args[]) throws IOException {
         P.pln("SocketChannel Demo");
         //test1();
-        test2();
+        //test2();
+        test3();
     }
 
 
@@ -61,5 +62,28 @@ public class SocketChannelDemo {
             buf.clear();
             bytesRead = socketChannel.read(buf);
         }
+    }
+
+
+    /**
+     * 阻塞模式
+     */
+    private static void test3() throws IOException {
+        SocketChannel socketChannel = SocketChannel.open();
+        socketChannel.connect(new InetSocketAddress("192.168.201.121", 8989));
+
+        P.pln("finishConnect:" + socketChannel.finishConnect());
+
+        String info = "I'm " + 0 + "-th information from client";
+        ByteBuffer buffer = ByteBuffer.allocate(48);
+        buffer.clear();
+        buffer.put(info.getBytes());
+        buffer.flip();
+        while (buffer.hasRemaining()) {
+            System.out.println(buffer);
+            //写入到buffer
+            socketChannel.write(buffer);
+        }
+        socketChannel.close();
     }
 }
