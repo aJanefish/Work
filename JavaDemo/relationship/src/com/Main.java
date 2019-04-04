@@ -4,24 +4,62 @@ import com.utils.P;
 
 /**
  * JAVA 复习
- *
- * */
-public class Main {
+ */
+
+class SuperMain {
+    private static int SuperMainId;
+
+    static {
+        SuperMainId = 1000;
+        P.pln("SuperMain static{" + SuperMainId + "}");
+    }
+
+    public static int getMainId() {
+        return SuperMainId;
+    }
+
+    {
+        P.pln("SuperMain {" + SuperMainId + "}");
+    }
+
+    public SuperMain(int age) {
+        P.pln("SuperMain:" + SuperMainId++);
+    }
+
+}
+
+public class Main extends SuperMain {
+    private static int mainId;
+    private String name = "sDefault";
+
+    static {
+        mainId = 1000;
+        P.pln("static{" + mainId + "}");
+
+    }
+
+    public static int getMainId() {
+        return mainId;
+    }
+
+    {
+        P.pln("Main{" + mainId + "}=" + this.name);
+        //System.exit(0);
+    }
+
+    public Main(String name) {
+        super(1);
+        P.pln("Main:" + mainId++);
+        this.name = name;
+    }
 
     public static void main(String[] args) {
-        P.pln("relationship");
-        //int和Integer的区别
-        // 4 1 8
-        Integer i1 =  1;
-        Integer i2 =  1;
 
-        Integer i3 =  128;
-        Integer i4 =  128;
-        P.pln(i1 == i2);
-        P.pln(i3 == i4);
 
-        Integer i5 =  new Integer(128);
-        Integer i6 =  new Integer(128);
-        P.pln(i5 == i6);
+        Main main = null;
+        main = new Main("First");
+
+        main = new Main("Second");
     }
+
 }

@@ -267,7 +267,7 @@ public class MyProcessor extends AbstractProcessor {
         List<FieldSpec> fieldSpecs = getFieldSpecs();
         List<MethodSpec> methodSpecs = getMethodSpecs();
 
-        
+
         TypeSpec finderClass = TypeSpec.classBuilder(className)
                 .addModifiers(Modifier.PUBLIC, Modifier.ABSTRACT)
                 .addFields(fieldSpecs)
