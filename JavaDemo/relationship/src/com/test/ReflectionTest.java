@@ -1,6 +1,7 @@
 package com.test;
 
 import com.utils.P;
+import sun.misc.Unsafe;
 
 import java.io.File;
 import java.lang.reflect.Constructor;
@@ -13,7 +14,7 @@ public class ReflectionTest {
     public static void main(String args[]) throws ClassNotFoundException {
 
 
-        Class<?>  dateClass = Date.class;
+        Class<?>  dateClass = Unsafe.class;
 
         String className = dateClass.getName();
         P.pln(className);
