@@ -6,14 +6,27 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class NIODemo03 {
 
+    private static ExecutorService pool = Executors.newCachedThreadPool();
     public static void main(String args[]) {
         P.pln("NIO NIODemo03");
         //client1();
-        client2();
+
+        int tmp = 10000;
+        for (int i = 0; i < tmp; i++) {
+            int finalI = i;
+            pool.execute(new Runnable() {
+                @Override
+                public void run() {
+                    client2();
+                }
+            });
+        }
     }
 
     private static void client2() {
@@ -26,7 +39,7 @@ public class NIODemo03 {
             //连接网络
             socketChannel = SocketChannel.open();
             socketChannel.configureBlocking(false);
-            socketChannel.connect(new InetSocketAddress("192.168.201.154", 8080));
+            socketChannel.connect(new InetSocketAddress("192.168.201.153", 8080));
             if (socketChannel.finishConnect()) {
                 int i = 0;
                 while (true) {

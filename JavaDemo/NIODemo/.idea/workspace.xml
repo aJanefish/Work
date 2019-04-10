@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="220d36ad-0fe0-43ad-821f-0467336a29a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nio/NIODemo03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nio/NIODemo03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nio/ServerSocketChannelDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nio/ServerSocketChannelDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nio/SocketChannelDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nio/SocketChannelDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -27,8 +29,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/ServerSocketChannelDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="724">
+              <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/NIODemo04.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/SocketChannelDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="35" column="9" lean-forward="true" selection-start-line="21" selection-end-line="35" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,34 +65,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/NIODemo03.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="33" selection-start-line="33" selection-end-line="41" selection-end-column="21" />
+            <state relative-caret-position="279">
+              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/SocketChannelDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/NIODemo02.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="31" column="33" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#736#737#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,7 +106,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/nio/BufferDemo.java" />
         <option value="$PROJECT_DIR$/data/toFile.txt" />
         <option value="$PROJECT_DIR$/data/fromFile.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nio/NIODemo03.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nio/SelectorDemo.java" />
         <option value="$PROJECT_DIR$/src/nio.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/nio/ChannelDemo.java" />
@@ -113,6 +115,7 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/nio/ServerSocketChannelDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nio/SocketChannelDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nio/NIODemo03.java" />
       </list>
     </option>
   </component>
@@ -128,7 +131,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,6 +187,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,10 +213,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SocketChannelDemo">
-    <configuration name="DatagramChannelDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nio.DatagramChannelDemo" />
-      <module name="NIODemo.NIODemo.main" />
+  <component name="RunManager" selected="Application.NIODemo03">
+    <configuration name="NIODemo03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nio.NIODemo03" />
+      <module name="NIODemo.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NIODemo04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nio.NIODemo04" />
+      <module name="NIODemo.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.nio.*" />
@@ -226,19 +242,6 @@
     </configuration>
     <configuration name="NIODemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nio.NIODemo1" />
-      <module name="NIODemo.NIODemo.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nio.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PipeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nio.PipeDemo" />
       <module name="NIODemo.NIODemo.main" />
       <extension name="coverage">
         <pattern>
@@ -278,11 +281,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NIODemo03" />
+        <item itemvalue="Application.NIODemo04" />
         <item itemvalue="Application.SocketChannelDemo" />
         <item itemvalue="Application.ServerSocketChannelDemo" />
         <item itemvalue="Application.NIODemo1" />
-        <item itemvalue="Application.PipeDemo" />
-        <item itemvalue="Application.DatagramChannelDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -303,7 +306,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2675906" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27025586" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -312,7 +315,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37931034" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45494995" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933258" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -582,16 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/NIODemo04.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/ChannelDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -661,7 +654,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/SelectorDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1195">
+        <state relative-caret-position="611">
           <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -671,18 +664,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/ServerSocketChannelDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/NIODemo03.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="33" selection-start-line="33" selection-end-line="41" selection-end-column="21" />
+        <state relative-caret-position="724">
+          <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -691,8 +674,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/SocketChannelDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
+        <state relative-caret-position="330">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="21" selection-end-line="35" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/NIODemo03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/NIODemo04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
