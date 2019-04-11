@@ -2,25 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bd15605-0ddf-4e32-9af3-9413aad8297b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/stream/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/stream/FindMaxTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/stream/FutureDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/stream/GZipAllFiles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/stream/GZipRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/stream/JoinDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/stream/Parent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/stream/Test01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/stream/Test02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tomcat/TomcatMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NIODemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NIODemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NIODemo/build/classes/java/main/com/nio/NIODemo03.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NIODemo/build/classes/java/main/com/nio/NIODemo03.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NIODemo/build/classes/java/main/com/nio/ServerSocketChannelDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NIODemo/build/classes/java/main/com/nio/ServerSocketChannelDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NIODemo/build/classes/java/main/com/nio/ServerSocketChannelDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NIODemo/build/classes/java/main/com/nio/ServerSocketChannelDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NIODemo/build/classes/java/main/com/nio/SocketChannelDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NIODemo/build/classes/java/main/com/nio/SocketChannelDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NIODemo/src/main/java/com/nio/NIODemo03.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NIODemo/src/main/java/com/nio/NIODemo03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NIODemo/src/main/java/com/nio/ServerSocketChannelDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NIODemo/src/main/java/com/nio/ServerSocketChannelDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NIODemo/src/main/java/com/nio/SocketChannelDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NIODemo/src/main/java/com/nio/SocketChannelDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/AdapterDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/InnerDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/IntegerDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/Main.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/StringDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/Test.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/bean/Apple.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/effective/EffectiveMain.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/effective/Operation.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/effective/PayType.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/effective/PayrollDay.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/effective/Planet.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/example/Example01.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/interfaces/InterfaceCaseDemo02.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/interfaces/InterfaceCaseDemo04.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/interfaces/InterfaceDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/ModeMain.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/factory/Factory.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/factory/FactoryMethodRuntimeException.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/factory/IDCard.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/factory/IDCardFactory.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/factory/Product.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/factory/Television.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/factory/TelevisionFactory.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/template/AbstractDisplay.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/template/CharDisplay.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/template/StringDisplay.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/pattern/Example01.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/pattern/PatternBean.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/pattern/PatternMain.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/pattern/RegexMatches.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/proxyDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/reference/ReferenceDemo1.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/reference/Salad.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/Child.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/FindMaxTask.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/FutureDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/GZipAllFiles.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/GZipRunnable.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/JoinDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/Parent.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/Test01.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/Test02.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/FieldTest.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/ObjectAnalyzer.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/ReflectionBean.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/ReflectionTest.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/Test01.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/Test02.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/Test03.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/Test04.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/Test05.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/Test06.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/Test07.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/tomcat/TomcatMain.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/com/utils/P.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gztest/src/data/ClanBean.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/stream/GZipAllFiles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/stream/GZipAllFiles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/stream/GZipAllFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/stream/GZipAllFiles.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/stream/GZipAllFiles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+            <state relative-caret-position="379">
+              <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,12 +95,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/stream/GZipRunnable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+            <state relative-caret-position="528">
+              <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#158#159#0" expanded="true" />
-                <element signature="e#192#193#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,8 +203,8 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="482" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="922" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -175,6 +214,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -186,18 +226,11 @@
             <path>
               <item name="relationship" type="b2602c69:ProjectViewProjectNode" />
               <item name="relationship" type="462c0819:PsiDirectoryNode" />
-              <item name="gztest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="relationship" type="b2602c69:ProjectViewProjectNode" />
-              <item name="relationship" type="462c0819:PsiDirectoryNode" />
-              <item name="gztest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="relationship" type="b2602c69:ProjectViewProjectNode" />
               <item name="relationship" type="462c0819:PsiDirectoryNode" />
-              <item name="gztest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -205,6 +238,8 @@
               <item name="relationship" type="b2602c69:ProjectViewProjectNode" />
               <item name="relationship" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stream" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="relationship" type="b2602c69:ProjectViewProjectNode" />
@@ -214,7 +249,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Course" />
     </panes>
   </component>
@@ -339,10 +373,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="922" y="0" width="960" height="1040" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19083156" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29222223" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -352,7 +385,7 @@
       <window_info anchor="bottom" id="Educational.CheckDetails" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32925472" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3926585" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.39184597" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3170189" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -372,7 +405,7 @@
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32995737" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19083156" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40222222" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -382,7 +415,7 @@
       <window_info anchor="bottom" id="Educational.CheckDetails" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32925472" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.4160178" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3926585" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3170189" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -761,22 +794,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/stream/GZipRunnable.java">
+    <entry file="file://$PROJECT_DIR$/src/com/stream/GZipAllFiles.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        <state relative-caret-position="379">
+          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/stream/GZipAllFiles.java">
+    <entry file="file://$PROJECT_DIR$/src/com/stream/GZipRunnable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+        <state relative-caret-position="528">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

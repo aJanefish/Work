@@ -2,40 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d34d8cb-9b12-4734-ab1b-62e39fd0b6e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/activity/RetrofitActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/res/layout/activity_retrofit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/androidTest/java/com/zy/retrofit/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/java/com/zy/retrofit/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/java/com/zy/retrofit/DataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/java/com/zy/retrofit/P.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/java/com/zy/retrofit/RetrofitManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/retrofit/src/test/java/com/zy/retrofit/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/androidTest/java/com/zy/viewinject/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/java/com/zy/viewinject/ViewField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/java/com/zy/viewinject/ViewLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/java/com/zy/viewinject/ViewMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/java/com/zy/viewinject/ViewUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/viewinject/src/test/java/com/zy/viewinject/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/address/IPCharacteristics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/address/InetAddressDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/utils/P.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/utils/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SocketJavaDemo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SocketJavaDemo/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/AdapterDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/InnerDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/IntegerDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/Main.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/StringDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/Test.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/bean/Apple.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/effective/EffectiveMain.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/effective/Operation.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/effective/PayType.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/effective/PayrollDay.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/effective/Planet.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/example/Example01.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/interfaces/InterfaceCaseDemo02.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/interfaces/InterfaceCaseDemo04.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/interfaces/InterfaceDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/mode/ModeMain.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/mode/factory/Factory.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/mode/factory/FactoryMethodRuntimeException.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/mode/factory/IDCard.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/mode/factory/IDCardFactory.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/mode/factory/Product.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/mode/factory/Television.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/mode/factory/TelevisionFactory.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/mode/template/AbstractDisplay.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/mode/template/CharDisplay.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/mode/template/StringDisplay.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/pattern/Example01.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/pattern/PatternBean.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/pattern/PatternMain.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/pattern/RegexMatches.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/proxyDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/reference/ReferenceDemo1.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/reference/Salad.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/stream/Child.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/stream/FindMaxTask.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/stream/FutureDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/stream/GZipAllFiles.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/stream/GZipRunnable.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/stream/JoinDemo.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/stream/Parent.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/stream/Test01.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/stream/Test02.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/test/FieldTest.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/test/ObjectAnalyzer.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/test/ReflectionBean.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/test/ReflectionTest.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/test/Test01.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/test/Test02.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/test/Test03.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/test/Test04.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/test/Test05.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/test/Test06.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/test/Test07.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/tomcat/TomcatMain.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/com/utils/P.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/gztest/src/data/ClanBean.java.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/out/production/relationship/com/stream/GZipAllFiles.class" beforeDir="false" afterPath="$PROJECT_DIR$/../relationship/out/production/relationship/com/stream/GZipAllFiles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relationship/src/com/stream/GZipAllFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/../relationship/src/com/stream/GZipAllFiles.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,13 +76,17 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="110">
+              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,11 +95,54 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SocketJavaDemo.iml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/com/address/InetAddressDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1168#1169#0" expanded="true" />
+                <element signature="e#1191#1192#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/address/IPCharacteristics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/utils/P.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="e#107#108#0" expanded="true" />
+                <element signature="e#139#140#0" expanded="true" />
+                <element signature="e#160#161#0" expanded="true" />
+                <element signature="e#239#240#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -71,15 +150,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/com/utils/P.java" />
+        <option value="$PROJECT_DIR$/src/com/address/IPCharacteristics.java" />
+        <option value="$PROJECT_DIR$/src/com/address/InetAddressDemo.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1612" />
-    <option name="height" value="876" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -87,6 +168,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,19 +182,36 @@
               <item name="SocketJavaDemo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SocketJavaDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocketJavaDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocketJavaDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocketJavaDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="address" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553150563777" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -125,7 +225,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.InetAddressDemo">
+    <configuration name="IPCharacteristics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.address.IPCharacteristics" />
+      <module name="SocketJavaDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.address.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InetAddressDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.address.InetAddressDemo" />
+      <module name="SocketJavaDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.address.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SocketJavaDemo" />
@@ -138,6 +264,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InetAddressDemo" />
+        <item itemvalue="Application.IPCharacteristics" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -156,10 +284,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25479743" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3888889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -168,7 +295,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24471635" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29218572" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -186,20 +313,90 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5366667" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29218572" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/SocketJavaDemo.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/utils/P.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="176">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#107#108#0" expanded="true" />
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#160#161#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/net/InetAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="190" column="6" selection-start-line="190" selection-start-column="6" selection-end-line="190" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/address/IPCharacteristics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SocketJavaDemo.iml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/com/address/InetAddressDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="e#1191#1192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

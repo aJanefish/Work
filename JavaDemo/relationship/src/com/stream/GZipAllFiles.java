@@ -17,6 +17,12 @@ public class GZipAllFiles {
         P.pln(file);
         gz(file);
         pool.shutdown();
+//        pool.submit(new Runnable() {
+//            @Override
+//            public void run() {
+//                P.pln("shutdown .....");
+//            }
+//        });
     }
 
 

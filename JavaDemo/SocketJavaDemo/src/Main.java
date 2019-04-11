@@ -1,11 +1,12 @@
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Hello World! - " + Arrays.toString(args));
         Socket socket = new Socket();
         List<Integer> ss = getNarcissisticNumbers(8);
         System.out.println(ss);
@@ -16,7 +17,7 @@ public class Main {
 
     /**
      * 求水仙花数
-     * */
+     */
     public static List<Integer> getNarcissisticNumbers(int n) {
         // write your code here
 
