@@ -36,6 +36,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Log.d(getLog(), "onResume");
+        System.gc();
 
     }
 
