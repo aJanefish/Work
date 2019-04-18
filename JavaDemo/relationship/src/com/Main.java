@@ -52,14 +52,21 @@ public class Main extends SuperMain {
         P.pln("Main:" + mainId++);
         this.name = name;
     }
-
-    public static void main(String[] args) {
-
-
-        Main main = null;
-        main = new Main("First");
-
-        main = new Main("Second");
+    public static boolean isAdmin(String userId){
+        userId.toLowerCase().intern();
+        return userId.toLowerCase()=="admin";
     }
+    public static void main(String[] args){
+        System.out.println(isAdmin("Admin"));
+    }
+
+//    public static void main(String[] args) {
+//
+//
+//        Main main = null;
+//        main = new Main("First");
+//
+//        main = new Main("Second");
+//    }
 
 }

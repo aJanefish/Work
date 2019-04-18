@@ -14,6 +14,10 @@ public class ModeMain {
         //
         templateTest();
         factoryTest();
+        StringBuffer stringBuffer = new StringBuffer(10);
+        stringBuffer.append("12345678901");
+        P.pln(stringBuffer.length());
+        P.pln(stringBuffer.capacity());
     }
 
     private static void factoryTest() {
