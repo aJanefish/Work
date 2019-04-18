@@ -2,66 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bd15605-0ddf-4e32-9af3-9413aad8297b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/mode/prototype/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mode/prototype/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mode/prototype/MessageBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mode/prototype/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mode/prototype/UnderlinePen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mode/singleton/SingleTonMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mode/singleton/SingletonDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mode/singleton/TicketMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketJavaDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketJavaDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/AdapterDemo.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/InnerDemo.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/IntegerDemo.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/Main.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/StringDemo.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/Test.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/bean/Apple.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/effective/EffectiveMain.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/effective/Operation.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/effective/PayType.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/effective/PayrollDay.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/effective/Planet.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/example/Example01.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/interfaces/InterfaceCaseDemo02.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/interfaces/InterfaceCaseDemo04.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/interfaces/InterfaceDemo.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/ModeMain.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/factory/Factory.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/factory/FactoryMethodRuntimeException.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/factory/IDCard.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/factory/IDCardFactory.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/factory/Product.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/factory/Television.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/factory/TelevisionFactory.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/template/AbstractDisplay.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/template/CharDisplay.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/mode/template/StringDisplay.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/pattern/Example01.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/pattern/PatternBean.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/pattern/PatternMain.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/pattern/RegexMatches.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/proxyDemo.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/reference/ReferenceDemo1.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/reference/Salad.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/Child.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/FindMaxTask.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/FutureDemo.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/GZipAllFiles.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/GZipRunnable.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/JoinDemo.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/Parent.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/Test01.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/stream/Test02.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/FieldTest.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/ObjectAnalyzer.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/ReflectionBean.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/ReflectionTest.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/Test01.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/Test02.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/Test03.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/Test04.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/Test05.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/Test06.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/test/Test07.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/tomcat/TomcatMain.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/com/utils/P.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gztest/src/data/ClanBean.java.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/stream/GZipAllFiles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/stream/GZipAllFiles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/stream/GZipAllFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/stream/GZipAllFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/OtherActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/OtherActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/JVMActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/JVMActivity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,28 +30,66 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="relationship" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/stream/GZipAllFiles.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mode/prototype/MessageBox.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+            <state relative-caret-position="528">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/mode/prototype/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Cloneable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mode/prototype/UnderlinePen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mode/prototype/Manager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#181#182#0" expanded="true" />
+                <element signature="e#223#224#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/stream/GZipRunnable.java">
+        <entry file="file://$PROJECT_DIR$/src/com/mode/prototype/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="316">
+              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -110,6 +100,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -140,15 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/utils/P.java" />
-        <option value="$PROJECT_DIR$/src/com/bean/Apple.java" />
-        <option value="$PROJECT_DIR$/src/com/reference/Salad.java" />
-        <option value="$PROJECT_DIR$/src/com/reference/ReferenceDemo1.java" />
-        <option value="$PROJECT_DIR$/src/com/Test.java" />
-        <option value="$PROJECT_DIR$/src/com/mode/template/TemplateMain.java" />
-        <option value="$PROJECT_DIR$/src/com/mode/TemplateMain.java" />
-        <option value="$PROJECT_DIR$/src/com/mode/template/AbstractDisplay.java" />
-        <option value="$PROJECT_DIR$/src/com/mode/template/CharDisplay.java" />
         <option value="$PROJECT_DIR$/src/com/mode/template/StringDisplay.java" />
         <option value="$PROJECT_DIR$/src/com/mode/factory/Product.java" />
         <option value="$PROJECT_DIR$/src/com/mode/factory/TeleVision.java" />
@@ -191,6 +173,15 @@
         <option value="$PROJECT_DIR$/src/com/stream/FutureDemo.java" />
         <option value="$PROJECT_DIR$/src/com/stream/GZipRunnable.java" />
         <option value="$PROJECT_DIR$/src/com/stream/GZipAllFiles.java" />
+        <option value="$PROJECT_DIR$/src/com/mode/singleton/SingletonDemo.java" />
+        <option value="$PROJECT_DIR$/src/com/mode/singleton/TicketMaker.java" />
+        <option value="$PROJECT_DIR$/src/com/mode/singleton/SingleTonMain.java" />
+        <option value="$PROJECT_DIR$/src/com/mode/prototype/Managet.java" />
+        <option value="$PROJECT_DIR$/src/com/mode/prototype/MessageBox.java" />
+        <option value="$PROJECT_DIR$/src/com/mode/prototype/UnderlinePen.java" />
+        <option value="$PROJECT_DIR$/src/com/mode/prototype/Manager.java" />
+        <option value="$PROJECT_DIR$/src/com/mode/prototype/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/mode/prototype/Product.java" />
       </list>
     </option>
   </component>
@@ -203,8 +194,8 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="922" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -214,8 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,7 +228,15 @@
               <item name="relationship" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="stream" type="462c0819:PsiDirectoryNode" />
+              <item name="mode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="relationship" type="b2602c69:ProjectViewProjectNode" />
+              <item name="relationship" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mode" type="462c0819:PsiDirectoryNode" />
+              <item name="prototype" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="relationship" type="b2602c69:ProjectViewProjectNode" />
@@ -249,6 +246,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Course" />
     </panes>
   </component>
@@ -283,20 +282,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GZipAllFiles">
-    <configuration name="FutureDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.stream.FutureDemo" />
-      <module name="relationship" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.stream.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="GZipAllFiles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.stream.GZipAllFiles" />
       <module name="relationship" />
@@ -323,12 +309,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReflectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.ReflectionTest" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mode.prototype.Main" />
       <module name="relationship" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.*" />
+          <option name="PATTERN" value="com.mode.prototype.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingleTonMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mode.singleton.SingleTonMain" />
+      <module name="relationship" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mode.singleton.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -351,11 +350,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.SingleTonMain" />
         <item itemvalue="Application.GZipAllFiles" />
         <item itemvalue="Application.JoinDemo" />
         <item itemvalue="Application.Test01" />
-        <item itemvalue="Application.FutureDemo" />
-        <item itemvalue="Application.ReflectionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -373,19 +372,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="922" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29222223" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49906892" visible="true" weight="0.2988889" />
+      <window_info id="Structure" order="1" sideWeight="0.5009311" side_tool="true" weight="0.2988889" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.50056624" side_tool="true" weight="0.2988889" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32925472" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.39184597" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.39184597" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3170189" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -405,7 +405,7 @@
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32995737" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40222222" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2988889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -415,7 +415,7 @@
       <window_info anchor="bottom" id="Educational.CheckDetails" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32925472" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.3926585" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.39184597" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3170189" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -440,59 +440,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/test/Test02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/Test01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/reflect/Modifier.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/util/calendar/BaseCalendar.class" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Date.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/reflect/AccessibleObject.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/reflect/Field.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/test/FieldTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ObjectAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/Test05.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/reflect/Array.java" />
     <entry file="file://$PROJECT_DIR$/src/com/test/Test06.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -796,8 +743,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/stream/GZipAllFiles.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        <state relative-caret-position="380">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -811,6 +758,82 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mode/prototype.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/mode/singleton/SingletonDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mode/singleton/SingleTonMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mode/singleton/TicketMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4092">
+          <caret line="211" column="28" selection-start-line="211" selection-start-column="28" selection-end-line="211" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Cloneable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mode/prototype/MessageBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mode/prototype/UnderlinePen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mode/prototype/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mode/prototype/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mode/prototype/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
         </state>
       </provider>
     </entry>

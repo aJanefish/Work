@@ -20,11 +20,14 @@ import java.util.List;
 public class JVMActivity extends AppCompatActivity {
     static {
         Log.d(App.TAG, "JVMActivity static ");
-        jvm1 = new JvmBean("10000");
+
+
     }
 
-    private static final JvmBean jvm1;
-    private JvmBean jvm2 = new JvmBean("10001");
+    private static int id = 10002;
+    private static final JvmBean jvm1 = new JvmBean("10000");
+    private static JvmBean jvm2 = new JvmBean("10001");
+    private JvmBean jvm3 = new JvmBean(id+++"");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +40,7 @@ public class JVMActivity extends AppCompatActivity {
 
     @ViewMethod(getId = R.id.activity_jvm_gc)
     private void gc(View view) {
-
-        Log.d(App.TAG, "JVMActivity gc "+jvm1+"\n"+jvm2);
-
+        Log.d(App.TAG, "JVMActivity gc " + jvm1 + "\n" + jvm2 + "\n" + jvm3);
     }
 
     @Override
