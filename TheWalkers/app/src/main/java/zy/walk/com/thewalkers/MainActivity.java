@@ -2,6 +2,8 @@ package zy.walk.com.thewalkers;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.os.PersistableBundle;
+
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import zy.walk.com.thewalkers.activity.BaseActivity;

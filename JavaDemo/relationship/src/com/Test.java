@@ -1,42 +1,62 @@
 package com;
 
-import com.sun.istack.internal.NotNull;
 import com.utils.P;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.TimeUnit;
 
-class Base
-{
-    public void method()
-    {
-        System.out.println("Base");
+class Outer {
+
+    Object obj;
+
+    public void outerMethod() {
+
+        //局部变量
+        int x = 5;
+        //定义在方法中的内部类称为局部内部类
+        class Inner {
+
+            @Override
+            public String toString() {
+                P.pln(x);
+                return "Inner{"+x+"}";
+            }
+
+            @Override
+            protected void finalize() throws Throwable {
+                super.finalize();
+                P.pln("finalize");
+            }
+        }
+        //创建内部类实例
+        Inner in = new Inner();
+        in.toString();
+
+        //将内部类实例的引用赋值给obj
+        //obj = in;
     }
 }
-class Son extends Base
-{
-    public void method()
-    {
-        System.out.println("Son");
-    }
 
-    public void methodB()
-    {
-        System.out.println("SonB");
+public class Test {
+
+    public static void main(String[] args) throws InterruptedException {
+        Outer out = new Outer();
+        out.outerMethod();
+        System.gc();
+
+        TimeUnit.SECONDS.sleep(2);
+
+        P.pln(out.obj);
+
+        StringBuffer stringBuffer = new StringBuffer();
+
+
     }
 }
-public class Test
-{
-    public static void main(String[] args)
-    {
-        Son base = new Son();
-        base.method();
-        base.methodB();
 
-        int d[][] =new int[10][10];
-        int []d1[] =new int[10][10];
+interface ssfas{
+    default void show(){
 
     }
+    int lenght();
 }
 

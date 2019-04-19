@@ -1,6 +1,7 @@
 package zy.walk.com.thewalkers;
 
 import android.app.Application;
+import android.content.Context;
 import android.util.Log;
 
 import com.hjq.toast.ToastUtils;

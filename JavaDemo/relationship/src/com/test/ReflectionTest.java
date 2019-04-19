@@ -14,7 +14,7 @@ public class ReflectionTest {
     public static void main(String args[]) throws ClassNotFoundException {
 
 
-        Class<?>  dateClass = Unsafe.class;
+        Class<?>  dateClass = String.class;
 
         String className = dateClass.getName();
         P.pln(className);

@@ -36,7 +36,7 @@ public class Constant {
 
         list.add(createMainEvent("Dagger2", "Dagger2 依赖注入", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.DaggerActivity"));
         list.add(createMainEvent("JVM", "JVM", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.JVMActivity"));
-
+        list.add(createMainEvent("Hot Fix", "热修复", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.HotFixActivity"));
 
 
 

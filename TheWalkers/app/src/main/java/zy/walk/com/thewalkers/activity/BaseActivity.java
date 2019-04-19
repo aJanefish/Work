@@ -7,12 +7,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public abstract class BaseActivity extends AppCompatActivity {
+    private static final String TAG = "BaseActivity";
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(getLog(), "onCreate");
+        Log.d(TAG, getLog() + "-onCreate");
 
     }
 
@@ -21,21 +22,21 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onStart();
         initView();
         initDate();
-        Log.d(getLog(), "onStart");
+        Log.d(TAG, getLog() + "-onStart");
 
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.d(getLog(), "onRestart");
+        Log.d(TAG, getLog() + "-onRestart");
 
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d(getLog(), "onResume");
+        Log.d(TAG, getLog() + "-onResume");
         System.gc();
 
     }
@@ -43,21 +44,21 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d(getLog(), "onPause");
+        Log.d(TAG, getLog() + "-onPause");
 
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d(getLog(), "onStop");
+        Log.d(TAG, getLog() + "-onStop");
 
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d(getLog(), "onDestroy");
+        Log.d(TAG, getLog() + "-onDestroy");
 
     }
 

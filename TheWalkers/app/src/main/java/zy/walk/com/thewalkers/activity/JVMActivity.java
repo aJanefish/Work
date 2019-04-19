@@ -1,6 +1,8 @@
 package zy.walk.com.thewalkers.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import dalvik.system.PathClassLoader;
 import zy.walk.com.thewalkers.App;
 import zy.walk.com.thewalkers.R;
 import zy.walk.com.thewalkers.jvm.JvmBean;
@@ -41,6 +43,15 @@ public class JVMActivity extends AppCompatActivity {
     @ViewMethod(getId = R.id.activity_jvm_gc)
     private void gc(View view) {
         Log.d(App.TAG, "JVMActivity gc " + jvm1 + "\n" + jvm2 + "\n" + jvm3);
+        Class<? extends JVMActivity> aClass = getClass();
+        Log.d(App.TAG,""+aClass);
+        ClassLoader classLoader = aClass.getClassLoader();
+        PathClassLoader pathClassLoader  = (PathClassLoader) classLoader;
+
+
+        Log.d(App.TAG,""+pathClassLoader);
+        ClassLoader classLoaderParent = classLoader.getParent();
+        Log.d(App.TAG,""+classLoaderParent);
     }
 
     @Override
