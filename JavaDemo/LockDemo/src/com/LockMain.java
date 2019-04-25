@@ -1,9 +1,11 @@
 package com;
 
 import com.lock.ReentrantLock;
+import com.utils.P;
 import com.utils.Print;
 import sun.dc.pr.PRError;
 
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.LockSupport;
 
 
@@ -26,9 +28,20 @@ public class LockMain implements Runnable {
         test1();
         test2();
         test3();
+        int s = test4();
+        P.pln(s);
 
 
+    }
 
+    private static int test4() {
+        try {
+            P.pln("test4 return");
+            return 1;
+        }finally {
+            P.pln("test4 finally");
+            return 2;
+        }
     }
 
     private static void test3() {
@@ -39,7 +52,21 @@ public class LockMain implements Runnable {
     }
 
     public void park(){
+        Thread thread = Thread.currentThread();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    TimeUnit.SECONDS.sleep(5);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                LockSupport.unpark(thread);
+            }
+        }).start();
+
         LockSupport.park(this);
+
     }
 
     //测试重入锁的数量
