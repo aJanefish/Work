@@ -14,7 +14,11 @@ import org.greenrobot.eventbus.Logger;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
+import java.net.URL;
 import java.util.Date;
+import java.util.Enumeration;
+
+import dalvik.system.PathClassLoader;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(MessageEvent event) {/* Do something */
         Log.d(TAG, "onMessageEvent:" + Thread.currentThread() + " - " + event);
-        Log.d(TAG,Log.getStackTraceString(new Throwable()));
+        Log.d(TAG, Log.getStackTraceString(new Throwable()));
     }
 
 
@@ -51,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
         //Logger sss = EventBus.getDefault().getLogger();
         Date date = new Date();
         EventBus.getDefault().post(new MessageEvent(id++, date.toString()));
+        PathClassLoader sss = (PathClassLoader) this.getClass().getClassLoader();
+
+        Log.d(TAG, "" + sss);
     }
 
     public void MyEventInit(View view) {
@@ -76,6 +83,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void MyEventPost2(View view) {
-        MyEventBus.getDefault().post(new String(""+id++));
+        MyEventBus.getDefault().post(new String("" + id++));
     }
 }

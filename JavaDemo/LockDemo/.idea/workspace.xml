@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="38d70a6f-23c6-4210-8b7b-9228bf0b887e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/misc.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +61,7 @@
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/LockSupport.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
-              <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
+              <caret line="177" selection-start-line="177" selection-end-line="177" />
             </state>
           </provider>
         </entry>
@@ -229,7 +231,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -348,7 +350,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -464,9 +466,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.516129" visible="true" weight="0.14179105" />
-      <window_info id="Structure" order="1" sideWeight="0.48387095" side_tool="true" visible="true" weight="0.14179105" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.51390433" visible="true" weight="0.14498934" />
+      <window_info id="Structure" order="1" sideWeight="0.48609567" side_tool="true" visible="true" weight="0.14498934" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -832,7 +835,7 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/LockSupport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
         </state>
       </provider>
     </entry>
