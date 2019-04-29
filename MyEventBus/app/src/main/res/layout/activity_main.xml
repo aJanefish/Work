@@ -29,8 +29,15 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MyEventPost"
-            android:onClick="MyEventPost"
+            android:text="MyEventPost1"
+            android:onClick="MyEventPost1"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MyEventPost2"
+            android:onClick="MyEventPost2"
             />
 
     </LinearLayout>

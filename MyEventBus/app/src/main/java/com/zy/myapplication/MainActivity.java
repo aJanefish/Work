@@ -63,8 +63,19 @@ public class MainActivity extends AppCompatActivity {
         //Log.d(TAG,Log.getStackTraceString(new Throwable()));
     }
 
-    public void MyEventPost(View view) {
+    @ZySubscribe
+    public void onZyString(String event) {/* Do something */
+        Log.d(TAG, "onZyString:" + Thread.currentThread() + " - " + event);
+        //Log.d(TAG,Log.getStackTraceString(new Throwable()));
+    }
+
+
+    public void MyEventPost1(View view) {
         Date date = new Date();
         MyEventBus.getDefault().post(new MessageEvent(id++, date.toString()));
+    }
+
+    public void MyEventPost2(View view) {
+        MyEventBus.getDefault().post(new String(""+id++));
     }
 }
