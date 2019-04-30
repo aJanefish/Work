@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestBuilder;
 import com.bumptech.glide.RequestManager;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.target.ViewTarget;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,18 +41,30 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this,"onBase",Toast.LENGTH_LONG).show();
 
         final String uri = "https://i.loli.net/2019/02/21/5c6e1e24c4689.png";
-        //Glide.with(this).load("https://i.loli.net/2019/02/21/5c6e1e24c4689.png").into(imageView);
-        RequestManager requestManager = Glide.with(getApplicationContext());
+        RequestManager requestManager = Glide.with(this);
+
         RequestBuilder<Drawable> requestBuilder = requestManager.load(uri);
-        requestBuilder.placeholder(getDrawable(R.drawable.ic_launcher_background));
-        //requestBuilder.e
+        requestBuilder.skipMemoryCache(true);
+        requestBuilder.diskCacheStrategy(DiskCacheStrategy.ALL);
+        ViewTarget<ImageView, Drawable> viewTarget = requestBuilder.into(imageView_one);
 
 
-        ViewTarget<ImageView, Drawable> viewDrawableViewTarget = requestBuilder.into(imageView_one);
-        ViewTarget<ImageView, Drawable> viewDrawableViewTarget1 = requestBuilder.into(imageView_one);
 
-        Log.d(TAG, ""+viewDrawableViewTarget.getClass()
-        );
+        Glide.with(this).load(uri).into(imageView_two);
+
+
+        // Glide.with(this).load()
+//        RequestManager requestManager = Glide.with(getApplicationContext());
+//        RequestBuilder<Drawable> requestBuilder = requestManager.load(uri);
+//        requestBuilder.placeholder(getDrawable(R.drawable.ic_launcher_background));
+//        //requestBuilder.e
+//
+//
+//        ViewTarget<ImageView, Drawable> viewDrawableViewTarget = requestBuilder.into(imageView_one);
+//        ViewTarget<ImageView, Drawable> viewDrawableViewTarget1 = requestBuilder.into(imageView_one);
+//
+//        Log.d(TAG, ""+viewDrawableViewTarget.getClass()
+//        );
 
 
 
