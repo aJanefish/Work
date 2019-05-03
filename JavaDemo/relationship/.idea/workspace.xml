@@ -2,41 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bd15605-0ddf-4e32-9af3-9413aad8297b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/androidTest/java/com/zy/glidecache/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/main/java/com/zy/glidecache/ZYActiveResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/main/java/com/zy/glidecache/ZYLruCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/main/java/com/zy/glidecache/ZYLruResourceCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/test/java/com/zy/glidecache/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/src/androidTest/java/com/zy/glideprocess/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/src/main/java/com/zy/glideprocess/GlideProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/src/test/java/com/zy/glideprocess/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/main/java/com/zy/glidecache/ZYGlide.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BlockingQueueDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BlockingQueueDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaTest001/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaTest001/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LoadClassDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LoadClassDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/META-INF/relationship.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/WithInner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/WithInner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/relationship/com/bean/Apple.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/bean/Apple.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/relationship/com/test/Test07.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/test/Test07.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/relationship/com/thread/MyThreadLocal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/relationship/com/thread/MyThreadLocal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/test/Test07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/Test07.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/java/com/zy/glidedemo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/java/com/zy/glidedemo/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/main/java/com/zy/glidecache/ZYLruCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/main/java/com/zy/glidecache/ZYLruCache.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,25 +37,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thread/MyThreadLocal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-              <folding>
-                <element signature="e#915#916#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/test/Test07.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            <state relative-caret-position="81">
+              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#889#890#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="e#878#879#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,7 +73,6 @@
       <find>value</find>
       <find>entrySet</find>
       <find>table</find>
-      <find>threshold</find>
       <find>loadFactor</find>
       <find>TreeNode</find>
       <find>e instanceof TreeNode</find>
@@ -112,6 +82,7 @@
       <find>writeObject</find>
       <find>segments</find>
       <find>threadLocals</find>
+      <find>threshold</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -195,8 +166,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -214,6 +183,21 @@
               <item name="relationship" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="relationship" type="b2602c69:ProjectViewProjectNode" />
+              <item name="relationship" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="relationship" type="b2602c69:ProjectViewProjectNode" />
+              <item name="relationship" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="Example01.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="relationship" type="b2602c69:ProjectViewProjectNode" />
@@ -244,24 +228,18 @@
               <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="relationship" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556362097310" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556874210612" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -383,11 +361,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.492635" visible="true" weight="0.21801706" />
-      <window_info id="Structure" order="1" sideWeight="0.507365" side_tool="true" visible="true" weight="0.21801706" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48722318" visible="true" weight="0.22768533" />
+      <window_info id="Structure" order="1" sideWeight="0.51277685" side_tool="true" visible="true" weight="0.22768533" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -396,7 +373,7 @@
       <window_info anchor="bottom" id="Educational.CheckDetails" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32925472" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32035595" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.5008518" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.2836485" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -451,8 +428,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/mode/abfactory/listfactory/ListFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/mode/abfactory/listfactory/ListLink.java" />
     <entry file="file://$PROJECT_DIR$/src/com/mode/abfactory/factory/Factory.java" />
     <entry file="file://$PROJECT_DIR$/src/com/mode/abfactory/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/com/mode/abfactory/tablefactory/TableFactory.java" />
@@ -541,7 +516,7 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/lang/ThreadLocal.java" />
     <entry file="file://$PROJECT_DIR$/src/com/thread/MyThreadLocal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="810">
           <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
           <folding>
             <element signature="e#915#916#0" expanded="true" />
@@ -549,12 +524,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="394" column="26" selection-start-line="394" selection-start-column="26" selection-end-line="394" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/util/LinkedHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="400" column="11" selection-start-line="400" selection-start-column="11" selection-end-line="400" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/Test07.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        <state relative-caret-position="81">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
           </folding>
         </state>
       </provider>

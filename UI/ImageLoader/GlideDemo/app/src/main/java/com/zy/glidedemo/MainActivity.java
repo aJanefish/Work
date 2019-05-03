@@ -3,12 +3,10 @@ package com.zy.glidedemo;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.Bitmap;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Looper;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -18,6 +16,7 @@ import com.bumptech.glide.RequestBuilder;
 import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.target.ViewTarget;
+import com.zy.glidecache.ZYGlide;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView imageView_two;
 
 
-    private String TAG= "MainActivityZy";
+    private String TAG = "MainActivityZy";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +35,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public void onBase(View view){
-        Toast.makeText(this,"onBase",Toast.LENGTH_LONG).show();
+    public void onBase(View view) {
+        Toast.makeText(this, "onBase", Toast.LENGTH_LONG).show();
 
         final String uri = "https://i.loli.net/2019/02/21/5c6e1e24c4689.png";
         RequestManager requestManager = Glide.with(this);
@@ -47,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
         requestBuilder.skipMemoryCache(true);
         requestBuilder.diskCacheStrategy(DiskCacheStrategy.ALL);
         ViewTarget<ImageView, Drawable> viewTarget = requestBuilder.into(imageView_one);
-
 
 
         Glide.with(this).load(uri).into(imageView_two);
@@ -67,8 +67,24 @@ public class MainActivity extends AppCompatActivity {
 //        );
 
 
-
         //RequestBuilder<Integer> integerRequestBuilder = null;
 
     }
+
+    public void saveBitmap(View view) {
+        final String uri = "https://i.loli.net/2019/02/21/5c6e1e24c4689.png";
+        ZYGlide.save(uri, 50, this);
+
+        //ZYGlide.getBitmap(uri);
+    }
+
+
+    public void cacheTest(View view) {
+        Intent intent =new Intent(this,CacheActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+
+    }
+
+
 }
