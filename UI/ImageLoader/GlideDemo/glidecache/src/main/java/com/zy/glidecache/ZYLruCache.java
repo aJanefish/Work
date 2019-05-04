@@ -37,14 +37,14 @@ public class ZYLruCache {
     }
 
     private void balance() {
-        control(MAX_NUMBER);
+         control(MAX_NUMBER);
     }
 
     public void clear() {
         control(0);
     }
 
-    private void control(int size) {
+    private synchronized void control(int size) {
         Iterator<Map.Entry<String, Bitmap>> iterator;
         Map.Entry<String, Bitmap> entry;
         while (currentSize > size) {

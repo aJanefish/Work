@@ -4,16 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.graphics.Bitmap;
+
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
-import android.widget.ListView;
 
-import com.zy.glidecache.ZYGlide;
-import com.zy.glidedemo.myadapter.BaseAdapter;
-import com.zy.glidedemo.myadapter.BaseHolder;
-import com.zy.glidedemo.myadapter.ItemViewDelegate;
+import com.zy.glidedemo.myadapter.CacheAdapter;
 import com.zy.glidedemo.myadapter.MessageEvent;
 
 import java.util.ArrayList;
@@ -56,37 +51,41 @@ public class CacheActivity extends AppCompatActivity {
         mTmpDates.add(new MessageEvent("uri10",uri3));
         mTmpDates.add(new MessageEvent("uri11",uri4));
         mTmpDates.add(new MessageEvent("uri12",uri5));
-        BaseAdapter<MessageEvent> baseAdapter = new BaseAdapter<>(this, mTmpDates);
-        baseAdapter.addDelegate(new ItemViewDelegate<MessageEvent>() {
-            @Override
-            public int getLayoutId() {
-                return R.layout.activity_cache_item_list;
-            }
-
-            @Override
-            public boolean isShowing(MessageEvent messageEvent, int position) {
-                return true;
-            }
-
-            @Override
-            public void convert(final BaseHolder holder, final MessageEvent messageEvent, int position) {
-                holder.setText(R.id.activity_cache_item_title, messageEvent.getTitle());
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        final Bitmap bitmap = ZYGlide.getBitmap(messageEvent.getUrl());
-                        handler.post(new Runnable() {
-                            @Override
-                            public void run() {
-                                holder.setImage(R.id.activity_cache_item_image_view, bitmap);
-
-                            }
-                        });
-                    }
-                }).start();
-
-            }
-        });
-        recyclerView.setAdapter(baseAdapter);
+        mTmpDates.add(new MessageEvent("uri22",uri1));
+        mTmpDates.add(new MessageEvent("uri23",uri2));
+        mTmpDates.add(new MessageEvent("uri24",uri3));
+        mTmpDates.add(new MessageEvent("uri25",uri4));
+        mTmpDates.add(new MessageEvent("uri26",uri5));
+        mTmpDates.add(new MessageEvent("uri27",uri6));
+        mTmpDates.add(new MessageEvent("uri28",uri1));
+        mTmpDates.add(new MessageEvent("uri29",uri2));
+        mTmpDates.add(new MessageEvent("uri210",uri3));
+        mTmpDates.add(new MessageEvent("uri211",uri4));
+        mTmpDates.add(new MessageEvent("uri212",uri5));
+        mTmpDates.add(new MessageEvent("uri31",uri));
+        mTmpDates.add(new MessageEvent("uri32",uri1));
+        mTmpDates.add(new MessageEvent("uri33",uri2));
+        mTmpDates.add(new MessageEvent("uri34",uri3));
+        mTmpDates.add(new MessageEvent("uri35",uri4));
+        mTmpDates.add(new MessageEvent("uri36",uri5));
+        mTmpDates.add(new MessageEvent("uri37",uri6));
+        mTmpDates.add(new MessageEvent("uri38",uri1));
+        mTmpDates.add(new MessageEvent("uri39",uri2));
+        mTmpDates.add(new MessageEvent("uri310",uri3));
+        mTmpDates.add(new MessageEvent("uri311",uri4));
+        mTmpDates.add(new MessageEvent("uri312",uri5));
+        mTmpDates.add(new MessageEvent("uri322",uri1));
+        mTmpDates.add(new MessageEvent("uri323",uri2));
+        mTmpDates.add(new MessageEvent("uri324",uri3));
+        mTmpDates.add(new MessageEvent("uri325",uri4));
+        mTmpDates.add(new MessageEvent("uri326",uri5));
+        mTmpDates.add(new MessageEvent("uri327",uri6));
+        mTmpDates.add(new MessageEvent("uri328",uri1));
+        mTmpDates.add(new MessageEvent("uri329",uri2));
+        mTmpDates.add(new MessageEvent("uri3210",uri3));
+        mTmpDates.add(new MessageEvent("uri3211",uri4));
+        mTmpDates.add(new MessageEvent("uri3212",uri5));
+        CacheAdapter cacheAdapter = new CacheAdapter(mTmpDates);
+        recyclerView.setAdapter(cacheAdapter);
     }
 }

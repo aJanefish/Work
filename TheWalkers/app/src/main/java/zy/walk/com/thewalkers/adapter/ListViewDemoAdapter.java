@@ -65,18 +65,12 @@ public class ListViewDemoAdapter extends BaseAdapter {
         final ViewHolder holder;
         ListViewDemoEvent listViewDemoEvent = listViewDemoEvents.get(position);
 
-        Log.d(TAG, "convertView:" + convertView + ""+Log.getStackTraceString(new Throwable()));
+        Log.d(TAG, "convertView:" + convertView);
 
         if (convertView == null) {
             //Log.d(TAG,position+" : (convertView == null)");
             convertView = inflater.inflate(R.layout.activity_list_view_demo_list_view_item, null);
-            holder = new ViewHolder();
-
-            holder.textView = convertView.findViewById(R.id.activity_list_view_demo_list_view_item_text_view);
-            holder.textView_des = convertView.findViewById(R.id.activity_list_view_demo_list_view_item_text_view_des);
-
-            holder.imageView = convertView.findViewById(R.id.activity_list_view_demo_list_view_item_image_view);
-
+            holder = new ViewHolder(convertView);
 
             convertView.setTag(holder);
 
@@ -122,5 +116,11 @@ public class ListViewDemoAdapter extends BaseAdapter {
         ImageView imageView;
         TextView textView;
         TextView textView_des;
+
+        public ViewHolder(View convertView) {
+            textView = convertView.findViewById(R.id.activity_list_view_demo_list_view_item_text_view);
+            textView_des = convertView.findViewById(R.id.activity_list_view_demo_list_view_item_text_view_des);
+            imageView = convertView.findViewById(R.id.activity_list_view_demo_list_view_item_image_view);
+        }
     }
 }
