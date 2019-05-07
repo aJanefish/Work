@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="220d36ad-0fe0-43ad-821f-0467336a29a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nio/NIODemo03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nio/NIODemo03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nio/ServerSocketChannelDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nio/ServerSocketChannelDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nio/SocketChannelDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nio/SocketChannelDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nio/NIODemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nio/NIODemo1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyEventBus/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyEventBus/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyEventBus/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyEventBus/build.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -29,7 +30,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/ServerSocketChannelDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="724">
+            <state relative-caret-position="1804">
               <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -38,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/NIODemo04.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="278">
@@ -50,11 +51,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/NIODemo1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/SocketChannelDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="35" column="9" lean-forward="true" selection-start-line="21" selection-end-line="35" selection-end-column="9" />
+            <state relative-caret-position="594">
+              <caret line="35" column="9" selection-start-line="21" selection-end-line="35" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,11 +78,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/NIODemo03.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
+            <state relative-caret-position="352">
               <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,7 +115,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/NIOMain.java" />
         <option value="$PROJECT_DIR$/src/nomal_io.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/nio/NIODemo02.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nio/NIODemo1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nio/BufferDemo.java" />
         <option value="$PROJECT_DIR$/data/toFile.txt" />
         <option value="$PROJECT_DIR$/data/fromFile.txt" />
@@ -116,6 +128,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/nio/ServerSocketChannelDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nio/SocketChannelDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nio/NIODemo03.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nio/NIODemo1.java" />
       </list>
     </option>
   </component>
@@ -131,6 +144,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -186,8 +201,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,7 +319,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27025586" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27292112" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -412,13 +425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="103" column="15" selection-start-line="103" selection-start-column="15" selection-end-line="103" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/RandomAccessFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="278" column="29" selection-start-line="278" selection-start-column="29" selection-end-line="278" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -632,16 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/NIODemo1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/NIODemo02.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -664,7 +660,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/ServerSocketChannelDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
+        <state relative-caret-position="1804">
           <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -674,8 +670,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/SocketChannelDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="21" selection-end-line="35" selection-end-column="9" />
+        <state relative-caret-position="594">
+          <caret line="35" column="9" selection-start-line="21" selection-end-line="35" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -684,11 +680,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/NIODemo03.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
+        <state relative-caret-position="352">
           <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -697,6 +693,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/RandomAccessFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="300" lean-forward="true" selection-start-line="300" selection-end-line="300" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="274" column="11" selection-start-line="274" selection-start-column="11" selection-end-line="274" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/NIODemo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

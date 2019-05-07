@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.zy.eventbus.MyEventBus;
 import com.zy.eventbus.ZySubscribe;
+import com.zy.zyopenlibtest.ZYUtils;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Logger;
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
     @ZySubscribe
     public void onZyString(String event) {/* Do something */
-        Log.d(TAG, "onZyString:" + Thread.currentThread() + " - " + event);
+        Log.d(TAG, "onZyString:" + Thread.currentThread() + " - " + event + " - " + ZYUtils.getID());
         //Log.d(TAG,Log.getStackTraceString(new Throwable()));
     }
 

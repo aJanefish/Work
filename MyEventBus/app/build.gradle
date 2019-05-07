@@ -28,4 +28,6 @@ dependencies {
 
     implementation 'org.greenrobot:eventbus:3.1.1'
     implementation project(path: ':eventbus')
+
+    implementation 'com.github.aJanefish:ZYOpenTestLib:1.0.0'
 }

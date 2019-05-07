@@ -12,6 +12,7 @@ public class NIODemo1 {
         P.pln("NIO Demo");
         method1();
         method2();
+
     }
 
     /**
