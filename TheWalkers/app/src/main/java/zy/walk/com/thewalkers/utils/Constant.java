@@ -87,6 +87,7 @@ public class Constant {
         list.add(createMainEvent("Adapter", "Adapter框架", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.AdapterActivity"));
         list.add(createMainEvent("ItemTouchHelper", "ItemTouchHelper源码分析 实现拖动 ", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.ItemTouchHelperActivity"));
         list.add(createMainEvent("ListView", "ListView中图片错位怎么产生的", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.ListViewDemoActivity"));
+        list.add(createMainEvent("ListView", "ListView缓存机制", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.ListViewCacheActivity"));
 
 
 

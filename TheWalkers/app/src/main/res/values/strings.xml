@@ -8,4 +8,5 @@
     <string name="bitmap_demo_activity">BitmapDemoActivity</string>
     <string name="activity_content_resolver_demo_title">ContentResolverDemo</string>
     <string name="activity_content_resolver_demo_des">com.zy.content.provider.demo</string>
+    <string name="list_view_cache">ListView 缓存 Cache</string>
 </resources>

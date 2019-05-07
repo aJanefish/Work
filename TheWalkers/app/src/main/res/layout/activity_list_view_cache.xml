@@ -4,16 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.AdapterMainActivity">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/activity_adapter_main_recycler_view"
+    tools:context=".activity.ListViewCacheActivity">
+    <TextView
+        android:id="@+id/activity_list_view_cache_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/list_view_cache"
+        android:textSize="@dimen/sp_24"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/activity_list_view_cache_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/activity_list_view_cache_title"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         tools:ignore="MissingConstraints">
 
-    </androidx.recyclerview.widget.RecyclerView>
+    </ListView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
