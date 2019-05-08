@@ -8,6 +8,7 @@ public class Apple {
 
     public Apple(String name) {
         this.name = name;
+        P.pln("Apple Init: " + name + " - " + Thread.currentThread());
     }
 
     public String getName() {
@@ -26,7 +27,7 @@ public class Apple {
     @Override
     protected void finalize() throws Throwable {
         super.finalize();
-        P.pln("Apple： " + name + " finalize");
+        P.pln("Apple finalize： " + name + " - " + Thread.currentThread());
     }
 
     @Override
