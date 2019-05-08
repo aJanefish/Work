@@ -40,7 +40,8 @@ dependencies {
     //服务端
     implementation 'com.koushikdutta.async:androidasync:2.2.1'
 
-    implementation project(':viewinject')
     implementation project(':retrofit')
+
+    implementation 'com.github.aJanefish:viewinject:1.0.0'
 
 }

@@ -1,1 +1,1 @@
-include ':app', ':viewinject', ':retrofit'
+include ':app', ':retrofit'

@@ -5,6 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.RetrofitActivity">
+    <TextView
+        android:id="@+id/activity_retrofit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
 
     <Button
         android:id="@+id/activity_retrofit_test1"

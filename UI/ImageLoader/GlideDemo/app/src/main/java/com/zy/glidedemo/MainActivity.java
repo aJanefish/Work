@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -74,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
     public void saveBitmap(View view) {
         final String uri = "https://i.loli.net/2019/02/21/5c6e1e24c4689.png";
         ZYGlide.save(uri, 50, this);
+
+        Log.d(TAG,"getCacheDir:"+getCacheDir());
 
         //ZYGlide.getBitmap(uri);
     }

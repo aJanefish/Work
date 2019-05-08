@@ -23,7 +23,7 @@ import dalvik.system.PathClassLoader;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = " ";
     private int id = 1000;
 
     @Override
