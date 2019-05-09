@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -52,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         Glide.with(this).load(uri).into(imageView_two);
+
+        Looper.getMainLooper();
 
 
         // Glide.with(this).load()

@@ -60,7 +60,7 @@ public class ViewUtils {
             if (method.isAnnotationPresent(ViewMethod.class)) {
                 ViewMethod viewMethod = method.getAnnotation(ViewMethod.class);
                 show(method + "    " + viewMethod);
-                View view = target.findViewById(viewMethod.getId());
+                View view = target.findViewById(viewMethod.value());
                 view.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -92,7 +92,7 @@ public class ViewUtils {
             if (field.isAnnotationPresent(ViewField.class)) {
                 ViewField viewField = field.getAnnotation(ViewField.class);
                 field.setAccessible(true);
-                field.set(target, target.findViewById(viewField.getId()));
+                field.set(target, target.findViewById(viewField.value()));
             }
         }
     }

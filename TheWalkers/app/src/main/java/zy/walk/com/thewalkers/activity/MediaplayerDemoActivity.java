@@ -20,15 +20,15 @@ public class MediaplayerDemoActivity extends BaseActivity {
     private static final String TAG = "MediaPlayerDemo";
     RobustPlayer robustPlayer;
     private String uri = "http://od.open.qingting.fm/m4a/5a436ca87cb89146f2089737_8455491_64.m4a?u=786&channelId=235929&programId=8295766";
-    @ViewField(getId = R.id.media_player_destination)
+    @ViewField(R.id.media_player_destination)
     private TextView destination;
-    @ViewField(getId = R.id.media_player_start)
+    @ViewField(R.id.media_player_start)
     private Button start;
-    @ViewField(getId = R.id.media_player_play)
+    @ViewField(R.id.media_player_play)
     private Button play;
-    @ViewField(getId = R.id.media_player_pause)
+    @ViewField(R.id.media_player_pause)
     private Button pause;
-    @ViewField(getId = R.id.media_player_stop)
+    @ViewField(R.id.media_player_stop)
     private Button stop;
 
     @Override
@@ -80,27 +80,27 @@ public class MediaplayerDemoActivity extends BaseActivity {
 //    }
 
 
-    @ViewMethod(getId = R.id.media_player_pause)
+    @ViewMethod(R.id.media_player_pause)
     public void pause(View v) {
         robustPlayer.pause();
         show("pause");
     }
 
-    @ViewMethod(getId = R.id.media_player_play)
+    @ViewMethod(R.id.media_player_play)
     public void play(View v) {
         robustPlayer.play(Uri.parse(uri));
         show("play");
 
     }
 
-    @ViewMethod(getId = R.id.media_player_stop)
+    @ViewMethod(R.id.media_player_stop)
     public void stop(View v) {
         robustPlayer.stop();
         show("stop");
 
     }
 
-    @ViewMethod(getId = R.id.media_player_start)
+    @ViewMethod(R.id.media_player_start)
     public void start(View v) {
         robustPlayer.start();
         show("start");

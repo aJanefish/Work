@@ -2,36 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a714ef9a-9b48-47e2-a565-f814031c87d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/androidTest/java/com/zy/glidecache/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/main/java/com/zy/glidecache/ZYActiveResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/main/java/com/zy/glidecache/ZYLruResourceCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glidecache/src/test/java/com/zy/glidecache/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/src/androidTest/java/com/zy/glideprocess/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/src/main/java/com/zy/glideprocess/GlideProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/glideprocess/src/test/java/com/zy/glideprocess/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relationship/src/com/thread/ThreadDemo02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BlockingQueueDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BlockingQueueDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaTest001/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaTest001/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LoadClassDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LoadClassDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/java/com/zy/glidedemo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/java/com/zy/glidedemo/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../UI/ImageLoader/GlideDemo/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/caches/gradle_models.ser" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -43,8 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -161,10 +136,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="70" />
-    <option name="y" value="202" />
-    <option name="width" value="1612" />
-    <option name="height" value="876" />
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -173,6 +148,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,7 +164,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,7 +315,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -380,20 +355,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/write.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/write.txt" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.60/e5c7258c893cd3fa12b85eb535dcc5d0961ba4c7/kotlin-stdlib-1.2.60-sources.jar!/kotlin/jvm/annotations/JvmPlatformAnnotations.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.2.2/36f483536153f15339a8b48d508e22be7c9c531a/okio-2.2.2.jar!/okio/Okio.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.60/e5c7258c893cd3fa12b85eb535dcc5d0961ba4c7/kotlin-stdlib-1.2.60-sources.jar!/kotlin/jvm/annotations/JvmPlatformAnnotations.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.2.2/36f483536153f15339a8b48d508e22be7c9c531a/okio-2.2.2.jar!/okio/Okio.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/util/FileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -404,60 +367,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.2.2/6904b2c4ae9d612465f6fdd45ddda28aebb45921/okio-2.2.2-sources.jar!/okio/Sink.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.2.2/6904b2c4ae9d612465f6fdd45ddda28aebb45921/okio-2.2.2-sources.jar!/okio/Okio.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding>
-            <element signature="e#684#1125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.2.2/6904b2c4ae9d612465f6fdd45ddda28aebb45921/okio-2.2.2-sources.jar!/okio/BufferedSink.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-          <folding>
-            <element signature="e#615#746#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.2.2/6904b2c4ae9d612465f6fdd45ddda28aebb45921/okio-2.2.2-sources.jar!/okio/BufferedSource.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.2.2/6904b2c4ae9d612465f6fdd45ddda28aebb45921/okio-2.2.2-sources.jar!/okio/Buffer.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-253">
-          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.2.2/6904b2c4ae9d612465f6fdd45ddda28aebb45921/okio-2.2.2-sources.jar!/okio/Sink.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.2.2/6904b2c4ae9d612465f6fdd45ddda28aebb45921/okio-2.2.2-sources.jar!/okio/Okio.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.2.2/6904b2c4ae9d612465f6fdd45ddda28aebb45921/okio-2.2.2-sources.jar!/okio/BufferedSink.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.2.2/6904b2c4ae9d612465f6fdd45ddda28aebb45921/okio-2.2.2-sources.jar!/okio/BufferedSource.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.2.2/6904b2c4ae9d612465f6fdd45ddda28aebb45921/okio-2.2.2-sources.jar!/okio/Buffer.kt" />
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.0.0/a4ff5fc46e41fead491d62f258567fff4f153ab8/okio-2.0.0-sources.jar!/okio/Okio.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.0.0/5c7c9d8787f602fff66cda55ef61803251df7460/okio-2.0.0.jar!/okio/Okio.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.0.0/a4ff5fc46e41fead491d62f258567fff4f153ab8/okio-2.0.0-sources.jar!/okio/Okio.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.0.0/5c7c9d8787f602fff66cda55ef61803251df7460/okio-2.0.0.jar!/okio/Okio.class" />
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">

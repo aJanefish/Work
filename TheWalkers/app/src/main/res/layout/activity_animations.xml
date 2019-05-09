@@ -6,113 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".AnimationsActivity"
     android:padding="@dimen/dp_16">
-
-    <TextView
+    <LinearLayout
+        android:id="@+id/activity_animations_linear_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/animaion_text_view_values"/>
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/activity_animations_bujian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="补间动画"/>
+
+        <Button
+            android:id="@+id/activity_animations_zhuzhen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="逐帧动画"/>
+
+
+        <Button
+            android:id="@+id/activity_animations_shuxing_translationX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="属性动画(translationX)"/>
+        <Button
+            android:id="@+id/activity_animations_shuxing_alpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="属性动画(alpha>)"/>
+        <Button
+            android:id="@+id/activity_animations_shuxing_rotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="属性动画(rotation>)"/>
+        <Button
+            android:id="@+id/activity_animations_shuxing_scaleY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="属性动画(scaleY)"/>
+        <Button
+            android:id="@+id/activity_animations_shuxing_zuhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="属性动画(组合)"/>
+    </LinearLayout>
+
 
     <Button
+        android:id="@+id/activity_animations_animation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="张宇"
-        android:id="@+id/animaion_button"
-        android:layout_marginTop="@dimen/dp_16"
+        android:text="Animation"
+        app:layout_constraintBottom_toBottomOf="@id/activity_animations_image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/activity_animations_linear_layout"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/animaion_daimajia_recysler_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/animaion_button"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/animaion_zhangyu_recycler_view"
-        app:layout_constraintBottom_toBottomOf="parent"
-        >
-
-    </androidx.recyclerview.widget.RecyclerView>
-
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/animaion_zhangyu_recycler_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/animaion_button"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/animaion_daimajia_recysler_view"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-
-    </androidx.recyclerview.widget.RecyclerView>
+        tools:ignore="MissingConstraints" />
 
 
     <ImageView
-        android:id="@+id/animation_image_vew_menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_settings_input_svideo_black_24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/activity_animations_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Animation"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-    <ImageView
-        android:id="@+id/animation_image_vew_dissatisfied"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_sentiment_dissatisfied_black_24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/activity_animations_animation"
+        app:layout_constraintLeft_toRightOf="@id/activity_animations_linear_layout"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/animation_image_vew_neutral"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_sentiment_neutral_black_24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
-    <ImageView
-        android:id="@+id/animation_image_vew_satisfied"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_sentiment_satisfied_black_24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
-
-    <ImageView
-        android:id="@+id/animation_image_vew_very_dissatisfied"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_sentiment_very_dissatisfied_black_24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
-    <ImageView
-        android:id="@+id/animation_image_vew_very_satisfied"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_sentiment_very_satisfied_black_24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
 
 
 

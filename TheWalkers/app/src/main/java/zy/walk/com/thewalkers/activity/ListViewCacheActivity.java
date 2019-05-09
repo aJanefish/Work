@@ -19,7 +19,7 @@ import zy.walk.com.thewalkers.viewinjection.ViewUtils;
 public class ListViewCacheActivity extends AppCompatActivity {
 
     private static final String TAG = "ListViewCacheActivity";
-    @ViewField(getId = R.id.activity_list_view_cache_list_view)
+    @ViewField(R.id.activity_list_view_cache_list_view)
     private ListView listView;
 
     @Override

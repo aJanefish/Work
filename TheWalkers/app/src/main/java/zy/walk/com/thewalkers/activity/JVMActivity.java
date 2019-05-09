@@ -40,7 +40,7 @@ public class JVMActivity extends AppCompatActivity {
     }
 
 
-    @ViewMethod(getId = R.id.activity_jvm_gc)
+    @ViewMethod(R.id.activity_jvm_gc)
     private void gc(View view) {
         Log.d(App.TAG, "JVMActivity gc " + jvm1 + "\n" + jvm2 + "\n" + jvm3);
         Class<? extends JVMActivity> aClass = getClass();

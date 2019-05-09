@@ -30,12 +30,12 @@ import javax.inject.Named;
 @ViewLayout(R.layout.activity_dagger)
 public class DaggerActivity extends BaseActivity {
     private static final String TAG = "DaggerActivity";
-    @ViewField(getId = R.id.activity_dagger_title)
+    @ViewField(R.id.activity_dagger_title)
     TextView title;
 
-    @ViewField(getId = R.id.activity_dagger_des)
+    @ViewField(R.id.activity_dagger_des)
     TextView des;
-    @ViewField(getId = R.id.activity_dagger_test)
+    @ViewField(R.id.activity_dagger_test)
     Button button_test;
 
     @Inject
@@ -97,7 +97,7 @@ public class DaggerActivity extends BaseActivity {
     }
 
 
-    @ViewMethod(getId = R.id.activity_dagger_test)
+    @ViewMethod(R.id.activity_dagger_test)
     private void test(View view) {
         Log.d(TAG, "" + title + "\n" + des + "\n" + button_test);
         Log.d(TAG, "User:" + user);

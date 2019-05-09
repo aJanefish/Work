@@ -27,7 +27,7 @@ public class AndroidDateActivity extends AppCompatActivity {
 
 
 
-    @ViewMethod(getId = R.id.AndroidDateActivity_test1)
+    @ViewMethod(R.id.AndroidDateActivity_test1)
     public void test1(View view) {
         SparseArray<String> sparseArray =new SparseArray();
         sparseArray.append(1,"A");
