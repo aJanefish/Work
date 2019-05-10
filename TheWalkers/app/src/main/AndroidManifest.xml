@@ -32,7 +32,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.ListViewCacheActivity"></activity>
+        <activity android:name=".activity.EventTransferActivity"></activity>
+        <activity android:name=".activity.ListViewCacheActivity" />
         <activity android:name=".activity.HotFixActivity" />
         <activity android:name=".activity.JVMActivity" />
         <activity android:name=".activity.DaggerActivity" />

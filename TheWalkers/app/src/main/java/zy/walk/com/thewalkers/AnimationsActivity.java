@@ -151,7 +151,7 @@ public class AnimationsActivity extends BaseActivity {
         animSet.start();
     }
 
-    
+
     /**
      * 逐帧动画测测试
      */

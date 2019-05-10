@@ -20,6 +20,8 @@ public class Constant {
 
         list.add(createMainEvent("RxJava", "RxJava(RxJava)", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.RxJavaActivity"));
         list.add(createMainEvent("Activity生命周期", "The life cycle", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.AuxiliaryInfoShowActivityaa"));
+        list.add(createMainEvent("dispatchTouchEvent", "View 事件传递机制", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.EventTransferActivity"));
+
         list.add(createMainEvent("PreferenceFragment", "设置常用", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.PreferenceActivity"));
 
 
