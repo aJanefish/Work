@@ -11,4 +11,14 @@
     <string name="list_view_cache">ListView 缓存 Cache</string>
     <string name="translationx"><![CDATA[属性动画<translationX>]]></string>
     <string name="view_create_title">研究View绘制流程</string>
+    <string name="activity_android_server_main_title"> Android Server 研究总结</string>
+    <string name="start_normal_server"> 开启普通服务</string>
+    <string name="stop_normal_server"> 关闭普通服务</string>
+
+    <string name="bind_server"> bind server</string>
+    <string name="unbind_server"> unbind server</string>
+    <string name="set_name">set</string>
+    <string name="get_name">get</string>
+    <string name="foo">IntentService foo</string>
+    <string name="baz">IntentService baz</string>
 </resources>

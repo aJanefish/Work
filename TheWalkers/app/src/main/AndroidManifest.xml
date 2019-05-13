@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="zy.walk.com.thewalkers">
+
     <!-- 连接网络权限，用于执行云端语音能力 -->
     <uses-permission android:name="android.permission.INTERNET" /> <!-- 读写外部存储器 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -32,7 +33,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.ViewCreateActivity"></activity>
+        <service
+            android:name=".server.MyIntentService"
+            android:exported="false" />
+        <service
+            android:name=".server.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activity.AndroidServerMainActivity" />
+        <activity android:name=".activity.ViewCreateActivity" />
         <activity android:name=".activity.EventTransferActivity" />
         <activity android:name=".activity.ListViewCacheActivity" />
         <activity android:name=".activity.HotFixActivity" />
