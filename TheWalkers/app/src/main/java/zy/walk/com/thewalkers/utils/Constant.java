@@ -8,6 +8,10 @@ import zy.walk.com.thewalkers.imagesandanimations.event.MainEvent;
 public class Constant {
 
     public static final String LOG = "TheWalkers";
+
+    public static final String CREATE_VIEW_LOG = "draw_view";
+
+
     public static final List<MainEvent> getMainEvent() {
 
         List<MainEvent> list = new ArrayList<>();
@@ -26,7 +30,7 @@ public class Constant {
 
 
         list.add(createMainEvent("辅助信息展示", "Singou(singou)", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.AuxiliaryInfoShowActivity"));
-        list.add(createMainEvent("DIY VIEW", "diy view", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.DiyViewActivity"));
+        list.add(createMainEvent("DIY VIEW", "android view", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.DiyViewActivity"));
         list.add(createMainEvent("Google translate", "谷歌翻译", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.GoogleTranslateActivity"));
         list.add(createMainEvent("Adapter", "adapter框架", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.AdapterMainActivity"));
 
@@ -71,6 +75,7 @@ public class Constant {
 
         list.add(createMainEvent("Face", "diy face", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.FaceActivity"));
         list.add(createMainEvent("GPU", "渲染优化", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.GPUActivity"));
+        list.add(createMainEvent("View 绘制流程", "View 绘制流程", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.ViewCreateActivity"));
 
 
         list.add(createMainEvent("废柴", "行走", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.MainActivity1"));
