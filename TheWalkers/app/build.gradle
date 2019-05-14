@@ -63,4 +63,13 @@ dependencies {
     annotationProcessor 'com.google.dagger:dagger-compiler:2.15'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+
+
+    /**
+     * 内存泄漏检测工具
+     * */
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
 }

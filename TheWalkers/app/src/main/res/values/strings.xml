@@ -25,4 +25,18 @@
     <string name="operation_alpha">operation_alpha</string>
     <string name="activity_view_base_title"> View 基本操作 </string>
     <string name="operation_background">operation_background</string>
+    <string name="aa">aa</string>
+    <string name="bb">bb</string>
+    <string name="cc">cc</string>
+    <string name="dd">dd</string>
+    <string name="ee">ee</string>
+    <string name="ff">ff</string>
+    <string name="hello">hello</string>
+    <string name="gg">gg</string>
+    <string name="hh">hh</string>
+    <string name="android_date">Android Date</string>
+    <string name="sparse_array">sparse_array</string>
+    <string name="sparse_int_array">spare_int_array</string>
+    <string name="sparse_long_array">parse_long_array</string>
+    <string name="sparse_boolean_array">sparse_boolean_array</string>
 </resources>

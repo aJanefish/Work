@@ -28,6 +28,12 @@ public class FirstLayout extends ViewGroup {
     }
 
     @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
+    }
+
+    @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         Log.d(TAG,"onLayout :"+this);
         Log.d(TAG,"onLayout changed:"+changed+" l:"+l+" t:"+t+" r:"+r+" b:"+b);
