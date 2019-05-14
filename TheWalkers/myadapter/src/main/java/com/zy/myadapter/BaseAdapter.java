@@ -13,13 +13,13 @@ import androidx.recyclerview.widget.RecyclerView;
 public class BaseAdapter<T> extends RecyclerView.Adapter<BaseHolder> {
 
     private List<T> list;
-    private Context mContext;
+    //private Context mContext;
 
     private ItemViewDelegateManager itemViewDelegateManager;
 
     public BaseAdapter(Context mContext, List<T> list) {
         this.list = list;
-        this.mContext = mContext;
+        //this.mContext = mContext;
 
         itemViewDelegateManager = new ItemViewDelegateManager();
     }

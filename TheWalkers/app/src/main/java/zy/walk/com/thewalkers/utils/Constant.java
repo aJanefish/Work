@@ -78,6 +78,8 @@ public class Constant {
         list.add(createMainEvent("Face", "diy face", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.FaceActivity"));
         list.add(createMainEvent("GPU", "渲染优化", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.GPUActivity"));
         list.add(createMainEvent("View 绘制流程", "View 绘制流程", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.ViewCreateActivity"));
+        list.add(createMainEvent("View", "View 基本用法", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.ViewBaseActivity"));
+
 
 
         list.add(createMainEvent("废柴", "行走", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.MainActivity1"));

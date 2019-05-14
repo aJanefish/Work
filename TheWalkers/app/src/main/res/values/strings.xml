@@ -21,4 +21,8 @@
     <string name="get_name">get</string>
     <string name="foo">IntentService foo</string>
     <string name="baz">IntentService baz</string>
+    <string name="test">test</string>
+    <string name="operation_alpha">operation_alpha</string>
+    <string name="activity_view_base_title"> View 基本操作 </string>
+    <string name="operation_background">operation_background</string>
 </resources>
