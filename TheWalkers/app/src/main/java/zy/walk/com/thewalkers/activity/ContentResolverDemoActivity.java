@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import zy.walk.com.thewalkers.R;
 
+import android.annotation.SuppressLint;
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -49,6 +50,7 @@ public class ContentResolverDemoActivity extends AppCompatActivity {
     }
 
 
+    @SuppressLint("WrongConstant")
     private void initView() {
         des = findViewById(R.id.activity_content_resolver_demo_des);
         recycler_view = findViewById(R.id.activity_content_resolver_demo_recycler_view);

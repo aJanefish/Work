@@ -7,79 +7,79 @@
     tools:context=".PermissionActivity">
 
     <TextView
+        android:id="@+id/permission_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/permission_text_view"
-        />
+        tools:ignore="MissingConstraints" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="清空"
         android:onClick="cancel"
+        android:text="清空"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent" />
+
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="检查是否有网络权限"
         android:onClick="checkIntent"
+        android:text="检查是否有网络权限"
+        app:layout_constraintBottom_toTopOf="@id/button2"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
 
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/button2"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="打开apk的应用设置界面"
         android:onClick="openSettings"
+        android:text="打开apk的应用设置界面"
+        app:layout_constraintBottom_toBottomOf="@id/button3"
         app:layout_constraintLeft_toLeftOf="parent"
+
         app:layout_constraintRight_toRightOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@id/button1"
-        app:layout_constraintBottom_toBottomOf="@id/button3"/>
-
-
+        app:layout_constraintTop_toBottomOf="@id/button1" />
 
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="请求运行时权限"
         android:onClick="requestPermission"
+        android:text="请求运行时权限"
+        app:layout_constraintBottom_toTopOf="@id/button4"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@id/button2"
-        app:layout_constraintBottom_toTopOf="@id/button4"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button2" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="检查权限"
         android:onClick="isHasPermissionD"
+        android:text="检查权限"
+        app:layout_constraintBottom_toTopOf="@id/button5"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@id/button3"
-        app:layout_constraintBottom_toTopOf="@id/button5"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button3" />
 
 
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="权限设置界面"
         android:onClick="settings"
+        android:text="权限设置界面"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@id/button4"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

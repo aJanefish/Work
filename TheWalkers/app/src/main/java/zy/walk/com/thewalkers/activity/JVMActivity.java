@@ -3,7 +3,7 @@ package zy.walk.com.thewalkers.activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import dalvik.system.PathClassLoader;
-import zy.walk.com.thewalkers.App;
+import zy.walk.com.thewalkers.MyApp;
 import zy.walk.com.thewalkers.R;
 import zy.walk.com.thewalkers.jvm.JvmBean;
 import zy.walk.com.thewalkers.viewinjection.ViewLayout;
@@ -14,14 +14,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import java.util.ArrayList;
-import java.util.List;
-
 
 @ViewLayout(R.layout.activity_jvm)
 public class JVMActivity extends AppCompatActivity {
     static {
-        Log.d(App.TAG, "JVMActivity static ");
+        Log.d(MyApp.TAG, "JVMActivity static ");
 
 
     }
@@ -36,41 +33,41 @@ public class JVMActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_jvm);
         ViewUtils.register(this);
-        Log.d(App.TAG, "JVMActivity onCreate " + this);
+        Log.d(MyApp.TAG, "JVMActivity onCreate " + this);
     }
 
 
     @ViewMethod(R.id.activity_jvm_gc)
     private void gc(View view) {
-        Log.d(App.TAG, "JVMActivity gc " + jvm1 + "\n" + jvm2 + "\n" + jvm3);
+        Log.d(MyApp.TAG, "JVMActivity gc " + jvm1 + "\n" + jvm2 + "\n" + jvm3);
         Class<? extends JVMActivity> aClass = getClass();
-        Log.d(App.TAG,""+aClass);
+        Log.d(MyApp.TAG,""+aClass);
         ClassLoader classLoader = aClass.getClassLoader();
         PathClassLoader pathClassLoader  = (PathClassLoader) classLoader;
 
 
-        Log.d(App.TAG,""+pathClassLoader);
+        Log.d(MyApp.TAG,""+pathClassLoader);
         ClassLoader classLoaderParent = classLoader.getParent();
-        Log.d(App.TAG,""+classLoaderParent);
+        Log.d(MyApp.TAG,""+classLoaderParent);
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d(App.TAG, "JVMActivity onStop " + this);
+        Log.d(MyApp.TAG, "JVMActivity onStop " + this);
 
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d(App.TAG, "JVMActivity onDestroy " + this);
+        Log.d(MyApp.TAG, "JVMActivity onDestroy " + this);
 
     }
 
     @Override
     protected void finalize() throws Throwable {
         super.finalize();
-        Log.d(App.TAG, "JVMActivity finalize " + this);
+        Log.d(MyApp.TAG, "JVMActivity finalize " + this);
     }
 }

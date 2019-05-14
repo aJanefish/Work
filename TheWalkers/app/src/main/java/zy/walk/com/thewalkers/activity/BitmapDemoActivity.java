@@ -9,6 +9,7 @@ import zy.walk.com.thewalkers.adapter.MainAdapter;
 import zy.walk.com.thewalkers.imagesandanimations.event.MainEvent;
 import zy.walk.com.thewalkers.utils.Constant;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -40,6 +41,8 @@ import com.zhy.adapter.recyclerview.base.ViewHolder;
 import java.util.ArrayList;
 import java.util.List;
 
+import static androidx.recyclerview.widget.LinearLayoutManager.*;
+
 /**
  * 对Bitmap的理解
  * Bitmap.Config是影响图片画质的重要因素，单位像素占用字节越大，画质越高。ARGB是一种存储色彩的模式，其中A：透明度；R：红色；G：绿色；B：蓝色
@@ -67,6 +70,7 @@ public class BitmapDemoActivity extends AppCompatActivity {
     }
 
 
+    @SuppressLint("WrongConstant")
     @TargetApi(Build.VERSION_CODES.O)
     private void initView() {
         image_view = findViewById(R.id.bitmap_demo_image_view);
@@ -75,7 +79,7 @@ public class BitmapDemoActivity extends AppCompatActivity {
 
         recycler_view = findViewById(R.id.bitmap_demo_recycler_view);
 
-        recycler_view.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
+        recycler_view.setLayoutManager(new LinearLayoutManager(getApplicationContext(), VERTICAL, false));
 
 
         final List<BitmapEvent> list = new ArrayList<>();

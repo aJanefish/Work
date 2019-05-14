@@ -12,41 +12,42 @@
         android:layout_height="wrap_content"
         android:hint="澳门今天全天晴转阵雨，18℃ ~ 25℃，东北风3-4级，气候温暖"
         android:text="澳门今天全天晴转阵雨，18℃ ~ 25℃，东北风3-4级，气候温暖"
-        />
+        tools:ignore="MissingConstraints" />
+
     <Button
         android:id="@+id/activity_google_translate_ft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="繁体"
         android:onClick="activity_google_translate_ft"
-        app:layout_constraintTop_toBottomOf="@id/activity_google_translate_et"
+        android:text="繁体"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/activity_google_translate_english"/>
+        app:layout_constraintRight_toLeftOf="@id/activity_google_translate_english"
+        app:layout_constraintTop_toBottomOf="@id/activity_google_translate_et" />
 
     <Button
         android:id="@+id/activity_google_translate_english"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="English"
         android:onClick="activity_google_translate_english"
-        app:layout_constraintTop_toBottomOf="@id/activity_google_translate_et"
+        android:text="English"
         app:layout_constraintLeft_toRightOf="@+id/activity_google_translate_ft"
-        app:layout_constraintRight_toLeftOf="@id/activity_google_translate_por"/>
+        app:layout_constraintRight_toLeftOf="@id/activity_google_translate_por"
+        app:layout_constraintTop_toBottomOf="@id/activity_google_translate_et" />
 
     <Button
         android:id="@+id/activity_google_translate_por"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Português"
         android:onClick="activity_google_translate_por"
-        app:layout_constraintTop_toBottomOf="@id/activity_google_translate_et"
+        android:text="Português"
         app:layout_constraintLeft_toRightOf="@+id/activity_google_translate_english"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_google_translate_et" />
 
     <TextView
         android:id="@+id/activity_google_translate_show"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/activity_google_translate_por"/>
+        app:layout_constraintTop_toBottomOf="@id/activity_google_translate_por" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

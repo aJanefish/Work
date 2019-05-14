@@ -98,7 +98,7 @@ public class DaggerActivity extends BaseActivity {
 
 
     @ViewMethod(R.id.activity_dagger_test)
-    private void test(View view) {
+    public void test(View view) {
         Log.d(TAG, "" + title + "\n" + des + "\n" + button_test);
         Log.d(TAG, "User:" + user);
 

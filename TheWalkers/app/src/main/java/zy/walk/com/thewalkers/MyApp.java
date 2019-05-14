@@ -6,7 +6,7 @@ import android.util.Log;
 
 import com.hjq.toast.ToastUtils;
 
-public class App extends Application {
+public class MyApp extends Application {
 
     public static final String TAG = "TheWalkersTAG";
     public static int appId = 0;
@@ -15,7 +15,7 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         ToastUtils.init(this);
-        Log.d(TAG,"App onCreate "+this );
+        Log.d(TAG,"MyApp onCreate "+this );
 
     }
 
@@ -24,6 +24,6 @@ public class App extends Application {
     @Override
     protected void finalize() throws Throwable {
         super.finalize();
-        Log.d(TAG,"App finalize "+this );
+        Log.d(TAG,"MyApp finalize "+this );
     }
 }

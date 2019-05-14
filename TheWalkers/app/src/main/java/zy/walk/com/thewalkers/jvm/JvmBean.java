@@ -2,7 +2,7 @@ package zy.walk.com.thewalkers.jvm;
 
 import android.util.Log;
 
-import zy.walk.com.thewalkers.App;
+import zy.walk.com.thewalkers.MyApp;
 
 public class JvmBean {
 
@@ -12,14 +12,14 @@ public class JvmBean {
 
     public JvmBean(String id) {
         this.id = id;
-        Log.d(App.TAG,"JvmBean constructor "+id);
+        Log.d(MyApp.TAG,"JvmBean constructor "+id);
         bytes = new byte[1024*1024*10];
     }
 
     @Override
     protected void finalize() throws Throwable {
         super.finalize();
-        Log.d(App.TAG,"JvmBean finalize "+this);
+        Log.d(MyApp.TAG,"JvmBean finalize "+this);
     }
 
     @Override

@@ -5,20 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.BitmapActivity">
+
     <TextView
         android:id="@+id/activity_bitmap_show"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
+        android:id="@+id/activity_bitmap_image_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/activity_bitmap_image_view"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
     <zy.walk.com.thewalkers.diy.RunBallSix
         android:id="@+id/activity_bitmap_run_ball_six"
         android:layout_width="match_parent"
@@ -30,7 +32,8 @@
         android:layout_height="wrap_content"
         android:onClick="ball"
         android:text="BALL"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:layout_width="wrap_content"
@@ -38,6 +41,6 @@
         android:onClick="rect"
         android:text="RECT"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/activity_bitmap_ball"/>
+        app:layout_constraintTop_toBottomOf="@id/activity_bitmap_ball" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

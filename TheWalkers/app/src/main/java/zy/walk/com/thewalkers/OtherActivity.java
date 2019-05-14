@@ -18,6 +18,6 @@ public class OtherActivity extends AppCompatActivity {
     @Override
     protected void finalize() throws Throwable {
         super.finalize();
-        Log.d(App.TAG, "OtherActivity finalize " + this);
+        Log.d(MyApp.TAG, "OtherActivity finalize " + this);
     }
 }
