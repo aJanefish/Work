@@ -85,10 +85,7 @@ public class AndroidDateActivity extends AppCompatActivity {
         //setContentView(R.layout.activity_data);
         ViewUtils.register(this);
 
-        //setMan(0); //將會報錯
-        setMan(MAN);
-        //setFlag("ss"); // 將會報錯
-        setFlag(OK);
+
     }
 
 
@@ -102,6 +99,22 @@ public class AndroidDateActivity extends AppCompatActivity {
     private void setMan(@Sex int sex) {
 
     }
+
+    @ViewMethod(R.id.activity_data_IntDef)
+    public void int_def(View view) {
+        setMan(MAN);
+        setMan(WOMAN);
+        //setMan(0); //將會報錯
+
+    }
+
+    @ViewMethod(R.id.activity_data_StringDef)
+    public void string_def(View view) {
+        //setFlag("ss"); // 將會報錯
+        setFlag(OK);
+        setFlag(ERROR);
+    }
+
 
     @ViewMethod(R.id.activity_data_sparse_long_array)
     public void sparse_long_array(View view) {

@@ -39,4 +39,6 @@
     <string name="sparse_int_array">spare_int_array</string>
     <string name="sparse_long_array">parse_long_array</string>
     <string name="sparse_boolean_array">sparse_boolean_array</string>
+    <string name="IntDef">IntDef</string>
+    <string name="StringDef">StringDef</string>
 </resources>
