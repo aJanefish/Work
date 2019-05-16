@@ -76,7 +76,7 @@ public class AndroidDateActivity extends AppCompatActivity {
             ElementType.METHOD,
     }) //表示注解作用范围，参数注解，成员注解，方法注解
     @Retention(RetentionPolicy.SOURCE) //表示注解所存活的时间,在运行时,而不会存在 .class 文件中
-    public @interface FlagDef { //接口，定义新的注解类型
+    @interface FlagDef { //接口，定义新的注解类型
     }
 
     @Override
