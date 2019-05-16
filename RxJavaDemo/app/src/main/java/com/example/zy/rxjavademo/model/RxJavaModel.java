@@ -4,8 +4,11 @@ import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.internal.operators.observable.ObservableCreate;
+import io.reactivex.internal.operators.observable.ObservableObserveOn;
+import io.reactivex.schedulers.Schedulers;
 
 public class RxJavaModel {
 
@@ -49,8 +52,11 @@ public class RxJavaModel {
 
 
         showLog("observable:" + observable.toString());
-        showLog("observer:" + observer.toString());
-        observable.subscribe(observer);
+
+        Observable<Integer> subscribeOn = observable.subscribeOn(Schedulers.io());   //调度线程
+        ObservableObserveOn<Integer> observable1 = (ObservableObserveOn<Integer>) subscribeOn.observeOn(Schedulers.single());  //调度线程
+        showLog("observable1:" + observable1.toString());
+        observable1.subscribe(observer);
     }
 
     private static void showLog(String data) {
