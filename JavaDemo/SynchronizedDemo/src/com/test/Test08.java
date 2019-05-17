@@ -1,12 +1,12 @@
 package com.test;
 
-import com.utils.Print;
+import com.utils.P;
 
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Test08 {
-    public static void main(String[] args) {
+    private volatile  int id = 0;
+    public  static void main(String[] args) {
         test1();
     }
 
@@ -47,7 +47,7 @@ public class Test08 {
         }
 
 
-        Print.P(atomicInteger + " , " + num[0]);
+        P.P(atomicInteger + " , " + num[0]);
 
     }
 }

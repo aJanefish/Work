@@ -1,6 +1,6 @@
 package com.test;
 
-import com.utils.Print;
+import com.utils.P;
 
 import java.util.concurrent.TimeUnit;
 
@@ -27,7 +27,7 @@ public class Test07 implements Runnable {
         //该线程已持有当前实例锁
         new Thread() {
             public void run() {
-                Print.P("f 1 starting:"+this);
+                P.P("f 1 starting:"+this);
                 f(1); // Lock acquired by this thread
             }
         }.start();
@@ -41,7 +41,7 @@ public class Test07 implements Runnable {
                 System.out.println("中断线程!!");
                 break;
             } else {
-                Print.P("f 2 starting:"+this);//锁 被占用 不能使用
+                P.P("f 2 starting:"+this);//锁 被占用 不能使用
                 f(2);
             }
         }

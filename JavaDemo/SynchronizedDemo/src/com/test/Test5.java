@@ -1,6 +1,6 @@
 package com.test;
 
-import com.utils.Print;
+import com.utils.P;
 
 import java.util.concurrent.TimeUnit;
 /**
@@ -22,12 +22,12 @@ public class Test5 {
                     if (this.isInterrupted()){
                         //isInterrupted判断线程是否已被中断，如果被中断将跳出循环以此结束线程,
                         //注意非阻塞状态调用interrupt()并不会导致中断状态重置
-                        System.out.println("线程中断");
+                        P.pln("线程中断");
                         break;
                     }
                 }
 
-                System.out.println("已跳出循环,线程中断!");
+                P.pln("已跳出循环,线程中断!");
             }
         };
         t1.start();
@@ -40,7 +40,7 @@ public class Test5 {
         t1.interrupt();
 
         //t1.stop();
-        //Print.P("run:" + t1.isInterrupted());
+        //P.P("run:" + t1.isInterrupted());
 
 
     }

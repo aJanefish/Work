@@ -1,6 +1,6 @@
 package com.test;
 
-import com.utils.Print;
+import com.utils.P;
 
 //synchronized同步代码块
 //除了使用关键字修饰实例方法和静态方法外，还可以使用同步代码块，
@@ -18,7 +18,7 @@ public class Test3 implements Runnable {
         //省略其他耗时操作....
 
         //使用同步代码块对变量i进行同步操作,锁对象为instance || name
-        Print.P(this + " -- start");
+        P.P(this + " -- start");
         synchronized (name) {
             for (int j = 0; j < 1000000; j++) {
                 i++;
@@ -29,6 +29,6 @@ public class Test3 implements Runnable {
                 e.printStackTrace();
             }
         }
-        Print.P(this + " -- end");
+        P.P(this + " -- end");
     }
 }

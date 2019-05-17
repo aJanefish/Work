@@ -1,6 +1,6 @@
 package com.test;
 
-import com.utils.Print;
+import com.utils.P;
 
 import java.util.concurrent.TimeUnit;
 
@@ -13,20 +13,20 @@ public class Test06 {
                 try {
                     //判断当前线程是否已中断,注意interrupted方法是静态的,执行后会对中断状态进行复位
                     while (!Thread.interrupted()) {
-                        Print.P("run:"+isInterrupted());
+                        P.P("run:"+isInterrupted());
                         TimeUnit.SECONDS.sleep(2);//堵塞状态
                         long start = System.currentTimeMillis();
-                        Print.P("start for");
+                        P.P("start for");
                         for(int i = 0;i < 1000000000;i++){
                             int x = i;
                         }
-                        Print.P(System.currentTimeMillis() -start);
+                        P.P(System.currentTimeMillis() -start);
                     }
-                    Print.P("run end:"+isInterrupted());
+                    P.P("run end:"+isInterrupted());
                 } catch (InterruptedException e) {
-                    Print.P("InterruptedException:"+e);
+                    P.P("InterruptedException:"+e);
                 }finally {
-                    Print.P("finally:"+isInterrupted());
+                    P.P("finally:"+isInterrupted());
                 }
             }
         };
@@ -40,7 +40,7 @@ public class Test06 {
         t1.interrupt();
 
         //t1.stop();
-        //Print.P("run:" + t1.isInterrupted());
+        //P.P("run:" + t1.isInterrupted());
 
 
     }

@@ -1,7 +1,7 @@
 package com;
 
 import com.test.TestMain;
-import com.utils.Print;
+import com.utils.P;
 /**
  * synchronized的三种应用方式
  * synchronized关键字最主要有以下3种应用方式，下面分别介绍
@@ -13,8 +13,8 @@ import com.utils.Print;
 public class Main {
 
     public static void main(String[] ages){
-        Print.P("synchronized ---------------- main");
-        Print.P(ClassLoader.getSystemClassLoader());
+        P.pln("synchronized ---------------- main");
+        P.pln(ClassLoader.getSystemClassLoader());
         //TestMain.test1();
         //TestMain.test2();
         //TestMain.test3();
