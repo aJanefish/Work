@@ -19,12 +19,14 @@
             android:background="@color/colorPrimaryDark"
             tools:ignore="MissingConstraints">
             <zy.walk.com.thewalkers.view.DiyView
+                android:id="@+id/activity_view_create_my_view"
                 android:text="test"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:ignore="MissingConstraints" />
         </zy.walk.com.thewalkers.view.DiyGroup>
         <Button
+            android:id="@+id/activity_view_create_test1"
             android:text="test1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

@@ -21,7 +21,7 @@ public class Constant {
         list.add(createMainEvent("Toast", "吐司功能小集合", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.ToastActivity"));
         list.add(createMainEvent("Android Server", "android 服务总结", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.AndroidServerMainActivity"));
 
-        list.add(createMainEvent("Animator", "一直想学习动画,没有时间精力,可自从发现了:https://github.com/daimajia/AndroidViewAnimations", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.AnimationsActivity"));
+        list.add(createMainEvent("Animator", "Android 动画", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.AnimationsActivity"));
 
 
         list.add(createMainEvent("RxJava", "RxJava(RxJava)", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.RxJavaActivity"));

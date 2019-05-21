@@ -53,7 +53,7 @@
     </LinearLayout>
 
 
-    <Button
+    <zy.walk.com.thewalkers.view.DiyView
         android:id="@+id/activity_animations_animation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
         tools:ignore="MissingConstraints" />
 
 
-    <ImageView
+    <zy.walk.com.thewalkers.view.DiyImageView
         android:id="@+id/activity_animations_image_view"
         android:layout_width="100dp"
         android:layout_height="100dp"

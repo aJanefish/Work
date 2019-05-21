@@ -1,51 +1,38 @@
 package zy.walk.com.thewalkers.view;
 
 import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.view.MotionEvent;
-import android.view.PointerIcon;
-import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 
 import zy.walk.com.thewalkers.utils.Constant;
 
-
 @SuppressLint("AppCompatCustomView")
-public class DiyView extends Button {
-    private static final String TAG = "DiyView";
-    private Drawable mDivider;
-
-    public DiyView(Context context) {
+public class DiyImageView extends ImageView {
+    public DiyImageView(Context context) {
         super(context);
     }
 
-    public DiyView(Context context, @Nullable AttributeSet attrs) {
+    public DiyImageView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public DiyView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public DiyImageView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
-    public DiyView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public DiyImageView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
-
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        getDiyDefaultSize("DiyView onMeasure width", widthMeasureSpec);
+        getDiyDefaultSize("DiyImageView onMeasure width", widthMeasureSpec);
         //getDiyDefaultSize("DiyView onMeasure height", heightMeasureSpec);
     }
 
@@ -75,19 +62,13 @@ public class DiyView extends Button {
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
-        Log.d(Constant.CREATE_VIEW_LOG, "DiyView onLayout:" + changed + " - " + left + " - " + top + " - " + right + " - " + bottom);
+        Log.d(Constant.CREATE_VIEW_LOG, "DiyImageView onLayout:" + changed + " - " + left + " - " + top + " - " + right + " - " + bottom);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        Log.d(Constant.CREATE_VIEW_LOG, "DiyView onDraw ");
+        Log.d(Constant.CREATE_VIEW_LOG, "DiyImageView onDraw ");
 
     }
-
-//    @Override
-//    public void draw(Canvas canvas) {
-////        super.draw(canvas);
-//        super.draw(canvas);
-//    }
 }

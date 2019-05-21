@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2732091-2f5a-4c1c-9e70-7cad1f19068b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/test/ThreadMXBeanDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/test/VolatileDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test06$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test06$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test07$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test07$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test07.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test07.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test08.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test08.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test4$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Test5$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/utils/Print.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/test/Test06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/Test06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/test/Test07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/Test07.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/test/Test08.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/Test08.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/test/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/Test3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/test/Test4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/Test4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/test/Test5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/Test5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/utils/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/P.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RxJavaDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RxJavaDemo/.idea/misc.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +39,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/test/ThreadMXBeanDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
+            <state relative-caret-position="651">
               <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -136,7 +116,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="121" />
     <option name="y" value="448" />
     <option name="width" value="1400" />
@@ -304,8 +284,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -316,7 +295,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46051168" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46051168" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -529,7 +508,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/ThreadMXBeanDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
+        <state relative-caret-position="651">
           <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />

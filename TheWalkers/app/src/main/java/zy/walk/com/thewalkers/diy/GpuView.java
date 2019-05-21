@@ -144,12 +144,21 @@ public class GpuView extends View {
         f.x = width;
         f.y = height;
         calcPointsXY(a,f);//将初始化计算放在这
+        Log.d(TAG,"onMeasure");
     }
+
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+        Log.d(TAG,"onLayout");
+    }
+
 
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        Log.d(TAG,"onDraw");
         if (isInit) {
             isInit = true;
             f = new MyPoint(canvas.getWidth() - 100, canvas.getHeight() - 100);

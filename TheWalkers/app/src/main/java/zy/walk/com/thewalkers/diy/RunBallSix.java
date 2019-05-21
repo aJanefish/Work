@@ -111,6 +111,7 @@ public class RunBallSix extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        Log.d(TAG,"onDraw");
         if (mCoo == null) {
 
             mCoo = new Point(canvas.getWidth(), canvas.getHeight());
@@ -181,6 +182,18 @@ public class RunBallSix extends View {
                 break;
         }
         return true;
+    }
+
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+        Log.d(TAG,"onLayout");
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        Log.d(TAG,"onMeasure");
     }
 
     /**

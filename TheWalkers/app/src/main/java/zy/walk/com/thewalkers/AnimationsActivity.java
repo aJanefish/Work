@@ -2,6 +2,8 @@ package zy.walk.com.thewalkers;
 
 
 import zy.walk.com.thewalkers.activity.BaseActivity;
+import zy.walk.com.thewalkers.view.DiyImageView;
+import zy.walk.com.thewalkers.view.DiyView;
 import zy.walk.com.thewalkers.viewinjection.ViewField;
 import zy.walk.com.thewalkers.viewinjection.ViewMethod;
 import zy.walk.com.thewalkers.viewinjection.ViewUtils;
@@ -10,17 +12,17 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 
 /**
- *
+ * 动画总结:
+ * Android 动画包括
+ * 补间动画和逐帧动画 -  会影响性能 - 调用时会onDraw
+ * 属性动画 - 则不会影响性能 - 调用时不会onDraw
  */
 
 public class AnimationsActivity extends BaseActivity {
@@ -29,11 +31,11 @@ public class AnimationsActivity extends BaseActivity {
     private String TAG = "AnimationsActivity";
 
     @ViewField(R.id.activity_animations_animation)
-    Button animation_button;
+    DiyView animation_button;
 
 
     @ViewField(R.id.activity_animations_image_view)
-    ImageView imageView;
+    DiyImageView imageView;
     private AnimationDrawable frameAnim;
 
     @Override
@@ -97,6 +99,7 @@ public class AnimationsActivity extends BaseActivity {
         animator.start();
         //animation_button.setTranslationZ(100);
     }
+
     /**
      * 属性动画测试
      */

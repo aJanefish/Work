@@ -28,6 +28,8 @@ public class BitmapActivity extends AppCompatActivity {
     private ImageView activity_bitmap_image_view;
     private String TAG= "BitmapActivity";
     private RunBallSix run_ball_six;
+    private Bitmap qq;
+    private Bitmap qq_big;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +42,8 @@ public class BitmapActivity extends AppCompatActivity {
 
     private void initDate() {
         activity_bitmap_image_view.setImageBitmap(createBitmap(200,200));
-
+        qq = BitmapFactory.decodeResource(getResources(), R.drawable.qq);
+        qq_big = BitmapFactory.decodeResource(getResources(), R.drawable.qq_big);
     }
 
 
@@ -171,12 +174,16 @@ public class BitmapActivity extends AppCompatActivity {
 
     public void ball(View view) {
         mBalls.clear();
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.qq_big);
-        Log.d(TAG,"bitmap.size():"+bitmap.getWidth()+" , "+bitmap.getHeight());
+        if (qq_big == null){
+            Log.d(TAG,"qq_big == null");
+            qq_big = BitmapFactory.decodeResource(getResources(), R.drawable.qq_big);
+            return;
+        }
+        Log.d(TAG,"bitmap.size():"+qq_big.getWidth()+" , "+qq_big.getHeight());
         int r = 16;
         d = r*2;
 
-        initBall(bitmap,d);
+        initBall(qq_big,d);
         Log.d(TAG,"bitmap.size():"+mBalls.size());
         run_ball_six.setList(mBalls,d,true);
     }
@@ -214,10 +221,16 @@ public class BitmapActivity extends AppCompatActivity {
 
     public void rect(View view) {
         mBalls.clear();
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.qq);
-        Log.d(TAG,"bitmap.size():"+bitmap.getWidth()+" , "+bitmap.getHeight());
+        if (qq == null){
+            Log.d(TAG,"qq == null");
+            qq = BitmapFactory.decodeResource(getResources(), R.drawable.qq);
+            return;
+        }
+
+
+        Log.d(TAG,"bitmap.size():"+qq.getWidth()+" , "+qq.getHeight());
         d = 5;
-        initRect(bitmap,d);
+        initRect(qq,d);
         Log.d(TAG,"mBalls.size():"+mBalls.size());
         run_ball_six.setList(mBalls,d,false);
     }
