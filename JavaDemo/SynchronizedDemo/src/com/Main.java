@@ -19,6 +19,16 @@ public class Main {
         //TestMain.test2();
         //TestMain.test3();
         TestMain.test4();
+
+    }
+
+
+    static class Inner1{
+
+    }
+
+    class Inner2{
+
     }
 }
 

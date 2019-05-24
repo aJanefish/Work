@@ -43,6 +43,10 @@ public class ViewCreateActivity extends AppCompatActivity {
 
     @ViewMethod(R.id.activity_view_create_test1)
     public void test1(View view){
+        if (view != null) {
+            throw new NullPointerException("View != null");
+        }
+
         myView.setRotation(random.nextFloat()*100);
     }
 

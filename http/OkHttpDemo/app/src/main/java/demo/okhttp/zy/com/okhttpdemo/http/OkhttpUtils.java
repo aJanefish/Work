@@ -16,13 +16,13 @@ import demo.okhttp.zy.com.okhttpdemo.log.MyLog;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
+import okhttp3.Interceptor;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
-import okhttp3.internal.Version;
 import okio.BufferedSink;
 public class OkhttpUtils {
 
@@ -42,9 +42,17 @@ public class OkhttpUtils {
         builder.connectTimeout(60, TimeUnit.SECONDS);
         builder.readTimeout(60, TimeUnit.SECONDS);
         builder.writeTimeout(60, TimeUnit.SECONDS);
-        okHttpClient = builder.build();
+        builder.addInterceptor(new Interceptor() {
+            @Override
+            public Response intercept(Chain chain) throws IOException {
+                return null;
+            }
+        });
 
-        Version version;
+        //builder.sslSocketFactory()
+
+
+        okHttpClient = builder.build();
     }
 
 

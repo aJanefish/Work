@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">OkHttpDemo</string>
     <string name="RetrofitActivity">RetrofitActivity</string>
+    <string name="ok_http_title">OkHttp 学习</string>
 </resources>

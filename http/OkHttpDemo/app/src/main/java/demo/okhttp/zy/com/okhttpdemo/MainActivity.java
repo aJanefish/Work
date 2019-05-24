@@ -41,4 +41,13 @@ public class MainActivity extends BaseActivity {
         main_recycler_view  = findViewById(R.id.main_recycler_view);
     }
 
+
+    static class Inner1{
+
+    }
+
+    class Inner2{
+
+    }
+
 }

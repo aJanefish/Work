@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a714ef9a-9b48-47e2-a565-f814031c87d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../relationship/src/com/thread/ThreadDemo02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BlockingQueueDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BlockingQueueDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SynchronizedDemo/src/com/test/BlockedMutex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SynchronizedDemo/src/com/test/Interrupting2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/presenter/OkHttpPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/view/IOkhttpView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SynchronizedDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SynchronizedDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SynchronizedDemo/out/production/SynchronizedDemo/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SynchronizedDemo/out/production/SynchronizedDemo/com/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SynchronizedDemo/out/production/SynchronizedDemo/com/test/ThreadMXBeanDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SynchronizedDemo/out/production/SynchronizedDemo/com/test/ThreadMXBeanDemo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SynchronizedDemo/out/production/SynchronizedDemo/com/test/ThreadMXBeanDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SynchronizedDemo/out/production/SynchronizedDemo/com/test/ThreadMXBeanDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SynchronizedDemo/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SynchronizedDemo/src/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SynchronizedDemo/src/com/test/ThreadMXBeanDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SynchronizedDemo/src/com/test/ThreadMXBeanDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../relationship/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/ViewCreateActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/activity/ViewCreateActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/activity/OkHttpDemoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/activity/OkHttpDemoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/http/OkhttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/http/OkhttpUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/res/layout/activity_ok_http_demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/res/layout/activity_ok_http_demo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -147,8 +160,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,12 +169,64 @@
             </path>
             <path>
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OkioDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OkioDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OkioDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OkioDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OkioDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OkioDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OkioDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,7 +378,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
