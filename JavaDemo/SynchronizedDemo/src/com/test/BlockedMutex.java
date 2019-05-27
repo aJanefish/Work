@@ -1,6 +1,8 @@
 package com.test;
 
 
+import com.utils.P;
+
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -16,6 +18,7 @@ public class BlockedMutex {
         //获取当前对象锁
         try {
             lock.lockInterruptibly();
+            P.pln("geted lock " + Thread.currentThread());
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
@@ -27,7 +30,7 @@ public class BlockedMutex {
         try {
             //获取挡墙对象锁
             //这种获取锁的方式在等待获取对象锁 被阻塞的时候是可以被中断的
-            System.out.println("获取对象锁 在f()......");
+            System.out.println("获取对象锁 在f()......" + Thread.currentThread());
             lock.lockInterruptibly();
             System.out.println("获取对象锁 在f()方法中");
         } catch (InterruptedException e) {
@@ -43,6 +46,10 @@ public class BlockedMutex {
 
 class Blocked2 implements Runnable {
     BlockedMutex blocked = new BlockedMutex();
+
+    public Blocked2() {
+        P.pln("Blocked2:" + Thread.currentThread());
+    }
 
     @Override
     public void run() {

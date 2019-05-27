@@ -59,7 +59,18 @@ public class DiyReentrantLock {
                     "waitStatus=" + waitStatus +
                     ", thread=" + thread +
                     ", nextWaiter=" + (nextWaiter == SHARED ? "SHARED" : "EXCLUSIVE") +
+                    ", hashcode=" + hashCode() +
+                    ", prev=" + getPrevHashCode() +
+                    ", next=" + getNextHashCode() +
                     '}';
+        }
+
+        private String getPrevHashCode() {
+            return prev == null ? "null" : "" + prev.hashCode();
+        }
+
+        private String getNextHashCode() {
+            return next == null ? "null" : "" + next.hashCode();
         }
     }
 
@@ -87,10 +98,12 @@ public class DiyReentrantLock {
         for (Node node = head; node != null; node = node.next) {
             if (node == head) {
                 stringBuilder.append("head = " + node + ",\n");
-            } else if (node == tail) {
-                stringBuilder.append("tail = " + node + ",\n");
             } else {
                 stringBuilder.append(i++ + " = " + node + ",\n");
+            }
+
+            if (node == tail) {
+                stringBuilder.append("tail = " + node + ",\n");
             }
 
         }
@@ -100,11 +113,13 @@ public class DiyReentrantLock {
     }
 
     public void addShare() {
-        addWaiter(Node.SHARED);
+        Node node = addWaiter(Node.SHARED);
+        P.pln("addShare:" + node);
     }
 
     public void addExcluSive() {
-        addWaiter(Node.EXCLUSIVE);
+        Node node = addWaiter(Node.EXCLUSIVE);
+        P.pln("addExcluSive:" + node);
     }
 
 
@@ -167,9 +182,65 @@ public class DiyReentrantLock {
         }
     }
 
+    public void unlock() {
+        release(1);
+    }
+
+    private boolean release(int arg) {
+        if (tryRelease(arg)) {
+            Node h = head;
+            if (h != null && h.waitStatus != 0)
+                //unparkSuccessor(h);
+            return true;
+        }
+        return false;
+    }
+
+    private boolean tryRelease(int releases) {
+        int c = getState() - releases;
+        if (Thread.currentThread() != getExclusiveOwnerThread())
+            throw new IllegalMonitorStateException();
+        boolean free = false;
+        if (c == 0) {
+            free = true;
+            setExclusiveOwnerThread(null);
+        }
+        setState(c);
+        return free;
+    }
+
     private void acquire(int arg) {
-        boolean acquire = tryAcquire(arg);
-        P.pln("acquire:" + acquire);
+        boolean tryAc = tryAcquire(arg);
+        P.pln("" + Thread.currentThread() + " - " + tryAc);
+        if (!tryAc &&
+                acquireQueued(addWaiter(Node.EXCLUSIVE), arg))
+            selfInterrupt();
+    }
+
+    private boolean acquireQueued(Node node, int arg) {
+        for (; ; ) {
+            final Node p = node.predecessor();
+            P.pln(Thread.currentThread() + " (p == head) = " + (p == head));
+            if (p == head && tryAcquire(arg)) {
+                setHead(node);
+                p.next = null; // help GC
+                P.pln(""+Thread.currentThread()+" acquireQueued");
+                show();
+                return true;
+            }
+        }
+    }
+
+
+    private void setHead(Node node) {
+        head = node;
+        node.thread = null;
+        node.prev = null;
+    }
+
+
+    private void selfInterrupt() {
+        Thread.currentThread().interrupt();
     }
 
 

@@ -15,7 +15,7 @@ public class Interrupting2 {
         t.start();
         TimeUnit.SECONDS.sleep(5);
         System.out.println("Issuing t.interrupt()");
-        t.interrupt();
+        //t.interrupt();
 
         //test1();
     }
