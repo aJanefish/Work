@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2732091-2f5a-4c1c-9e70-7cad1f19068b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Blocked2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/BlockedMutex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/Interrupting2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/ReentrantLockTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/ReentrantLockTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/ReentrantLockTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/ReentrantLockTest$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/ReentrantLockTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SynchronizedDemo/com/test/ReentrantLockTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/test/BlockedMutex.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/test/Interrupting2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/test/ReentrantLockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/ReentrantLockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,33 +19,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/test/ReentrantLockTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+            <state relative-caret-position="425">
+              <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="441" column="32" lean-forward="true" selection-start-line="441" selection-start-column="32" selection-end-line="441" selection-end-column="32" />
-              <folding>
-                <element signature="e#6849#6850#0" expanded="true" />
-                <element signature="e#6907#6908#0" expanded="true" />
-                <element signature="e#7116#7117#0" expanded="true" />
-                <element signature="e#7150#7151#0" expanded="true" />
-                <element signature="e#8176#8177#0" expanded="true" />
-                <element signature="e#8216#8217#0" expanded="true" />
-                <element signature="e#9117#9118#0" expanded="true" />
-                <element signature="e#9144#9145#0" expanded="true" />
-                <element signature="e#12210#12211#0" expanded="true" />
-                <element signature="e#12258#12259#0" expanded="true" />
-                <element signature="e#15850#15851#0" expanded="true" />
-                <element signature="e#15881#15882#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -668,11 +635,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1921">
+          <caret line="178" column="17" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="441" column="32" lean-forward="true" selection-start-line="441" selection-start-column="32" selection-end-line="441" selection-end-column="32" />
+        <state relative-caret-position="183">
+          <caret line="166" column="30" selection-start-line="166" selection-start-column="30" selection-end-line="166" selection-end-column="30" />
           <folding>
+            <element signature="e#5562#5563#0" expanded="true" />
+            <element signature="e#5614#5615#0" expanded="true" />
             <element signature="e#6849#6850#0" expanded="true" />
             <element signature="e#6907#6908#0" expanded="true" />
             <element signature="e#7116#7117#0" expanded="true" />
@@ -685,14 +661,16 @@
             <element signature="e#12258#12259#0" expanded="true" />
             <element signature="e#15850#15851#0" expanded="true" />
             <element signature="e#15881#15882#0" expanded="true" />
+            <element signature="e#17535#17536#0" expanded="true" />
+            <element signature="e#17577#17578#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/ReentrantLockTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+        <state relative-caret-position="425">
+          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -3,6 +3,7 @@ package com.test;
 import com.utils.P;
 
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
@@ -11,11 +12,11 @@ import java.util.concurrent.locks.ReentrantLock;
 public class ReentrantLockTest {
 
     enum ReentrantLockTestType {
-        LOCK, lockInterruptibly, tryLock, tryLock1
+        LOCK, lockInterruptibly, tryLock, tryLock1, newCondition
     }
 
     public static void main(String args[]) {
-        ReentrantLockTestType reentrantLockTestType = ReentrantLockTestType.tryLock1;
+        ReentrantLockTestType reentrantLockTestType = ReentrantLockTestType.newCondition;
         switch (reentrantLockTestType) {
             case LOCK:
                 lockTest();
@@ -29,15 +30,31 @@ public class ReentrantLockTest {
             case tryLock1:
                 tryLock1Test();
                 break;
+            case newCondition:
+                newConditionTest();
+                break;
         }
 
 
     }
 
     /**
+     * 返回绑定到此Lock实例的新Condition实例
+     */
+    private static void newConditionTest() {
+        ReentrantLock reentrantLock = new ReentrantLock();
+        Condition condition = reentrantLock.newCondition();
+        Condition condition1 = reentrantLock.newCondition();
+
+        P.pln(condition);
+        P.pln(condition1);
+
+    }
+
+    /**
      * tryLock(long timeout, TimeUnit unit)
      * 如果在给定的等待时间内空闲并且当前线程未被中断，则获取锁
-     * */
+     */
     private static void tryLock1Test() {
         ReentrantLock reentrantLock = new ReentrantLock();
         boolean ooo = false;
@@ -48,7 +65,7 @@ public class ReentrantLockTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        
+
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {

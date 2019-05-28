@@ -75,6 +75,9 @@ public class Constant {
         list.add(createMainEvent("Environment", "Environment详情", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.EnvironmentActivity"));
         list.add(createMainEvent("Diy Layout", "Diy Layout", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.DiyLayoutActivity"));
 
+        list.add(createMainEvent("Diy Launcher", "Drag ViewGroup", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.DiyDragActivity"));
+
+
         list.add(createMainEvent("Face", "diy face", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.FaceActivity"));
         list.add(createMainEvent("GPU", "渲染优化", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.GPUActivity"));
         list.add(createMainEvent("View 绘制流程", "View 绘制流程", "zy.walk.com.thewalkers", "zy.walk.com.thewalkers.activity.ViewCreateActivity"));

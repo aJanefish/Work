@@ -41,4 +41,5 @@
     <string name="sparse_boolean_array">sparse_boolean_array</string>
     <string name="IntDef">IntDef</string>
     <string name="StringDef">StringDef</string>
+    <string name="drag">Drag</string>
 </resources>

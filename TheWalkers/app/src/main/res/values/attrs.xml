@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DragViewGroup_Launcher">
+        <attr name="launcherX" format="integer" />
+        <attr name="launcherY" format="integer" />
+    </declare-styleable>
+</resources>

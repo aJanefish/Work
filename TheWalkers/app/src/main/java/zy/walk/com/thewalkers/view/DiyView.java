@@ -13,6 +13,7 @@ import android.view.MotionEvent;
 import android.view.PointerIcon;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
@@ -21,7 +22,7 @@ import zy.walk.com.thewalkers.utils.Constant;
 
 
 @SuppressLint("AppCompatCustomView")
-public class DiyView extends Button {
+public class DiyView extends TextView {
     private static final String TAG = "DiyView";
     private Drawable mDivider;
 

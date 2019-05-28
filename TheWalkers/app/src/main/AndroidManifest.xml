@@ -32,7 +32,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.ViewBaseActivity"></activity>
+        <activity android:name=".activity.DiyDragActivity"></activity>
+        <activity android:name=".activity.ViewBaseActivity" />
 
         <service
             android:name=".server.MyIntentService"
