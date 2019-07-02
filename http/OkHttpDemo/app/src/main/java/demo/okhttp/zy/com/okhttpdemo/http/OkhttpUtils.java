@@ -24,6 +24,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 import okio.BufferedSink;
+
 public class OkhttpUtils {
 
 
@@ -32,7 +33,7 @@ public class OkhttpUtils {
     public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
     public static final MediaType MEDIA_TYPE_MARKDOWN = MediaType.parse("text/x-markdown; charset=utf-8");
     private static final MediaType MEDIA_TYPE_PNG = MediaType.parse("image/png");
-    private static final String URL = "http://192.168.201.80:9000/";
+    private static final String URL = "http://192.168.1.103:9000/";
     //private static final String URL = "http://localhost:9000/";
 
 
@@ -56,9 +57,7 @@ public class OkhttpUtils {
     }
 
 
-
-
-    public void requestJson(){
+    public void requestJson() {
         Request request = new Request.Builder()
                 .url("https://api.github.com/gists/c2a7c39532239ff261be")
                 .tag("Resquest Json+aaaa")
@@ -67,13 +66,13 @@ public class OkhttpUtils {
     }
 
 
-    public void sendMultipartBody(){
+    public void sendMultipartBody() {
         RequestBody requestBody = new MultipartBody.Builder()
                 .setType(MultipartBody.FORM)
                 .addFormDataPart("title", "Square Logo")
                 .addFormDataPart("image", "logo-square.png",
                         RequestBody.create(MEDIA_TYPE_PNG, new File("/storage/emulated/0/a.png")))
-                .addFormDataPart("Id","zhangyu")
+                .addFormDataPart("Id", "zhangyu")
                 .build();
 
         send(requestBody, "MultipartBody");
@@ -202,7 +201,16 @@ public class OkhttpUtils {
     }
 
     private void newCall(final Request request) {
+        if (okHttpClient == null) {
+            MyLog.d(TAG, "okHttpClient == null");
+            return;
+        }
         Call cell = okHttpClient.newCall(request);
+
+        if (cell == null) {
+            MyLog.d(TAG, "cell == null");
+            return;
+        }
         cell.enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
@@ -211,58 +219,12 @@ public class OkhttpUtils {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                MyLog.d(TAG, "onResponse:" + call.toString());
-                MyLog.d(TAG, "onResponse response:" + response);
-                MyLog.d(TAG, "onResponse contentType:" + response.body().contentType());
-                MyLog.d(TAG, "onResponse headers:" + response.headers());
-                MyLog.d(TAG, "onResponse request:" + response.request());
-                Call call1 = call;
-                EventBus.getDefault().post(new ClientEvent("[" + response.toString() + "\n" + response.request() + "]"));
-                MyLog.d(TAG,"charStream:"+response.body().charStream());
-                //MyLog.d(TAG,"bytes:"+new String(response.body().bytes()));
 
-
-                byte[] buf = new byte[2048];
-                int len = 0;
-                FileOutputStream fos = null;
-
-                InputStream is=null;
-                try {
-                    is = response.body().byteStream();
-
-                    //文件大小
-                    long total = response.body().contentLength();
-                    //File file = new File(url, fileName);
-                    //fos = new FileOutputStream(file);
-                    long sum = 0;
-                    while ((len = is.read(buf)) != -1) {
-                        //fos.write(buf, 0, len);
-                        MyLog.d(TAG,"buf:"+buf.length);
-                        MyLog.d(TAG,"buf:"+new String(buf));
-                    }
-                    //fos.flush();
-                    MyLog.d(TAG,"xxxxxxxx"+ "下载成功");
-                } catch (Exception e) {
-                } finally {
-                    try {
-                        if (is != null)
-                            is.close();
-                    } catch (IOException e) {
-                    }
-//                    try {
-//                        if (fos != null)
-//                            fos.close();
-//                    } catch (IOException e) {
-//                    }
-                }
-
+                MyLog.d(TAG, "response:" + response);
 
             }
         });
     }
-
-
-
 
 
 }
