@@ -66,6 +66,7 @@ public class OkHttpDemoActivity extends AppCompatActivity implements IOkhttpView
 
 
         okHttpClient = builder.build();
+
     }
 
 
@@ -84,28 +85,11 @@ public class OkHttpDemoActivity extends AppCompatActivity implements IOkhttpView
                                 .build();
 
                         Call call = client.newCall(request);
-                        call.enqueue(new Callback() {
-                            @Override
-                            public void onFailure(Call call, IOException e) {
-                                MyLog.d(TAG, "IOException:" + e);
-
-                            }
-
-                            @Override
-                            public void onResponse(Call call, Response response) throws IOException {
-                                MyLog.d(TAG, "response:" + response);
-                                Headers headers = response.request().headers();
-                                Headers headers1 = response.headers();
-                                MyLog.d(TAG, "request headers:" + headers);
-                                MyLog.d(TAG, "response headers1:" + headers1);
-
-
-                                String body = response.body().string();
-                                MyLog.d(TAG, "body:" + body);
-
-                            }
-                        });
-
+                        try {
+                            Response response = call.execute();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
         ).start();
