@@ -1,23 +1,23 @@
-package com.http;
+package com.test;
 
+import com.http.*;
 import com.util.P;
 
 import java.io.IOException;
 
-/**
- * OkHttp Case
- */
 public class HttpCaseMain {
     //https://free-api.heweather.com/s6/air/now?location=beijing&key=f464c53cb02240a194640685ee425116
-   static OkHttpClient okHttpClient = new OkHttpClient();
+    static OkHttpClient okHttpClient = new OkHttpClient();
 
     public static void main(String[] args) {
+        //http://localhost:4567/blog
         P.pln("OkHttpClient Case");
-        runableTest();
+        //runableTest();
+        enqueueTest();
     }
 
-    private static void runableTest(){
-        for (int i = 0; i <10 ; i++) {
+    private static void runableTest() {
+        for (int i = 0; i < 10; i++) {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -31,8 +31,17 @@ public class HttpCaseMain {
 
     private static void enqueueTest() {
         P.pln("enqueueTest");
-        Request request = new Request("www.baidu.com");
 
+        Headers headers = new Headers.Builder()
+                .add("name", "test")
+                .build();
+
+        HttpUrl httpUrl = new HttpUrl("http", "loaclhost", 4567, "blog");
+
+        Request request = new Request.Builder()
+                .url(httpUrl)
+                .headers(headers)
+                .build();
         Call call = okHttpClient.newCall(request);
 
         call.enqueue(new Callback() {
@@ -42,15 +51,19 @@ public class HttpCaseMain {
             }
 
             @Override
-            public void onSuccess(Call call, Response response) throws IOException {
-                P.pln(call + " - " + request + " - " + Thread.currentThread());
+            public void onResponse(Call call, Response response) throws IOException {
+                P.pln(call + " - " + response + " - " + Thread.currentThread());
             }
         });
     }
 
     private static void executeTest() {
         P.pln("executeTest -- start");
-        Request request = new Request("www.baidu.com");
+        HttpUrl httpUrl = new HttpUrl("http", "www.baidu.com", 80, "");
+
+        Request request = new Request.Builder()
+                .url(httpUrl)
+                .build();
         OkHttpClient okHttpClient = new OkHttpClient();
         Call call = okHttpClient.newCall(request);
         try {
@@ -59,8 +72,9 @@ public class HttpCaseMain {
             P.pln(response);
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             P.pln("executeTest -- end");
         }
     }
 }
+

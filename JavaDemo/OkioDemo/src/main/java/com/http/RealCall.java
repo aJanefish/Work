@@ -1,8 +1,11 @@
 package com.http;
 
+import com.http.chain.*;
 import com.util.P;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class RealCall implements Call {
@@ -10,11 +13,13 @@ public class RealCall implements Call {
     OkHttpClient client;
     private boolean executed;
     final boolean forWebSocket;
+    private final RetryAndFollowUpInterceptor retryAndFollowUpInterceptor;
 
     private RealCall(Request request, OkHttpClient okHttpClient, boolean forWebSocket) {
         this.request = request;
         this.client = okHttpClient;
         this.forWebSocket = forWebSocket;
+        this.retryAndFollowUpInterceptor = new RetryAndFollowUpInterceptor();
     }
 
     static RealCall newRealCall(Request request, OkHttpClient okHttpClient, boolean forWebSocket) {
@@ -45,19 +50,27 @@ public class RealCall implements Call {
         @Override
         protected void execute() {
             //异步 网络请求业务逻辑实现
-            P.pln(get()+"  --- starting");
-            Response response = new Response(request);
-            try {
-                Random random = new Random();
+            boolean signalledCallback = false;
 
-                Thread.sleep(random.nextInt(10)*1000);
-                callback.onSuccess(get(), response);
+            try {
+                Response response = getResponseWithInterceptorChain();
+
+                if (retryAndFollowUpInterceptor.isCanceled()) {
+                    signalledCallback = true;
+                    callback.onFailure(RealCall.this, new IOException("Canceled"));
+                } else {
+                    signalledCallback = true;
+                    callback.onResponse(RealCall.this, response);
+                }
             } catch (IOException e) {
-                e.printStackTrace();
-                callback.onFailure(get(), e);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }finally {
+                if (signalledCallback) {
+                    // Do not signal the callback twice!
+                    //Platform.get().log(INFO, "Callback failure for " + toLoggableString(), e);
+                } else {
+                    //eventListener.callFailed(RealCall.this, e);
+                    callback.onFailure(RealCall.this, e);
+                }
+            } finally {
                 client.dispatcher().finished(this);
             }
         }
@@ -80,8 +93,8 @@ public class RealCall implements Call {
         }
         //return new Response(request());
         try {
-            Response result = new Response(request());
             client.dispatcher().executed(this);
+            Response result = getResponseWithInterceptorChain();
             if (result == null) throw new IOException("Canceled");
             return result;
         } catch (IOException e) {
@@ -98,6 +111,19 @@ public class RealCall implements Call {
 
     @Override
     public void cancel() {
-        //retryAndFollowUpInterceptor.cancel();
+        retryAndFollowUpInterceptor.cancel();
+    }
+
+    Response getResponseWithInterceptorChain() throws IOException {
+        List<Interceptor> interceptors = new ArrayList<>();
+        interceptors.add(retryAndFollowUpInterceptor);
+        interceptors.add(new BridgeInterceptor());
+        interceptors.add(new CacheInterceptor());
+        interceptors.add(new ConnectInterceptor());
+        interceptors.add(new CallServerInterceptor());
+
+
+        Interceptor.Chain chain = new RealInterceptorChain(interceptors, 0, request, this);
+        return chain.proceed(request);
     }
 }
