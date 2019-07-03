@@ -81,15 +81,28 @@ public class OkHttpDemoActivity extends AppCompatActivity implements IOkhttpView
                         OkHttpClient client = new OkHttpClient();
 
                         final Request request = new Request.Builder()
-                                .url("https://www.baidu.com/")
+                                .url("http://192.168.1.101:4567/blog")
                                 .build();
 
                         Call call = client.newCall(request);
-                        try {
-                            Response response = call.execute();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
+                        call.enqueue(new Callback() {
+                            @Override
+                            public void onFailure(Call call, IOException e) {
+                                e.printStackTrace();
+
+                            }
+
+                            @Override
+                            public void onResponse(Call call, Response response) throws IOException {
+                                //获得返回，并使用FastJson将Json字符串存储在JavaBean对象中
+                                MyLog.d(TAG, "response:" + response);
+                                try {
+                                    MyLog.d(TAG, "response:" + response.body().string());
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        });
                     }
                 }
         ).start();

@@ -20,7 +20,6 @@ public final class Headers {
     }
 
 
-
     @Override
     public String toString() {
         return "Headers{" +
@@ -39,6 +38,19 @@ public final class Headers {
             }
         }
         return null;
+    }
+
+
+    public int size() {
+        return namesAndValues.length / 2;
+    }
+
+    public String name(int index) {
+        return namesAndValues[index * 2];
+    }
+
+    public String value(int index) {
+        return namesAndValues[index * 2 + 1];
     }
 
     public static final class Builder {

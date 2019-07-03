@@ -35,8 +35,8 @@ public class HttpCaseMain {
         Headers headers = new Headers.Builder()
                 .add("name", "test")
                 .build();
-
-        HttpUrl httpUrl = new HttpUrl("http", "loaclhost", 4567, "blog");
+        //http://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101
+        HttpUrl httpUrl = new HttpUrl("http", "www.googletagservices.com", 80, "/activeview/js/current/osd.js?cb=%2Fr20100101");
 
         Request request = new Request.Builder()
                 .url(httpUrl)

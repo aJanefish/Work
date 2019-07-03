@@ -31,6 +31,9 @@ public class Request {
     public String host() {
         return url.getHost();
     }
+    public int port() {
+        return url.getPort();
+    }
 
     public @Nullable String header(String name) {
         return headers.get(name);

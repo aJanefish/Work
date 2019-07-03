@@ -33,7 +33,7 @@ public class Dispatcher {
 
     private synchronized ExecutorService executorService() {
         if (executorService == null) {
-            executorService = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60, TimeUnit.SECONDS,
+            executorService = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 10, TimeUnit.SECONDS,
                     new SynchronousQueue<Runnable>(), threadFactory("OkHttp Dispatcher", false));
         }
         return executorService;

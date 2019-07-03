@@ -40,7 +40,6 @@ public final class HttpUrl {
                 .append(host)
                 .append(":")
                 .append(port)
-                .append("/")
                 .append(path);
         return stringBuilder.toString();
     }
