@@ -2,44 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10585d18-651b-41d6-aacc-f4154e727532" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/Headers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/HttpUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/Version.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/chain/BridgeInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/chain/CacheInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/chain/CallServerInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/chain/ConnectInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/chain/Interceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/chain/RealInterceptorChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/chain/RetryAndFollowUpInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/connection/RealConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/connection/StreamAllocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/http1/Http1Codec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/test/HeadersTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/test/HttpCaseMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/test/HttpUrlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/Dns.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OkioDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/Call.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/Call.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/Callback.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/Callback.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/Dispatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/Dispatcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/HttpCaseMain$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/HttpCaseMain$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/HttpCaseMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/Headers.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/Headers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/HttpUrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/HttpUrl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/NamedRunnable.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/NamedRunnable.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/RealCall$AsyncCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/RealCall$AsyncCall.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/RealCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/RealCall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/Request.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/Response.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/Callback.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/Callback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/HttpCaseMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/RealCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/RealCall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/http/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/connection/RealConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/http/connection/RealConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/test/HttpCaseMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/test/HttpCaseMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/test/OkioTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/test/OkioTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/test/SocketTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/out/production/classes/com/test/SocketTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/test/OkioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/test/OkioTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/test/SocketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/src/main/java/com/test/SocketTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/db/DB.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/db/DB.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -261,7 +237,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562140741291" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562158686992" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />

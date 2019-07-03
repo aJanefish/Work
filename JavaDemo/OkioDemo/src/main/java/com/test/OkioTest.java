@@ -46,6 +46,7 @@ public class OkioTest {
             //new InetSocketAddress(inetAddress, socketPort)
 
             InetSocketAddress inetSocketAddress1 = null;
+
             if (inetAddresses.length > 1) {
                 inetSocketAddress1 = new InetSocketAddress(inetAddresses[0], port);
             }

@@ -2,44 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a714ef9a-9b48-47e2-a565-f814031c87d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/http/Headers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/http/HttpUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/http/Version.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/http/chain/BridgeInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/http/chain/CacheInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/http/chain/CallServerInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/http/chain/ConnectInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/http/chain/Interceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/http/chain/RealInterceptorChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/http/chain/RetryAndFollowUpInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/http/connection/RealConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/http/connection/StreamAllocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/http/http1/Http1Codec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/HeadersTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/HttpCaseMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/HttpUrlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/http/Dns.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/http/Call.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/http/Call.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/http/Callback.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/http/Callback.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/http/Dispatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/http/Dispatcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/http/HttpCaseMain$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/http/HttpCaseMain$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/http/HttpCaseMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/http/Headers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/http/Headers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/http/HttpUrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/http/HttpUrl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/http/NamedRunnable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/http/NamedRunnable.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/http/RealCall$AsyncCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/http/RealCall$AsyncCall.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/http/RealCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/http/RealCall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/http/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/http/Request.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/http/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/http/Response.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/http/Callback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/http/Callback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/http/HttpCaseMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/http/RealCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/http/RealCall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/http/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/http/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/http/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/http/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/http/connection/RealConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/http/connection/RealConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/test/HttpCaseMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/test/HttpCaseMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/test/OkioTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/test/OkioTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/test/SocketTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/test/SocketTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/OkioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/OkioTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/SocketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/SocketTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ZyServer/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ZyServer/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ZyServer/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ZyServer/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ZyServer/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ZyServer/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ZyServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ZyServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ZyServer/server/out/production/classes/db/DB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ZyServer/server/out/production/classes/db/DB.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -61,31 +37,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/http/connection/RealConnection.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/HttpCaseMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="23" selection-start-line="23" selection-end-line="41" selection-end-column="9" />
+            <state relative-caret-position="121">
+              <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1097#1098#0" expanded="true" />
+                <element signature="e#1140#1141#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/QueneTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/OkioTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/SocketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="77" column="44" lean-forward="true" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
+            <state relative-caret-position="210">
+              <caret line="34" column="54" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,76 +63,84 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/3aaaf83694e8c88e8c33c71b609f0ad506007a4a/okio-1.9.0-sources.jar!/okio/Okio.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/OkioTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+            <state relative-caret-position="-1695">
+              <caret line="23" column="43" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="43" />
               <folding>
-                <element signature="e#1976#1977#0" expanded="true" />
-                <element signature="e#2019#2020#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/3aaaf83694e8c88e8c33c71b609f0ad506007a4a/okio-1.9.0-sources.jar!/okio/RealBufferedSink.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/http/connection/StreamAllocation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+            <state relative-caret-position="54">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/3aaaf83694e8c88e8c33c71b609f0ad506007a4a/okio-1.9.0-sources.jar!/okio/BufferedSource.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/net/InetSocketAddress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="822">
-              <caret line="391" column="9" selection-start-line="391" selection-start-column="9" selection-end-line="391" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/http/Headers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+            <state relative-caret-position="592">
+              <caret line="227" column="56" lean-forward="true" selection-start-line="227" selection-start-column="56" selection-end-line="227" selection-end-column="56" />
               <folding>
-                <element signature="e#1131#1132#0" expanded="true" />
-                <element signature="e#1173#1174#0" expanded="true" />
-                <element signature="e#1256#1257#0" expanded="true" />
-                <element signature="e#1298#1299#0" expanded="true" />
-                <element signature="e#1379#1380#0" expanded="true" />
-                <element signature="e#1425#1426#0" expanded="true" />
+                <element signature="class#InetSocketAddressHolder#0;class#InetSocketAddress#0" />
+                <element signature="e#7256#7257#0" expanded="true" />
+                <element signature="e#7330#7331#0" expanded="true" />
+                <element signature="e#10984#10985#0" expanded="true" />
+                <element signature="e#11026#11027#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/net/Socket.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/net/InetAddress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="557" column="29" lean-forward="true" selection-start-line="557" selection-start-column="29" selection-end-line="557" selection-end-column="29" />
+            <state relative-caret-position="128">
+              <caret line="1508" column="23" selection-start-line="1508" selection-start-column="23" selection-end-line="1508" selection-end-column="23" />
+              <folding>
+                <element signature="e#54813#54814#0" expanded="true" />
+                <element signature="e#54858#54859#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/net/SocketAddress.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/http/http1/Http1Codec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+            <state relative-caret-position="54">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/HttpCaseMain.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/http/connection/RealConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="37" column="87" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="87" />
+            <state relative-caret-position="-243">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/HttpUrlTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="7" column="48" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -173,8 +150,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -216,7 +193,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/http/chain/CacheInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/http/chain/BridgeInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/HttpUrlTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/SocketTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/http/Request.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/http/chain/ConnectInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/http/Dispatcher.java" />
@@ -225,6 +201,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/http/connection/RealConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/http/Headers.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/OkioTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/SocketTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/http/Dns.java" />
       </list>
     </option>
   </component>
@@ -338,13 +316,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562142051338" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562158686869" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ZyServer" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -370,7 +348,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.OkioTest">
+  <component name="RunManager" selected="Application.SocketTest">
     <configuration default="true" type="tests" factoryName="Nosetests">
       <module name="demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -496,9 +474,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SocketTest" />
         <item itemvalue="Application.OkioTest" />
         <item itemvalue="Application.HttpCaseMain (1)" />
-        <item itemvalue="Application.SocketTest" />
         <item itemvalue="Application.HttpUrlTest" />
         <item itemvalue="Application.HeadersTest" />
       </list>
@@ -518,9 +496,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.55289423" visible="true" weight="0.2750533" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.55289423" visible="true" weight="0.25567323" />
       <window_info id="Structure" order="1" sideWeight="0.4471058" side_tool="true" weight="0.30711043" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -529,7 +508,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925472" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3003337" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.051107325" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6081772" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -581,9 +560,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/file1">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/file1554100710257.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -626,14 +602,43 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/http/chain/RealInterceptorChain.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/lang/String.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/http/Version.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/http/chain/CacheInterceptor.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/http/chain/BridgeInterceptor.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/http/connection/StreamAllocation.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/net/InetAddress.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/net/InetSocketAddress.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/http/http1/Http1Codec.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/HttpUrlTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/SocketTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/http/chain/CacheInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/http/chain/BridgeInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/http/http1/Http1Codec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/HttpUrlTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/HeadersTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -641,20 +646,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Iterable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="74" column="21" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Iterable.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/function/Consumer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/http/Request.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -676,24 +669,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/net/InetSocketAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding>
-            <element signature="e#7256#7257#0" expanded="true" />
-            <element signature="e#7330#7331#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/net/Proxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/net/InetSocketAddress.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/net/Proxy.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/http/Dispatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -701,30 +678,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/net/SocketAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/net/Socket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="557" column="29" lean-forward="true" selection-start-line="557" selection-start-column="29" selection-end-line="557" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/http/connection/RealConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="23" selection-start-line="23" selection-end-line="41" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/net/SocketAddress.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/net/Socket.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/QueneTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -734,8 +689,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/HttpCaseMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="37" column="87" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="87" />
+        <state relative-caret-position="121">
+          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -779,10 +739,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/http/connection/RealConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/http/connection/StreamAllocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/net/InetAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="1508" column="23" selection-start-line="1508" selection-start-column="23" selection-end-line="1508" selection-end-column="23" />
+          <folding>
+            <element signature="e#54813#54814#0" expanded="true" />
+            <element signature="e#54858#54859#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/net/InetSocketAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="227" column="56" lean-forward="true" selection-start-line="227" selection-start-column="56" selection-end-line="227" selection-end-column="56" />
+          <folding>
+            <element signature="class#InetSocketAddressHolder#0;class#InetSocketAddress#0" />
+            <element signature="e#7256#7257#0" expanded="true" />
+            <element signature="e#7330#7331#0" expanded="true" />
+            <element signature="e#10984#10985#0" expanded="true" />
+            <element signature="e#11026#11027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/OkioTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="77" column="44" lean-forward="true" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
+        <state relative-caret-position="-1695">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/http/Dns.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/SocketTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="34" column="54" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
