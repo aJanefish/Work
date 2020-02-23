@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.HandlerThread;
 import android.os.Looper;
 import android.util.Log;
 import android.view.View;
@@ -35,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         imageView_one = findViewById(R.id.activity_main_image_view_one);
         imageView_two = findViewById(R.id.activity_main_image_view_two);
 
+        HandlerThread handlerThread = new HandlerThread("");
+
     }
 
 
@@ -52,7 +55,9 @@ public class MainActivity extends AppCompatActivity {
         ViewTarget<ImageView, Drawable> viewTarget = requestBuilder.into(imageView_one);
 
 
-        Glide.with(this).load(uri).into(imageView_two);
+        Glide.with(this)
+                .load(uri)
+                .into(imageView_two);
 
         Looper.getMainLooper();
 
