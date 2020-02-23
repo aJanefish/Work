@@ -1,0 +1,73 @@
+Http简介大纲
+1.定义 - 网络协议中的位置(图片)
+
+.HTTP协议定义(
+request
+response)
+状态码
+首部字段
+
+ 怎么抓包(charles,wireshark,Fillder)  用命令发送http请求
+
+
+1.定义
+是什么？
+HTTP是一种协议
+HTTP(HyperText Transfer Protocol)超文本传输协议(超文本转移协议)
+
+Http协议在网络中位置：如图
+
+与Http协议相关的协议：IP,TCP和DNS
+IP协议负责传输
+TCP协议负责可靠传输
+DNS 负责域名解析
+他们之间的关系图：如图
+
+
+3.HTTP协议定义(request，response)
+HTTP是基于客户端/服务端（C/S）的架构模型，通过一个可靠的链接来交换信息，是一个无状态的请求/响应协议。
+
+一个HTTP"客户端"是一个应用程序（Web浏览器或其他任何客户端），通过连接到服务器达到向服务器发送一个或多个HTTP的请求的目的。
+
+一个HTTP"服务器"同样也是一个应用程序（通常是一个Web服务，如Apache Web服务器或IIS服务器等），通过接收客户端的请求并向客户端发送HTTP响应数据。
+
+HTTP使用统一资源标识符（Uniform Resource Identifiers, URI）来传输数据和建立连接。
+
+一旦建立连接后，数据消息就通过类似Internet邮件所使用的格式[RFC5322]和多用途Internet邮件扩展（MIME）[RFC2045]来传送
+
+https://www.runoob.com/http/http-messages.html
+
+
+
+请求报文：如图
+
+响应报文：如图
+
+
+HTTP 请求方法
+根据 HTTP 标准，HTTP 请求可以使用多种请求方法。
+HTTP1.0 定义了三种请求方法： GET, POST 和 HEAD方法。
+HTTP1.1 新增了六种请求方法：OPTIONS、PUT、PATCH、DELETE、TRACE 和 CONNECT 方法
+
+如图
+
+
+状态码
+HTTP状态码分类:如图
+比如：206 给出curl请求命令
+
+416:
+
+HTTP首部：
+见表格
+Referer:表示请求网页的来源，做统计，防盗链
+防盗链：实测
+
+
+
+
+
+
+
+
+

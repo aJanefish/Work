@@ -1,0 +1,117 @@
+telnet localhost 3434
+
+GET /blog HTTP/1.1
+Host: localhost:3434
+
+请求方法测试：
+GET
+curl -v http://localhost:3434/blog
+curl -v http://localhost:3434/blog/1
+
+GET /blog/12 HTTP/1.1
+Host: localhost:3434
+User-Agent: curl/7.63.0
+Accept: */*
+
+
+
+POST
+curl -v -X POST  --data "{\"id\":1,\"date\":\"2020-02-22 03:29:13\",\"author\":\"fish\",\"title\":\"http2\",\"content\":\"http test 2\"}" http://localhost:3434/blog
+curl -v -X POST  --data "{\"id\":2,\"date\":\"2020-02-22 03:29:13\",\"author\":\"fish\",\"title\":\"http2\",\"content\":\"http test 2\"}" http://localhost:3434/blog/1
+
+POST /blog HTTP/1.1
+Host: localhost:3434
+User-Agent: curl/7.63.0
+Accept: */*
+Content-Length: 93
+Content-Type: application/x-www-form-urlencoded
+
+{"id":1,"date":"2020-02-22 03:29:13","author":"fish","title":"http2","content":"http test 2"}
+
+POST /blog HTTP/1.1
+Host: localhost:3434
+User-Agent: curl/7.63.0
+Accept: */*
+Content-Length: 14
+Content-Type: application/x-www-form-urlencoded
+
+name=zy&age=28
+
+
+HEAD 
+查看请求头
+curl -v -X HEAD http://localhost:3434/blog
+
+
+
+PUT
+curl -v -X PUT --data "{\"id\":2,\"date\":\"2020-02-22 03:29:13\",\"author\":\"fish\",\"title\":\"http2\",\"content\":\"http test 2\"}" http://localhost:3434/blog/1
+curl -v -X PUT  --data-ascii "{\"id\":2,\"date\":\"2020-02-22 03:29:13\",\"author\":\"fish\",\"title\":\"http2\",\"content\":\"http test 2\"}" http://localhost:3434/blog/1
+
+
+DELETE
+curl -v -X DELETE http://localhost:3434/blog
+
+
+OPTIONS
+curl -v -X OPTIONS http://localhost:3434/blog
+curl -v -X OPTIONS www.baidu.com
+
+OPTIONS /blog HTTP/1.1
+Host: localhost:3434
+User-Agent: curl/7.63.0
+Accept: */*
+
+
+TRACE
+curl -v -X TRACE http://localhost:3434/blog
+curl -v -X TRACE www.baidu.com -H "Max-Forwards: 2"
+telnet 
+TRACE / HTTP/1.1
+Host: www.baidu.com
+Accept: */*
+
+
+//图片地址
+http://a4.att.hudong.com/21/09/01200000026352136359091694357.jpg
+
+
+//发送Range的请求 请求成功会返回206请求码
+200
+curl -v -I http://a4.att.hudong.com/21/09/01200000026352136359091694357.jpg
+
+206
+curl -v -H "Range: bytes=0-1000" http://a4.att.hudong.com/21/09/01200000026352136359091694357.jpg
+curl http://a4.att.hudong.com/21/09/01200000026352136359091694357.jpg -v -H "Range: bytes=0-1023"
+curl http://a4.att.hudong.com/21/09/01200000026352136359091694357.jpg -v -H "Range: bytes=0-50, 100-150"
+
+telnet a4.att.hudong.com 80
+GET /21/09/01200000026352136359091694357.jpg HTTP/1.1
+Host: a4.att.hudong.com
+User-Agent: curl/7.63.0
+Accept: */*
+Range: bytes=0-1000
+
+
+304: 无状态协议
+curl 'http://ask.android-studio.org/uploads/article/20150602/49e627d8b62d6c877c805ded9c2ec964.jpg'
+curl 'http://ask.android-studio.org/uploads/article/20150602/49e627d8b62d6c877c805ded9c2ec964.jpg' -H 'If-None-Match: "ba74-51789b2d7d180"' -v -I
+
+telnet ask.android-studio.org 80
+GET /uploads/article/20150602/49e627d8b62d6c877c805ded9c2ec964.jpg HTTP/1.1
+Host: ask.android-studio.org
+User-Agent: curl/7.63.0
+Accept: */*
+If-None-Match: "ba74-51789b2d7d180"
+
+
+416:
+curl http://a4.att.hudong.com/21/09/01200000026352136359091694357.jpg -v -H "Range: bytes=2533555-2533557"
+
+telnet a4.att.hudong.com 80
+GET /21/09/01200000026352136359091694357.jpg HTTP/1.1
+Host: a4.att.hudong.com
+User-Agent: curl/7.63.0
+Accept: */*
+Range: bytes=2533555-2533557
+
