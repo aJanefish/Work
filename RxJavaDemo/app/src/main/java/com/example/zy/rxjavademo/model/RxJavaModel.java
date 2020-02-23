@@ -57,6 +57,8 @@ public class RxJavaModel {
         ObservableObserveOn<Integer> observable1 = (ObservableObserveOn<Integer>) subscribeOn.observeOn(Schedulers.single());  //调度线程
         showLog("observable1:" + observable1.toString());
         observable1.subscribe(observer);
+
+
     }
 
     private static void showLog(String data) {

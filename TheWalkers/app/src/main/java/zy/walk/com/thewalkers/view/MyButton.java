@@ -30,17 +30,21 @@ public class MyButton extends Button {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        Log.d(ViewUitls.TAG, "MyView onTouchEvent start" );
+
         boolean touchEvent = super.onTouchEvent(event);
         //touchEvent = true;
-        Log.d(ViewUitls.TAG, "MyView onTouchEvent:" + touchEvent+" - "+ViewUitls.getAction(event));
+        Log.d(ViewUitls.TAG, "MyView onTouchEvent end:" + touchEvent+" - "+ViewUitls.getAction(event));
         return touchEvent;
     }
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
+        Log.d(ViewUitls.TAG, "MyView dispatchTouchEvent start");
+
         boolean touchEvent = super.dispatchTouchEvent(event);
         //touchEvent = false;
-        Log.d(ViewUitls.TAG, "MyView dispatchTouchEvent:" + touchEvent);
+        Log.d(ViewUitls.TAG, "MyView dispatchTouchEvent end:" + touchEvent);
         return touchEvent;
     }
 

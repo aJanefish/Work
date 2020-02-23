@@ -28,6 +28,7 @@ import spark.Request;
 import spark.Response;
 import spark.Route;
 import util.StringUtils;
+
 import static com.j256.ormlite.dao.DaoManager.createDao;
 
 import java.sql.SQLException;
@@ -37,6 +38,7 @@ public enum BlogHandler implements Route {
     GET {
         @Override
         public Object handle(Request request, Response response) throws Exception {
+            System.out.println("GET...");
             long id = getId(request);
             Object result;
             long page = 1L;
@@ -70,8 +72,11 @@ public enum BlogHandler implements Route {
     POST {
         @Override
         public Object handle(Request request, Response response) throws Exception {
+            System.out.println("接受post...");
             Gson gson = new Gson();
-            Blog blog = gson.fromJson(request.body(), Blog.class);
+            String body = request.body();
+            System.out.println("body:" + body);
+            Blog blog = gson.fromJson(body, Blog.class);
 
             String field = null;
             if (StringUtils.isEmpty(blog.author)) {
@@ -82,9 +87,11 @@ public enum BlogHandler implements Route {
                 field = "title";
             }
             if (field != null) {
+                System.out.println("接受post...400");
                 return Resp.create(400, " `" + field + "` is empty!");
             } else {
                 getDao().create(blog);
+                System.out.println("接受post...200");
                 return Resp.create(200, "OK", blog);
             }
         }
@@ -93,6 +100,7 @@ public enum BlogHandler implements Route {
     PUT {
         @Override
         public Object handle(Request request, Response response) throws Exception {
+            System.out.println("PUT");
             long id = getId(request);
             if (id >= 0) {
                 Blog blog = getDao().queryForId(id);
@@ -100,9 +108,11 @@ public enum BlogHandler implements Route {
                     return Resp.create(400, "No Such Element:" + id);
                 } else {
                     Gson gson = new Gson();
-                    Blog requestBody = gson.fromJson(request.body(), Blog.class);
+                    String body = request.body();
+                    System.out.println("body:" + body);
+                    Blog requestBody = gson.fromJson(body, Blog.class);
                     if (requestBody.content == null && requestBody.title == null && requestBody.author == null) {
-                        return Resp.create(400, "Can't find any field of Blog", gson.fromJson(request.body(), Map.class));
+                        return Resp.create(400, "Can't find any field of Blog", gson.fromJson(body, Map.class));
                     } else {
                         if (!StringUtils.isEmpty(requestBody.author)) {
                             blog.author = requestBody.author;
@@ -127,6 +137,7 @@ public enum BlogHandler implements Route {
     DELETE {
         @Override
         public Object handle(Request request, Response response) throws Exception {
+            System.out.println("DELETE");
             long id = getId(request);
             if (id >= 0) {
                 getDao().deleteById(id);
@@ -140,6 +151,23 @@ public enum BlogHandler implements Route {
         @Override
         public Object handle(Request request, Response response) throws Exception {
             return Resp.create(200, "OK");
+        }
+    },
+
+    TRACE {
+        @Override
+        public Object handle(Request request, Response response) throws Exception {
+            System.out.println("TRACE");
+            return Resp.create(200, "OK");
+        }
+    },
+    OPTIONS {
+        @Override
+        public Object handle(Request request, Response response) throws Exception {
+            System.out.println("OPTIONS");
+            System.out.println("request.body:" + request.body());
+            response.header("Allow", "GET,POST,HEAD,TRACE,PUT,DELETE");
+            return Resp.create(200, "OK", "Hello Client");
         }
     };
 

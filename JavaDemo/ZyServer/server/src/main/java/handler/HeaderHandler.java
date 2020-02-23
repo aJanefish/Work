@@ -46,6 +46,7 @@ public class HeaderHandler implements Route {
                 customHeaderMap.put(header, request.headers(header));
             }
             customHeaderMap.put("name","zy");
+            customHeaderMap.put("age","28");
         }
         return customHeaderMap;
     }

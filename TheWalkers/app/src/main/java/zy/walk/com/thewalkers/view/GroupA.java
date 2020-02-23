@@ -27,24 +27,30 @@ public class GroupA extends LinearLayout {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
+        Log.d(ViewUitls.TAG, "GroupA onInterceptTouchEvent start");
+
         boolean interceptTouchEvent = super.onInterceptTouchEvent(ev);
         //interceptTouchEvent = true;
-        Log.d(ViewUitls.TAG, "GroupA onInterceptTouchEvent:" + interceptTouchEvent);
+        Log.d(ViewUitls.TAG, "GroupA onInterceptTouchEvent end:" + interceptTouchEvent);
         return interceptTouchEvent;
     }
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
+        Log.d(ViewUitls.TAG, "GroupA dispatchTouchEvent start");
+
         boolean touchEvent = super.dispatchTouchEvent(ev);
         //touchEvent = true;
-        Log.d(ViewUitls.TAG, "GroupA dispatchTouchEvent:" + touchEvent);
+        Log.d(ViewUitls.TAG, "GroupA dispatchTouchEvent end:" + touchEvent);
         return touchEvent;
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        Log.d(ViewUitls.TAG, "GroupA onTouchEvent start");
+
         boolean touchEvent = super.onTouchEvent(event);
-        Log.d(ViewUitls.TAG, "GroupA onTouchEvent:" + touchEvent+" - "+ViewUitls.getAction(event));
+        Log.d(ViewUitls.TAG, "GroupA onTouchEvent end:" + touchEvent + " - " + ViewUitls.getAction(event));
         return touchEvent;
     }
 }

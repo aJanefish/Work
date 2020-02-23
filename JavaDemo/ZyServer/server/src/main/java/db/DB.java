@@ -83,9 +83,9 @@ public class DB {
 
         for (int i = 0; i < 15; i++) {
             Blog blog = new Blog();
-            blog.author = "怪盗kidou";
-            blog.title = "Retrofit2 测试" + (i + 1);
-            blog.content = "这里是 Retrofit2 Demo 测试服务器" + (i + 1);
+            blog.author = "fish";
+            blog.title = "http" + (i + 1);
+            blog.content = "http test " + (i + 1);
             blogList.add(blog);
         }
         return blogList;

@@ -18,7 +18,7 @@
 
     <zy.walk.com.thewalkers.view.GroupA
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="300dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="@color/colorAccent"
@@ -26,14 +26,14 @@
         >
 
         <zy.walk.com.thewalkers.view.GroupB
-            android:layout_width="400dp"
-            android:layout_height="400dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:background="@color/colorPrimaryDark">
 
             <zy.walk.com.thewalkers.view.MyButton
                 android:id="@+id/activity_event_transfer_button"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@color/colorPrimary"/>
 
         </zy.walk.com.thewalkers.view.GroupB>

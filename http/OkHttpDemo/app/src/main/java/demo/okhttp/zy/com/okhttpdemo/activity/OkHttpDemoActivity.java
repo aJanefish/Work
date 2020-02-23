@@ -81,7 +81,8 @@ public class OkHttpDemoActivity extends AppCompatActivity implements IOkhttpView
                         OkHttpClient client = new OkHttpClient();
 
                         final Request request = new Request.Builder()
-                                .url("http://192.168.1.101:4567/blog")
+                                //.url("http://192.168.1.101:4567/blog")
+                                .url("https://www.baidu.com/")
                                 .build();
 
                         Call call = client.newCall(request);
