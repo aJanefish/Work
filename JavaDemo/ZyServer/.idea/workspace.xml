@@ -1,45 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10585d18-651b-41d6-aacc-f4154e727532" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../OkioDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OkioDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/data.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/upload_bd398f30_9e26_4db0_b9c2_00107446efb3_00000005.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/upload_bd398f30_9e26_4db0_b9c2_00107446efb3_00000008.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/upload_bd398f30_9e26_4db0_b9c2_00107446efb3_00000011.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/upload_bd398f30_9e26_4db0_b9c2_00107446efb3_00000012.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/RESTServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/RESTServer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/RESTServer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/RESTServer$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/RESTServer$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/RESTServer$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/RESTServer$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/RESTServer$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/RESTServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/RESTServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/db/DB.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/db/DB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/handler/BlogHandler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/handler/BlogHandler$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/handler/BlogHandler$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/handler/BlogHandler$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/handler/BlogHandler$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/handler/BlogHandler$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/handler/BlogHandler$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/handler/BlogHandler$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/handler/BlogHandler$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/handler/BlogHandler$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/handler/BlogHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/handler/BlogHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/out/production/classes/handler/HeaderHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/out/production/classes/handler/HeaderHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/RESTServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/RESTServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/db/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/db/DB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/handler/BlogHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/handler/BlogHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/handler/HeaderHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/handler/HeaderHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RxJavaDemo/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../RxJavaDemo/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RxJavaDemo/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../RxJavaDemo/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RxJavaDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RxJavaDemo/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RxJavaDemo/app/src/main/java/com/example/zy/rxjavademo/model/RxJavaModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../RxJavaDemo/app/src/main/java/com/example/zy/rxjavademo/model/RxJavaModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/view/GroupA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/view/GroupA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/view/GroupB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/view/GroupB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/view/MyButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/java/zy/walk/com/thewalkers/view/MyButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/layout/activity_event_transfer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TheWalkers/app/src/main/res/layout/activity_event_transfer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/activity/OkHttpDemoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../http/OkHttpDemo/app/src/main/java/demo/okhttp/zy/com/okhttpdemo/activity/OkHttpDemoActivity.java" afterDir="false" />
-    </list>
+    <list default="true" id="10585d18-651b-41d6-aacc-f4154e727532" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -59,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/RESTServer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
@@ -103,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/handler/BlogHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="74">
@@ -166,6 +128,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -413,7 +376,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.53662694" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.26362625" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -636,16 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/RESTServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -664,6 +617,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
           <caret line="140" column="25" lean-forward="true" selection-start-line="140" selection-start-column="25" selection-end-line="140" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/RESTServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
